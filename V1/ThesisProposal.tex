@@ -1,0 +1,88 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{newtxtext}
+\usepackage{geometry}
+\geometry{top=25mm,bottom=25mm,left=25mm,right=25mm}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{siunitx}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
+\addbibresource{CitationsV3.bib}
+
+\setcounter{biburlnumpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburllcpenalty}{100}
+\begin{document}
+
+\begin{center}
+    \Large\textbf{Thesis Description}\\
+    \vspace{4mm}
+    \normalsize Student: \textbf{Oskar De Clerck} \\
+    Date: October 2025
+\end{center}
+
+\vspace{6mm}
+
+Industrial assembly tasks remain among the most ergonomically demanding operations in manufacturing, often requiring workers to perform repetitive and force-intensive motions. These activities significantly contribute to the global prevalence of musculoskeletal disorders (MSDs) which represents a global health challenge affecting an estimated 1.71 billion people worldwide, being the leading contributor to disability \cite{WHO_musculoskeletal}.
+
+In Belgium, approximately 2.5 million people were affected by MSD in 2018, resulting in direct medical costs of 3 billion euros and indirect costs of 2 billion euros annually \cite{Gorasso2023}.
+
+Work-related musculoskeletal disorders (WMSDs) are caused by repetitive movements, awkward postures and excessive use of force over a long period of time \cite{EUOSHA_MSD}. In European industries 50 percent of work absenteeism of employees is affected by WMSDs. These employees are also absent for a longer period of time compared to workers with other health problems. WMSDs are responsible for permanent incapacity in 60 percent of all reported cases. The financial costs in Europe are estimated to be 240 billion euros, which is 2 percent of the gross domestic product of the EU-15 \cite{EEA_EU15} \cite{Govaerts2021WMSD}.
+
+By using a robotic arm to compensate the weight of heavy parts and/or reduce repetitive motions in assembly tasks, this use case aims to reduce the physical strain on the human body. Reducing physical and mental fatigue will result in less WMSDs and reduce its economic impact while simultaneously improving throughput and quality of production. 
+
+\section*{Use Case Description}
+To ground the proposed research in a realistic industrial context, this thesis focuses on a representative collaborative assembly scenario involving human-robot interaction during the manipulation and placement of mechanical components. The selected use case is motivated by repetitive assembly operations, such as gearbox or substructure assemblies, where parts of varying size and mass (often between 1 kilogram and 5 kilogram) must be repeatedly retrieved, positioned and fitted by an operator. These tasks combine precision requirements with physical loads, making them ideal for collaborative assistance.
+
+The assembly space is divided into two functionally distinct zones which remain dynamically connected. These zones are separated by a laser safety screen which ensures human safety.
+
+\begin{itemize}
+    \item Robot workspace (autonomous zone): The robot performs autonomous actions such as part retrieval and pre-positioning. In this zone, safety is guaranteed by means of human-robot separation, while impedance control ensures accurate motion and force tracking.
+
+    \item Human workspace (collaborative zone): The operator performs fine alignment or assembly tasks. The safety screen acts as a logical boundary rather than a rigid divider. Its primary function is to trigger the controller's transfer between autonomous (impedance) mode to collaborative (hybrid admittance-impedance) mode. Laser safety screens are represented in industrial safety norms concerning physical human-robot interaction (pHRI) and industrial robots, such as, but not limited to, ISO/TS 15066 and ISO 10218-2.
+    
+\end{itemize}
+
+\section*{Workflow}
+Industrial environments already use software to guide human operators during the assembly process. This software can be repurposed to guide the robotic arm to pick the right parts in the correct sequence. After the correct part has been grabbed, the robotic arm brings this part to the border of its workspace. If the human operator moves within the robot workspace during autonomous movement, the robotic arm will stop moving to ensure human safety. When the robotic arm is at a standstill at a predefined switching point, the human operator grabs the robotic arm and guides the end effector to the correct position in the human workspace. The robotic arm will only compensate the weight of the parts, and will remain passive as long as it is within the human workspace. Once the assembly is complete, the human operator guides the robotic arm back within the robot workspace, where it regains autonomous impedance control and fetches the next component.
+
+This workflow achieves a dynamic interaction between human and robot, eliminating downtime associated with rigid separation of work zones \cite{Praxie_Cobot}\cite{ScienceDirect_Cobot}.
+
+\section*{Control concept}
+
+The proposed robotic system operates within two functional zones:
+
+
+\begin{itemize}
+    \item Autonomous workspace (robot-only region), where the robot retrieves, positions or manipulates parts independently
+    \item Collaborative workspace (shared region), where direct physical guidance from the human operator occurs during assembly.
+\end{itemize}
+
+Transitions between these zones demand different dynamic behaviors: precision and stiffness in the autonomous region, whereas compliance, back-drivability and safety in the collaborative region. The control framework therefore integrates impedance control for autonomous tasks and hybrid admittance-impedance control for human-guided interaction, with a supervisory safety layer ensuring smooth transitions between the two modes.
+
+A series elastic transmission (SET) forms the mechanical foundation of this architecture. By introducing a controlled torsional compliance between motor and load, the SET serves as a passive safety filter—absorbing impacts and allowing accurate measurement of interaction forces through spring deflection. Yet elasticity alone is insufficient: it introduces unmodeled dynamics such as backlash, frictional hysteresis and time-dependent compliance variations that can degrade precision.
+
+To compensate for these nonlinearities while preserving compliance, a disturbance observer (DOB) is incorporated into the torque-control loop. The DOB estimates the effect of all disturbances such as mechanical backlash, spring nonlinearity, friction, torque ripple, and cancels them in real time. This restores force-tracking fidelity without compromising the intrinsic safety benefits of elasticity \cite{Paine2016_SEA}\cite{Shim2021_DO}.
+\newpage
+\section*{Research Objectives}
+The primary objectives of this thesis are as follows:
+\begin{enumerate}
+    \item To design and implement a disturbance observer capable of real-time compensation of combined disturbances within the hybrid (admittance/impedance) control framework.
+    \item To analyse and provide stability and passivity proofs of the proposed controller architecture using classical methods (e.g., Nyquist stability criterion) and Lyapunov theory.
+    \item To design and build a 3-DoF experimental test bench incorporating the series elastic transmission, the laser safety interface for zone separation, and the collaborative arm hardware.
+    \item To experimentally validate the proposed use-case for weight compensation and human–robot cooperative assembly of heavy parts: quantify improvements in productivity (e.g., target ~30\% reduction in cycle times) and ergonomics (e.g., measurable reduction in MSD risk factors among operators).
+\end{enumerate}
+
+\section*{Expected Outcomes and Impact}
+The expected outcomes of this thesis include:
+\begin{itemize}
+    \item A validated experimental prototype demonstrating pHRI in an industrial-style assembly cell with cobot assistance.
+    \item Open-source code and documentation for the hybrid control algorithm and disturbance observer implementation.
+\end{itemize}
+
+\vspace{8mm}
+\newpage
+\printbibliography
+
+\end{document}

@@ -1,0 +1,329 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{WHO_musculoskeletal}{online}{}
+      \name{author}{1}{}{%
+        {{hash=531217507bec092b6ec36c0f78f46736}{%
+           family={{World Health Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{fullhash}{531217507bec092b6ec36c0f78f46736}
+      \strng{bibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorbibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authornamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorfullhash}{531217507bec092b6ec36c0f78f46736}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-10-27}
+      \field{title}{Musculoskeletal health – fact sheet}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.who.int/news-room/fact-sheets/detail/musculoskeletal-conditions
+      \endverb
+      \verb{url}
+      \verb https://www.who.int/news-room/fact-sheets/detail/musculoskeletal-conditions
+      \endverb
+    \endentry
+    \entry{Gorasso2023}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=7a2885063c7786ca33d09017b46287ed}{%
+           family={Gorasso},
+           familyi={G\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=01d826ea2a7c681c25eddbf304dea533}{%
+           family={Van\bibnamedelimb der\bibnamedelima Heyden},
+           familyi={V\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f23638a78f0b9b988a4697ad61ae293c}{%
+           family={De\bibnamedelima Pauw},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b96042f89f2af05b736ce6359d4ff73d}
+      \strng{fullhash}{b96042f89f2af05b736ce6359d4ff73d}
+      \strng{bibnamehash}{b96042f89f2af05b736ce6359d4ff73d}
+      \strng{authorbibnamehash}{b96042f89f2af05b736ce6359d4ff73d}
+      \strng{authornamehash}{b96042f89f2af05b736ce6359d4ff73d}
+      \strng{authorfullhash}{b96042f89f2af05b736ce6359d4ff73d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Population Health Metrics}
+      \field{number}{4}
+      \field{title}{The health and economic burden of musculoskeletal disorders in Belgium from 2013 to 2018}
+      \field{volume}{21}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1186/s12963-023-00303-z
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s12963-023-00303-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s12963-023-00303-z
+      \endverb
+    \endentry
+    \entry{EUOSHA_MSD}{online}{}
+      \name{author}{1}{}{%
+        {{hash=69a5112641c9be7fd86588f4f820ab55}{%
+           family={{European Agency for Safety and Health at Work}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{69a5112641c9be7fd86588f4f820ab55}
+      \strng{fullhash}{69a5112641c9be7fd86588f4f820ab55}
+      \strng{bibnamehash}{69a5112641c9be7fd86588f4f820ab55}
+      \strng{authorbibnamehash}{69a5112641c9be7fd86588f4f820ab55}
+      \strng{authornamehash}{69a5112641c9be7fd86588f4f820ab55}
+      \strng{authorfullhash}{69a5112641c9be7fd86588f4f820ab55}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-10-27}
+      \field{title}{Musculoskeletal disorders}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://osha.europa.eu/en/themes/musculoskeletal-disorders
+      \endverb
+      \verb{url}
+      \verb https://osha.europa.eu/en/themes/musculoskeletal-disorders
+      \endverb
+    \endentry
+    \entry{EEA_EU15}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9aa80cbd4e27fcec08519169fe921f57}{%
+           family={{European Environment Agency}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{9aa80cbd4e27fcec08519169fe921f57}
+      \strng{fullhash}{9aa80cbd4e27fcec08519169fe921f57}
+      \strng{bibnamehash}{9aa80cbd4e27fcec08519169fe921f57}
+      \strng{authorbibnamehash}{9aa80cbd4e27fcec08519169fe921f57}
+      \strng{authornamehash}{9aa80cbd4e27fcec08519169fe921f57}
+      \strng{authorfullhash}{9aa80cbd4e27fcec08519169fe921f57}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.eea.europa.eu/help/glossary/eea-glossary/eu-15}}
+      \field{note}{Accessed: 2025-10-24}
+      \field{title}{EU-15}
+      \field{year}{n.d.}
+    \endentry
+    \entry{Govaerts2021WMSD}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=b74b5038e4542467602626f407c29ede}{%
+           family={Govaerts},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ddbb9482c6410082d99739ed45d1998b}{%
+           family={Tassignon},
+           familyi={T\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ac2cb925d2b86d8a3fa04646cf26978c}{%
+           family={Ghillebert},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f5f32b6b88145cd27cd5f567895d42e}
+      \strng{fullhash}{9f5f32b6b88145cd27cd5f567895d42e}
+      \strng{bibnamehash}{9f5f32b6b88145cd27cd5f567895d42e}
+      \strng{authorbibnamehash}{9f5f32b6b88145cd27cd5f567895d42e}
+      \strng{authornamehash}{9f5f32b6b88145cd27cd5f567895d42e}
+      \strng{authorfullhash}{9f5f32b6b88145cd27cd5f567895d42e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BMC Musculoskeletal Disorders}
+      \field{title}{Prevalence and incidence of work-related musculoskeletal disorders in secondary industries of 21st century Europe: a systematic review and meta-analysis}
+      \field{volume}{22}
+      \field{year}{2021}
+      \field{pages}{751}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s12891-021-04615-9
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s12891-021-04615-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s12891-021-04615-9
+      \endverb
+    \endentry
+    \entry{Praxie_Cobot}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ecf600431de316635b8bdaef37c9115a}{%
+           family={{Praxie Consulting}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{ecf600431de316635b8bdaef37c9115a}
+      \strng{fullhash}{ecf600431de316635b8bdaef37c9115a}
+      \strng{bibnamehash}{ecf600431de316635b8bdaef37c9115a}
+      \strng{authorbibnamehash}{ecf600431de316635b8bdaef37c9115a}
+      \strng{authornamehash}{ecf600431de316635b8bdaef37c9115a}
+      \strng{authorfullhash}{ecf600431de316635b8bdaef37c9115a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-10-27}
+      \field{title}{Cobot applications in manufacturing}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://praxie.com/cobot-applications-in-manufacturing/
+      \endverb
+      \verb{url}
+      \verb https://praxie.com/cobot-applications-in-manufacturing/
+      \endverb
+    \endentry
+    \entry{ScienceDirect_Cobot}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5d0ddda3a367ceb26fbaeca02e391c22}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9cbb6fd5ebde2fff6b9a00ce82ed7520}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d1c3d318e9e1f80f90b5f52bfe7c2186}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3cf9064448a944d3c479f7e4234a1dc8}
+      \strng{fullhash}{3cf9064448a944d3c479f7e4234a1dc8}
+      \strng{bibnamehash}{3cf9064448a944d3c479f7e4234a1dc8}
+      \strng{authorbibnamehash}{3cf9064448a944d3c479f7e4234a1dc8}
+      \strng{authornamehash}{3cf9064448a944d3c479f7e4234a1dc8}
+      \strng{authorfullhash}{3cf9064448a944d3c479f7e4234a1dc8}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Industrial Engineering}
+      \field{title}{Impact of collaborative robots on assembly accuracy and workload}
+      \field{volume}{185}
+      \field{year}{2024}
+      \field{pages}{109231}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.cie.2024.109231
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0003687024000838
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0003687024000838
+      \endverb
+    \endentry
+    \entry{Paine2016_SEA}{report}{}
+      \name{author}{3}{}{%
+        {{hash=623fa6f28a0bdaaece9ad088e6808acf}{%
+           family={Paine},
+           familyi={P\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1b7e3f69527189e4c91062599cc2f49b}{%
+           family={Sentis},
+           familyi={S\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=303ae7de09c71a69728c4e110269e899}{%
+           family={Combes},
+           familyi={C\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Texas at Austin, Human Centered Robotics Lab}%
+      }
+      \strng{namehash}{3e239aef2629d670359b5dbb212911b3}
+      \strng{fullhash}{3e239aef2629d670359b5dbb212911b3}
+      \strng{bibnamehash}{3e239aef2629d670359b5dbb212911b3}
+      \strng{authorbibnamehash}{3e239aef2629d670359b5dbb212911b3}
+      \strng{authornamehash}{3e239aef2629d670359b5dbb212911b3}
+      \strng{authorfullhash}{3e239aef2629d670359b5dbb212911b3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Design and Control of a Prismatic Series Elastic Actuator for Human-Robot Interaction}
+      \field{type}{techreport}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://sites.utexas.edu/hcrl/files/2016/01/prismatic-sea-paine.pdf
+      \endverb
+      \verb{url}
+      \verb https://sites.utexas.edu/hcrl/files/2016/01/prismatic-sea-paine.pdf
+      \endverb
+    \endentry
+    \entry{Shim2021_DO}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e928da19c9fe77cd53a855c9c85199fa}{%
+           family={Shim},
+           familyi={S\bibinitperiod},
+           given={Hyungbo},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{e928da19c9fe77cd53a855c9c85199fa}
+      \strng{fullhash}{e928da19c9fe77cd53a855c9c85199fa}
+      \strng{bibnamehash}{e928da19c9fe77cd53a855c9c85199fa}
+      \strng{authorbibnamehash}{e928da19c9fe77cd53a855c9c85199fa}
+      \strng{authornamehash}{e928da19c9fe77cd53a855c9c85199fa}
+      \strng{authorfullhash}{e928da19c9fe77cd53a855c9c85199fa}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{note}{Accessed: 2025-10-27}
+      \field{title}{Disturbance Observer}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2101.02859
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2101.02859
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
