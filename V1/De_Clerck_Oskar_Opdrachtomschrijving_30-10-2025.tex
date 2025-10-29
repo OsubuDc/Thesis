@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{newtxtext}
+\usepackage{geometry}
+\geometry{top=20mm,bottom=20mm,left=20mm,right=20mm}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
+\addbibresource{CitationsV3.bib}
+
+\begin{document}
+
+\begin{center}
+    \large\textbf{Opdrachtomschrijving}\\
+    \normalsize Student: \textbf{Oskar De Clerck} \\
+    Datum: Oktober 2025
+\end{center}
+
+\section*{Situatieschets}
+Deze thesis richt zich op een collaboratieve assemblage waarin een menselijke operator en een robotarm samenwerken bij het assembleren van objecten van 1 tot 5 kg. Hiermee worden werkgerelateerde musculoskeletale aandoeningen voorkomen en wordt de socio-economische impact beperkt. De assemblageruimte is opgedeeld in twee zones, gescheiden door een laserscreen:  
+
+\begin{itemize}
+    \item \textbf{Robotwerkruimte (autonoom)}: de robot voert zelfstandig taken uit, zoals het ophalen en positioneren van onderdelen. Veiligheid en nauwkeurigheid worden gegarandeerd door fysieke scheiding en impedantiecontrole.  
+    \item \textbf{Operatorwerkruimte (collaboratief)}: de operator voert fijne montage uit. Het laserscreen markeert de grens tussen werkruimtes en activeert de overgang van autonome naar collaboratieve modus. Deze thesis voldoet aan industriële normen zoals ISO/TS 15066 en ISO 10218-2.
+\end{itemize}
+
+\section*{Workflow}
+De robot gebruikt bestaande software om de operator de juiste assemblagevolgorde aan te wijzen. De robot beweegt autonoom naar het juiste onderdeel en grijpt het vast. Vervolgens brengt de robotarm het naar de grens van de werkruimte. Wanneer de robot stilstaat, kan de operator de robot begeleiden naar de juiste positie in de operatorwerkruimte. In deze collaboratieve modus compenseert de robot enkel het gewicht van de onderdelen. Nadat de operator het onderdeel loskoppelt, wordt de robotarm begeleid naar de robotwerkruimte, waarna het proces opnieuw start. Deze dynamische interactie vermindert stilstand en verhoogt de efficiëntie \cite{Praxie_Cobot}\cite{ScienceDirect_Cobot}.  
+
+\section*{Controleconcept}
+Het systeem combineert twee controlemodi:  
+
+\begin{itemize}
+    \item \textbf{Autonome modus}: precisie en stijfheid bij zelfstandig manipuleren door middel van impedantiecontrole.  
+    \item \textbf{Collaboratieve modus}: compliance en veiligheid tijdens fysieke interactie via een hybride impedantie-admittantiecontroller.
+\end{itemize}
+
+Een Series Elastic Transmission (SET) vormt de mechanische basis van de robotarm. De SET zorgt onder andere voor nauwkeurige en dus veilige krachtcontrole. Een disturbance observer (DOB) compenseert ongewenste effecten zoals backlash, wrijving en niet-lineair veergedrag, waardoor nauwkeurige krachtregeling behouden blijft, zelfs bij minder hoogwaardige hardware \cite{Paine2016_SEA}\cite{Shim2021_DO}.  
+
+
+
+\vspace{10mm}
+
+\begin{tabular}{p{0.45\textwidth} p{0.45\textwidth}}
+\textbf{Student:} & \textbf{Promotor / Opdrachtgever:} \\
+\\[20mm] % space for signature
+\rule{6cm}{0.4pt} & \rule{6cm}{0.4pt} \\ % signature lines
+Oskar De Clerck & [Promotor / Opdrachtgever] \\
+\end{tabular}
+
+\newpage
+\printbibliography
+
+\end{document}
