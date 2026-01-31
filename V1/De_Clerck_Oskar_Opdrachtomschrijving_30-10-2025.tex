@@ -18,21 +18,21 @@
 \end{center}
 
 \section*{Situatieschets}
-Deze thesis richt zich op een collaboratieve assemblage waarin een menselijke operator en een robotarm samenwerken bij het assembleren van objecten van 1 tot 5 kg. Hiermee worden werkgerelateerde musculoskeletale aandoeningen voorkomen en wordt de socio-economische impact beperkt. De assemblageruimte is opgedeeld in twee zones, gescheiden door een laserscreen:  
+Deze thesis richt zich op collaboratieve assemblage waarin een menselijke operator en een robotarm samenwerken bij het assembleren van objecten van 1 tot 5 kg. Hiermee worden werkgerelateerde musculoskeletale aandoeningen voorkomen en wordt de socio-economische impact hiervan beperkt. De assemblageruimte is opgedeeld in twee zones, gescheiden door een laserscreen:  
 
 \begin{itemize}
-    \item \textbf{Robotwerkruimte (autonoom)}: de robot voert zelfstandig taken uit, zoals het ophalen en positioneren van onderdelen. Veiligheid en nauwkeurigheid worden gegarandeerd door fysieke scheiding en impedantiecontrole.  
-    \item \textbf{Operatorwerkruimte (collaboratief)}: de operator voert fijne montage uit. Het laserscreen markeert de grens tussen werkruimtes en activeert de overgang van autonome naar collaboratieve modus. Deze thesis voldoet aan industriële normen zoals ISO/TS 15066 en ISO 10218-2.
+    \item \textbf{Robotwerkruimte (autonoom)}: de robot voert zelfstandig taken uit, zoals het ophalen en positioneren van onderdelen. Veiligheid en nauwkeurigheid worden gegarandeerd door fysieke scheiding van de zones en impedantiecontrole.  
+    \item \textbf{Operatorwerkruimte (collaboratief)}: de operator voert montage uit. Het laserscreen markeert de grens tussen werkruimtes en activeert de overgang van autonome naar collaboratieve modus. Deze thesis zal voldoen aan industriële normen zoals ISO/TS 15066 en ISO 10218-2.
 \end{itemize}
 
 \section*{Workflow}
-De robot gebruikt bestaande software om de operator de juiste assemblagevolgorde aan te wijzen. De robot beweegt autonoom naar het juiste onderdeel en grijpt het vast. Vervolgens brengt de robotarm het naar de grens van de werkruimte. Wanneer de robot stilstaat, kan de operator de robot begeleiden naar de juiste positie in de operatorwerkruimte. In deze collaboratieve modus compenseert de robot enkel het gewicht van de onderdelen. Nadat de operator het onderdeel loskoppelt, wordt de robotarm begeleid naar de robotwerkruimte, waarna het proces opnieuw start. Deze dynamische interactie vermindert stilstand en verhoogt de efficiëntie \cite{Praxie_Cobot}\cite{ScienceDirect_Cobot}.  
+De robot gebruikt bestaande software om de operator de juiste assemblagevolgorde aan te wijzen. De robot beweegt autonoom naar het juiste onderdeel en grijpt deze vast. Vervolgens brengt de robotarm het onderdeel naar de grens van zijn werkruimte. Wanneer de robot stilstaat, kan de operator de robot begeleiden naar de juiste positie in de operatorwerkruimte. In deze collaboratieve modus compenseert de robot enkel het gewicht van de onderdelen. Nadat de operator het onderdeel loskoppelt, wordt de robotarm begeleid naar de robotwerkruimte, waarna het proces opnieuw start. Deze dynamische interactie vermindert stilstand en verhoogt de assemblage efficiëntie \cite{Praxie_Cobot}\cite{ScienceDirect_Cobot}.  
 
 \section*{Controleconcept}
 Het systeem combineert twee controlemodi:  
 
 \begin{itemize}
-    \item \textbf{Autonome modus}: precisie en stijfheid bij zelfstandig manipuleren door middel van impedantiecontrole.  
+    \item \textbf{Autonome modus}: precisie en stijfheid bij zelfstandig bewegen door middel van impedantiecontrole.  
     \item \textbf{Collaboratieve modus}: compliance en veiligheid tijdens fysieke interactie via een hybride impedantie-admittantiecontroller.
 \end{itemize}
 
