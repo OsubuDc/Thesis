@@ -1,0 +1,378 @@
+% ============================================================
+%  MASTER'S THESIS — KU Leuven IIW Gent
+%  Compiler: pdfLaTeX  |  Bibliography: Biber + BibLaTeX
+%  To compile in TeXmaker:
+%    1. pdfLaTeX  →  Biber  →  pdfLaTeX  →  pdfLaTeX
+% ============================================================
+
+\documentclass[12pt, a4paper, twoside, openright]{book}
+
+% ── PAGE GEOMETRY ───────────────────────────────────────────
+% Asymmetric margins: wider inner margin for binding
+\usepackage[
+  top=25mm, bottom=25mm,
+  inner=35mm, outer=25mm,   % <-- adjust inner if binding is thicker
+  headheight=15pt
+]{geometry}
+
+% ── LANGUAGE & ENCODING ─────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% ── FONTS ───────────────────────────────────────────────────
+% Latin Modern — clean academic look, scales well
+\usepackage{lmodern}
+% Alternative: uncomment one of these instead
+% \usepackage{palatino}     % softer serif, popular in humanities
+% \usepackage{mathptmx}     % Times New Roman-style
+
+% ── MATH ────────────────────────────────────────────────────
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{bm}             % bold math symbols: \bm{\tau}
+
+% ── FIGURES & TABLES ────────────────────────────────────────
+\usepackage{graphicx}
+\usepackage{float}          % [H] placement
+\usepackage{booktabs}       % \toprule \midrule \bottomrule
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}     % subfigures side by side
+% Figure path — put your images in a folder called "figures/"
+\graphicspath{{figures/}}
+
+% ── COLOURS ─────────────────────────────────────────────────
+\usepackage[dvipsnames]{xcolor}
+% KU Leuven blue: #003d6b  — used sparingly for headings/rules
+\definecolor{kulblue}{HTML}{003D6B}
+
+% ── CHAPTER & SECTION STYLING ───────────────────────────────
+\usepackage{titlesec}
+% Chapter title: large number + horizontal rule
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{kulblue}}
+  {\chaptertitlename\ \thechapter}
+  {10pt}
+  {\Huge}
+  [\vspace{2pt}\color{kulblue}\titlerule]
+
+% ── HEADERS & FOOTERS ───────────────────────────────────────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\leftmark}       % even pages: chapter name
+\fancyhead[RO]{\small\rightmark}      % odd pages:  section name
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+% Plain style for chapter-opening pages
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% ── HYPERLINKS & PDF METADATA ───────────────────────────────
+\usepackage[
+  colorlinks = true,
+  linkcolor  = kulblue,
+  citecolor  = kulblue,
+  urlcolor   = kulblue,
+  pdftitle   = {Thesis Title Here},   % <-- change
+  pdfauthor  = {Oskar},               % <-- change
+]{hyperref}
+
+% ── BIBLIOGRAPHY (BibLaTeX + Biber) ─────────────────────────
+\usepackage[
+  backend  = biber,
+  style    = ieee,          % IEEE numeric — standard for engineering
+  sorting  = none,          % citations appear in order of first use
+  doi      = true,
+  url      = false
+]{biblatex}
+\addbibresource{references.bib}   % <-- your .bib file name here
+
+% ── CODE LISTINGS (optional, useful for controller snippets) ─
+\usepackage{listings}
+\lstset{
+  basicstyle   = \ttfamily\small,
+  keywordstyle = \color{kulblue}\bfseries,
+  commentstyle = \color{gray},
+  numbers      = left,
+  numberstyle  = \tiny\color{gray},
+  frame        = single,
+  breaklines   = true,
+}
+
+% ── ACRONYMS & SYMBOLS ──────────────────────────────────────
+\usepackage{nomencl}
+\makenomenclature
+% Usage in text: \nomenclature{SET}{Series Elastic Transmission}
+% Compile: run "makeindex thesis_main.nlo -s nomencl.ist -o thesis_main.nls"
+% TeXmaker: Options > Configure TeXmaker > add makeindex command
+
+% ── MISCELLANEOUS ───────────────────────────────────────────
+\usepackage{microtype}      % better line breaking, fewer overfulls
+\usepackage{setspace}
+\onehalfspacing             % 1.5 line spacing — standard for theses
+\usepackage{parskip}        % space between paragraphs, no indent
+\usepackage{emptypage}      % blank verso pages have no header/footer
+\usepackage{csquotes}       % smart quotes, required by biblatex
+\usepackage{lipsum}
+% ============================================================
+%  DOCUMENT START
+% ============================================================
+\begin{document}
+
+% ── FRONT MATTER ────────────────────────────────────────────
+\frontmatter    % roman page numbers (i, ii, iii …)
+
+% ── TITLE PAGE ──────────────────────────────────────────────
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+
+  % Institution logo — place KULeuven_logo.png in figures/
+  % \includegraphics[width=5cm]{KULeuven_logo}\\[1.5cm]
+
+  {\Large KU Leuven — Faculty of Engineering Technology}\\[0.3cm]
+  {\large Department of Electromechanical Engineering, Gent}\\[2cm]
+
+  \rule{\linewidth}{1pt}\\[0.4cm]
+  {\Huge\bfseries\color{kulblue}
+    Design and Control of a 3-DOF Collaborative Robot Arm \\[0.3cm]
+    with Series Elastic Transmission Joints              % <-- your title
+  }\\[0.4cm]
+  \rule{\linewidth}{1pt}\\[2cm]
+
+  {\large Master's Thesis submitted in partial fulfilment of the\\
+  requirements for the degree of Master of Science in\\
+  Industrial Engineering}\\[2cm]
+
+  {\large\textbf{Author:} Oskar \textsc{[Last Name]}}\\[0.5cm]     % <-- fill in
+  {\large\textbf{Promotor:} Prof. [Name]}\\[0.2cm]                 % <-- fill in
+  {\large\textbf{Co-promotor:} [Name] (if applicable)}\\[2cm]      % <-- remove if not
+
+  {\large Academic year 2024--2025}
+
+  \vfill
+\end{titlepage}
+
+% ── ABSTRACT ────────────────────────────────────────────────
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+% ~300–500 words. Write this LAST.
+% Structure: (1) problem & motivation, (2) approach / what you built,
+%            (3) key results, (4) one-sentence conclusion.
+\lipsum[1]   % placeholder — remove \lipsum and write your abstract here
+             % add \usepackage{lipsum} above if you want to keep the placeholder
+
+% ── ACKNOWLEDGEMENTS ────────────────────────────────────────
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+% Thank your supervisor, lab colleagues, family. Keep it to half a page.
+I would like to thank \ldots
+
+% ── TABLE OF CONTENTS ───────────────────────────────────────
+\tableofcontents
+
+% ── LIST OF FIGURES ─────────────────────────────────────────
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+% ── LIST OF TABLES ──────────────────────────────────────────
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+
+% ── ABBREVIATIONS & SYMBOLS ─────────────────────────────────
+% Add entries anywhere in the text with \nomenclature{symbol}{description}
+% Then compile with makeindex (see setup notes above).
+\chapter*{List of Abbreviations and Symbols}
+\addcontentsline{toc}{chapter}{List of Abbreviations and Symbols}
+\printnomenclature[3cm]   % [3cm] = width of the symbol column
+
+% ============================================================
+%  MAIN MATTER
+% ============================================================
+\mainmatter   % arabic page numbers restart from 1
+
+% ── CHAPTER 1: INTRODUCTION ─────────────────────────────────
+\chapter{Introduction}
+\label{ch:introduction}
+
+\section{Background}
+\label{sec:background}
+% Broad context: collaborative robotics, physical human-robot interaction,
+% industrial load-handling challenges. Start wide, funnel toward your problem.
+% ~2–3 pages. Every claim should be citable.
+
+\section{Challenges and Framework Overview}
+\label{sec:challenges}
+% This is your gap analysis + research challenges section.
+% (1) What does existing work fail to address?
+% (2) What makes your specific problem hard?
+%     (compliance vs. precision, real-time control, sensor fusion, etc.)
+% (3) Introduce your approach at a high level: SET joints, the assist modes,
+%     the control architecture — enough for the reader to understand Chapter 3.
+% End with explicit research questions or objectives, e.g.:
+%   \begin{enumerate}
+%     \item How can gravity compensation be made adaptive to payload changes?
+%     \item What real-time control architecture ensures 1 kHz determinism on embedded Linux?
+%   \end{enumerate}
+
+\section{Thesis Outline}
+\label{sec:outline}
+% One short paragraph per chapter. E.g.:
+% "Chapter~\ref{ch:related_work} reviews existing work on series elastic actuators,
+%  collaborative robot control, and real-time CANopen architectures \ldots"
+
+% ── CHAPTER 2: BACKGROUND & RELATED WORK ────────────────────
+\chapter{Background and Related Work}
+\label{ch:related_work}
+% Suggested subsections — reorder or merge to suit your literature:
+
+\section{Series Elastic Actuators and Transmissions}
+\label{sec:sea_literature}
+% History (Pratt & Williamson 1995), key properties, variants (rotary, linear).
+% What are the known limitations? Bandwidth, model complexity.
+
+\section{Collaborative Robots and Load-Assist Devices}
+\label{sec:cobots}
+% Commercial cobots (UR, KUKA iiwa) and industrial exoskeletons/assist devices.
+% Where does your device fit in this landscape?
+
+\section{Gravity Compensation Strategies}
+\label{sec:grav_comp_literature}
+% Passive (counterweight, spring-cam) vs. active (model-based torque control).
+% What has been demonstrated? What are the limitations at your scale?
+
+\section{Real-Time Control Architectures for Robotic Systems}
+\label{sec:rt_control}
+% CANopen / CiA402, PREEMPT_RT vs. bare-metal, ESCON autonomous inner loops.
+% Justify your design choices with literature.
+
+\section{Gap Analysis}
+\label{sec:gap}
+% Concise paragraph or small table: "None of the reviewed systems combine
+% SET joints with adaptive payload estimation and deterministic 1 kHz control
+% on a low-cost embedded platform. This thesis addresses that gap."
+
+% ── CHAPTER 3: SYSTEM DESIGN & IMPLEMENTATION ───────────────
+\chapter{System Design and Implementation}
+\label{ch:design}
+% This is your main contribution chapter.
+
+\section{System Overview and Requirements}
+\label{sec:overview}
+% Top-level architecture diagram. List functional requirements
+% (DOF, payload range, assist modes) and non-functional requirements
+% (timing budget, safety, portability).
+
+\section{Mechanical Design}
+\label{sec:mechanical}
+% Robot kinematics (Z-Y-Y joints, link lengths).
+% SET joint design: spring selection, gear stages (r1=276, r2=1.0833),
+% preloaded anti-backlash parallel springs.
+% Passive Z-axis base rotation.
+
+\section{Hardware Architecture}
+\label{sec:hardware}
+% Component overview: Jetson reComputer J4012, ESCON2 Compact 60/12,
+% STM32G4 sensor node, Maxon ECX FLAT 42M HTQ motors.
+% CAN bus topology: termination (ESCON #1 DIP7=OFF, #2 DIP7=ON),
+% shielded twisted-pair, shield grounded at Jetson end.
+% Sensor architecture: AS5048A encoders (SPI1), ADS1256 ADC (SPI2),
+% 4 potentiometers (2× spring deflection, 2× joint position).
+
+\section{Sensor and Actuator Modelling}
+\label{sec:modelling}
+% SET spring model, motor EOM:
+%   \tau_{motor} = b_m \omega_m + \tau_{desired} / (r_2 \cdot r_1)
+% Torque-speed envelope (flat region below ~664 rad/s, then linear drop).
+% Gear friction as constant experimental value.
+
+\section{Control Architecture}
+\label{sec:control}
+
+  \subsection{State Machine}
+  % CALIBRATE → FLOAT → WEIGH → CARRY → PUT\_DOWN + EMERGENCY (stiff PD hold)
+  % Transition conditions, safety triggers.
+
+  \subsection{Gravity Compensation and Floating Mode}
+  % Quasi-static motor command derivation, trim integrator logic.
+
+  \subsection{Weighing and Carrying Modes}
+  % Payload estimation, assist scaling, Cartesian velocity commands
+  % (actuated joints only), Jacobian inverse (3×3 direct, singularity unreachable).
+
+  \subsection{Put-Down Mode}
+  % Transition logic, spring state monitoring.
+
+\section{Software Implementation}
+\label{sec:software}
+% Standalone real-time C++, SocketCAN, clock\_nanosleep / SCHED\_FIFO at 1 kHz.
+% Lock-free triple buffer. YAML config (assist\_config.yaml).
+% Briefly: why standalone C++ over ROS2 (determinism argument).
+
+% ── CHAPTER 4: VALIDATION & RESULTS ─────────────────────────
+\chapter{Validation and Results}
+\label{ch:validation}
+% Directly answer the research questions from Chapter 1.
+
+\section{Experimental Setup}
+\label{sec:exp_setup}
+% Describe your test bench, measurement equipment, procedure.
+% What loads, what motions, how many trials?
+
+\section{Spring and Sensor Characterisation}
+\label{sec:spring_char}
+% Spring deflection vs. torque linearity. Encoder and ADC noise floor.
+% STM32 filtering effectiveness (3750 SPS raw → 1000 SPS CAN).
+
+\section{Controller Performance}
+\label{sec:controller_perf}
+% Step response, gravity compensation error, assist force accuracy.
+% Timing jitter of the 1 kHz loop.
+
+\section{Assisted Load Handling Evaluation}
+\label{sec:assist_eval}
+% Perceived effort / force measurements with and without assist.
+% Stability and robustness observations.
+
+\section{Discussion}
+\label{sec:discussion}
+% Honest assessment: what worked, what didn't, where the model deviates
+% from reality. Link back to your research questions.
+
+% ── CHAPTER 5: CONCLUSION & FUTURE WORK ─────────────────────
+\chapter{Conclusion and Future Work}
+\label{ch:conclusion}
+
+\section{Conclusion}
+\label{sec:conclusion}
+% ~1 page. Restate problem → summarise what you built → key findings.
+% No new information here. Mirror the abstract but with more depth.
+
+\section{Future Work}
+\label{sec:future_work}
+% Grounded and specific. Examples:
+% - Full 3-DOF Cartesian impedance control
+% - Dynamic payload estimation (Kalman filter on spring state)
+% - Physical buttons and LED feedback replacing keyboard publisher
+% - Fatigue study with human subjects
+% - PREEMPT_RT kernel once NVIDIA driver support matures
+
+% ============================================================
+%  BACK MATTER
+% ============================================================
+\backmatter
+
+% ── BIBLIOGRAPHY ────────────────────────────────────────────
+\printbibliography[heading=bibintoc, title={Bibliography}]
+
+% ── APPENDICES (add as needed) ───────────────────────────────
+% \appendix
+% \chapter{Motor Datasheet Summary}
+% \chapter{CAN Message Definitions}
+% \chapter{Full Controller Source Code}
+
+\end{document}

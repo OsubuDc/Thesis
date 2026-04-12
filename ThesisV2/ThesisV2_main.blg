@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'ThesisV2_main.blg'
+[79] biber:340> INFO - === zo apr 12, 2026, 16:55:32
+[93] Biber.pm:418> INFO - Reading 'ThesisV2_main.bcf'
+[156] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
+[167] bbl.pm:654> INFO - Writing 'ThesisV2_main.bbl' with encoding 'UTF-8'
+[167] bbl.pm:757> INFO - Output to ThesisV2_main.bbl
+[167] Biber.pm:130> WARN - The file 'ThesisV2_main.bcf' does not contain any citations!
+[167] Biber.pm:132> INFO - WARNINGS: 1
