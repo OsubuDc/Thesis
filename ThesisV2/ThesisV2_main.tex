@@ -1,378 +1,429 @@
-% ============================================================
-%  MASTER'S THESIS — KU Leuven IIW Gent
-%  Compiler: pdfLaTeX  |  Bibliography: Biber + BibLaTeX
-%  To compile in TeXmaker:
-%    1. pdfLaTeX  →  Biber  →  pdfLaTeX  →  pdfLaTeX
-% ============================================================
+\documentclass[11pt,a4paper,twoside,openright]{book}
 
-\documentclass[12pt, a4paper, twoside, openright]{book}
-
-% ── PAGE GEOMETRY ───────────────────────────────────────────
-% Asymmetric margins: wider inner margin for binding
-\usepackage[
-  top=25mm, bottom=25mm,
-  inner=35mm, outer=25mm,   % <-- adjust inner if binding is thicker
-  headheight=15pt
-]{geometry}
-
-% ── LANGUAGE & ENCODING ─────────────────────────────────────
-\usepackage[T1]{fontenc}
+% ===== LANGUAGE AND ENCODING =====
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 
-% ── FONTS ───────────────────────────────────────────────────
-% Latin Modern — clean academic look, scales well
+% ===== FONTS =====
 \usepackage{lmodern}
-% Alternative: uncomment one of these instead
-% \usepackage{palatino}     % softer serif, popular in humanities
-% \usepackage{mathptmx}     % Times New Roman-style
+\usepackage{microtype}
 
-% ── MATH ────────────────────────────────────────────────────
-\usepackage{amsmath, amssymb, amsthm}
-\usepackage{bm}             % bold math symbols: \bm{\tau}
+% ===== MATH =====
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{bm}
 
-% ── FIGURES & TABLES ────────────────────────────────────────
+% ===== FIGURES =====
 \usepackage{graphicx}
-\usepackage{float}          % [H] placement
-\usepackage{booktabs}       % \toprule \midrule \bottomrule
+\usepackage{float}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{subcaption}
+\graphicspath{{Graphics/}}   % put all images in a figures/ subfolder
+
+% ===== TABLES =====
+\usepackage{booktabs}
+\usepackage{array}
 \usepackage{multirow}
-\usepackage{caption}
-\usepackage{subcaption}     % subfigures side by side
-% Figure path — put your images in a folder called "figures/"
-\graphicspath{{figures/}}
 
-% ── COLOURS ─────────────────────────────────────────────────
-\usepackage[dvipsnames]{xcolor}
-% KU Leuven blue: #003d6b  — used sparingly for headings/rules
-\definecolor{kulblue}{HTML}{003D6B}
+% ===== CODE LISTINGS =====
+\usepackage{listings}
+\usepackage{xcolor}
 
-% ── CHAPTER & SECTION STYLING ───────────────────────────────
-\usepackage{titlesec}
-% Chapter title: large number + horizontal rule
-\titleformat{\chapter}[display]
-  {\normalfont\huge\bfseries\color{kulblue}}
-  {\chaptertitlename\ \thechapter}
-  {10pt}
-  {\Huge}
-  [\vspace{2pt}\color{kulblue}\titlerule]
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.97,0.97,0.97}
 
-% ── HEADERS & FOOTERS ───────────────────────────────────────
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue}\bfseries,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=8pt,
+    frame=single,
+    framerule=0.5pt,
+    rulecolor=\color{black!30}
+}
+\lstset{style=mystyle}
+
+% ===== BIBLIOGRAPHY =====
+\usepackage{csquotes}
+\usepackage[
+  backend=biber,
+  style=ieee,
+  sorting=none,
+  maxbibnames=99
+]{biblatex}
+\addbibresource{/home/oskar/Thesis/ThesisV2/references.bib}  % <-- update path if needed
+
+% ===== PAGE GEOMETRY =====
+\usepackage[
+  inner=3cm,
+  outer=2.5cm,
+  top=2.5cm,
+  bottom=3cm,
+  headheight=14pt
+]{geometry}
+
+% ===== HEADERS AND FOOTERS =====
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE]{\small\leftmark}       % even pages: chapter name
-\fancyhead[RO]{\small\rightmark}      % odd pages:  section name
+\fancyhead[LE]{\nouppercase{\leftmark}}
+\fancyhead[RO]{\nouppercase{\rightmark}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
-% Plain style for chapter-opening pages
+
 \fancypagestyle{plain}{
   \fancyhf{}
   \fancyfoot[C]{\thepage}
   \renewcommand{\headrulewidth}{0pt}
 }
 
-% ── HYPERLINKS & PDF METADATA ───────────────────────────────
+% ===== CHAPTER STYLING =====
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+% ===== LINE SPACING =====
+\usepackage{setspace}
+\onehalfspacing
+
+% ===== TABLE OF CONTENTS STYLING =====
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftchappagefont}{\bfseries}
+
+% ===== HYPERLINKS =====
 \usepackage[
-  colorlinks = true,
-  linkcolor  = kulblue,
-  citecolor  = kulblue,
-  urlcolor   = kulblue,
-  pdftitle   = {Thesis Title Here},   % <-- change
-  pdfauthor  = {Oskar},               % <-- change
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=blue,
+  urlcolor=blue,
+  bookmarks=true,
+  bookmarksnumbered=true,
+  pdfstartview=FitH,
+  pdftitle={Thesis_OskarDeClerck_2026},   % <-- update
+  pdfauthor={Oskar De Clerck}
 ]{hyperref}
 
-% ── BIBLIOGRAPHY (BibLaTeX + Biber) ─────────────────────────
-\usepackage[
-  backend  = biber,
-  style    = ieee,          % IEEE numeric — standard for engineering
-  sorting  = none,          % citations appear in order of first use
-  doi      = true,
-  url      = false
-]{biblatex}
-\addbibresource{references.bib}   % <-- your .bib file name here
-
-% ── CODE LISTINGS (optional, useful for controller snippets) ─
-\usepackage{listings}
-\lstset{
-  basicstyle   = \ttfamily\small,
-  keywordstyle = \color{kulblue}\bfseries,
-  commentstyle = \color{gray},
-  numbers      = left,
-  numberstyle  = \tiny\color{gray},
-  frame        = single,
-  breaklines   = true,
+% ===== CUSTOM COMMANDS =====
+% Bold paragraph heading that does NOT appear in the ToC
+\newcommand{\smalltitle}[1]{%
+  \vspace{0.5cm}%
+  \noindent\textbf{#1}%
+  \vspace{0.2cm}%
+  \par\noindent%
 }
 
-% ── ACRONYMS & SYMBOLS ──────────────────────────────────────
-\usepackage{nomencl}
-\makenomenclature
-% Usage in text: \nomenclature{SET}{Series Elastic Transmission}
-% Compile: run "makeindex thesis_main.nlo -s nomencl.ist -o thesis_main.nls"
-% TeXmaker: Options > Configure TeXmaker > add makeindex command
+% To erase space between list items.
+\usepackage{enumitem}
 
-% ── MISCELLANEOUS ───────────────────────────────────────────
-\usepackage{microtype}      % better line breaking, fewer overfulls
-\usepackage{setspace}
-\onehalfspacing             % 1.5 line spacing — standard for theses
-\usepackage{parskip}        % space between paragraphs, no indent
-\usepackage{emptypage}      % blank verso pages have no header/footer
-\usepackage{csquotes}       % smart quotes, required by biblatex
-\usepackage{lipsum}
-% ============================================================
-%  DOCUMENT START
+% ===== DOCUMENT METADATA =====
+\title{Robotic Testbench for Collaborative Handling of Payloads with Varying Weights using Compliant Joint Transmissions}
+\author{Oskar De Clerck}
+\date{May 2026}
+
+
 % ============================================================
 \begin{document}
+% ============================================================
 
-% ── FRONT MATTER ────────────────────────────────────────────
-\frontmatter    % roman page numbers (i, ii, iii …)
-
-% ── TITLE PAGE ──────────────────────────────────────────────
+% ===== TITLE PAGE =====
 \begin{titlepage}
-  \centering
-  \vspace*{2cm}
+    \centering
+    \vspace*{2cm}
 
-  % Institution logo — place KULeuven_logo.png in figures/
-  % \includegraphics[width=5cm]{KULeuven_logo}\\[1.5cm]
+    {\Large\scshape KU Leuven\par}
+    \vspace{0.5cm}
+    {\large Faculty of Engineering Technology\par}
+    \vspace{2.5cm}
 
-  {\Large KU Leuven — Faculty of Engineering Technology}\\[0.3cm]
-  {\large Department of Electromechanical Engineering, Gent}\\[2cm]
+    {\Huge\bfseries Your Thesis Title Here\par}   % <-- update
+    \vspace{0.5cm}
+    \rule{10cm}{0.4pt}\par
+    \vspace{3cm}
 
-  \rule{\linewidth}{1pt}\\[0.4cm]
-  {\Huge\bfseries\color{kulblue}
-    Design and Control of a 3-DOF Collaborative Robot Arm \\[0.3cm]
-    with Series Elastic Transmission Joints              % <-- your title
-  }\\[0.4cm]
-  \rule{\linewidth}{1pt}\\[2cm]
+    {\Large\itshape Oskar De Clerck\par}
+    \vfill
 
-  {\large Master's Thesis submitted in partial fulfilment of the\\
-  requirements for the degree of Master of Science in\\
-  Industrial Engineering}\\[2cm]
+    {\large A thesis submitted for the degree of\\
+    Master of Science in \textit{industriële wetenschappen: Elektromechanica}\par}
+    \vfill
 
-  {\large\textbf{Author:} Oskar \textsc{[Last Name]}}\\[0.5cm]     % <-- fill in
-  {\large\textbf{Promotor:} Prof. [Name]}\\[0.2cm]                 % <-- fill in
-  {\large\textbf{Co-promotor:} [Name] (if applicable)}\\[2cm]      % <-- remove if not
-
-  {\large Academic year 2024--2025}
-
-  \vfill
+    {\large Academic Year 2025--2026\par}
+    \vspace{0.5cm}
+    {\large Promotor: ir.\ Maurizio Grossi\par}
+    {\large Copromotor: prof.\ dr.\ ir.\ Dino Accoto\par}
 \end{titlepage}
 
-% ── ABSTRACT ────────────────────────────────────────────────
+
+% ============================================================
+%  FRONT MATTER
+% ============================================================
+\frontmatter
+
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
-% ~300–500 words. Write this LAST.
-% Structure: (1) problem & motivation, (2) approach / what you built,
-%            (3) key results, (4) one-sentence conclusion.
-\lipsum[1]   % placeholder — remove \lipsum and write your abstract here
-             % add \usepackage{lipsum} above if you want to keep the placeholder
+% Write last. ~300-500 words.
+\cleardoublepage
 
-% ── ACKNOWLEDGEMENTS ────────────────────────────────────────
 \chapter*{Acknowledgements}
 \addcontentsline{toc}{chapter}{Acknowledgements}
-% Thank your supervisor, lab colleagues, family. Keep it to half a page.
-I would like to thank \ldots
+\cleardoublepage
 
-% ── TABLE OF CONTENTS ───────────────────────────────────────
 \tableofcontents
+\cleardoublepage
 
-% ── LIST OF FIGURES ─────────────────────────────────────────
 \listoffigures
-\addcontentsline{toc}{chapter}{List of Figures}
+\cleardoublepage
 
-% ── LIST OF TABLES ──────────────────────────────────────────
 \listoftables
-\addcontentsline{toc}{chapter}{List of Tables}
+\cleardoublepage
 
-% ── ABBREVIATIONS & SYMBOLS ─────────────────────────────────
-% Add entries anywhere in the text with \nomenclature{symbol}{description}
-% Then compile with makeindex (see setup notes above).
-\chapter*{List of Abbreviations and Symbols}
-\addcontentsline{toc}{chapter}{List of Abbreviations and Symbols}
-\printnomenclature[3cm]   % [3cm] = width of the symbol column
+\chapter*{Nomenclature}
+\addcontentsline{toc}{chapter}{Nomenclature}
+
+\section*{Symbols}
+\begin{tabular}{@{}lll@{}}
+  $\bm{q}$    & Joint position vector  & [rad]    \\
+  $K_s$       & Spring stiffness       & [Nm/rad] \\
+  % add rows here
+\end{tabular}
+
+\vspace{1cm}
+\section*{Abbreviations}
+\begin{tabular}{@{}ll@{}}
+  CAN  & Controller Area Network \\
+  SET  & Series Elastic Transmission \\
+  % add rows here
+\end{tabular}
+
+\cleardoublepage
+
 
 % ============================================================
 %  MAIN MATTER
 % ============================================================
-\mainmatter   % arabic page numbers restart from 1
+\mainmatter
 
-% ── CHAPTER 1: INTRODUCTION ─────────────────────────────────
+% ============================================================
 \chapter{Introduction}
 \label{ch:introduction}
+% ============================================================
 
-\section{Background}
-\label{sec:background}
-% Broad context: collaborative robotics, physical human-robot interaction,
-% industrial load-handling challenges. Start wide, funnel toward your problem.
-% ~2–3 pages. Every claim should be citable.
+\section{Background and Motivation}
 
-\section{Challenges and Framework Overview}
-\label{sec:challenges}
-% This is your gap analysis + research challenges section.
-% (1) What does existing work fail to address?
-% (2) What makes your specific problem hard?
-%     (compliance vs. precision, real-time control, sensor fusion, etc.)
-% (3) Introduce your approach at a high level: SET joints, the assist modes,
-%     the control architecture — enough for the reader to understand Chapter 3.
-% End with explicit research questions or objectives, e.g.:
-%   \begin{enumerate}
-%     \item How can gravity compensation be made adaptive to payload changes?
-%     \item What real-time control architecture ensures 1 kHz determinism on embedded Linux?
-%   \end{enumerate}
+The musculoskeletal system contains muscles, bones, joints and connective tissues like tendons and ligaments surrounding these structures. Musculoskeletal disorders (MSDs) can therefore be defined as injuries of the muscles, nerves, tendons, joints, cartilage, and spinal discs. When these injuries are sustained or worsened by exposure to risk factors in the workspace, they are also known as work-related musculoskeletal disorders (WMSDs). These disorders can go from minor aches to severe pain and chronic illness needing medical treatment, resulting in workers not being able to do physical jobs. 
+
+A degenerating physical state of the body can also result in mental health issues like depression or frustration causing low job satisfaction, which will indirectly cause workers to perform worse even if they physically can keep working.
+
+WMSDs are developed over time due to non-ergonomic working conditions and can be categorized into two main groups:
+\vspace{0.2cm} 
+\begin{itemize}[noitemsep, topsep=0pt]
+	\item Back disorders related to handling loads
+	\item Upper limb disorders, also known as repetitive strain injuries (RSIs)
+\end{itemize}
+\vspace{0.3cm}
+MSDs can be caused by for example:
+\vspace{0.2cm}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item Twisting and bending movements while handling loads
+    \item Repetitive or forceful movements 
+    \item Awkward and static postures
+    \item Vibration
+    \item Prolonged sitting or standing in the same position
+\end{itemize}
+\vspace{0.3cm}
+A large increase in MSDs has been reported worldwide. This rise is partly attributed to improved recognition and reporting, but also to the tendency for work to be more segmented. This tendency arises from an increasingly competitive global economy where fast-pased repetitive work environments become more widespread.
+
+It is interesting to note that the increase in education in the workforce, combined with increased expectations regarding job satisfaction, has reduced workers' tolerance for WMSDs. An ergonomic work environment can prevent the development of WMSDs and directly reduce the cost to companies due to sick leave, as well as reducing the societal impact. Ergonomics can be defined as the study of work, where the goal is to fit tasks and jobs to workers’ capabilities, instead of forcing workers to fit the job. An ergonomic work environment is thus one that implements task-specific strategies to prevent reduced work ability. Reduced work ability can be categorized in absenteeism and presenteeism. Absenteeism refers to the absence from work due to injuries sustained on the job. Presenteeism describes the situation in which workers continue to attend their expected
+working duties despite existing injuries, often due to concerns
+about job security. In such cases, work is performed
+in a self–protective manner to reduce physical strain.
+
+Musculoskeletal disorders affect approximately one in three people worldwide. Within the European Union, MSDs represent the most costly health-related problems, affecting 45 million workers, many of whom are unable to continue working after the age of 60 due to these diseases. This results in billions of euros in lost revenue for companies and a great burden on the public healthcare system.
+
+In Belgium, 2.5 million people were affected by MSDs in 2018 (approximately 62\% of the Belgian working population in 2015) resulting in 3 billion euros in direct medical costs and 2 billion in work absenteeism, which is 0.3\% of the Belgian gross domestic product
+\cite{oralEvaluationAbsenteeismPresenteeism2024}\cite{yassiRepetitiveStrainInjuries}\cite{vilellaMusculoskeletalExamination}\cite{ibvMusculoskeletalDisordersCaused2017}\cite{gorassoHealthEconomicBurden2023}.
+
+There is a clear need to address reduced work efficiency resulting from physical injuries since this improves the quality of life of an increasingly aging workforce, but also to reduce the impact on social welfare systems and increase overall economic productivity. Yet few collaborative applications exist in production facilities. Human and robots are either physically seperated, or work in a coexistence arrangement where no physical barrier seperates human and robot but no direct interaction takes place. Implementations like this are only economically viable for large batch sizes, since a whole production line needs to be tuned towards that specific robotic solution. Cage–free robotic arms that share a workspace with a human worker are introduced to increase flexibility of the production line. Interactive robotic solutions for small batches and varying product sizes has become a clear need since 70\% of collaboration between human worker and robotic solutions are found in assembly applications. An industry survey reported that 86\% of respondents were willing to invest in lightweight robotic solutions, indicating strong industrial interest. The primary motivations for introducing robotic arms in assembly environments are:
+\vspace{0.2cm} 
+\begin{itemize}[noitemsep, topsep=0pt]
+	\item Improving operational efficiency
+	\item Improving ergonomics
+\end{itemize}
+\vspace{0.3cm}
+Cage–free robotic solutions generally involve higher initial costs compared to traditional fenced systems due to safety certification requirements and CE conformity procedures. Companies are however often willing to accept longer payback periods for implementing and testing company specific robotic solutions which increase ergonomics. Traditional stiff robots in collaborative applications are heavily regulated to minimise the risk
+of injuries. These robots are lightweight, operate at low speeds and often lack mechanical bandwidth to react to unforeseen collisions in a safe and compliant way\cite{benderLightweightRobotsManual2016}.
+
+One solution for safe collaboration between human and robot are hand–guided robotic arms. Hand–guided robotic applications are defined as a direct physical interaction between human and robot, where the human operator has full control over the robot motion. In this application, a direct input device is located at or near the end–effector to measure input forces and simultaneously define the position of the human in the shared workspace. A direct consequence of this approach is that robotic applications with sensorised end–effectors can only react in a passive compliant manner when handled at a specific point on the robotic arm. Collisions or attemted handling of the robotic arm elsewhere will result in a safety stop of the robotic arm\cite{sicilianoSpringerHandbookRobotics2016a}.
+
+Existing robotic solutions that allow a human worker to hand–guide a robotic arm by grapsing it wherever is most convenient are, to the best of the autors knowledge, practically non-existent in assembly and packaging industries. When hand–guiding is discussed in literature, it is typically limited to sensorised end–effectors on conventional stiff robots\cite{gregorHandGuidingVirtual2021}\cite{hameedControlSystemDesign2023}.
+
+This absence in current industrial applications is further supported by surveys of end users, system integrators and researchers which states that collaborative robots are still primarily implemented as traditional stiff robots with limited or no direct human interaction \cite{montiniCollaborativeRoboticsSurvey2024}.
+
+\smalltitle{Example bold paragraph title}
+Your text here \cite{somekey}.  % example citation
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{SEA_Schematic}  % filename without extension
+    \caption{Caption text.}
+    \label{fig:example}
+\end{figure}
+
+\section{Problem Statement}
+\label{sec:problem_statement}
 
 \section{Thesis Outline}
-\label{sec:outline}
-% One short paragraph per chapter. E.g.:
-% "Chapter~\ref{ch:related_work} reviews existing work on series elastic actuators,
-%  collaborative robot control, and real-time CANopen architectures \ldots"
 
-% ── CHAPTER 2: BACKGROUND & RELATED WORK ────────────────────
-\chapter{Background and Related Work}
-\label{ch:related_work}
-% Suggested subsections — reorder or merge to suit your literature:
 
-\section{Series Elastic Actuators and Transmissions}
-\label{sec:sea_literature}
-% History (Pratt & Williamson 1995), key properties, variants (rotary, linear).
-% What are the known limitations? Bandwidth, model complexity.
+% ============================================================
+\chapter{Literature Review}
+\label{ch:literature}
+% ============================================================
 
-\section{Collaborative Robots and Load-Assist Devices}
-\label{sec:cobots}
-% Commercial cobots (UR, KUKA iiwa) and industrial exoskeletons/assist devices.
-% Where does your device fit in this landscape?
+\section{Theoretical Background}
 
-\section{Gravity Compensation Strategies}
-\label{sec:grav_comp_literature}
-% Passive (counterweight, spring-cam) vs. active (model-based torque control).
-% What has been demonstrated? What are the limitations at your scale?
+\subsection{Example subsection}
 
-\section{Real-Time Control Architectures for Robotic Systems}
-\label{sec:rt_control}
-% CANopen / CiA402, PREEMPT_RT vs. bare-metal, ESCON autonomous inner loops.
-% Justify your design choices with literature.
+Example equation:
+\begin{equation}
+    \tau = K_s \, \theta_s
+    \label{eq:spring}
+\end{equation}
+
+\subsection{Another subsection}
+
+\section{State of the Art}
 
 \section{Gap Analysis}
-\label{sec:gap}
-% Concise paragraph or small table: "None of the reviewed systems combine
-% SET joints with adaptive payload estimation and deterministic 1 kHz control
-% on a low-cost embedded platform. This thesis addresses that gap."
 
-% ── CHAPTER 3: SYSTEM DESIGN & IMPLEMENTATION ───────────────
+
+% ============================================================
 \chapter{System Design and Implementation}
 \label{ch:design}
-% This is your main contribution chapter.
+% ============================================================
 
 \section{System Overview and Requirements}
-\label{sec:overview}
-% Top-level architecture diagram. List functional requirements
-% (DOF, payload range, assist modes) and non-functional requirements
-% (timing budget, safety, portability).
 
 \section{Mechanical Design}
-\label{sec:mechanical}
-% Robot kinematics (Z-Y-Y joints, link lengths).
-% SET joint design: spring selection, gear stages (r1=276, r2=1.0833),
-% preloaded anti-backlash parallel springs.
-% Passive Z-axis base rotation.
 
 \section{Hardware Architecture}
-\label{sec:hardware}
-% Component overview: Jetson reComputer J4012, ESCON2 Compact 60/12,
-% STM32G4 sensor node, Maxon ECX FLAT 42M HTQ motors.
-% CAN bus topology: termination (ESCON #1 DIP7=OFF, #2 DIP7=ON),
-% shielded twisted-pair, shield grounded at Jetson end.
-% Sensor architecture: AS5048A encoders (SPI1), ADS1256 ADC (SPI2),
-% 4 potentiometers (2× spring deflection, 2× joint position).
+
+\subsection{CAN Bus Topology}
+
+\subsection{Sensor Architecture}
 
 \section{Sensor and Actuator Modelling}
-\label{sec:modelling}
-% SET spring model, motor EOM:
-%   \tau_{motor} = b_m \omega_m + \tau_{desired} / (r_2 \cdot r_1)
-% Torque-speed envelope (flat region below ~664 rad/s, then linear drop).
-% Gear friction as constant experimental value.
+
+\subsection{SET Spring Model}
+
+\subsection{Motor and Transmission Model}
 
 \section{Control Architecture}
-\label{sec:control}
 
-  \subsection{State Machine}
-  % CALIBRATE → FLOAT → WEIGH → CARRY → PUT\_DOWN + EMERGENCY (stiff PD hold)
-  % Transition conditions, safety triggers.
+\subsection{State Machine}
 
-  \subsection{Gravity Compensation and Floating Mode}
-  % Quasi-static motor command derivation, trim integrator logic.
+\subsection{Gravity Compensation and Floating Mode}
 
-  \subsection{Weighing and Carrying Modes}
-  % Payload estimation, assist scaling, Cartesian velocity commands
-  % (actuated joints only), Jacobian inverse (3×3 direct, singularity unreachable).
+\subsection{Weighing Mode}
 
-  \subsection{Put-Down Mode}
-  % Transition logic, spring state monitoring.
+\subsection{Carrying Mode}
+
+\subsection{Put-Down Mode}
 
 \section{Software Implementation}
-\label{sec:software}
-% Standalone real-time C++, SocketCAN, clock\_nanosleep / SCHED\_FIFO at 1 kHz.
-% Lock-free triple buffer. YAML config (assist\_config.yaml).
-% Briefly: why standalone C++ over ROS2 (determinism argument).
 
-% ── CHAPTER 4: VALIDATION & RESULTS ─────────────────────────
+\subsection{Real-Time Architecture}
+
+Example code listing:
+\begin{lstlisting}[language=C++, caption={Example listing.}, label={lst:example}]
+while (running) {
+    clock_nanosleep(...);
+    // your code here
+}
+\end{lstlisting}
+
+\subsection{Configuration}
+
+
+% ============================================================
 \chapter{Validation and Results}
 \label{ch:validation}
-% Directly answer the research questions from Chapter 1.
+% ============================================================
 
 \section{Experimental Setup}
-\label{sec:exp_setup}
-% Describe your test bench, measurement equipment, procedure.
-% What loads, what motions, how many trials?
+
+\subsection{Hardware Configuration}
+
+\subsection{Parameter Identification}
 
 \section{Spring and Sensor Characterisation}
-\label{sec:spring_char}
-% Spring deflection vs. torque linearity. Encoder and ADC noise floor.
-% STM32 filtering effectiveness (3750 SPS raw → 1000 SPS CAN).
 
 \section{Controller Performance}
-\label{sec:controller_perf}
-% Step response, gravity compensation error, assist force accuracy.
-% Timing jitter of the 1 kHz loop.
 
 \section{Assisted Load Handling Evaluation}
-\label{sec:assist_eval}
-% Perceived effort / force measurements with and without assist.
-% Stability and robustness observations.
 
 \section{Discussion}
-\label{sec:discussion}
-% Honest assessment: what worked, what didn't, where the model deviates
-% from reality. Link back to your research questions.
 
-% ── CHAPTER 5: CONCLUSION & FUTURE WORK ─────────────────────
+Example table:
+\begin{table}[htbp]
+    \centering
+    \caption{Example results table.}
+    \label{tab:example}
+    \begin{tabular}{@{}lcc@{}}
+        \toprule
+        Metric  & Target  & Achieved \\
+        \midrule
+        Value 1 & X       & Y        \\
+        Value 2 & X       & Y        \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+% ============================================================
 \chapter{Conclusion and Future Work}
 \label{ch:conclusion}
+% ============================================================
 
 \section{Conclusion}
-\label{sec:conclusion}
-% ~1 page. Restate problem → summarise what you built → key findings.
-% No new information here. Mirror the abstract but with more depth.
 
 \section{Future Work}
-\label{sec:future_work}
-% Grounded and specific. Examples:
-% - Full 3-DOF Cartesian impedance control
-% - Dynamic payload estimation (Kalman filter on spring state)
-% - Physical buttons and LED feedback replacing keyboard publisher
-% - Fatigue study with human subjects
-% - PREEMPT_RT kernel once NVIDIA driver support matures
+
 
 % ============================================================
 %  BACK MATTER
 % ============================================================
 \backmatter
 
-% ── BIBLIOGRAPHY ────────────────────────────────────────────
-\printbibliography[heading=bibintoc, title={Bibliography}]
+\printbibliography[heading=bibintoc, title={References}]
 
-% ── APPENDICES (add as needed) ───────────────────────────────
-% \appendix
-% \chapter{Motor Datasheet Summary}
-% \chapter{CAN Message Definitions}
-% \chapter{Full Controller Source Code}
+\appendix
+
+\chapter{2D Manufacturing Drawings}
+\label{app:drawings}
+
+\section{CNC Part 1}
+\section{CNC Part 2}
+\section{CNC Part 3}
+
+\chapter{Additional Experimental Results}
+\label{app:results}
+
+\chapter{Source Code}
+\label{app:code}
+\url{https://github.com/username/repository}   % <-- update
 
 \end{document}

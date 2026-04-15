@@ -1,0 +1,532 @@
+\documentclass[11pt,a4paper,twoside,openright]{book}
+
+% ===== ESSENTIAL PACKAGES =====
+% Language and encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+% Professional fonts
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% Math
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Figures
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{subcaption}
+
+% Code listings
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+
+% Bibliography
+\usepackage{csquotes}
+\usepackage[
+  backend=biber,
+  style=ieee,
+  sorting=none,
+  maxbibnames=99
+]{biblatex}
+\addbibresource{/home/oskar/Thesis/ThesisReferences.bib}
+
+% Page layout - asymmetric margins for binding
+\usepackage[
+  inner=3cm,        % Extra space for binding
+  outer=2.5cm,
+  top=2.5cm,
+  bottom=3cm,
+  headheight=14pt
+]{geometry}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\nouppercase{\leftmark}}   % Chapter on left (even) pages
+\fancyhead[RO]{\nouppercase{\rightmark}}  % Section on right (odd) pages
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Plain style for chapter opening pages
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% Chapter styling
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+% Line spacing
+\usepackage{setspace}
+\onehalfspacing
+
+% Better table of contents
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftchappagefont}{\bfseries}
+
+% Hyperlinks (load last)
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=blue,
+  urlcolor=blue,
+  bookmarks=true,
+  bookmarksnumbered=true,
+  pdfstartview=FitH
+]{hyperref}
+
+% ===== CODE STYLE =====
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.97,0.97,0.97}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue}\bfseries,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=8pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    frame=single,
+    framerule=0.5pt,
+    rulecolor=\color{black!30}
+}
+\lstset{style=mystyle}
+
+% ===== PARAPGRAPH TITLES =====
+\newcommand{\smalltitle}[1]{%
+  \vspace{0.5cm}%
+  \noindent\textbf{#1}%
+  \vspace{0.2cm}%
+  \par\noindent%
+}
+
+% ===== CUSTOM INFO =====
+\title{Robotic Testbench for Collaborative Handling of Payloads with Varying Weights using Compliant Transmissions}
+\author{Oskar De Clerck}
+\date{May 2026}
+
+% ===== BEGIN DOCUMENT =====
+\begin{document}
+
+% ===== TITLE PAGE =====
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Large\scshape KU Leuven\par}
+    \vspace{0.5cm}
+    {\large Faculty of Engineering Technology\par}
+    \vspace{2.5cm}
+    
+    {\Huge\bfseries Robotic Testbench for Collaborative Handling of Payloads with Varying Weights using Impedance Control, a Disturbance observer and Compliant Transmissions\par}
+    \vspace{0.5cm}
+    \rule{10cm}{0.4pt}\par
+    \vspace{3cm}
+    
+    {\Large\itshape Oskar De Clerck\par}
+    \vfill
+    
+    {\large A thesis submitted for the degree of\\
+    Master of Science in \textit{industriële wetenschappen: Elektromechanica}\par}
+    \vfill
+    
+    {\large Academic Year 2025--2026\par}
+    \vspace{0.5cm}
+    {\large Promotor: ir. Maurizio Grossi\par}
+    {\large Copromotor: prof. dr. ir. Dino Accoto\par}
+    
+\end{titlepage}
+
+% ===== FRONT MATTER =====
+\frontmatter
+
+% Abstract
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+This thesis addresses [problem]. The main objective is to [objective]. 
+
+We develop [methodology/approach] and demonstrate [key result]. The results show [findings]. 
+
+Our main contributions are: (1) [first contribution], (2) [second contribution], and (3) [third contribution].
+
+\vspace{1cm}
+\noindent\textbf{Keywords:} keyword1, keyword2, keyword3, keyword4, keyword5
+
+\cleardoublepage
+
+% Acknowledgments
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+
+
+\cleardoublepage
+
+% Table of Contents
+\tableofcontents
+\cleardoublepage
+
+% List of Figures
+\listoffigures
+\cleardoublepage
+
+% List of Tables
+\listoftables
+\cleardoublepage
+
+% Nomenclature (optional - remove if not needed)
+\chapter*{Nomenclature}
+\addcontentsline{toc}{chapter}{Nomenclature}
+
+\section*{Symbols}
+\begin{tabular}{@{}ll@{}}
+$A$ & Cross-sectional area [m$^2$] \\
+$E$ & Young's modulus [Pa] \\
+$F$ & Force [N] \\
+$m$ & Mass [kg] \\
+$t$ & Time [s] \\
+$v$ & Velocity [m/s] \\
+$\alpha$ & Angle [rad] \\
+$\omega$ & Angular frequency [rad/s] \\
+\end{tabular}
+
+\section*{Abbreviations}
+\begin{tabular}{@{}ll@{}}
+AI & Artificial Intelligence \\
+CAD & Computer-Aided Design \\
+FEM & Finite Element Method \\
+IoT & Internet of Things \\
+PID & Proportional-Integral-Derivative \\
+\end{tabular}
+
+\cleardoublepage
+
+% ===== MAIN MATTER =====
+\mainmatter
+
+\chapter{Introduction}
+\label{ch:introduction}
+
+Assembly and packaging tasks often impose significant phyiscal strain on workers' joints, affecting both quality of life and productivity \cite{greggiWorkRelatedMusculoskeletalDisorders2024}. This chapter provides context for this problem, explains its societal relevance and the objectives of this thesis.
+
+\section{Background and Motivation}
+
+\smalltitle{Ergonomic challenges}
+Industrial assembly and packaging tasks remain among the most ergonomically demanding operations in manufacturing, requiring workers to perform repetitive and force--intensive motions. These activities which cause repetitive strain on different body parts can result in Musculoskeletal Disorders (MSDs). According to the World Health Organization, one in three people worldwide lives with a chronic MSD \cite{gorassoHealthEconomicBurden2023}. 
+
+The European Agency for Safety and Health at Work considers MSDs to be the main occupational disease,  affecting approximately 45 million workers within the European Union \cite{gorassoHealthEconomicBurden2023}, causing billions of euros of lost revenue for companies and a great burden on the public health care system \cite{ibvMusculoskeletalDisordersCaused2017}.
+
+In 2018, 2.5 million Belgians were affected by one or more MSDs. Over a period of four years, from 2013 to 2017, these MSDs resulted in approximately 3 billion euros in medical expenses and 2 billion euros of lost revenue due to work absenteeism, corresponding to 0.3\% of Belgian gross domestic product (GDP) in 2018 \cite{gorassoHealthEconomicBurden2023}.
+
+\smalltitle{Reduced physical performance}
+Reduced work ability can be categorized in absenteeism and presenteeism. Absenteeism refers to the absence from work due to injuries sustained on the job. Presenteeism describes the situation in which workers continue to attend their expected working duties despite existing injuries, often due to concerns about job security. In such cases, work is performed in a self--protective manner to reduce physical strain. Both absenteeism and presenteeism result in reduced work efficiency, which leads to revenue losses and increased medical costs \cite{oralEvaluationAbsenteeismPresenteeism2024}.
+\pagebreak
+
+\smalltitle{Physical human--robot interaction}
+Human--robot interaction can be classified into several levels based on the different types of interaction, as illustrated in Figure~\ref{fig:hr-interaction}. The robotic application in this thesis falls under human--robot collaboration: Human worker and robot interact with the same component simultaneously.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{/home/oskar/Thesis/ThesisV1/figures/Human_robot_collaboration.png}
+    \caption{Levels of interaction between human and robot (reproduced from \cite{benderLightweightRobotsManual2016})}
+    \label{fig:hr-interaction}
+\end{figure}
+
+
+\smalltitle{Robotic solutions}
+There is a clear need to address reduced work efficiency resulting from physical injuries since this improves the quality of life of an increasingly aging workforce, but also to reduce the impact on social welfare systems and increase overall economic productivity. Yet few collaborative applications exist in production facilities. Human and robots are either physically seperated, or work in a coexistence arrangement where no  physical barrier seperates human and robot but no direct interaction takes place \cite{benderLightweightRobotsManual2016}.
+
+Implementations like this are only economically viable for large batch sizes, since a whole production line needs to be tuned towards that specific robotic solution \cite{benderLightweightRobotsManual2016}.
+Cage--free robotic arms that share a workspace with a human worker are introduced to increase flexibility of the production line. Interactive robotic solutions for small batches and varying product sizes has become a clear need since 70\% of collaboration between human worker and robotic solutions are found in assembly applications \cite{benderLightweightRobotsManual2016}.
+
+An industry survey reported that 86\% of respondents were willing to invest in lightweight robotic solutions, indicating strong industrial interest. The primary motivations for introducing robotic arms in assembly environments are:
+\begin{itemize}
+    \item Improving operational efficiency
+    \item Improving ergonomics
+\end{itemize}
+
+Cage--free robotic solutions generally involve higher initial costs compared to traditional fenced systems due to safety certification requirements and CE conformity procedures. Companies are however often willing to accept longer payback periods for implementing and testing company specific robotic solutions which increases ergonomics \cite{benderLightweightRobotsManual2016}.
+
+\smalltitle{Limitations of existing collaborative robots}
+Traditional stiff robots in collaborative applications are heavily regulated to minimise the risk of injuries. These robots are lightweight, operate at low speeds and  often lack mechanical bandwidth to react to unforeseen collisions in a safe and compliant way \cite{benderLightweightRobotsManual2016}\cite[Chapters~54 and~57]{sicilianoSpringerHandbookRobotics2016}.  
+
+One solution for safe collaboration between human and robot are hand--guided robotic arms. Hand--guided robotic applications are defined as a direct physical interaction  between human and robot, where the human operator has full control over the robot motion. In this application, a direct input device is located at or near the end--effector to measure input forces and simultaneously define the position of the human in the shared workspace. A direct consequence of this approach is that robotic applications with sensorised end--effectors can only react in a passive compliant manner when handled at a specific point on the robotic arm. Collisions or attemted handling of the robotic arm elsewhere will result in a safety stop of the robotic arm \cite[Chapters~54 and~57]{sicilianoSpringerHandbookRobotics2016}.
+
+\newpage
+\section{Problem Statement}
+
+Existing robotic solutions that allow a human worker to hand--guide a robotic arm by grapsing it wherever is most convenient are, to the best of current knowledge, practically non-existent in assembly and packaging industries. When hand--guiding is discussed in literature, it is typically limited to sensorised end--effectors on conventional stiff robots \cite{gregorHandGuidingVirtual2021}\cite{hameedControlSystemDesign2023}.
+This absence in current industrial applications is further supported by surveys of end users, system integrators and researchers which states that collaborative robots are still primarily implemented as traditional stiff robots with limited or no direct human interaction \cite{montiniCollaborativeRoboticsSurvey2024}.
+The proposed robotic solution must be useable without extensive training and intuïtive for operators without technical experience. To further enhance the return on investment, the system should also be portable, allowing the implementation of the robotic solution at different locations within an assembly or packaging facility wherever it is most needed.
+
+\chapter{Literature Review}
+\label{ch:literature}
+
+This chapter reviews the existing literature related to this research.
+
+\section{Theoretical Background}
+
+The fundamental theory underlying this work is...
+\begin{itemize}
+    \item Impedance control
+    \item Disturbance Observer
+    \item Docker
+    \item ROS2
+\end{itemize}
+
+\subsection{Impedance control}
+\subsection{Disturbance observer}
+\subsection{Docker}
+\subsection{ROS2}
+
+\section{State of the Art}
+
+Recent advances in this field include...
+\section{Research Gap}
+
+While existing methods provide solutions for..., they have limitations:
+\begin{itemize}
+    \item Limited scalability
+    \item High computational cost
+    \item Lack of robustness
+\end{itemize}
+
+This thesis addresses these gaps by...
+
+\chapter{Methodology}
+\label{ch:methodology}
+
+This chapter describes the research methodology and proposed approach.
+
+\section{Overview}
+
+Figure~\ref{fig:methodology} illustrates the overall methodology.
+
+Make figure with 3D design, code, workspace (how it would be implemented in for example TroPack)
+
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{figures/methodology.pdf}
+    \caption{Overview of the proposed methodology.}
+    \label{fig:methodology}
+\end{figure}
+
+\section{Mechanical design}
+
+The system is modeled as:
+\begin{equation}
+    \mathbf{y}(t) = \mathbf{C}\mathbf{x}(t) + \mathbf{D}\mathbf{u}(t)
+    \label{eq:output}
+\end{equation}
+
+\section{Code}
+\subsection{Docker setup}
+\subsection{ROS2 controller}
+
+
+The proposed algorithm is shown in Listing~\ref{lst:algorithm}.
+
+\begin{lstlisting}[language=Python, caption={Proposed optimization algorithm}, label={lst:algorithm}]
+import numpy as np
+from scipy.optimize import minimize
+
+def cost_function(x, *args):
+    """
+    Compute the cost for given parameters.
+    
+    Args:
+        x: Parameter vector
+        args: Additional arguments
+    
+    Returns:
+        Cost value
+    """
+    # Extract parameters
+    param1, param2 = x[0], x[1]
+    
+    # Compute cost
+    cost = param1**2 + param2**2
+    
+    return cost
+
+# Initial guess
+x0 = np.array([1.0, 1.0])
+
+# Constraints
+constraints = {'type': 'ineq', 'fun': lambda x: x[0] + x[1] - 1}
+
+# Optimize
+result = minimize(cost_function, x0, 
+                  method='SLSQP',
+                  constraints=constraints)
+
+print(f"Optimal solution: {result.x}")
+print(f"Final cost: {result.fun}")
+\end{lstlisting}
+
+\section{Experimental Setup}
+
+Pictures of real robot.
+Define what we measure, how we measure. What is concidered working, when does it fail. 
+Experimental testing of friction coefficients, damping... to implement in code
+
+\subsection{Hardware Configuration}
+
+Schematic of robot linked with maxon drivers, software ...
+\subsection{Results}
+Results-> graphs, values...
+
+Table~\ref{tab:results} summarizes the experimental results.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Comparison of different control strategies.}
+    \label{tab:results}
+    \begin{tabular}{@{}lcccc@{}}
+        \toprule
+        Method & Rise Time (s) & Settling Time (s) & Overshoot (\%) & RMSE \\
+        \midrule
+        PID Control & 2.3 & 5.1 & 12.5 & 0.089 \\
+        LQR Control & 1.8 & 4.2 & 8.3 & 0.065 \\
+        Proposed Method & 1.5 & 3.8 & 5.1 & 0.042 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+As shown in Table~\ref{tab:results}, the proposed method achieves superior performance.
+
+\chapter{Results and Discussion}
+\label{ch:results}
+
+This chapter presents the experimental results and their analysis.
+
+\section{Experimental results}
+
+Figure~\ref{fig:simulation} shows the simulation results.
+
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/simulation_results.pdf}
+    \caption{Simulation results showing system response over time.}
+    \label{fig:simulation}
+\end{figure}
+
+\section{Discussion}
+
+The results demonstrate that...
+
+\subsection{Performance Analysis}
+
+The improved performance can be attributed to...
+
+\subsection{Comparison with Existing Methods}
+
+Compared to traditional approaches, our method offers:
+\begin{enumerate}
+    \item Faster response time
+    \item Lower overshoot
+    \item Better disturbance rejection
+\end{enumerate}
+
+\subsection{Limitations}
+
+The current approach has some limitations:
+\begin{itemize}
+    \item Computational complexity scales as $O(n^2)$
+    \item Requires accurate system model
+    \item Sensitive to measurement noise
+\end{itemize}
+
+\chapter{Conclusion and Future Work}
+\label{ch:conclusion}
+
+This chapter summarizes the contributions and suggests directions for future research.
+
+\section{Summary}
+
+This thesis investigated [problem] and developed [solution].
+
+The main findings are:
+\begin{itemize}
+    \item We developed a novel methodology that...
+    \item Experimental results showed that...
+    \item The proposed approach outperforms existing methods by...
+\end{itemize}
+
+\section{Contributions}
+
+The key contributions of this work are:
+\begin{enumerate}
+    \item \textbf{Theoretical contribution:} A new framework for...
+    \item \textbf{Methodological contribution:} An efficient algorithm for...
+    \item \textbf{Practical contribution:} A prototype implementation demonstrating...
+\end{enumerate}
+
+\section{Future Work}
+
+Future research directions include:
+\begin{itemize}
+    \item Extension to multi-agent systems
+    \item Integration with machine learning techniques
+    \item Real-time implementation on embedded systems
+    \item Validation on industrial case studies
+\end{itemize}
+
+% ===== BIBLIOGRAPHY =====
+\printbibliography[heading=bibintoc, title={References}]
+
+% ===== APPENDICES =====
+\appendix
+
+\chapter{2D drawings}
+\label{app:derivations}
+
+2d drawings with tolerances
+
+\section{CNC Part 1}
+
+pic
+\section{CNC Part 2}
+\section{CNC Part 3}
+\chapter{Additional Results}
+\label{app:results}
+
+This appendix presents supplementary experimental data.
+
+\section{Extended Simulation Results}
+
+Additional simulation scenarios...
+
+\chapter{Source Code}
+\label{app:code}
+
+Complete source code is available at: \url{https://github.com/username/repository}
+
+\end{document}

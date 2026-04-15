@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  14 APR 2026 12:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  13 APR 2026 10:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ThesisV2_main.tex
-(./ThesisV2_main.tex
+**main.tex
+(./main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
@@ -219,16 +219,6 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \xmathstrut@box=\box53
 \xmathstrut@dim=\dimen159
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup6
-\symboldletters=\mathgroup7
-\symboldsymbols=\mathgroup8
-Package bm Info: No bold for \OMX/lmex/m/n, using \pmb.
-Package bm Info: No bold for \U/msa/m/n, using \pmb.
-Package bm Info: No bold for \U/msb/m/n, using \pmb.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -280,62 +270,25 @@ Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 \c@subfigure=\count284
 \c@subtable=\count285
 )
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen169
-\lightrulewidth=\dimen170
-\cmidrulewidth=\dimen171
-\belowrulesep=\dimen172
-\belowbottomsep=\dimen173
-\aboverulesep=\dimen174
-\abovetopsep=\dimen175
-\cmidrulesep=\dimen176
-\cmidrulekern=\dimen177
-\defaultaddspace=\dimen178
-\@cmidla=\count286
-\@cmidlb=\count287
-\@aboverulesep=\dimen179
-\@belowrulesep=\dimen180
-\@thisruleclass=\count288
-\@lastruleclass=\count289
-\@thisrulewidth=\dimen181
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen182
-\ar@mcellbox=\box56
-\extrarowheight=\dimen183
-\NC@list=\toks27
-\extratabsurround=\skip57
-\backup@length=\skip58
-\ar@cellbox=\box57
-)
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip59
-\multirow@cntb=\count290
-\multirow@dima=\skip60
-\bigstrutjot=\dimen184
-)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count291
-\lst@gtempboxa=\box58
-\lst@token=\toks28
-\lst@length=\count292
-\lst@currlwidth=\dimen185
-\lst@column=\count293
-\lst@pos=\count294
-\lst@lostspace=\dimen186
-\lst@width=\dimen187
-\lst@newlines=\count295
-\lst@lineno=\count296
-\lst@maxwidth=\dimen188
+\lst@mode=\count286
+\lst@gtempboxa=\box56
+\lst@token=\toks27
+\lst@length=\count287
+\lst@currlwidth=\dimen169
+\lst@column=\count288
+\lst@pos=\count289
+\lst@lostspace=\dimen170
+\lst@width=\dimen171
+\lst@newlines=\count290
+\lst@lineno=\count291
+\lst@maxwidth=\dimen172
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count297
-\lst@skipnumbers=\count298
-\lst@framebox=\box59
+\c@lstnumber=\count292
+\lst@skipnumbers=\count293
+\lst@framebox=\box57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -358,6 +311,43 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen173
+\lightrulewidth=\dimen174
+\cmidrulewidth=\dimen175
+\belowrulesep=\dimen176
+\belowbottomsep=\dimen177
+\aboverulesep=\dimen178
+\abovetopsep=\dimen179
+\cmidrulesep=\dimen180
+\cmidrulekern=\dimen181
+\defaultaddspace=\dimen182
+\@cmidla=\count294
+\@cmidlb=\count295
+\@aboverulesep=\dimen183
+\@belowrulesep=\dimen184
+\@thisruleclass=\count296
+\@lastruleclass=\count297
+\@thisrulewidth=\dimen185
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen186
+\ar@mcellbox=\box58
+\extrarowheight=\dimen187
+\NC@list=\toks28
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip59
+\multirow@cntb=\count298
+\multirow@dima=\skip60
+\bigstrutjot=\dimen188
 )
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
@@ -807,15 +797,6 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
 Package hyperref Info: Option `bookmarks' set `true' on input line 4073.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4073
 .
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4073.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4073.
-
 Package hyperref Info: Hyper figures OFF on input line 4192.
 Package hyperref Info: Link nesting OFF on input line 4197.
 Package hyperref Info: Hyper index ON on input line 4200.
@@ -826,6 +807,7 @@ Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count443
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen259
+
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
@@ -878,57 +860,48 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip128
 )
-(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip129
-\enit@outerparindent=\dimen262
-\enit@toks=\toks32
-\enit@inbox=\box62
-\enit@count@id=\count450
-\enitdp@description=\count451
-)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 13
-8.
+6.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (./ThesisV2_main.aux)
-\openout1 = `ThesisV2_main.aux'.
+) (./main.aux)
+\openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Info: Redefining \microtypecontext on input line 138.
-Package microtype Info: Applying patch `item' on input line 138.
-Package microtype Info: Applying patch `toc' on input line 138.
-Package microtype Info: Applying patch `eqnum' on input line 138.
-Package microtype Info: Applying patch `footnote' on input line 138.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Info: Redefining \microtypecontext on input line 136.
+Package microtype Info: Applying patch `item' on input line 136.
+Package microtype Info: Applying patch `toc' on input line 136.
+Package microtype Info: Applying patch `eqnum' on input line 136.
+Package microtype Info: Applying patch `footnote' on input line 136.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 138.
+LaTeX Info: Redefining \showhyphens on input line 136.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -939,17 +912,17 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count452
-\scratchdimen=\dimen263
-\scratchbox=\box63
-\nofMPsegments=\count453
-\nofMParguments=\count454
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count455
-\MPscratchDim=\dimen264
-\MPnumerator=\count456
-\makeMPintoPDFobject=\count457
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count450
+\scratchdimen=\dimen262
+\scratchbox=\box62
+\nofMPsegments=\count451
+\nofMParguments=\count452
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count453
+\MPscratchDim=\dimen263
+\MPnumerator=\count454
+\makeMPintoPDFobject=\count455
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -963,7 +936,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count458
+\c@lstlisting=\count456
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -973,23 +946,13 @@ File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `ThesisV2_main.bcf'.
+\openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'ThesisV2_main.bbl' found.
-
-(./ThesisV2_main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                somekey
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 138.
-Package biblatex Info: Reference segment=0 on input line 138.
-
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 136.
+Package biblatex Info: Reference segment=0 on input line 136.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1024,7 +987,7 @@ Package biblatex Info: Reference segment=0 on input line 138.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 138.
+Package hyperref Info: Link coloring ON on input line 136.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1034,15 +997,15 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count459
+\c@section@level=\count457
 )
-LaTeX Info: Redefining \ref on input line 138.
-LaTeX Info: Redefining \pageref on input line 138.
-LaTeX Info: Redefining \nameref on input line 138.
+LaTeX Info: Redefining \ref on input line 136.
+LaTeX Info: Redefining \pageref on input line 136.
+LaTeX Info: Redefining \nameref on input line 136.
 
-(./ThesisV2_main.out) (./ThesisV2_main.out)
+(./main.out) (./main.out)
 \@outlinefile=\write4
-\openout4 = `ThesisV2_main.out'.
+\openout4 = `main.out'.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/14.4'.
@@ -1060,11 +1023,10 @@ Package microtype Info: Character `029' is missing
 
 ] [4
 
-] (./ThesisV2_main.toc
+] (./main.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 .
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
@@ -1108,20 +1070,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [5])
 \tf@toc=\write5
-\openout5 = `ThesisV2_main.toc'.
+\openout5 = `main.toc'.
 
  [6]
-(./ThesisV2_main.lof)
+(./main.lof)
 \tf@lof=\write6
-\openout6 = `ThesisV2_main.lof'.
+\openout6 = `main.lof'.
 
  [7
 
 ] [8
 
-] (./ThesisV2_main.lot)
+] (./main.lot)
 \tf@lot=\write7
-\openout7 = `ThesisV2_main.lot'.
+\openout7 = `main.lot'.
 
  [9] [10
 
@@ -1131,51 +1093,180 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-33.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+
+LaTeX Warning: Citation 'greggiWorkRelatedMusculoskeletalDisorders2024' on page
+ 1 undefined on input line 237.
+
+
+Overfull \hbox (14.0075pt too wide) in paragraph at lines 237--238
+\T1/lmr/m/n/10.95 (-20) ing both qual-ity of life and pro-duc-tiv-ity [].
+ []
+
+
+LaTeX Warning: Citation 'gorassoHealthEconomicBurden2023' on page 1 undefined o
+n input line 242.
+
+
+LaTeX Warning: Citation 'gorassoHealthEconomicBurden2023' on page 1 undefined o
+n input line 244.
+
+
+LaTeX Warning: Citation 'ibvMusculoskeletalDisordersCaused2017' on page 1 undef
+ined on input line 244.
+
+
+Overfull \hbox (40.65074pt too wide) in paragraph at lines 244--245
+\T1/lmr/m/n/10.95 (-20) nies and a great bur-den on the pub-lic health care sys
+-tem []. 
+ []
+
+
+LaTeX Warning: Citation 'gorassoHealthEconomicBurden2023' on page 1 undefined o
+n input line 246.
+
+
+LaTeX Warning: Citation 'oralEvaluationAbsenteeismPresenteeism2024' on page 1 u
+ndefined on input line 249.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.253 
+l.251 
        [1
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
+]
+
+LaTeX Warning: Reference `fig:hr-interaction' on page 2 undefined on input line
+ 253.
+
+</home/oskar/Thesis/ThesisV1/figures/Human_robot_collaboration.png, id=319, 151
+5.6625pt x 690.58pt>
+File: /home/oskar/Thesis/ThesisV1/figures/Human_robot_collaboration.png Graphic
+ file (type png)
+<use /home/oskar/Thesis/ThesisV1/figures/Human_robot_collaboration.png>
+Package pdftex.def Info: /home/oskar/Thesis/ThesisV1/figures/Human_robot_collab
+oration.png  used on input line 257.
+(pdftex.def)             Requested size: 352.81552pt x 160.74786pt.
+
+LaTeX Warning: Citation 'benderLightweightRobotsManual2016' on page 2 undefined
+ on input line 258.
+
+
+LaTeX Warning: Citation 'benderLightweightRobotsManual2016' on page 2 undefined
+ on input line 258.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
+[]\T1/lmr/bx/n/10 (+20) Figure 1.1: |\T1/lmr/m/n/10 (+20) Lev-els of in-ter-ac-
+tion be-tween hu-man and robot (re-pro-duced from
+ []
+
+
+LaTeX Warning: Citation 'benderLightweightRobotsManual2016' on page 2 undefined
+ on input line 264.
+
+
+LaTeX Warning: Citation 'benderLightweightRobotsManual2016' on page 2 undefined
+ on input line 266.
+
+
+LaTeX Warning: Citation 'benderLightweightRobotsManual2016' on page 2 undefined
+ on input line 267.
+
+
+Overfull \hbox (95.66364pt too wide) in paragraph at lines 266--268
+\T1/lmr/m/n/10.95 (-20) pro-duc-tion line needs to be tuned to-wards that spe-c
+ific robotic so-lu-tion [].
+ []
+
+
+Overfull \hbox (7.2536pt too wide) in paragraph at lines 266--268
+\T1/lmr/m/n/10.95 (-20) robotic so-lu-tions are found in as-sem-bly ap-pli-ca-t
+ions []. 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+71.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+LaTeX Warning: Citation 'benderLightweightRobotsManual2016' on page 2 undefined
+ on input line 275.
+
+
+Overfull \hbox (55.33426pt too wide) in paragraph at lines 275--276
+\T1/lmr/m/n/10.95 (-20) com-pany spe-cific robotic so-lu-tions which in-creases
+ er-gonomics []. 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.270 
-       [2]
+l.277 ...tations of existing collaborative robots}
+                                                   [2 </home/oskar/Thesis/Thesi
+sV1/figures/Human_robot_collaboration.png>]
 
-LaTeX Warning: Citation 'somekey' on page 3 undefined on input line 276.
+LaTeX Warning: Citation 'benderLightweightRobotsManual2016' on page 3 undefined
+ on input line 278.
 
-<Graphics//SEA_Schematic.png, id=346, 1861.95625pt x 938.50626pt>
-File: Graphics//SEA_Schematic.png Graphic file (type png)
-<use Graphics//SEA_Schematic.png>
-Package pdftex.def Info: Graphics//SEA_Schematic.png  used on input line 280.
-(pdftex.def)             Requested size: 352.81552pt x 177.83115pt.
-[3 <./Graphics//SEA_Schematic.png>] [4
 
-]
+LaTeX Warning: Citation 'sicilianoSpringerHandbookRobotics2016' on page 3 undef
+ined on input line 278.
+
+
+Overfull \hbox (292.13644pt too wide) in paragraph at lines 277--279
+\T1/lmr/m/n/10.95 (-20) width to re-act to un-fore-seen col-li-sions in a safe 
+and com-pli-ant way [][]. 
+ []
+
+
+LaTeX Warning: Citation 'sicilianoSpringerHandbookRobotics2016' on page 3 undef
+ined on input line 280.
+
+[3]
+
+LaTeX Warning: Citation 'gregorHandGuidingVirtual2021' on page 4 undefined on i
+nput line 285.
+
+
+LaTeX Warning: Citation 'hameedControlSystemDesign2023' on page 4 undefined on 
+input line 285.
+
+
+LaTeX Warning: Citation 'montiniCollaborativeRoboticsSurvey2024' on page 4 unde
+fined on input line 286.
+
+
+Overfull \hbox (69.60948pt too wide) in paragraph at lines 285--288
+\T1/lmr/m/n/10.95 (-20) tional stiff robots with lim-ited or no di-rect hu-man 
+in-ter-ac-tion [].
+ []
+
+[4]
 Chapter 2.
-[5] [6
+[5
+
+] [6
 
 ]
 Chapter 3.
+
+LaTeX Warning: Reference `fig:methodology' on page 7 undefined on input line 33
+0.
+
+
+LaTeX Warning: Reference `lst:algorithm' on page 7 undefined on input line 354.
+
+
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-51.
+56.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1185,60 +1276,154 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 352.
- [7] [8]
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 357.
+ [7]
+
+LaTeX Warning: Reference `tab:results' on page 8 undefined on input line 406.
+
+
+LaTeX Warning: Reference `tab:results' on page 8 undefined on input line 423.
+
+[8]
 Chapter 4.
+
+LaTeX Warning: Reference `fig:simulation' on page 9 undefined on input line 432
+.
+
 [9
 
 ] [10
 
 ]
 Chapter 5.
+
+LaTeX Warning: Empty bibliography on input line 503.
+
 [11] [12
 
 ]
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
- [13
+Appendix A.
+[13] [14
 
-] [14] [15
+]
+Appendix B.
+[15] [16
 
-] [16
+]
+Appendix C.
+[17] (./main.aux)
 
-] [17] [18
+LaTeX Warning: There were undefined references.
 
-] [19] (./ThesisV2_main.aux)
-Package rerunfilecheck Info: File `ThesisV2_main.out' has not changed.
-(rerunfilecheck)             Checksum: 8C664534D2D5E1097E3E80C2AE743B49;8565.
-Package logreq Info: Writing requests to 'ThesisV2_main.run.xml'.
-\openout1 = `ThesisV2_main.run.xml'.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: A5C167E19DB97D521AC6A2EDBEE298E2;8470
+(rerunfilecheck)             After:  D7327DC44DB1CCF82977C97DE07C141E;6082.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26989 strings out of 478287
- 463573 string characters out of 5849289
- 1235789 words of memory out of 5000000
- 44558 multiletter control sequences out of 15000+600000
- 562209 words of font info for 155 fonts, out of 8000000 for 9000
+ 26535 strings out of 478287
+ 453334 string characters out of 5849289
+ 1351181 words of memory out of 5000000
+ 44100 multiletter control sequences out of 15000+600000
+ 552086 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,68p,2008b,2169s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/te
-xmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lm
-bx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on ThesisV2_main.pdf (33 pages, 341088 bytes).
+ 60i,12n,68p,1081b,2169s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{table.caption.5} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix*.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix*.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.Alph0.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.Alph0.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.Alph0.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix*.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.6.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.6.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.5.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.5.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.5.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.5.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.5.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
+s/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texm
+f/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mtt9.pfb>
+Output written on main.pdf (31 pages, 501047 bytes).
 PDF statistics:
- 551 PDF objects out of 1000 (max. 8388607)
- 479 compressed objects within 5 object streams
- 99 named destinations out of 1000 (max. 500000)
- 55182 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 483 compressed objects within 5 object streams
+ 139 named destinations out of 1000 (max. 500000)
+ 51078 words of extra memory for PDF output out of 51595 (max. 10000000)
 

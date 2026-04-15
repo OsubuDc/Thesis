@@ -16,5 +16,583 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{oralEvaluationAbsenteeismPresenteeism2024}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a0a0b94de9793668f036c13d187a8220}{%
+           family={Oral},
+           familyi={O\bibinitperiod},
+           given={Belgin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d3af5894e763b4bc8a6c2264e7800163}{%
+           family={Solak},
+           familyi={S\bibinitperiod},
+           given={Yavuzalp},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=223a58fd25fb69955816b24e5cbc964b}{%
+           family={Durmuş},
+           familyi={D\bibinitperiod},
+           given={Hasan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{5feb7797816f2fe0058152f0edf2d661}
+      \strng{fullhash}{5feb7797816f2fe0058152f0edf2d661}
+      \strng{bibnamehash}{5feb7797816f2fe0058152f0edf2d661}
+      \strng{authorbibnamehash}{5feb7797816f2fe0058152f0edf2d661}
+      \strng{authornamehash}{5feb7797816f2fe0058152f0edf2d661}
+      \strng{authorfullhash}{5feb7797816f2fe0058152f0edf2d661}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{BACKGROUND: While absenteeism refers to not attending work, presenteeism is defined as not being present at work. These two conditions, which negatively affect employee health, can be indicators of work efficiency, work peace, work safety and work engagement. OBJECTIVE: Several factors were evaluated in this study concerning absenteeism and presenteeism among factory workers. METHODS: This cross-sectional study was conducted among workers in a factory operating in a heavy industry in southern Turkey in 2021. A survey consisting of 57 questions was applied to 152 factory workers by face-to-face interview method. The participants’ behaviour over the last month was evaluated regarding absenteeism and presenteeism. RESULTS: It was reported that 24 (15.8\%) of all employees were absent from work in the last month (absenteeism), excluding holidays and sick leave, and that 20 (13.2\%) employees engaged in presenteeism, working when they should not have been at the workplace. There was a high absenteeism rate among employees who had an acute illness and were dissatisfied with their jobs. Several factors have been associated with presenteeism, including poor economic conditions, family health problems, previous unemployment, working overtime, job dissatisfaction, poor relationships with colleagues and difficulty finding a replacement, acute illness, sleep problems and fatigue. CONCLUSIONS: To increase the productivity and commitment of employees, it may be useful to identify the reasons for absenteeism and present behaviours, to facilitate effective interpersonal communication skills by examining the organisational climate of employees, and to regulate workload based on a comprehensive assessment of the health status of employees.}
+      \field{day}{11}
+      \field{issn}{1051-9815, 1875-9270}
+      \field{journaltitle}{WORK: A Journal of Prevention, Assessment \& Rehabilitation}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{1}
+      \field{shortjournal}{WORK: A Journal of Prevention, Assessment \& Rehabilitation}
+      \field{title}{Evaluation of Absenteeism and Presenteeism Status of Factory Employees}
+      \field{urlday}{1}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{79}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{449\bibrangedash 457}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.3233/WOR-230642
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/7S526YQX/Oral et al. - 2024 - Evaluation of absenteeism and presenteeism status of factory employees.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.sagepub.com/doi/10.3233/WOR-230642
+      \endverb
+      \verb{url}
+      \verb https://journals.sagepub.com/doi/10.3233/WOR-230642
+      \endverb
+    \endentry
+    \entry{yassiRepetitiveStrainInjuries}{article}{}
+      \name{author}{1}{}{%
+        {{hash=45f37f59b8cad3d2b58fbe8db8eb4506}{%
+           family={Yassi},
+           familyi={Y\bibinitperiod},
+           given={Annalee},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{45f37f59b8cad3d2b58fbe8db8eb4506}
+      \strng{fullhash}{45f37f59b8cad3d2b58fbe8db8eb4506}
+      \strng{bibnamehash}{45f37f59b8cad3d2b58fbe8db8eb4506}
+      \strng{authorbibnamehash}{45f37f59b8cad3d2b58fbe8db8eb4506}
+      \strng{authornamehash}{45f37f59b8cad3d2b58fbe8db8eb4506}
+      \strng{authorfullhash}{45f37f59b8cad3d2b58fbe8db8eb4506}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{THE LANCET}
+      \field{langid}{english}
+      \field{title}{Repetitive Strain Injuries}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/BJY9EFQI/Yassi - Repetitive strain injuries.pdf
+      \endverb
+    \endentry
+    \entry{vilellaMusculoskeletalExamination}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6ed89af823f60e854f81396c8c0337c6}{%
+           family={Vilella},
+           familyi={V\bibinitperiod},
+           given={Renato\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d2dbb53e544752c0c5cc989b929b6eea}{%
+           family={Reddivari},
+           familyi={R\bibinitperiod},
+           given={Anil\bibnamedelimb Kumar\bibnamedelima Reddy},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{51aaaaf6868842622bf8784c5dd0ef04}
+      \strng{fullhash}{51aaaaf6868842622bf8784c5dd0ef04}
+      \strng{bibnamehash}{51aaaaf6868842622bf8784c5dd0ef04}
+      \strng{authorbibnamehash}{51aaaaf6868842622bf8784c5dd0ef04}
+      \strng{authornamehash}{51aaaaf6868842622bf8784c5dd0ef04}
+      \strng{authorfullhash}{51aaaaf6868842622bf8784c5dd0ef04}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Musculoskeletal {{Examination}}}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/32CCZJL5/Vilella and Reddivari - Musculoskeletal Examination.pdf
+      \endverb
+    \endentry
+    \entry{ibvMusculoskeletalDisordersCaused2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c10e3dd85813f7bc2dcb73905522a05d}{%
+           family={{IBV}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {European Commission}%
+      }
+      \strng{namehash}{c10e3dd85813f7bc2dcb73905522a05d}
+      \strng{fullhash}{c10e3dd85813f7bc2dcb73905522a05d}
+      \strng{bibnamehash}{c10e3dd85813f7bc2dcb73905522a05d}
+      \strng{authorbibnamehash}{c10e3dd85813f7bc2dcb73905522a05d}
+      \strng{authornamehash}{c10e3dd85813f7bc2dcb73905522a05d}
+      \strng{authorfullhash}{c10e3dd85813f7bc2dcb73905522a05d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Musculoskeletal Disorders Caused by the Most Common Job Demands and Ergonomic Risks}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/CKI3VS8C/IBV - 2017 - Musculoskeletal disorders caused by the most common job demands and ergonomic risks.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ec.europa.eu/programmes/erasmus-plus/project-result-content/c7cc4b4d-52c9-4b5e-a282-46f53f5f5e98/D2.1.MSDs_job_demands_Revised.pdf
+      \endverb
+      \verb{url}
+      \verb https://ec.europa.eu/programmes/erasmus-plus/project-result-content/c7cc4b4d-52c9-4b5e-a282-46f53f5f5e98/D2.1.MSDs_job_demands_Revised.pdf
+      \endverb
+    \endentry
+    \entry{gorassoHealthEconomicBurden2023}{article}{}
+      \name{author}{11}{}{%
+        {{hash=ce01ad737c0491a3c2bd7bc63c013b50}{%
+           family={Gorasso},
+           familyi={G\bibinitperiod},
+           given={Vanessa},
+           giveni={V\bibinitperiod}}}%
+        {{hash=43516c023319d4fc482ec88b9cc47674}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Heyden},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6d6eef95a09d2614a7349b5540a6ac0a}{%
+           family={De\bibnamedelima Pauw},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Robby},
+           giveni={R\bibinitperiod}}}%
+        {{hash=77cece82c0066a925c69c695968acc88}{%
+           family={Pelgrims},
+           familyi={P\bibinitperiod},
+           given={Ingrid},
+           giveni={I\bibinitperiod}}}%
+        {{hash=8393f7436e4957d07c57bc4d63316eb4}{%
+           family={De\bibnamedelima Clercq},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Eva\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=09ab7416ea5ed6a473ae54ee96f68806}{%
+           family={De\bibnamedelima Ridder},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Karin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bf35d70739211eeb37f75da88b0db48a}{%
+           family={Vandevijvere},
+           familyi={V\bibinitperiod},
+           given={Stefanie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4a0187c538fffe48f760e19a4d78a2a0}{%
+           family={Vansteelandt},
+           familyi={V\bibinitperiod},
+           given={Stijn},
+           giveni={S\bibinitperiod}}}%
+        {{hash=870badf35f2487ff40fe7db2b962051e}{%
+           family={Vaes},
+           familyi={V\bibinitperiod},
+           given={Bert},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3135361c16f0293cd516d886921b1cc7}{%
+           family={De\bibnamedelima Smedt},
+           familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Delphine},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c68be7be6df9af58605940c209f77920}{%
+           family={Devleesschauwer},
+           familyi={D\bibinitperiod},
+           given={Brecht},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{53f0f57f7793b42bb3f3406e7a5d811e}
+      \strng{fullhash}{297a20d00fbb20200965f6812ffc79c0}
+      \strng{bibnamehash}{297a20d00fbb20200965f6812ffc79c0}
+      \strng{authorbibnamehash}{297a20d00fbb20200965f6812ffc79c0}
+      \strng{authornamehash}{53f0f57f7793b42bb3f3406e7a5d811e}
+      \strng{authorfullhash}{297a20d00fbb20200965f6812ffc79c0}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Introduction Low back pain (LBP), neck pain (NKP), osteoarthritis (OST) and rheumatoid arthritis (RHE) are among the musculoskeletal (MSK) disorders causing the greatest disability in terms of Years Lived with Disability. The current study aims to analyze the health and economic impact of these MSK disorders in Belgium, providing a summary of morbidity and mortality outcomes from 2013 to 2018, as well as direct and indirect costs from 2013 to 2017. Methods The health burden of LBP, NKP, OST and RHE in Belgium from 2013 to 2018 was summarized in terms of prevalence and disability-adjusted life years (DALY) using data from the Belgian health interview surveys (BHIS), the INTEGO database (Belgian registration network for general practitioners) and the Global Burden of Diseases study 2019. The economic burden included estimates of direct medical costs and indirect costs, measured by cost of work absenteeism. For this purpose, data of the respondents to the BHIS-2013 were linked with the national health insurance data (intermutualistic agency [IMA] database) 2013–2017. Results In 2018, 2.5 million Belgians were affected by at least one MSK disorder. OST represented the disorder with the highest number of cases for both men and women, followed by LBP. In the same year, MSK disorders contributed to a total of 180,746 DALYs for female and 116,063 DALYs for men. LBP appeared to be the largest contributor to the health burden of MSK. Having at least one MSK disorder costed on average 3 billion € in medical expenses and 2 billion € in indirect costs per year, with LBP being the most costly. Conclusion MSK disorders represent a major health and economic burden in Belgium. As their burden will probably continue to increase in the future, acting on the risk factors associated to these disorders is crucial to mitigate both the health and economic burden.}
+      \field{day}{21}
+      \field{issn}{1478-7954}
+      \field{journaltitle}{Population Health Metrics}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{1}
+      \field{shortjournal}{Popul Health Metrics}
+      \field{title}{The Health and Economic Burden of Musculoskeletal Disorders in {{Belgium}} from 2013 to 2018}
+      \field{urlday}{1}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{21}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{4}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s12963-023-00303-z
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/RCJQRX8C/Gorasso et al. - 2023 - The health and economic burden of musculoskeletal disorders in Belgium from 2013 to 2018.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pophealthmetrics.biomedcentral.com/articles/10.1186/s12963-023-00303-z
+      \endverb
+      \verb{url}
+      \verb https://pophealthmetrics.biomedcentral.com/articles/10.1186/s12963-023-00303-z
+      \endverb
+    \endentry
+    \entry{benderLightweightRobotsManual2016}{report}{}
+      \name{author}{4}{}{%
+        {{hash=271fe2a3a2126d6968c9f71065e3b15a}{%
+           family={Bender},
+           familyi={B\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d80f7d8c34c0856e00fa15e123d2634d}{%
+           family={Braun},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a4992182ebbaf155fe0aad028f085d26}{%
+           family={Rally},
+           familyi={R\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4183f095693e3c298632617b264cac75}{%
+           family={Scholtz},
+           familyi={S\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=4a17cf3c3b7f5b41d41d1508f5625fea}{%
+           family={Bauer},
+           familyi={B\bibinitperiod},
+           given={Wilhelm},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Fraunhofer institute for industrial engineering}%
+      }
+      \strng{namehash}{dd716fac1987066a8328e0df82e8a46f}
+      \strng{fullhash}{9564995333a6fa33d5b1831702d0791e}
+      \strng{bibnamehash}{9564995333a6fa33d5b1831702d0791e}
+      \strng{authorbibnamehash}{9564995333a6fa33d5b1831702d0791e}
+      \strng{authornamehash}{dd716fac1987066a8328e0df82e8a46f}
+      \strng{authorfullhash}{9564995333a6fa33d5b1831702d0791e}
+      \strng{editorbibnamehash}{4a17cf3c3b7f5b41d41d1508f5625fea}
+      \strng{editornamehash}{4a17cf3c3b7f5b41d41d1508f5625fea}
+      \strng{editorfullhash}{4a17cf3c3b7f5b41d41d1508f5625fea}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Lightweight Robots in Manual Assembly - Best to Start Simply!}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{63}
+      \range{pages}{1}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/65GV99HZ/Bender et al. - StudyLeightweightRobots_FraunhoferIAO_2016-EN.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://publica-rest.fraunhofer.de/server/api/core/bitstreams/961b5036-c442-47db-84a6-b5334b4c1221/content
+      \endverb
+      \verb{url}
+      \verb https://publica-rest.fraunhofer.de/server/api/core/bitstreams/961b5036-c442-47db-84a6-b5334b4c1221/content
+      \endverb
+    \endentry
+    \entry{sicilianoSpringerHandbookRobotics2016a}{book}{}
+      \name{editor}{2}{}{%
+        {{hash=38f7a70abf2d86e432d63826f560ab93}{%
+           family={Siciliano},
+           familyi={S\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a1ed48939870abd896792330bc735967}{%
+           family={Khatib},
+           familyi={K\bibinitperiod},
+           given={Oussama},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \strng{fullhash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \strng{bibnamehash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \strng{editorbibnamehash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \strng{editornamehash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \strng{editorfullhash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-319-32550-7 978-3-319-32552-1}
+      \field{langid}{english}
+      \field{series}{Springer {{Handbooks}}}
+      \field{title}{Springer {{Handbook}} of {{Robotics}}}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-3-319-32552-1
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/X4FFEIEV/Siciliano and Khatib - 2016 - Springer Handbook of Robotics.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/978-3-319-32552-1
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/978-3-319-32552-1
+      \endverb
+    \endentry
+    \entry{gregorHandGuidingVirtual2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=cd12b4c2be6ca9a3fd7e84bd3557079c}{%
+           family={Gregor},
+           familyi={G\bibinitperiod},
+           given={Radovan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e1bb92f178f89894f66313a6e12be2c8}{%
+           family={Babinec},
+           familyi={B\bibinitperiod},
+           given={Andrej},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eeae06d4fa7c2045af0fe87f7d066925}{%
+           family={Duchoň},
+           familyi={D\bibinitperiod},
+           given={František},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1c636aab008207493ae7baf9d44fffb5}{%
+           family={Dobiš},
+           familyi={D\bibinitperiod},
+           given={Michal},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{57214750763eedf2832c227e227173c6}
+      \strng{fullhash}{cd322a146f7c91dd5dbd5733de60fb76}
+      \strng{bibnamehash}{cd322a146f7c91dd5dbd5733de60fb76}
+      \strng{authorbibnamehash}{cd322a146f7c91dd5dbd5733de60fb76}
+      \strng{authornamehash}{57214750763eedf2832c227e227173c6}
+      \strng{authorfullhash}{cd322a146f7c91dd5dbd5733de60fb76}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The research behind this paper arose out of a need to use an open-source system that enables hand guiding of the robot effector using a force sensor. The paper deals with some existing solutions, including the solution based on the open-source framework Robot Operating System (ROS), in which the built-in motion planner MoveIt is used. The proposed concept of a hand-guiding system utilizes the output of the force–torque sensor mounted at the robot effector to obtain the desired motion, which is thereafter used for planning consequential motion trajectories. Some advantages and disadvantages of the built-in planner are discussed, and then the custom motion planning solution is proposed to overcome the identified drawbacks. Our planning algorithm uses polynomial interpolation and is suitable for continuous replanning of the consequential motion trajectories, which is necessary because the output from the sensor changes due to the hand action during robot motion. The resulting system is verified using a virtual robot in the ROS environment, which acts on the real Optoforce force–torque sensor HEX-70-CE-2000N. Furthermore, the workspace and the motion of the robot are restricted to a greater extent to achieve more realistic simulation.}
+      \field{day}{1}
+      \field{issn}{2300-5319}
+      \field{journaltitle}{Acta Mechanica et Automatica}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Hand {{Guiding}} a {{Virtual Robot Using}} a {{Force Sensor}}}
+      \field{urlday}{3}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{15}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{177\bibrangedash 186}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.2478/ama-2021-0023
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/63VNRZ6Y/Gregor et al. - 2021 - Hand Guiding a Virtual Robot Using a Force Sensor.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciendo.com/article/10.2478/ama-2021-0023
+      \endverb
+      \verb{url}
+      \verb https://www.sciendo.com/article/10.2478/ama-2021-0023
+      \endverb
+    \endentry
+    \entry{hameedControlSystemDesign2023}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c714ae83efc2c4ef6c40f8d18ac0423d}{%
+           family={Hameed},
+           familyi={H\bibinitperiod},
+           given={Ayesha},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a09fb9b9ea25400f31cc5022fbc437fe}{%
+           family={Ordys},
+           familyi={O\bibinitperiod},
+           given={Andrzej},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d3262854ff02ea3a24e872921fcb5cdc}{%
+           family={Możaryn},
+           familyi={M\bibinitperiod},
+           given={Jakub},
+           giveni={J\bibinitperiod}}}%
+        {{hash=89231d4cae75a424b586cc901c3d2396}{%
+           family={Sibilska-Mroziewicz},
+           familyi={S\bibinithyphendelim M\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1ee8d61290d8704560a659227c12dc3}
+      \strng{fullhash}{2928fe60e31a70f059ee29dadea922ad}
+      \strng{bibnamehash}{2928fe60e31a70f059ee29dadea922ad}
+      \strng{authorbibnamehash}{2928fe60e31a70f059ee29dadea922ad}
+      \strng{authornamehash}{f1ee8d61290d8704560a659227c12dc3}
+      \strng{authorfullhash}{2928fe60e31a70f059ee29dadea922ad}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Collaborative robots cooperate with humans to assist them in undertaking simple-tocomplex tasks in several fields, including industry, education, agriculture, healthcare services, security, and space exploration. These robots play a vital role in the revolution of Industry 4.0, which defines new standards of manufacturing and the organization of products in the industry. Incorporating collaborative robots in the workspace improves efficiency, but it also introduces several safety risks. Effective safety measures then become indispensable to ensure safe and robust interaction. This paper presents the review of low-level control methodologies of a collaborative robot to assess the current status of human–robot collaboration over the last decade. First, we discuss the classification of human–robot collaboration, architectures of systems and the complex requirements on control strategies. The most commonly used control approaches were presented and discussed. Several methods of control, reported in industrial applications, are elaborated upon with a prime focus on HR-collaborative assembly operations. Since the physical HRC is a critical control problem for the co-manipulation task, this article identifies key control challenges such as the prediction of human intentions, safety, and human-caused disturbances in motion synchronization; the proposed solutions were analyzed afterwards. The discussion at the end of the paper summarizes the features of the control systems that should be incorporated within the systematic framework to allow the execution of a robotic task from global task planning to low-level control implementation for safe and robust interactions.}
+      \field{day}{3}
+      \field{issn}{2076-3417}
+      \field{journaltitle}{Applied Sciences}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Applied Sciences}
+      \field{shorttitle}{Control {{System Design}} and {{Methods}} for {{Collaborative Robots}}}
+      \field{title}{Control {{System Design}} and {{Methods}} for {{Collaborative Robots}}: {{Review}}}
+      \field{urlday}{3}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{675}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app13010675
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/F8F8FZEV/Hameed et al. - 2023 - Control System Design and Methods for Collaborative Robots Review.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2076-3417/13/1/675
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2076-3417/13/1/675
+      \endverb
+    \endentry
+    \entry{montiniCollaborativeRoboticsSurvey2024}{article}{}
+      \name{author}{8}{}{%
+        {{hash=f2b46128c8d4266082a91f0114100a2f}{%
+           family={Montini},
+           familyi={M\bibinitperiod},
+           given={Elias},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4507265d4d2b23abcad85124c5626a92}{%
+           family={Daniele},
+           familyi={D\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d2fff69ceeb7b3a5ed9bc5f92d8fa3f3}{%
+           family={Agbomemewa},
+           familyi={A\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=77c6284e3f6e9e772559fde8ee75f11e}{%
+           family={Confalonieri},
+           familyi={C\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e1526e0f87f0ac1dad2f4fd2f3476dbe}{%
+           family={Cutrona},
+           familyi={C\bibinitperiod},
+           given={Vincenzo},
+           giveni={V\bibinitperiod}}}%
+        {{hash=9071545d30fec1c073a9383f3dc1172f}{%
+           family={Bettoni},
+           familyi={B\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ec6cde3c776ad73f8169810efa5d824d}{%
+           family={Rocco},
+           familyi={R\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d5d54b0daf4d3a9a358497bdb233a8ba}{%
+           family={Ferrario},
+           familyi={F\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7eea034900ca38a1bbbafc90fd53ae6}
+      \strng{fullhash}{1aebfc7d8d4d9e5b3cda4d43e71d6af1}
+      \strng{bibnamehash}{1aebfc7d8d4d9e5b3cda4d43e71d6af1}
+      \strng{authorbibnamehash}{1aebfc7d8d4d9e5b3cda4d43e71d6af1}
+      \strng{authornamehash}{b7eea034900ca38a1bbbafc90fd53ae6}
+      \strng{authorfullhash}{1aebfc7d8d4d9e5b3cda4d43e71d6af1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Collaborative robotics possesses the potential to revolutionise industrial automation by offering affordable and accessible solutions with reasonable skill requirements. However, identifying the most valuable and appropriate applications for this technology remains a challenge. This study conducted a comprehensive literature review to analyse the existing collaborative robotics applications, and the results showed that only a limited number of applications can be considered true collaboration, with even fewer classified as intelligent collaboration. The study comprised a survey designed to offer valuable insights to not only enhance the state-of-the-art analysis in the identification of existing challenges in the field of collaborative robotics but also to provide motivation to guide future advancements. By leveraging the survey results, researchers and practitioners will be better equipped to navigate the complex landscape of collaborative robotics and develop innovative solutions to tackle the identified challenges. This study also informs on the latest research and development in the field.}
+      \field{day}{6}
+      \field{issn}{1573-0409}
+      \field{journaltitle}{Journal of Intelligent \& Robotic Systems}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{3}
+      \field{shortjournal}{J Intell Robot Syst}
+      \field{shorttitle}{Collaborative {{Robotics}}}
+      \field{title}{Collaborative {{Robotics}}: {{A Survey From Literature}} and {{Practitioners Perspectives}}}
+      \field{urlday}{3}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{110}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{117}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s10846-024-02141-z
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/HZ9WMVBC/Montini et al. - 2024 - Collaborative Robotics A Survey From Literature and Practitioners Perspectives.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/s10846-024-02141-z
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/s10846-024-02141-z
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{somekey}
+\endrefsection
 \endinput
 
