@@ -269,38 +269,42 @@ There is a clear need to address reduced work efficiency resulting from physical
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{workspaces}  % filename without extension
-    \caption{Caption text.}
-    \label{fig:Human, robot, and shared workspace from Fraunhofer \cite{benderLightweightRobotsManual2016}}
+    \includegraphics[width=0.8\textwidth]{workspaces}
+    \caption{Human, robot, and shared workspace from Fraunhofer
+             \cite{benderLightweightRobotsManual2016}.}
+    \label{fig:workspaces}
 \end{figure}
 
 Human--robot cooperation generally refers to the use of robots without safety fencing, also called cage--free robots. This in contrast to traditional robots which are stiff, heavy, and lack safety features that allow them to safely operate in the same space as humans, and are consequently only allowed to operate in closed of workspaces.
 
-Human and robot can work together in different types of operation, stated below in figure x.
+Human and robot can work together in different types of operation, as illustrated in Figure~\ref{fig:hr-cooperation-levels}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{Human_robot_collaboration}  % filename without extension
-    \caption{Caption text.}
-    \label{fig: Levels of cooperation between human worker and robot
-    \cite{benderLightweightRobotsManual2016}}
+    \includegraphics[width=0.8\textwidth]{Human_robot_collaboration}
+    \caption{Levels of cooperation between human worker and robot from Fraunhofer
+             \cite{benderLightweightRobotsManual2016}.}
+    \label{fig:hr-cooperation-levels}
 \end{figure}
 
-From left to right an increasing level of cooperation is shown. When robots operate in a cell, they are caged--off and there is no contact between human and robot. In a coexistent 
+From left to right an increasing level of interaction is shown.
+
 \vspace{0.2cm} 
 \begin{itemize}[noitemsep, topsep=0pt]
-	\item Safety--rated monitored stop
-	\item Hand--guiding
-	\item Power and force limiting
-	\item Speed and separation monitoring
+	\item Cell: Robot operates in traditional cage, fenced of from human contact
+	\item Coexistence: Human and cage--free robot work at the same time, but in different workspaces
+	\item Synchronized: Human and cage--free robot work in the same workspace, but one at a time
+	\item Cooperation: Human and cage--free robot have tasks in the same workspace at the same time, but to do not work together on the same task
+	\item Collaboration: Human and cage--free robot work in the same workspace on the same task
 \end{itemize}
 \vspace{0.3cm}
 
+The robotic testbench that was built in this thesis falls under coexistence and collaboration depending on how it is implemented. This is clarified in chapter x?
 
+Collaborative robots, defined as robots capable of performing collaborative tasks as described above, are widely used in industry. However, they are still primarily applied in traditional robotic operations such as pick--and--place tasks. In many cases, humans and robots remain either physically separated or operate in a coexistence mode, where no physical barrier is present but no direct interaction takes place. Such implementations are only economically viable for large batch sizes, since a whole production line needs to be tuned towards that specific robotic solution. 
 
-However, few collaborative applications currently exist in production facilities. In many cases, humans and robots are either physically separated or operate in a coexistence arrangement where no physical barrier exists, but no direct interaction takes place. Such implementations are only economically viable for large batch sizes, since a whole production line needs to be tuned towards that specific robotic solution.
+Cage--free robotic arms that share a workspace with a human worker are introduced to increase production flexibility. Interactive robotic solutions for small batches and varying product sizes has become a clear need since 70\% of collaboration between human worker and robotic solutions are found in assembly applications. An industry survey reported that 86\% of respondents were willing to invest in robotic solutions, indicating strong industrial interest. The primary motivations for introducing robotic arms in assembly environments are:
 
-Cage–-free robotic arms that share a workspace with a human worker are introduced to increase production flexibility. Interactive robotic solutions for small batches and varying product sizes has become a clear need since 70\% of collaboration between human worker and robotic solutions are found in assembly applications. An industry survey reported that 86\% of respondents were willing to invest in robotic solutions, indicating strong industrial interest. The primary motivations for introducing robotic arms in assembly environments are:
 \vspace{0.2cm} 
 \begin{itemize}[noitemsep, topsep=0pt]
 	\item Improving operational efficiency
@@ -308,26 +312,43 @@ Cage–-free robotic arms that share a workspace with a human worker are introdu
 \end{itemize}
 \vspace{0.3cm}
 
-Cage–free robotic solutions generally involve higher initial costs compared to traditional fenced systems due to safety certification requirements and conformity procedures. Companies are however often willing to accept longer payback periods for implementing and testing company specific robotic solutions which increase ergonomics. Traditional stiff robots in collaborative applications are heavily regulated to minimize the risk
-of injuries. These robots are lightweight, operate at low speeds and often lack mechanical bandwidth to react to unforeseen collisions in a safe and compliant way\cite{benderLightweightRobotsManual2016}.
+Cage--free robotic solutions generally involve higher initial costs compared to traditional fenced systems due to safety certification requirements and conformity procedures to minimize the risk of injuries. Companies are however often willing to accept longer payback periods for implementing and testing company specific robotic solutions which increase ergonomics \cite{benderLightweightRobotsManual2016}.
 
-One of the categorized modes of human robot collaboration (HRC) is hand-guiding, and is a potential solution for safe collaboration between human and robot. Hand–guided robotic applications are defined as a direct physical interaction between human and robot, where the human operator has full control over the robot motion. In this approach, a direct input device is located at or near the end–effector to measure input forces and simultaneously define the position of the human in the shared workspace. A direct consequence of this approach is that robotic applications with sensorised end–effectors can only react in a passive compliant manner when handled at a specific point on the robotic arm. Collisions or attemted handling of the robotic arm elsewhere will result in a safety stop of the robotic arm\cite{sicilianoSpringerHandbookRobotics2016a}.
+\section{Problem Statement}
 
-Existing robotic solutions that allow a human worker to hand–guide a robotic arm by grasping it wherever is most convenient are, to the best of the authors' knowledge, practically non-existent in assembly and packaging industries. When hand–guiding is discussed in literature, it is typically limited to sensorised end–effectors on conventional stiff robots\cite{gregorHandGuidingVirtual2021}\cite{hameedControlSystemDesign2023}.
+Normative ISO/TS 15066 covers the safety requirements for collaborative operations between human worker and robot. This normative classifies four different collaborative operations modes \cite{rosenstrauchHumanRobotCollaboration2018}: 
+
+\vspace{0.2cm} 
+\begin{itemize}[noitemsep, topsep=0pt]
+	\item Safety--rated monitor stop
+	\item Hand--guiding
+	\item Power and force limiting
+	\item Speed and seperation monitoring
+\end{itemize}
+\vspace{0.3cm}
+
+One of these categorized modes of human robot collaboration (HRC) is hand--guiding, and is a potential solution for safe collaboration between human and robot. Hand–guided robotic applications are defined as a direct physical interaction between human and robot, where the human operator has full control over the robot motion. In this approach, a direct input device is located at or near the end–effector to measure input forces and simultaneously define the position of the human in the shared workspace. 
+
+A direct consequence of this approach is that robotic applications with sensorised end–effectors can only react in a passive compliant manner when handled at a specific point on the robotic arm. Collisions or attemted handling of the robotic arm elsewhere will result in a safety stop of the robotic arm\cite{sicilianoSpringerHandbookRobotics2016a}.
+
+Existing robotic solutions that allow a human worker to hand--guide a robotic arm by grasping it wherever is most convenient are, to the best of the authors' knowledge, practically non--existent in assembly and packaging industries. When hand--guiding is discussed in literature, it is typically limited to sensorised end--effectors on conventional stiff robots\cite{gregorHandGuidingVirtual2021}\cite{hameedControlSystemDesign2023}.
 
 This absence in current industrial applications is further supported by surveys of end users, system integrators and researchers, which indicate that collaborative robots are still primarily implemented as traditional stiff robots with limited or no direct human interaction \cite{montiniCollaborativeRoboticsSurvey2024}.
 
-\smalltitle{Example bold paragraph title}
-Your text here \cite{somekey}.  % example citation
+I just started yapping a bit, this is were i am stuck. I think we can sell it as some kind of solution between cobots which have low load capacity and industrial robots which have high load capacity. With only 3 dof it can be a taylored solution for packaging and assembly industry which does not always need 6+ dof (expensive...)
+
+In this thesis, a robotic testbench is developed to test the practical implementation of an intrinsic safe robotic arm, that will be used for weight compensation of loads of varying weights that are guided by a human worker. Compared to existing collaborative robots, where the weight on the end--effector has to be specified before hand in software, this testbench utilizes build in torque sensors which are embedded in the compliant transmissions used for this testbench. 
+
+It is important that this solution is intuitive to use to limit the amount of recourced needed to be spend on training of the human workers. The robotic arm should be useable only by buttons that are readily avaible on the arm itself, and not need any software interface which is gebruikelijk for existing cobots.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{SEA_Schematic}  % filename without extension
-    \caption{Caption text.}
-    \label{fig:example}
+    \includegraphics[width=0.8\textwidth]{handguiding_precise_positioning}
+    \caption{Collaborative robot with sensorized end--effector from 
+             \cite{benderLightweightRobotsManual2016}.}
+    \label{fig:hr-cooperation-levels}
 \end{figure}
 
-\section{Problem Statement}
 \label{sec:problem_statement}
 
 \section{Thesis Outline}
@@ -353,6 +374,10 @@ Example equation:
 \section{State of the Art}
 
 \section{Gap Analysis}
+
+Intrinsic safe robot
+Grasp wherever you want
+3dof enough for packaging applications, no need for more dof
 
 
 % ============================================================
