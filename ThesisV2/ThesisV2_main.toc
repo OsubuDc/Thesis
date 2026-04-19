@@ -7,7 +7,8 @@
 \contentsline {subsection}{\numberline {1.1.1}Musculoskeletal disorders and ergonomic work environments}{1}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Industrial motivation for ergonomic improvement}{2}{subsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.1.3}Physical human--robot interaction}{2}{subsection.1.1.3}%
-\contentsline {section}{\numberline {1.2}Problem Statement}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.1.4}Industrial manipulators for weight compensation}{6}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Problem Statement}{6}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Thesis Outline}{6}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Literature Review}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Theoretical Background}{7}{section.2.1}%
@@ -44,10 +45,10 @@
 \contentsline {chapter}{\numberline {5}Conclusion and Future Work}{13}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Conclusion}{13}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Future Work}{13}{section.5.2}%
-\contentsline {chapter}{References}{15}{chapter*.8}%
-\contentsline {chapter}{2D Manufacturing Drawings}{17}{appendix*.9}%
+\contentsline {chapter}{References}{15}{chapter*.7}%
+\contentsline {chapter}{2D Manufacturing Drawings}{17}{appendix*.8}%
 \contentsline {section}{\numberline {.1}CNC Part 1}{17}{section.Alph0.1}%
 \contentsline {section}{\numberline {.2}CNC Part 2}{17}{section.Alph0.2}%
 \contentsline {section}{\numberline {.3}CNC Part 3}{17}{section.Alph0.3}%
-\contentsline {chapter}{Additional Experimental Results}{19}{appendix*.10}%
-\contentsline {chapter}{Source Code}{21}{appendix*.11}%
+\contentsline {chapter}{Additional Experimental Results}{19}{appendix*.9}%
+\contentsline {chapter}{Source Code}{21}{appendix*.10}%

@@ -312,42 +312,53 @@ Cage--free robotic arms that share a workspace with a human worker are introduce
 \end{itemize}
 \vspace{0.3cm}
 
-Cage--free robotic solutions generally involve higher initial costs compared to traditional fenced systems due to safety certification requirements and conformity procedures to minimize the risk of injuries. Companies are however often willing to accept longer payback periods for implementing and testing company specific robotic solutions which increase ergonomics \cite{benderLightweightRobotsManual2016}.
+Cage--free robotic solutions generally involve higher initial costs compared to traditional fenced systems due to safety certification requirements and conformity procedures to minimize the risk of injuries. Companies are however often willing to accept longer payback periods for implementing and testing company specific robotic solutions which increase ergonomics \cite{benderLightweightRobotsManual2016}\cite{europeanparliament.directorategeneralforparliamentaryresearchservices.AnalysisExploringRisks2023}.
 
-\section{Problem Statement}
-
-Normative ISO/TS 15066 covers the safety requirements for collaborative operations between human worker and robot. This normative classifies four different collaborative operations modes \cite{rosenstrauchHumanRobotCollaboration2018}: 
+Normative ISO/TS 15066 covers the safety requirements for collaborative operations between human worker and robot. This normative classifies four different collaborative operations modes \cite{rosenstrauchHumanRobotCollaboration2018}\cite{chemwenoOrientingSafetyAssurance2020}: 
 
 \vspace{0.2cm} 
 \begin{itemize}[noitemsep, topsep=0pt]
 	\item Safety--rated monitor stop
 	\item Hand--guiding
 	\item Power and force limiting
-	\item Speed and seperation monitoring
+	\item Speed and separation monitoring
 \end{itemize}
 \vspace{0.3cm}
 
-One of these categorized modes of human robot collaboration (HRC) is hand--guiding, and is a potential solution for safe collaboration between human and robot. Hand–guided robotic applications are defined as a direct physical interaction between human and robot, where the human operator has full control over the robot motion. In this approach, a direct input device is located at or near the end–effector to measure input forces and simultaneously define the position of the human in the shared workspace. 
+Safety--rated monitored stop
+The robot operates at its rated speed when a human is not present in the collaborative workspace. When a human enters the workspace, which can be detected by various means like laser scanners or light curtains, the robot undergoes a complete stop. As long as the human is in the workspace, the robot will not operate. Only by leaving the workspace and resetting the safety stop can operation continue.
 
-A direct consequence of this approach is that robotic applications with sensorised end–effectors can only react in a passive compliant manner when handled at a specific point on the robotic arm. Collisions or attemted handling of the robotic arm elsewhere will result in a safety stop of the robotic arm\cite{sicilianoSpringerHandbookRobotics2016a}.
+Hand--guiding
+Hand--guided robotic applications are defined as a direct physical interaction between human and robot, where the human operator has full control over the robot motion. In this approach, a direct input device is located at or near the end--effector to measure input forces and simultaneously define the position of the human in the shared workspace. The robot must be in a monitored stop before hand--guiding can be activated via an enabling device. Safety requirements for this mode include force and or torque sensing at the guiding point, emergency stop accessible from the position where the robot is being guided, which is typically at the end--effector, and a maximum speed limit during guided motion.
 
-Existing robotic solutions that allow a human worker to hand--guide a robotic arm by grasping it wherever is most convenient are, to the best of the authors' knowledge, practically non--existent in assembly and packaging industries. When hand--guiding is discussed in literature, it is typically limited to sensorised end--effectors on conventional stiff robots\cite{gregorHandGuidingVirtual2021}\cite{hameedControlSystemDesign2023}.
+Power and force limiting
+This mode is the most commonly associated with collaborative robots. The robots' software and hardware are designed in such a way that any contact with a human cannot result in injury. Low robot mass, rounded surfaces and padding combined with active force and torque sensing, which limits contact forces with its environment below set thresholds depending on the body region of the human that can be in contact with the robot.
 
-This absence in current industrial applications is further supported by surveys of end users, system integrators and researchers, which indicate that collaborative robots are still primarily implemented as traditional stiff robots with limited or no direct human interaction \cite{montiniCollaborativeRoboticsSurvey2024}.
+Speed and separation monitoring
+Robot and human can operate in the same workspace at the same time, but the position and speed of the human and robot relative to each other is constantly monitored to adjust the speed of the robot with the goal of constantly having a minimum dynamical separation distance at all times. 
 
-I just started yapping a bit, this is were i am stuck. I think we can sell it as some kind of solution between cobots which have low load capacity and industrial robots which have high load capacity. With only 3 dof it can be a taylored solution for packaging and assembly industry which does not always need 6+ dof (expensive...)
+Hand--guiding is useful for packaging and assembly applications since it combines the physical strength of robotic arms, which can compensate the weight of components or help with moving relatively light but large components, with human intelligence.
 
-In this thesis, a robotic testbench is developed to test the practical implementation of an intrinsic safe robotic arm, that will be used for weight compensation of loads of varying weights that are guided by a human worker. Compared to existing collaborative robots, where the weight on the end--effector has to be specified before hand in software, this testbench utilizes build in torque sensors which are embedded in the compliant transmissions used for this testbench. 
+ISO/TS 15066 specifies that the hand--guiding devices should be located at or near the robot end--effector. (not sure if its hand guiding or hand--guiding) 
 
-It is important that this solution is intuitive to use to limit the amount of recourced needed to be spend on training of the human workers. The robotic arm should be useable only by buttons that are readily avaible on the arm itself, and not need any software interface which is gebruikelijk for existing cobots.
+A direct consequence of this approach is that robotic applications with sensorised end--effectors can only react in a passive compliant manner when handled at a specific point on the robotic arm. Collisions or attempted handling of the robotic arm elsewhere will result in a safety stop of the robotic arm \cite{sicilianoSpringerHandbookRobotics2016a}.
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.8\textwidth]{handguiding_precise_positioning}
-    \caption{Collaborative robot with sensorized end--effector from 
-             \cite{benderLightweightRobotsManual2016}.}
-    \label{fig:hr-cooperation-levels}
-\end{figure}
+Existing robotic solutions that allow a human worker to hand--guide a robotic arm by grasping it wherever is most convenient are, to the best of the authors' knowledge, practically non--existent in assembly and packaging industries. When hand--guiding is discussed in literature, it is typically limited to sensorised end--effectors on conventional stiff robots. Collaborative robots that are adapted in industry are generally those without build in compliance. As stated before, collaborative robots are used for applications with little to no human contact where precision and repeatability is of more value than inherent compliance. \cite{gregorHandGuidingVirtual2021}\cite{hameedControlSystemDesign2023}.
+
+This absence in current industrial applications is further supported by surveys of end users, system integrators and researchers, which indicate that collaborative robots are still primarily implemented as traditional stiff robots with limited or no direct human interaction but with the added value that less space is needed to operate these robots \cite{montiniCollaborativeRoboticsSurvey2024}.
+
+Collaborative robots such as the UR30 from Universal Robots, and the CR-35iB from FANUC can handle payloads up to 30kg and 50kg respectively. Hand--guiding is mainly used for point based teaching, and path based teaching. The user can intuitively move the robot to a new point in space and record that position. This can be done for a singular point, or for a full path, in this case the robot records the full movement from start to finish while a button is pressed. It is however possible to correctly configure collaborative robots for weight compensation, but software is needed for correct calibration of the load attached to the end--effector. Although rare, some collaborative robots can estimate payload weight and center of mass by performing predefined controlled motions, but multiple interactions with the robot software controller are needed making this approach time consuming. This function however is not found often, and is often an optional software package and is not available for every collaborative robot, further proving that weight compensation of payloads of varying weights is mostly absent in industrial collaborative applications \cite{UR30CollaborativeRobot}\cite{CollaborativeRobotsCobots}\cite{groupHandGuidingRobots2021}\cite{ConfiguringFANUCRobot2026}. 
+
+\subsection{Industrial manipulators for weight compensation}
+
+Passive weight compensating manipulators are well established in industrial environments. By combining continuous force springs like coil springs or gas springs which can sometimes be adjusted, with load bearing joints, humans only have to provide a small force to move heavy objects. These are, as stated before, passive and can thus not be used for autonomous tasks. They are also pre-tuned for specific weights, and can only be used in a specific weight range. Pressurized air needs more maintenance then electric solutions and is also more expensive. I LL ADD TO THIS LATER
+
+
+\section{Problem Statement}
+
+
+
+
 
 \label{sec:problem_statement}
 
