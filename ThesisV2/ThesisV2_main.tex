@@ -393,7 +393,7 @@ IADs cannot only interact safely and compliantly with human operators, but can a
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{assemblyline}
+    \includegraphics[width=0.4\textwidth]{assemblyline}
     \caption{IAD integrated in an assembly line \cite{colgateIntelligentAssistDevices2003}.}
     \label{fig:spring-balancer}
 \end{figure}
@@ -406,15 +406,20 @@ Non--ergonomic load handling is the primary cause of musculoskeletal disorders i
 
 Intelligent assist devices offer semi--autonomous advantages to support payload manipulation. Gantry--style implementation cannot be used in buildings with limited ceiling heights or overhead obstructions. IADs are semi--autonomous solutions and can thus offer a higher degree of integration than passive devices.
 
-Collaborative robots require frequent software interaction to calibrate the system for different payloads or work modes. Although rare, it is possible for specific collaborative robots to go through predifined motions to estimate the weight of a payload rigidly attached to the end--effector, which also requires software programming and confirmation. Payloads also need to be fixed to the end--effector, which is not always possible for loads that vary in shape and size.
+Collaborative robots require frequent software interaction to calibrate the system for different payloads or work modes. Although rare, it is possible for specific collaborative robots to go through predefined motions to estimate the weight of a payload rigidly attached to the end--effector, which also requires software programming and confirmation. Payloads also need to be fixed to the end--effector, which is not always possible for loads that vary in shape and size.
 
 This thesis presents a three degree of freedom robotic testbench using novel, inherently compliant transmissions. This allows for the combination of an intrinsically safe design with real--time weight measurements and intuitive, software--free hand guidance at any point along the arm structure. This approach aims to combines the strengths of collaborative robots with passive or intelligent assist devices.
 
-The testbench provides a weight--optimized platform that allows for further validation of the novel transmission, offering data acquisition and a configureable controller written in C++ specificially for the approach of this thesis. 
+The testbench provides a weight--optimized platform that allows for further validation of the novel transmission, offering data acquisition and a configurable controller written in C++ specifically for the approach of this thesis. 
 \section{Thesis Outline}
 
+In Chapter~\ref{ch:literature}, the theoretical background on concepts relevant to this thesis is introduced, followed by an overview of the current state of the art in collaborative load--handling systems.\\
 
+In Chapter~\ref{ch:methodology}, the design of the robotic testbench is presented; this includes the mechanical design, hardware implementation, proposed controller, and data communication architecture.\\
 
+In Chapter~\ref{ch:validation}, the developed testbench and proposed controller are experimentally validated; this includes mechanical design validation and controller performance evaluation in interactive load--handling experiments.\\
+
+Chapter~\ref{ch:conclusion} summarizes the main conclusions  of this thesis, discusses limitations of the proposed system, and presents possible improvements for future development.
 % ============================================================
 \chapter{Literature Review}
 \label{ch:literature}
@@ -422,7 +427,16 @@ The testbench provides a weight--optimized platform that allows for further vali
 
 \section{Theoretical Background}
 
-\subsection{Example subsection}
+\subsection{Impedance control}
+
+\subsection{Series elastic actuator}
+
+\subsection{Disturbance observer}
+
+\subsection{ROS}
+
+\subsection{Docker}
+
 
 Example equation:
 \begin{equation}
@@ -434,8 +448,8 @@ Example equation:
 
 
 % ============================================================
-\chapter{System Design and Implementation}
-\label{ch:design}
+\chapter{Methodology}
+\label{ch:methodology}
 % ============================================================
 
 \section{System Overview and Requirements}
@@ -448,7 +462,7 @@ Example equation:
 
 \subsection{Sensor Architecture}
 
-\section{Sensor and Actuator Modelling}
+\section{Sensor and Actuator Modeling}
 
 \subsection{SET Spring Model}
 
@@ -492,7 +506,7 @@ while (running) {
 
 \subsection{Parameter Identification}
 
-\section{Spring and Sensor Characterisation}
+\section{Spring and Sensor Characterization}
 
 \section{Controller Performance}
 
