@@ -98,6 +98,8 @@
 \usepackage{setspace}
 \onehalfspacing
 
+\setlength{\parindent}{0pt}
+
 % ===== TABLE OF CONTENTS STYLING =====
 \usepackage{tocloft}
 \renewcommand{\cftchapfont}{\bfseries}
@@ -225,7 +227,7 @@
 
 \subsection{Musculoskeletal disorders and ergonomic work environments}
 
-Non-ergonomic work environments place strain on the human body, which can cause painful complications and limit the worker’s ability to perform tasks optimally. How these complications arise, which parts of the body are affected, and how they can be prevented are explained in this section.
+Non-ergonomic work environments place strain on the human body, which can cause painful complications and limit the worker’s ability to perform tasks optimally. Ergonomics can be defined as the study of work, where the goal is to fit tasks and jobs to workers’ capabilities, rather than forcing workers to adapt to the job. An ergonomic work environment therefore implements task-specific strategies to prevent reduced work ability. How these complications arise, which parts of the body are affected, and how they can be prevented are explained in this section. 
 
 The musculoskeletal system contains muscles, bones, joints and connective tissues like tendons and ligaments. Musculoskeletal disorders (MSDs) can therefore be defined as injuries of the muscles, nerves, tendons, joints, cartilage, and spinal discs. When these injuries are sustained or worsened by exposure to risk factors in the workplace, they are also known as work-related musculoskeletal disorders (WMSDs). These disorders can go from minor aches to severe pain and chronic illness requiring medical treatment, potentially preventing workers from performing physical tasks. 
 
@@ -247,27 +249,29 @@ MSDs can be caused by, for example:
 \end{itemize}
 \vspace{0.3cm}
 
+\newpage
+
 An increase in MSDs has been reported worldwide. This rise is partly attributed to improved recognition and reporting, but also to the tendency for work to be more segmented and specialized. This trend is driven by an increasingly competitive global economy, where fast-paced repetitive work environments are more widespread.
 
 \subsection{Industrial motivation for ergonomic improvement}
 
-Musculoskeletal disorders affect approximately one in three people worldwide. Within the European Union, MSDs represent the most costly health-related problems, affecting 45 million workers, many individuals are unable to continue working after the age of 60 due to these conditions, resulting in billions of euros in lost revenue and a substantial burden on the public healthcare system.
+Musculoskeletal disorders affect approximately one in three people worldwide. Within the European Union, MSDs represent the most costly health-related problems, affecting 45 million workers. Many individuals are unable to continue working beyond the age of 60 due to these conditions, resulting in billions of euros in lost revenue and a substantial burden on the public healthcare system.
 
-A declining physical condition can also lead to mental health issues such as depression or frustration, resulting in reduced job satisfaction and indirectly lower work performance, even when workers are still physically able to continue working.
+A declining physical condition can also lead to mental health issues such as depression or frustration, resulting in reduced job satisfaction and, indirectly, lower work performance, even when workers are still physically able to continue working.
 
-The increase in education in the workforce, combined with higher expectations regarding job satisfaction, has reduced workers' tolerance for WMSDs. An ergonomic work environment can prevent the development of WMSDs and directly reduce both the cost to companies due to sick leave and the societal impact. Ergonomics can be defined as the study of work, where the goal is to fit tasks and jobs to workers’ capabilities, rather then forcing workers to adapt to the job. An ergonomic work environment therefore implements task-specific strategies to prevent reduced work ability. 
+The increase in education in the workforce, combined with higher expectations regarding job satisfaction, has reduced workers' tolerance for WMSDs. An ergonomic work environment can prevent the development of WMSDs and directly reduce both the cost to companies due to sick leave and the societal impact.  
 
-Reduced work ability can be categorized in absenteeism and presenteeism. Absenteeism refers to the absence from work due to injuries sustained on the job. Presenteeism describes the situation in which workers continue to attend their expected working duties despite existing injuries, often due to concerns about job security. In such cases, work is performed
-in a self–protective manner to reduce physical strain.
+Reduced work ability can be categorized into absenteeism and presenteeism. Absenteeism refers to the absence from work due to injuries sustained on the job. Presenteeism describes the situation in which workers continue to attend their expected work duties despite existing injuries, often due to concerns about job security. In such cases, work is performed
+in a self--protective manner to reduce physical strain.
 
 In Belgium, 2.5 million people were affected by MSDs in 2018 (approximately 62\% of the Belgian working population in 2015), resulting in 3 billion euros in direct medical costs and 2 billion in work absenteeism, corresponding to 0.3\% of Belgium's gross domestic product
 \cite{oralEvaluationAbsenteeismPresenteeism2024}\cite{yassiRepetitiveStrainInjuries}\cite{vilellaMusculoskeletalExamination}\cite{ibvMusculoskeletalDisordersCaused2017}\cite{gorassoHealthEconomicBurden2023}.
 
 \subsection{Physical human--robot interaction}
 
-There is a clear need to address reduced work efficiency resulting from physical injuries since this improves the quality of life of an increasingly aging workforce, but also to reduce the impact on social welfare systems and increase overall economic productivity. Industry has already adapted robotic solutions to achieve accuracy, speed, and repeatability that human workers cannot provide. Humans, however, can provide flexibility and have the capability to react to unforeseen circumstances. By increasing the degree of human participation, the strength and repeatability of robots is combined with the adaptability and decision making skills of humans. This schematic shown below illustrates the different workspaces in which robot and human operate.
+There is a clear need to address reduced work efficiency resulting from physical injuries since this improves the quality of life of an increasingly older workforce, while also reducing the impact on social welfare systems and increasing overall economic productivity. Industry has already adopted robotic solutions to achieve accuracy, speed, and repeatability that human workers cannot provide. Humans, however, provide flexibility and have the capability to react to unforeseen circumstances. By increasing the degree of human participation, the strength and repeatability of robots are combined with the adaptability and decision--making skills of humans. Humans and robots each operate in their respective workspaces to perform their tasks, and in some cases share the same workspace, as illustrated in Figure~\ref{fig:workspaces}.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{workspaces}
     \caption{Human, robot, and shared workspace from Fraunhofer
@@ -275,9 +279,9 @@ There is a clear need to address reduced work efficiency resulting from physical
     \label{fig:workspaces}
 \end{figure}
 
-Human--robot cooperation generally refers to the use of robots without safety fencing, also called cage--free robots. This in contrast to traditional robots which are stiff, heavy, and lack safety features that allow them to safely operate in the same space as humans, and are consequently only allowed to operate in closed of workspaces.
+Human--robot cooperation generally refers to the use of robots without safety fencing, also called cage--free robots. This is in contrast to traditional robots which are stiff, heavy, and lack safety features that allow them to operate in the same space as humans, and are consequently only allowed to operate in closed --off workspaces.
 
-Human and robot can work together in different types of operation, as illustrated in Figure~\ref{fig:hr-cooperation-levels}.
+Humans and robots can work together in different types of operation, as illustrated in Figure~\ref{fig:hr-cooperation-levels}.
 
 \begin{figure}[htbp]
     \centering
@@ -291,19 +295,19 @@ From left to right an increasing level of interaction is shown.
 
 \vspace{0.2cm} 
 \begin{itemize}[noitemsep, topsep=0pt]
-	\item Cell: Robot operates in traditional cage, fenced of from human contact
+	\item Cell: Robot operates in traditional cage, fenced--off from human contact
 	\item Coexistence: Human and cage--free robot work at the same time, but in different workspaces
-	\item Synchronized: Human and cage--free robot work in the same workspace, but one at a time
-	\item Cooperation: Human and cage--free robot have tasks in the same workspace at the same time, but to do not work together on the same task
+	\item Synchronized: Humans and cage--free robots work in the same workspace, but one at a time
+	\item Cooperation: Human and cage--free robot have tasks in the same workspace at the same time, but do not work together on the same task
 	\item Collaboration: Human and cage--free robot work in the same workspace on the same task
 \end{itemize}
 \vspace{0.3cm}
 
-The robotic testbench that was built in this thesis falls under coexistence and collaboration depending on how it is implemented. This is clarified in chapter x?
+The robotic testbench developed in this thesis operates in collaboration mode during assisted load handling, when the human operator physically guides the robotic arm, and in coexistence mode during the floating stand--by state, when no physical interaction is taking place. This distinction is further clarified in chapter (idk exactly for now).
 
 Collaborative robots, defined as robots capable of performing collaborative tasks as described above, are widely used in industry. However, they are still primarily applied in traditional robotic operations such as pick--and--place tasks. In many cases, humans and robots remain either physically separated or operate in a coexistence mode, where no physical barrier is present but no direct interaction takes place. Such implementations are only economically viable for large batch sizes, since a whole production line needs to be tuned towards that specific robotic solution. 
 
-Cage--free robotic arms that share a workspace with a human worker are introduced to increase production flexibility. Interactive robotic solutions for small batches and varying product sizes has become a clear need since 70\% of collaboration between human worker and robotic solutions are found in assembly applications. An industry survey reported that 86\% of respondents were willing to invest in robotic solutions, indicating strong industrial interest. The primary motivations for introducing robotic arms in assembly environments are:
+Cage--free robotic arms that share a workspace with a human worker are introduced to increase production flexibility. Interactive robotic solutions for small batches and varying product sizes have become a clear need since 70\% of collaboration between human workers and robots occurs in assembly applications. An industry survey reported that 86\% of respondents were willing to invest in robotic solutions, indicating strong industrial interest. The primary motivations for introducing robotic arms in assembly environments are:
 
 \vspace{0.2cm} 
 \begin{itemize}[noitemsep, topsep=0pt]
@@ -312,57 +316,103 @@ Cage--free robotic arms that share a workspace with a human worker are introduce
 \end{itemize}
 \vspace{0.3cm}
 
-Cage--free robotic solutions generally involve higher initial costs compared to traditional fenced systems due to safety certification requirements and conformity procedures to minimize the risk of injuries. Companies are however often willing to accept longer payback periods for implementing and testing company specific robotic solutions which increase ergonomics \cite{benderLightweightRobotsManual2016}\cite{europeanparliament.directorategeneralforparliamentaryresearchservices.AnalysisExploringRisks2023}.
+Cage--free robotic solutions generally involve higher initial costs compared to traditional fenced systems due to safety certification requirements and conformity procedures to minimize the risk of injuries. However, companies are often willing to accept longer payback periods for implementing and testing company--specific robotic solutions which increase ergonomics \cite{benderLightweightRobotsManual2016}\cite{europeanparliament.directorategeneralforparliamentaryresearchservices.AnalysisExploringRisks2023}.
 
-Normative ISO/TS 15066 covers the safety requirements for collaborative operations between human worker and robot. This normative classifies four different collaborative operations modes \cite{rosenstrauchHumanRobotCollaboration2018}\cite{chemwenoOrientingSafetyAssurance2020}: 
+ISO/TS 15066 covers the safety requirements for collaborative operations between human workers and robots. This normative classifies four different collaborative operations modes \cite{rosenstrauchHumanRobotCollaboration2018}\cite{chemwenoOrientingSafetyAssurance2020}: 
 
 \vspace{0.2cm} 
 \begin{itemize}[noitemsep, topsep=0pt]
-	\item Safety--rated monitor stop
-	\item Hand--guiding
+	\item Safety--rated monitored stop
+	\item Hand guiding
 	\item Power and force limiting
 	\item Speed and separation monitoring
 \end{itemize}
 \vspace{0.3cm}
 
-Safety--rated monitored stop
-The robot operates at its rated speed when a human is not present in the collaborative workspace. When a human enters the workspace, which can be detected by various means like laser scanners or light curtains, the robot undergoes a complete stop. As long as the human is in the workspace, the robot will not operate. Only by leaving the workspace and resetting the safety stop can operation continue.
+\smalltitle{Safety--rated monitored stop}
+The robot operates at its rated speed when a human is not present in the collaborative workspace. When a human enters the workspace, which can be detected by various means like laser scanners or light curtains, the robot undergoes a complete stop. As long as the human is in the workspace, the robot will not operate. Only by leaving the workspace and resetting the safety stop, can operation continue.
 
-Hand--guiding
-Hand--guided robotic applications are defined as a direct physical interaction between human and robot, where the human operator has full control over the robot motion. In this approach, a direct input device is located at or near the end--effector to measure input forces and simultaneously define the position of the human in the shared workspace. The robot must be in a monitored stop before hand--guiding can be activated via an enabling device. Safety requirements for this mode include force and or torque sensing at the guiding point, emergency stop accessible from the position where the robot is being guided, which is typically at the end--effector, and a maximum speed limit during guided motion.
+\smalltitle{Hand guiding}
+Hand guided robotic applications are defined as a direct physical interaction between humans and robots, where the human operator has full control over the robot's motion. In this approach, a direct input device is located at or near the end--effector to measure input forces and simultaneously define the position of the human in the shared workspace. The robot must be in a monitored stop before hand guiding can be activated via an enabling device. Safety requirements for this mode include force and/or torque sensing at the guiding point, emergency stop accessible from the position where the robot is being guided, which is typically at the end--effector, and a maximum speed limit during guided motion.
 
-Power and force limiting
-This mode is the most commonly associated with collaborative robots. The robots' software and hardware are designed in such a way that any contact with a human cannot result in injury. Low robot mass, rounded surfaces and padding combined with active force and torque sensing, which limits contact forces with its environment below set thresholds depending on the body region of the human that can be in contact with the robot.
+\smalltitle{Power and force limiting}
+This mode is the most commonly associated with collaborative robots. The robot's software and hardware are designed in such a way that any contact with a human cannot result in injury. Low robot mass, rounded surfaces, and padding are combined with active force and torque sensing, which limits contact forces with the environment below defined thresholds depending on the body region of the human that can be in contact with the robot.
 
-Speed and separation monitoring
-Robot and human can operate in the same workspace at the same time, but the position and speed of the human and robot relative to each other is constantly monitored to adjust the speed of the robot with the goal of constantly having a minimum dynamical separation distance at all times. 
+\smalltitle{Speed and separation monitoring}
+Robots and humans can operate in the same workspace at the same time, but the position and speed of the human and robot relative to each other is constantly monitored to adjust the speed of the robot with the goal of constantly having a minimum dynamical separation distance at all times. \\
 
-Hand--guiding is useful for packaging and assembly applications since it combines the physical strength of robotic arms, which can compensate the weight of components or help with moving relatively light but large components, with human intelligence.
+Hand guiding is useful for packaging and assembly applications since it combines the physical strength of robotic arms, which can compensate for the weight of components or help with move relatively light but large components, with human intelligence.
 
-ISO/TS 15066 specifies that the hand--guiding devices should be located at or near the robot end--effector. (not sure if its hand guiding or hand--guiding) 
+ISO/TS 15066 specifies that the hand--guiding devices should be located at or near the robot end--effector, structurally restricting compliant interaction to a single designated contact point. Collisions or attempted handling of the robotic arm elsewhere will result in a safety stop \cite{sicilianoSpringerHandbookRobotics2016a}.
 
-A direct consequence of this approach is that robotic applications with sensorised end--effectors can only react in a passive compliant manner when handled at a specific point on the robotic arm. Collisions or attempted handling of the robotic arm elsewhere will result in a safety stop of the robotic arm \cite{sicilianoSpringerHandbookRobotics2016a}.
+Existing robotic solutions that allow a human worker to hand guide a robotic arm while simultaneously identifying and compensating for payloads of unknown variable weights, without requiring prior software configuration, are to the best of the author's knowledge, not available in assembly and packaging industries. When hand guiding is discussed in literature, it is typically limited to sensorized end--effectors on conventional stiff robots. Collaborative robots adopted in industry generally lack build--in compliance. As previously stated, collaborative robots are used for applications with little to no human contact, where precision and repeatability is more important than inherent compliance. \cite{gregorHandGuidingVirtual2021}\cite{hameedControlSystemDesign2023}.
 
-Existing robotic solutions that allow a human worker to hand--guide a robotic arm by grasping it wherever is most convenient are, to the best of the authors' knowledge, practically non--existent in assembly and packaging industries. When hand--guiding is discussed in literature, it is typically limited to sensorised end--effectors on conventional stiff robots. Collaborative robots that are adapted in industry are generally those without build in compliance. As stated before, collaborative robots are used for applications with little to no human contact where precision and repeatability is of more value than inherent compliance. \cite{gregorHandGuidingVirtual2021}\cite{hameedControlSystemDesign2023}.
+This absence in current industrial applications is further supported by surveys of end users, system integrators and researchers, which indicate that collaborative robots are still primarily used as conventional stiff robots with limited or no direct human interaction, while offering the added value of less space requirements for operation \cite{montiniCollaborativeRoboticsSurvey2024}.
 
-This absence in current industrial applications is further supported by surveys of end users, system integrators and researchers, which indicate that collaborative robots are still primarily implemented as traditional stiff robots with limited or no direct human interaction but with the added value that less space is needed to operate these robots \cite{montiniCollaborativeRoboticsSurvey2024}.
+Current collaborative robots with the highest payloads, such as the UR30 from Universal Robots and the CR-35iB from FANUC, can handle loads up to 30kg and 50kg respectively. Still, hand guiding is mainly used for point-- and path--based teaching and not for weight compensation tasks in hand guiding applications. The user can intuitively move the robot to a new point in space and record that position. This can be done for a single point or for a full path; in this case the robot records the continuous movement while a button is pressed. It is, however, possible to correctly configure collaborative robots for weight compensation, but software is required for correct calibration of the load attached to the end--effector. Although rare, some collaborative robots can estimate payload weight and center of mass by performing predefined controlled motions, but multiple interactions with the software controller are needed, making this approach time--consuming. This method is not generally available, and is often part of an optional software package that is not compatible with every collaborative robot. This confirms that automatic real--time payload identification without software interaction is not a standard feature of current collaborative platforms deployed in assembly and packaging contexts industries, representing a key limitation addressed by this thesis \cite{UR30CollaborativeRobot}\cite{CollaborativeRobotsCobots}\cite{groupHandGuidingRobots2021}\cite{ConfiguringFANUCRobot2026}. 
 
-Collaborative robots such as the UR30 from Universal Robots, and the CR-35iB from FANUC can handle payloads up to 30kg and 50kg respectively. Hand--guiding is mainly used for point based teaching, and path based teaching. The user can intuitively move the robot to a new point in space and record that position. This can be done for a singular point, or for a full path, in this case the robot records the full movement from start to finish while a button is pressed. It is however possible to correctly configure collaborative robots for weight compensation, but software is needed for correct calibration of the load attached to the end--effector. Although rare, some collaborative robots can estimate payload weight and center of mass by performing predefined controlled motions, but multiple interactions with the robot software controller are needed making this approach time consuming. This function however is not found often, and is often an optional software package and is not available for every collaborative robot, further proving that weight compensation of payloads of varying weights is mostly absent in industrial collaborative applications \cite{UR30CollaborativeRobot}\cite{CollaborativeRobotsCobots}\cite{groupHandGuidingRobots2021}\cite{ConfiguringFANUCRobot2026}. 
+\subsection{Weight assisting devices}
+\label{subsec:weight_assisting_devices}
+Passive weight compensating manipulators are well established in industrial environments to help human workers perform their tasks in a more ergonomically sustainable way. These devices, if well calibrated, allow payloads to be moved around with minimal effort, offering passive, purely mechanically sourced weight compensation, effectively combining software--free and intuitive use. These manipulators however share a fundamental limitation; they only operate efficiently only within a pre-tuned weight range. The further a payload differs from the equilibrium point, the more force the human operator will have to deliver to move the load fixed to the manipulator. As a direct consequence, varying payloads that are too different in weight cannot be manipulated with these devices without manually re--tuning the counter--force system, for example counterweights and gas springs \cite{arakelianGRAVITYCOMPENSATIONROBOTICS2019}. The proposed system replicates the intuitive, software--free interaction properties of a passive balancer, while adding real--time load identification and the possibility to perform autonomous tasks, integrating this solution into the production line. Some commercially available examples support this claim. 
 
-\subsection{Industrial manipulators for weight compensation}
+\newpage
 
-Passive weight compensating manipulators are well established in industrial environments. By combining continuous force springs like coil springs or gas springs which can sometimes be adjusted, with load bearing joints, humans only have to provide a small force to move heavy objects. These are, as stated before, passive and can thus not be used for autonomous tasks. They are also pre-tuned for specific weights, and can only be used in a specific weight range. Pressurized air needs more maintenance then electric solutions and is also more expensive. I LL ADD TO THIS LATER
+The company 3ARM produces commercially available weight compensating manipulators, an example of which shown in Figure ~\ref{fig:3arm_manipulator}. Pneumatic gas springs are used to compensate weights within a minimum and maximum payload limit. The gas springs can be manually tuned to compensate for different weight classes \cite{IndustrialLiftAssist}. Figure ~\ref{fig:Gas-spring-characteristic} presents an example of a gas spring characteristic. By adjusting the filling pressure, the spring can optimized for different payloads scenarios \cite{CataloguesUserManuals}.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{3arm}
+    \caption{3ARM manipulator
+             \cite{IndustrialLiftAssist}.}
+    \label{fig:3arm_manipulator}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Gasspringcharacteristic}
+    \caption{Gas spring characteristic by Suspa \cite{CataloguesUserManuals}.}
+    \label{fig:Gas-spring-characteristic}
+\end{figure}
+
+\newpage
+
+Transprotec offers spring balancers, showh in Figure ~\ref{fig:spring-balancer}, that are tuned to a specific weight, load changes are not permitted to guarantee safety and correct operation \cite{SpringBalancerBalancer}. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.1\textwidth]{Springbalancer}
+    \caption{Spring balancer from Transprotec \cite{SpringBalancerBalancer}.}
+    \label{fig:spring-balancer}
+\end{figure}
+
+\subsection{Intelligent Assist Devices}
+
+The robotic testbench proposed in this thesis belongs to the category of Intelligent Assist Devices (IADs). These are described as computer--controlled, servo--driven tools that enable human workers to manipulate payloads in a safe and ergonomic way. This differentiates IADs from the devices described in Section~\ref{subsec:weight_assisting_devices}, which were completely passive. IADs were introduced to increase productivity and mitigate non--ergonomic work environments, a major issue in societies with an aging workforce. Currently, the term IADs is not commonly used anymore, as it has been subsumed under the modern term collaborative robots \cite{Cobot2026}. When IADs are mentioned today, they primarily appear as overhead gantry--mounted installations. While IADs can be effective in dedicated production cells with sufficient overhead clearance, they are unsuitable for industrial environments where ceiling height is limited, or overhead obstructions are present. 
+
+IADs cannot only interact safely and compliantly with human operators, but can also actively follow a predefined path. An example of this semi--autonomous strategy can be found in the automotive industry, where the controller guides the payload along a moving assembly line so that the human operator can focus on correctly installing the part into the assembly, rather than continuously repositioning the payload, as shown in Figure~\ref{fig:spring-balancer}\cite{IndustrialManipulatorsLoad}\cite{colgateIntelligentAssistDevices2003}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assemblyline}
+    \caption{IAD integrated in an assembly line \cite{colgateIntelligentAssistDevices2003}.}
+    \label{fig:spring-balancer}
+\end{figure}
+
+\newpage
 
 \section{Problem Statement}
 
+Non--ergonomic load handling is the primary cause of musculoskeletal disorders in packaging and assembly industries. Passive weight compensating devices are well established in industry with the goal of reducing this physical strain on the human body; these devices however cannot adapt to varying payloads and provide no sensing, intelligence, or active integration with production lines.
 
+Intelligent assist devices offer semi--autonomous advantages to support payload manipulation. Gantry--style implementation cannot be used in buildings with limited ceiling heights or overhead obstructions. IADs are semi--autonomous solutions and can thus offer a higher degree of integration than passive devices.
 
+Collaborative robots require frequent software interaction to calibrate the system for different payloads or work modes. Although rare, it is possible for specific collaborative robots to go through predifined motions to estimate the weight of a payload rigidly attached to the end--effector, which also requires software programming and confirmation. Payloads also need to be fixed to the end--effector, which is not always possible for loads that vary in shape and size.
 
+This thesis presents a three degree of freedom robotic testbench using novel, inherently compliant transmissions. This allows for the combination of an intrinsically safe design with real--time weight measurements and intuitive, software--free hand guidance at any point along the arm structure. This approach aims to combines the strengths of collaborative robots with passive or intelligent assist devices.
 
-\label{sec:problem_statement}
-
+The testbench provides a weight--optimized platform that allows for further validation of the novel transmission, offering data acquisition and a configureable controller written in C++ specificially for the approach of this thesis. 
 \section{Thesis Outline}
+
 
 
 % ============================================================
@@ -380,15 +430,7 @@ Example equation:
     \label{eq:spring}
 \end{equation}
 
-\subsection{Another subsection}
-
 \section{State of the Art}
-
-\section{Gap Analysis}
-
-Intrinsic safe robot
-Grasp wherever you want
-3dof enough for packaging applications, no need for more dof
 
 
 % ============================================================
