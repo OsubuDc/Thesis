@@ -150,7 +150,7 @@
     {\large Faculty of Engineering Technology\par}
     \vspace{2.5cm}
 
-    {\Huge\bfseries Your Thesis Title Here\par}   % <-- update
+    {\Huge\bfseries Implementation of a novel compliant transmission in a 3 DoF robotic testbench for collaborative hand guiding tasks\par}   % <-- update
     \vspace{0.5cm}
     \rule{10cm}{0.4pt}\par
     \vspace{3cm}
@@ -345,7 +345,7 @@ Hand guiding is useful for packaging and assembly applications since it combines
 
 ISO/TS 15066 specifies that the hand--guiding devices should be located at or near the robot end--effector, structurally restricting compliant interaction to a single designated contact point. Collisions or attempted handling of the robotic arm elsewhere will result in a safety stop \cite{sicilianoSpringerHandbookRobotics2016a}.
 
-Existing robotic solutions that allow a human worker to hand guide a robotic arm while simultaneously identifying and compensating for payloads of unknown variable weights, without requiring prior software configuration, are to the best of the author's knowledge, not available in assembly and packaging industries. When hand guiding is discussed in literature, it is typically limited to sensorized end--effectors on conventional stiff robots. Collaborative robots adopted in industry generally lack build--in compliance. As previously stated, collaborative robots are used for applications with little to no human contact, where precision and repeatability is more important than inherent compliance. \cite{gregorHandGuidingVirtual2021}\cite{hameedControlSystemDesign2023}.
+Existing robotic solutions that allow a human worker to hand guide a robotic arm while simultaneously identifying and compensating for payloads of unknown variable weights, without requiring prior software configuration, are to the best of the author's knowledge, not available in assembly and packaging industries. When hand guiding is discussed in literature, it is typically limited to sensorized end--effectors on conventional stiff robots. Collaborative robots adopted in industry generally lack build--in compliance. As previously stated, collaborative robots are used for applications with little to no human contact, where precision and repeatability is more important than inherent compliance \cite{gregorHandGuidingVirtual2021}\cite{hameedControlSystemDesign2023}.
 
 This absence in current industrial applications is further supported by surveys of end users, system integrators and researchers, which indicate that collaborative robots are still primarily used as conventional stiff robots with limited or no direct human interaction, while offering the added value of less space requirements for operation \cite{montiniCollaborativeRoboticsSurvey2024}.
 
@@ -428,6 +428,78 @@ Chapter~\ref{ch:conclusion} summarizes the main conclusions  of this thesis, dis
 \section{Theoretical Background}
 
 \subsection{Impedance control}
+
+Impedance control is used in most workspaces that involve human--robot interaction. The interaction forces of the robotic structure with the environment can be regulated by adjusting the felt mechanical impedance. Mechanical impedance can be defined as the ratio of the output force to the input velocity. It represents how much the robotic structure resists motion when an external force is applied.
+
+\begin{equation}
+    Z(s) = \frac{F(s)}{v(s)}
+    \label{eq:impedance_definition}
+\end{equation}
+
+As its inverse, mechanical admittance can be defined as the ratio of input velocity to the output force.
+
+\begin{equation}
+    Y(s) = \frac{v(s)}{F(s)} = \frac{1}{Z(s)}
+    \label{eq:admittance_definition}
+\end{equation}
+
+The robotic structure generates reaction forces in response to deviations from its current position due to effects like friction and inertia. The environment, on the other hand, typically moves or deforms when external forces are applied. This concept becomes clear when imagining a trolley, which moves in response to the applied force, or compressing a pillow, which deforms under pressure. Consequently, the robotic structure is generally expected to behave as an impedance, while the environment behaves as an admittance. However, this destinction depends on the mechanical properties of both the robotic structure and the environment, as well as the modeled interaction between them. Figure~\ref{fig:impedance_control} illustrates a stiff robotic structure interacting with its environment. The schematic at the end--effector demonstrates how impedance control can modify the apparent impedance perceived by the environment.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{impedance_control}
+    \caption{Impedance control for robotic structure in contact with an environment \cite{al-shukaActiveImpedanceControl2018}.}
+    \label{fig:impedance_control}
+\end{figure}
+
+Impedance control mirrors the ability of the human body to change its mechanical impedance by tensioning its muscles. To guarantee safe interaction between a robotic structure and its environment, one of the two bodies should be compliant relative to the other. Most collaborative robots lack the ability to dynamically change their mechanical impedance. Therefore, safe interaction between between a robot and an unknown environment cannot be guaranteed. Impedance control allows for a user--defined, dynamic relationship between the trajectory of the end--effector and the contact forces from the environment; allowing stiff robotic structures to compliantly react to their environment.
+
+The mathematical derivation for impedance control starts by considering a second--order system:
+
+\begin{equation}
+    m\,\ddot{x} + b\,\dot{x} + k\,x = u + f_{e}
+    \label{eq:plant_dynamics}
+\end{equation}
+
+In this equation, $m$ represents the system mass, $b$ the damping coefficient, $k$ the stiffness coefficient,, $u$ the control input generated by the controller, and $f_e$ is an external force applied to the system. As stated before, the idea behind impedance control is to change the apparent impedance of a mechanical  system. By defining a target impedance, the mechanical impedance of the system can be modified.
+
+\begin{equation}
+    m_{d}\,(\ddot{x}-\ddot{x}_{r})
+    + b_{d}\,(\dot{x}-\dot{x}_{r})
+    + k_{d}\,(x-x_{r})
+    = f_{e},
+    \label{eq:target_impedance}
+\end{equation}
+
+In equation~\ref{eq:target_impedance}, $m_d$, $b_d$, and $k_d$ respectively represent the desired inertia, damping, and stiffness of the system. Force--based impedance control and position--based impedance control are 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{generalapproachimpedancecontrol}
+    \caption{General classification of the impedance control approaches \cite{al-shukaActiveImpedanceControl2018}.}
+    \label{fig:impedance_control_appr}
+\end{figure}
+
+The conventional approaches are discussed in this thesis, since this suffies for a conceptual understanding of the concept. 
+
+\subparagraph{Force--based impedance control}
+
+In force--based impedance control, the control input generated by the controller $u$, is a force or torque. Substituting~\eqref{eq:target_impedance} into plant dynamics ~\eqref{eq:plant_dynamics}, the following control system is derived.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{impedance_control_u}
+    \caption{Mass--spring--damper system\cite{al-shukaActiveImpedanceControl2018}.}
+    \label{fig:impedance_control_appr}
+\end{figure}
+
+\subparagraph{Position/velocity--based impedance control}
+
+\section{State of the Art}
+
+Impedance control is a control strategy used for collaborative robots. It allows stiff robotic arms to react in a safe, compliant manner to external disturbances. The controller reacts to motion deviation by generating forces. There are two conventional impedance controlers that are discussed in this thesis, which is enough to grasp the general idea of this concept. A general classification of impedance control approaches is shown in Figure~\ref{fig:impedance_control_appr}.
+
+
 
 \subsection{Series elastic actuator}
 

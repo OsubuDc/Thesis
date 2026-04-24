@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.10" bltxversion="3.19" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.8" bltxversion="3.17" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -37,11 +37,6 @@
     <bcf:option type="singlevalued">
       <bcf:key>alphaothers</bcf:key>
       <bcf:value>+</bcf:value>
-    </bcf:option>
-    <bcf:option type="multivalued">
-      <bcf:key>extradatecontext</bcf:key>
-      <bcf:value order="1">labelname</bcf:value>
-      <bcf:value order="2">labeltitle</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labelalpha</bcf:key>
@@ -140,10 +135,6 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>nosortothers</bcf:key>
-      <bcf:value>0</bcf:value>
-    </bcf:option>
-    <bcf:option type="singlevalued">
-      <bcf:key>pluralothers</bcf:key>
       <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
@@ -281,11 +272,6 @@
   </bcf:options>
   <!-- online -->
   <bcf:options component="biblatex" type="online">
-    <bcf:option type="multivalued">
-      <bcf:key>extradatecontext</bcf:key>
-      <bcf:value order="1">labelname</bcf:value>
-      <bcf:value order="2">labeltitle</bcf:value>
-    </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labelalpha</bcf:key>
       <bcf:value>0</bcf:value>
@@ -386,11 +372,11 @@
       <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
-      <bcf:key>skipbiblist</bcf:key>
+      <bcf:key>skiplab</bcf:key>
       <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
-      <bcf:key>skiplab</bcf:key>
+      <bcf:key>skipbiblist</bcf:key>
       <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
@@ -505,7 +491,6 @@
     <bcf:option datatype="xml">sortingnamekeytemplate</bcf:option>
     <bcf:option datatype="xml">sortingtemplate</bcf:option>
     <bcf:option datatype="xml">extradatespec</bcf:option>
-    <bcf:option datatype="xml">extradatecontext</bcf:option>
     <bcf:option datatype="xml">labelnamespec</bcf:option>
     <bcf:option datatype="xml">labeltitlespec</bcf:option>
     <bcf:option datatype="xml">labeldatespec</bcf:option>
@@ -614,7 +599,6 @@
     <bcf:option datatype="boolean">labeltitle</bcf:option>
     <bcf:option datatype="boolean">labeltitleyear</bcf:option>
     <bcf:option datatype="boolean">labeldateparts</bcf:option>
-    <bcf:option datatype="boolean">pluralothers</bcf:option>
     <bcf:option datatype="boolean">nohashothers</bcf:option>
     <bcf:option datatype="boolean">nosortothers</bcf:option>
     <bcf:option datatype="boolean">noroman</bcf:option>
@@ -732,7 +716,6 @@
     <bcf:option datatype="xml">translit</bcf:option>
     <bcf:option datatype="xml">sortexclusion</bcf:option>
     <bcf:option datatype="xml">sortinclusion</bcf:option>
-    <bcf:option datatype="xml">extradatecontext</bcf:option>
     <bcf:option datatype="xml">labelnamespec</bcf:option>
     <bcf:option datatype="xml">labeltitlespec</bcf:option>
     <bcf:option datatype="xml">labeldatespec</bcf:option>
@@ -1064,7 +1047,7 @@
     <bcf:namepart order="3">given</bcf:namepart>
   </bcf:uniquenametemplate>
   <!-- SORTING NAME KEY TEMPLATES -->
-  <bcf:sortingnamekeytemplate name="global" visibility="sort">
+  <bcf:sortingnamekeytemplate name="global">
     <bcf:keypart order="1">
       <bcf:part type="namepart" order="1" use="1">prefix</bcf:part>
       <bcf:part type="namepart" order="2">family</bcf:part>
@@ -2365,50 +2348,78 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="7" intorder="1">oralEvaluationAbsenteeismPresenteeism2024</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">yassiRepetitiveStrainInjuries</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">vilellaMusculoskeletalExamination</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">ibvMusculoskeletalDisordersCaused2017</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">gorassoHealthEconomicBurden2023</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">benderLightweightRobotsManual2016</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">benderLightweightRobotsManual2016</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">benderLightweightRobotsManual2016</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">benderLightweightRobotsManual2016</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">benderLightweightRobotsManual2016</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">europeanparliament.directorategeneralforparliamentaryresearchservices.AnalysisExploringRisks2023</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">rosenstrauchHumanRobotCollaboration2018</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">chemwenoOrientingSafetyAssurance2020</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">sicilianoSpringerHandbookRobotics2016a</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">gregorHandGuidingVirtual2021</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">hameedControlSystemDesign2023</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">montiniCollaborativeRoboticsSurvey2024</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">UR30CollaborativeRobot</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">CollaborativeRobotsCobots</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">groupHandGuidingRobots2021</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">ConfiguringFANUCRobot2026</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">arakelianGRAVITYCOMPENSATIONROBOTICS2019</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">IndustrialLiftAssist</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">CataloguesUserManuals</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">IndustrialLiftAssist</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">IndustrialLiftAssist</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">CataloguesUserManuals</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">CataloguesUserManuals</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">SpringBalancerBalancer</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">SpringBalancerBalancer</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">SpringBalancerBalancer</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">Cobot2026</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">IndustrialManipulatorsLoad</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">colgateIntelligentAssistDevices2003</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">colgateIntelligentAssistDevices2003</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">colgateIntelligentAssistDevices2003</bcf:citekey>
+    <bcf:citekey order="10">oralEvaluationAbsenteeismPresenteeism2024</bcf:citekey>
+    <bcf:citekey order="11">yassiRepetitiveStrainInjuries</bcf:citekey>
+    <bcf:citekey order="12">vilellaMusculoskeletalExamination</bcf:citekey>
+    <bcf:citekey order="13">ibvMusculoskeletalDisordersCaused2017</bcf:citekey>
+    <bcf:citekey order="14">gorassoHealthEconomicBurden2023</bcf:citekey>
+    <bcf:citekey order="15">benderLightweightRobotsManual2016</bcf:citekey>
+    <bcf:citekey order="16">benderLightweightRobotsManual2016</bcf:citekey>
+    <bcf:citekey order="17">benderLightweightRobotsManual2016</bcf:citekey>
+    <bcf:citekey order="18">benderLightweightRobotsManual2016</bcf:citekey>
+    <bcf:citekey order="19">benderLightweightRobotsManual2016</bcf:citekey>
+    <bcf:citekey order="20">europeanparliament.directorategeneralforparliamentaryresearchservices.AnalysisExploringRisks2023</bcf:citekey>
+    <bcf:citekey order="21">rosenstrauchHumanRobotCollaboration2018</bcf:citekey>
+    <bcf:citekey order="22">chemwenoOrientingSafetyAssurance2020</bcf:citekey>
+    <bcf:citekey order="23">sicilianoSpringerHandbookRobotics2016a</bcf:citekey>
+    <bcf:citekey order="24">gregorHandGuidingVirtual2021</bcf:citekey>
+    <bcf:citekey order="25">hameedControlSystemDesign2023</bcf:citekey>
+    <bcf:citekey order="26">montiniCollaborativeRoboticsSurvey2024</bcf:citekey>
+    <bcf:citekey order="27">UR30CollaborativeRobot</bcf:citekey>
+    <bcf:citekey order="28">CollaborativeRobotsCobots</bcf:citekey>
+    <bcf:citekey order="29">groupHandGuidingRobots2021</bcf:citekey>
+    <bcf:citekey order="30">ConfiguringFANUCRobot2026</bcf:citekey>
+    <bcf:citekey order="31">arakelianGRAVITYCOMPENSATIONROBOTICS2019</bcf:citekey>
+    <bcf:citekey order="32">IndustrialLiftAssist</bcf:citekey>
+    <bcf:citekey order="33">CataloguesUserManuals</bcf:citekey>
+    <bcf:citekey order="34">IndustrialLiftAssist</bcf:citekey>
+    <bcf:citekey order="35">IndustrialLiftAssist</bcf:citekey>
+    <bcf:citekey order="36">CataloguesUserManuals</bcf:citekey>
+    <bcf:citekey order="37">CataloguesUserManuals</bcf:citekey>
+    <bcf:citekey order="38">SpringBalancerBalancer</bcf:citekey>
+    <bcf:citekey order="39">SpringBalancerBalancer</bcf:citekey>
+    <bcf:citekey order="40">SpringBalancerBalancer</bcf:citekey>
+    <bcf:citekey order="41">Cobot2026</bcf:citekey>
+    <bcf:citekey order="42">IndustrialManipulatorsLoad</bcf:citekey>
+    <bcf:citekey order="43">colgateIntelligentAssistDevices2003</bcf:citekey>
+    <bcf:citekey order="44">colgateIntelligentAssistDevices2003</bcf:citekey>
+    <bcf:citekey order="45">colgateIntelligentAssistDevices2003</bcf:citekey>
+    <bcf:citekey order="46">al-shukaActiveImpedanceControl2018</bcf:citekey>
+    <bcf:citekey order="47">al-shukaActiveImpedanceControl2018</bcf:citekey>
+    <bcf:citekey order="48">al-shukaActiveImpedanceControl2018</bcf:citekey>
+    <bcf:citekey order="49">al-shukaActiveImpedanceControl2018</bcf:citekey>
+    <bcf:citekey order="50">al-shukaActiveImpedanceControl2018</bcf:citekey>
+    <bcf:citekey order="51">al-shukaActiveImpedanceControl2018</bcf:citekey>
+    <bcf:citekey order="52">oralEvaluationAbsenteeismPresenteeism2024</bcf:citekey>
+    <bcf:citekey order="53">yassiRepetitiveStrainInjuries</bcf:citekey>
+    <bcf:citekey order="54">vilellaMusculoskeletalExamination</bcf:citekey>
+    <bcf:citekey order="55">ibvMusculoskeletalDisordersCaused2017</bcf:citekey>
+    <bcf:citekey order="56">gorassoHealthEconomicBurden2023</bcf:citekey>
+    <bcf:citekey order="57">benderLightweightRobotsManual2016</bcf:citekey>
+    <bcf:citekey order="58">europeanparliament.directorategeneralforparliamentaryresearchservices.AnalysisExploringRisks2023</bcf:citekey>
+    <bcf:citekey order="59">rosenstrauchHumanRobotCollaboration2018</bcf:citekey>
+    <bcf:citekey order="60">chemwenoOrientingSafetyAssurance2020</bcf:citekey>
+    <bcf:citekey order="61">sicilianoSpringerHandbookRobotics2016a</bcf:citekey>
+    <bcf:citekey order="62">gregorHandGuidingVirtual2021</bcf:citekey>
+    <bcf:citekey order="63">hameedControlSystemDesign2023</bcf:citekey>
+    <bcf:citekey order="64">montiniCollaborativeRoboticsSurvey2024</bcf:citekey>
+    <bcf:citekey order="65">UR30CollaborativeRobot</bcf:citekey>
+    <bcf:citekey order="66">CollaborativeRobotsCobots</bcf:citekey>
+    <bcf:citekey order="67">groupHandGuidingRobots2021</bcf:citekey>
+    <bcf:citekey order="68">ConfiguringFANUCRobot2026</bcf:citekey>
+    <bcf:citekey order="69">arakelianGRAVITYCOMPENSATIONROBOTICS2019</bcf:citekey>
+    <bcf:citekey order="70">IndustrialLiftAssist</bcf:citekey>
+    <bcf:citekey order="71">CataloguesUserManuals</bcf:citekey>
+    <bcf:citekey order="72">SpringBalancerBalancer</bcf:citekey>
+    <bcf:citekey order="73">Cobot2026</bcf:citekey>
+    <bcf:citekey order="74">IndustrialManipulatorsLoad</bcf:citekey>
+    <bcf:citekey order="75">colgateIntelligentAssistDevices2003</bcf:citekey>
+    <bcf:citekey order="76">al-shukaActiveImpedanceControl2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
     <bcf:sort order="1">
       <bcf:sortitem order="1">citeorder</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2">
-      <bcf:sortitem order="1">intciteorder</bcf:sortitem>
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
