@@ -14,14 +14,13 @@
 \contentsline {chapter}{\numberline {2}Literature Review}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Theoretical Background}{11}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Impedance control}{11}{subsection.2.1.1}%
-\contentsline {subparagraph}{Force--based impedance control}{13}{subparagraph*.12}%
-\contentsline {subparagraph}{Position/velocity--based impedance control}{13}{subparagraph*.14}%
-\contentsline {section}{\numberline {2.2}State of the Art}{13}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Series elastic actuator}{13}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Disturbance observer}{13}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}ROS}{13}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Docker}{13}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}State of the Art}{13}{section.2.3}%
+\contentsline {subparagraph}{Position/velocity--based impedance control}{14}{subparagraph*.13}%
+\contentsline {section}{\numberline {2.2}State of the Art}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Series elastic actuator}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Disturbance observer}{14}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}ROS}{14}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Docker}{14}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}State of the Art}{14}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Methodology}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}System Overview and Requirements}{15}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Mechanical Design}{15}{section.3.2}%
@@ -51,10 +50,10 @@
 \contentsline {chapter}{\numberline {5}Conclusion and Future Work}{19}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Conclusion}{19}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Future Work}{19}{section.5.2}%
-\contentsline {chapter}{References}{21}{chapter*.16}%
-\contentsline {chapter}{2D Manufacturing Drawings}{25}{appendix*.17}%
+\contentsline {chapter}{References}{21}{chapter*.15}%
+\contentsline {chapter}{2D Manufacturing Drawings}{25}{appendix*.16}%
 \contentsline {section}{\numberline {.1}CNC Part 1}{25}{section.Alph0.1}%
 \contentsline {section}{\numberline {.2}CNC Part 2}{25}{section.Alph0.2}%
 \contentsline {section}{\numberline {.3}CNC Part 3}{25}{section.Alph0.3}%
-\contentsline {chapter}{Additional Experimental Results}{27}{appendix*.18}%
-\contentsline {chapter}{Source Code}{29}{appendix*.19}%
+\contentsline {chapter}{Additional Experimental Results}{27}{appendix*.17}%
+\contentsline {chapter}{Source Code}{29}{appendix*.18}%
