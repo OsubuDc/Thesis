@@ -14,48 +14,49 @@
 \contentsline {chapter}{\numberline {2}Literature Review}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Theoretical Background}{11}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Impedance control}{11}{subsection.2.1.1}%
-\contentsline {subparagraph}{Position/velocity--based impedance control}{14}{subparagraph*.14}%
-\contentsline {subparagraph}{Position--based versus velocity--based inner loop}{15}{subparagraph*.16}%
-\contentsline {subsubsection}{Comparison of Force-Based and Position-Based Impedance Control}{16}{subsubsection*.17}%
-\contentsline {section}{\numberline {2.2}State of the Art}{16}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Series elastic actuator}{16}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Disturbance observer}{16}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}ROS}{16}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Docker}{16}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}State of the Art}{17}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Methodology}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}System Overview and Requirements}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Mechanical Design}{19}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Hardware Architecture}{19}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}CAN Bus Topology}{19}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Sensor Architecture}{19}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Sensor and Actuator Modeling}{19}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}SET Spring Model}{19}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Motor and Transmission Model}{19}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Control Architecture}{19}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}State Machine}{19}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Gravity Compensation and Floating Mode}{19}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Weighing Mode}{19}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Carrying Mode}{19}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Put-Down Mode}{19}{subsection.3.5.5}%
-\contentsline {section}{\numberline {3.6}Software Implementation}{19}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Real-Time Architecture}{19}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Configuration}{20}{subsection.3.6.2}%
-\contentsline {chapter}{\numberline {4}Validation and Results}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Experimental Setup}{21}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Hardware Configuration}{21}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Parameter Identification}{21}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Spring and Sensor Characterization}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Controller Performance}{21}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Assisted Load Handling Evaluation}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Discussion}{21}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{23}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{23}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future Work}{23}{section.5.2}%
-\contentsline {chapter}{References}{25}{chapter*.19}%
-\contentsline {chapter}{2D Manufacturing Drawings}{29}{appendix*.20}%
-\contentsline {section}{\numberline {.1}CNC Part 1}{29}{section.Alph0.1}%
-\contentsline {section}{\numberline {.2}CNC Part 2}{29}{section.Alph0.2}%
-\contentsline {section}{\numberline {.3}CNC Part 3}{29}{section.Alph0.3}%
-\contentsline {chapter}{Additional Experimental Results}{31}{appendix*.21}%
-\contentsline {chapter}{Source Code}{33}{appendix*.22}%
+\contentsline {subsubsection}{Force--based impedance control}{13}{subsubsection*.13}%
+\contentsline {subsubsection}{Position--based impedance control}{15}{subsubsection*.15}%
+\contentsline {subsubsection}{Position--based versus velocity--based inner loop}{16}{subsubsection*.17}%
+\contentsline {subsubsection}{Comparison of Force-Based and Position-Based Impedance Control}{17}{subsubsection*.19}%
+\contentsline {subsection}{\numberline {2.1.2}Series elastic actuator}{18}{subsection.2.1.2}%
+\contentsline {subsubsection}{The series elastic concept}{19}{subsubsection*.22}%
+\contentsline {subsubsection}{Benefits of series elasticity}{19}{subsubsection*.24}%
+\contentsline {subsubsection}{Performance limits}{20}{subsubsection*.25}%
+\contentsline {subsubsection}{Control architectures}{23}{subsubsection*.27}%
+\contentsline {section}{\numberline {2.2}State of the Art}{24}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Methodology}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}System Overview and Requirements}{25}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Mechanical Design}{25}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Hardware Architecture}{25}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}CAN Bus Topology}{25}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Sensor Architecture}{25}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Sensor and Actuator Modeling}{25}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}SET Spring Model}{25}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Motor and Transmission Model}{25}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Control Architecture}{25}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}State Machine}{25}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Gravity Compensation and Floating Mode}{25}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Weighing Mode}{25}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Carrying Mode}{25}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Put-Down Mode}{25}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}Software Implementation}{25}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Real-Time Architecture}{25}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Configuration}{26}{subsection.3.6.2}%
+\contentsline {chapter}{\numberline {4}Validation and Results}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Experimental Setup}{27}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Hardware Configuration}{27}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Parameter Identification}{27}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Spring and Sensor Characterization}{27}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Controller Performance}{27}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Assisted Load Handling Evaluation}{27}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Discussion}{27}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{29}{section.5.2}%
+\contentsline {chapter}{References}{31}{chapter*.30}%
+\contentsline {chapter}{2D Manufacturing Drawings}{35}{appendix*.31}%
+\contentsline {section}{\numberline {.1}CNC Part 1}{35}{section.Alph0.1}%
+\contentsline {section}{\numberline {.2}CNC Part 2}{35}{section.Alph0.2}%
+\contentsline {section}{\numberline {.3}CNC Part 3}{35}{section.Alph0.3}%
+\contentsline {chapter}{Additional Experimental Results}{37}{appendix*.32}%
+\contentsline {chapter}{Source Code}{39}{appendix*.33}%

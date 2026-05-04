@@ -1,17 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'ThesisV2_main.blg'
-[72] biber:340> INFO - === ma apr 27, 2026, 18:05:59
-[84] Biber.pm:418> INFO - Reading 'ThesisV2_main.bcf'
-[138] Biber.pm:972> INFO - Found 25 citekeys in bib section 0
-[149] Biber.pm:4383> INFO - Processing section 0
-[157] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
-[166] bibtex.pm:1713> INFO - LaTeX decoding ...
-[270] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
-[438] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[438] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[438] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[438] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[455] bbl.pm:654> INFO - Writing 'ThesisV2_main.bbl' with encoding 'UTF-8'
-[470] bbl.pm:757> INFO - Output to ThesisV2_main.bbl
-[470] Biber.pm:130> WARN - ISBN '978-3-319-32550-7 978-3-319-32552-1' in entry 'sicilianoSpringerHandbookRobotics2016a' is invalid - run biber with '--validate_datamodel' for details.
-[470] Biber.pm:132> INFO - WARNINGS: 1
+[70] biber:340> INFO - === ma mei  4, 2026, 18:11:19
+[83] Biber.pm:418> INFO - Reading 'ThesisV2_main.bcf'
+[144] Biber.pm:972> INFO - Found 32 citekeys in bib section 0
+[154] Biber.pm:4383> INFO - Processing section 0
+[163] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[171] bibtex.pm:1713> INFO - LaTeX decoding ...
+[271] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[468] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[468] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[468] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[468] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[486] bbl.pm:654> INFO - Writing 'ThesisV2_main.bbl' with encoding 'UTF-8'
+[506] bbl.pm:757> INFO - Output to ThesisV2_main.bbl
+[506] Biber.pm:130> WARN - ISBN '978-3-319-32550-7 978-3-319-32552-1' in entry 'sicilianoSpringerHandbookRobotics2016a' is invalid - run biber with '--validate_datamodel' for details.
+[506] Biber.pm:130> WARN - ISBN '978-3-319-60041-3 978-3-319-60042-0' in entry 'yuLearningElasticitySeriesElastic2017' is invalid - run biber with '--validate_datamodel' for details.
+[506] Biber.pm:132> INFO - WARNINGS: 2

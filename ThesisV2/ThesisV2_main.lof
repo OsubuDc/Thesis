@@ -8,10 +8,16 @@
 \contentsline {figure}{\numberline {1.6}{\ignorespaces IAD integrated in an assembly line \blx@tocontentsinit {0}\cite {colgateIntelligentAssistDevices2003}.\relax }}{8}{figure.caption.9}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Impedance control for robotic structure in contact with an environment \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{12}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces General classification of the impedance control approaches \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{13}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Impedance control diagram, with reference position $x_r$, external force $f_r$ which in theory can be canceled, and a measured position $x$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{14}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Mass--spring--damper system \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{14}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Admittance control diagram, with reference position $x_r$, compliant reference position $x_c$, measured position $x$, and measured external force $f_e$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{15}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Mass--spring--damper system in contact with external force $f_e$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces General classification of the impedance control approaches \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Impedance control diagram, with reference position $x_r$, external force $f_r$ which in theory can be canceled, and a measured position $x$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{15}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Admittance control diagram, with reference position $x_r$, compliant reference position $x_c$, measured position $x$, and measured external force $f_e$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{15}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Mass--spring--damper system with commanded position $x_c$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{17}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Motor and load connected with a rigid shaft.\relax }}{18}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Motor and load connected with a compliant coupling.\relax }}{18}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces General SEA schematic reconstructed from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{19}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Vector diagram reconstructed from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{22}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Torque control diagram from \blx@tocontentsinit {0}\cite {yuLearningElasticitySeriesElastic2017}.\relax }}{24}{figure.caption.28}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

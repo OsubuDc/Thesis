@@ -14,6 +14,7 @@
 \usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{bm}
+\usepackage{siunitx}
 
 % ===== FIGURES =====
 \usepackage{graphicx}
@@ -21,7 +22,7 @@
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage{subcaption}
 \graphicspath{{Graphics/}}   % put all images in a figures/ subfolder
-
+\usepackage{svg}
 % ===== TABLES =====
 \usepackage{booktabs}
 \usepackage{array}
@@ -429,21 +430,29 @@ Chapter~\ref{ch:conclusion} summarizes the main conclusions  of this thesis, dis
 
 \subsection{Impedance control}
 
-Impedance control is used in most workspaces that involve human--robot interaction. The interaction forces of the robotic structure with the environment can be regulated by adjusting the felt mechanical impedance. Mechanical impedance can be defined as the ratio of the output force to the input velocity. It represents how much the robotic structure resists motion when an external force is applied.
+Impedance control is widely used in applications that involve physical human--robot interaction. The interaction forces between the robotic structure and its environment can be regulated by adjusting the apparent mechanical impedance of the robot. Mechanical impedance is defined as the ratio of the output force to the input velocity. It represents how much the robotic structure resists motion when an external force is applied.
 
 \begin{equation}
     Z(s) = \frac{F(s)}{v(s)}
     \label{eq:impedance_definition}
 \end{equation}
 
-As its inverse, mechanical admittance can be defined as the ratio of input velocity to the output force.
+Its inverse, mechanical admittance is defined as the ratio of input velocity to the output force.
 
 \begin{equation}
     Y(s) = \frac{v(s)}{F(s)} = \frac{1}{Z(s)}
     \label{eq:admittance_definition}
 \end{equation}
 
-When two mechanical bodies interact, the interaction can be characterized by their relative mechanical properties. A body resisting motion responds to displacement by generating forces and is concequently modelled as a mechanical impedance. A body that responds to forces by generating motion or deformation is modelled as a mechanical admittance. These roles are not inherent properties of the objects themselves, but a concequence of the relative stiffness, inertia behaviour of the interacting bodies, and the choice of input and output signals. In conventional robotic applications, the robotic structure is stiff, position controlled, and has a high inertia compared to its environment, like a human worker or payloads. It follows a defined trajectory and resists external forces; in this scenario, the robotic structure behaves as an impedance. The environment, whether it is a workpiece, or a human worker, will yield to externally applied forces and are typically modelled as an admittance. Imagining pushing a trolley or compressing a pillow by applying an external force can clarify this concept; in both cases the environment moves or deforms in resonse to an applied force. As was stated before, an object behaving like an impedance or an admittance is context--dependent. A rigid concrete wall interacting with a lightweight robotic structure present an impedance that is much higher. From the perspective of the robotic structure, it must yield to its much stiffer environment. A human operator physically guiding a robotic arm applies forces, and expects the robotic structure to move; the human worker behaves like an impedance, while the robotic structure behaves like an admittance. Impedance control is used to modify the mechanical impedance of a robotic structure to control how it behaves relative to its environment and is often used in collaborative robots that were also discussed in Chapter~\ref{subs:ph-h-r} Figure~\ref{fig:impedance_control} illustrates a stiff robotic structure interacting with its environment. The schematic at the end--effector demonstrates how impedance control can modify the apparent impedance.
+When two mechanical bodies interact, the interaction can be characterized by their relative mechanical properties. A body that resists motion by responding to displacement with forces is modelled as a mechanical impedance. A body that responds to forces by generating motion or deformation is modelled as a mechanical admittance. These roles are not inherent properties of the objects themselves, but a consequence of the mechanical properties of the interacting bodies relative to each other, and the choice of input and output signals. 
+
+In conventional robotic applications, the robotic structure is stiff, position--controlled, and has a high inertia compared to its environment, like a human worker or payloads. It follows a defined trajectory and resists external forces; in this scenario, the robotic structure behaves as an impedance. The environment, whether it is a workpiece, or a human worker, yields to externally applied forces and is typically modelled as an admittance. As an example, pushing a trolley or compressing a pillow by applying an external force can clarify this concept; in both cases the environment moves or deforms in response to an applied force. 
+
+The impedance or admittance assignment is context--dependent. A rigid concrete wall presents an impedance that is much higher than that of a lightweight robotic structure; from the perspective of the robotic structure, it must yield to its much stiffer environment. 
+\newpage
+A human operator physically guiding a robotic arm applies forces and expects the robotic structure to move; the human worker behaves like an impedance, while the robotic structure behaves like an admittance. Impedance control modifies the mechanical impedance of a robotic structure to control how it behaves relative to its environment.
+
+Figure~\ref{fig:impedance_control} illustrates a stiff robotic structure interacting with its environment. The schematic at the end--effector demonstrates how impedance control can modify the apparent impedance.
 
 \begin{figure}[H]
     \centering
@@ -452,15 +461,24 @@ When two mechanical bodies interact, the interaction can be characterized by the
     \label{fig:impedance_control}
 \end{figure}
 
-Impedance control mirrors the ability of the human body to change its mechanical impedance by tensioning its muscles. To guarantee safe interaction between a robotic structure and its environment, one of the two bodies should be compliant relative to the other. Most collaborative robots lack the ability to dynamically change their mechanical impedance. Therefore, safe interaction between between a robot and an unknown environment cannot be guaranteed. Impedance control allows for a user--defined, dynamic relationship between the trajectory of the end--effector and the contact forces from the environment; allowing stiff robotic structures to compliantly react to their environment.
+Impedance control mirrors the ability of the human body to change its mechanical impedance by tensioning its muscles. To guarantee safe interaction between a robotic structure and its environment, one of the two bodies should be compliant relative to the other. Most collaborative robots lack the ability to dynamically change their mechanical impedance; therefore, safe interaction between between a robot and an unknown environment cannot be guaranteed by mechanical design alone. Impedance control allows for a user--defined, dynamic relationship between the trajectory of the end--effector and the contact forces from the environment, allowing stiff robotic structures to compliantly react to their environment.
 
-The mathematical derivation for impedance control starts by considering a second--order system:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{impedance_control_u}
+    \caption{Mass--spring--damper system in contact with external force $f_e$ \cite{al-shukaActiveImpedanceControl2018}.}
+    \label{fig:impedance_control_msd}
+\end{figure}
+
+The mathematical derivation for impedance control starts by considering a second--order system as shown in Figure~\ref{fig:impedance_control_msd}.
 \begin{equation}
     m\,\ddot{x} + b\,\dot{x} + k\,x = u + f_{e}
     \label{eq:plant_dynamics}
 \end{equation}
 
-In this equation, $m$ represents the system mass, $b$ the damping coefficient, $k$ the stiffness coefficient, $u$ the control input generated by the controller which is applied to the plant dynamics, and $f_e$ is an external force applied to the system. As stated before, the idea behind impedance control is to change the apparent impedance of a mechanical  system. By defining a target impedance, the mechanical impedance of the system can be modified. $x = x_e$ represents the position of the contact surface and can be interpreted as the position error relative to the equilibrium position $x_r$, which is illustrated in Figure ~\ref{fig:impedance_control_msd}.
+In this equation, $m$ represents the system mass, $b$ the damping coefficient, $k$ the stiffness coefficient, $u$ the control input (as seen from the plant's perspective) generated by the controller which is applied to the plant dynamics, and $f_e$ is the external force applied to the system. The position $x = x_e$ represents the position of the contact surface and can be interpreted as the position error relative to the equilibrium position $x_r$. 
+
+As stated before, the idea of impedance control is to change the apparent impedance of a mechanical  system. By defining a target impedance, the mechanical impedance of the system can be modified. This target impedance is expressed as a virtual mass--spring--damper system:
 \begin{equation}
     m_{d}\,(\ddot{x}-\ddot{x}_{r})
     + b_{d}\,(\dot{x}-\dot{x}_{r})
@@ -469,21 +487,20 @@ In this equation, $m$ represents the system mass, $b$ the damping coefficient, $
     \label{eq:target_impedance}
 \end{equation}
 
-In this equation, $m_d$, $b_d$, and $k_d$ respectively represent the desired inertia, damping, and stiffness of the system.
+In this equation, $m_d$, $b_d$, and $k_d$ respectively represent the desired inertia, damping, and stiffness of the system. A lower $k_d$ makes the robotic structure more compliant, while a higher $k_d$ makes it stiffer. The damping $b_d$ opposes velocity and influences how fast the system will settle. The inertia $m_d$ determines the system's resistance to acceleration.
 
+A general classification of impedance control approaches is shown in Figure~\ref{fig:impedance_control_appr}. The conventional approaches are discussed in this thesis, as these provide a sufficient conceptual understanding of the topic \cite{al-shukaActiveImpedanceControl2018, songImpedanceControlRobots2017, andersonHybridImpedanceControl1988, songTutorialSurveyComparison2019}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{generalapproachimpedancecontrol}
     \caption{General classification of the impedance control approaches \cite{al-shukaActiveImpedanceControl2018}.}
     \label{fig:impedance_control_appr}
 \end{figure}
-The conventional approaches are discussed in this thesis, since this suffices for a conceptual understanding of the concept. 
 
-\smalltitle{Force--based impedance control}
+\subsubsection{Force--based impedance control}
+In force--based impedance control, the control input $u$ is a force or torque generated by the controller and is applied to the plant. Consequently, the motor drivers should be able to directly control their output torque; motor drivers only capable of position or velocity control cannot directly implement an impedance controller. 
 
-In force--based impedance control, the control input generated by the controller $u$, is a force or torque. Concequently, the motor drivers should be able to directly control their output torque. For this reason, motor drivers only capable of position or velocity control cannot directly implement an impedance controller. The following control system is derived:
-
-The plant dynamics~\eqref{eq:plant_dynamics} are solved for the system's acceleration term $\ddot{x}$:
+The control law is derived by requiring that the system satisfies the target impedance of Equation~\eqref{eq:target_impedance}. In the first step, the plant dynamics~\eqref{eq:plant_dynamics} are solved for the system's acceleration term $\ddot{x}$:
 \begin{equation}
     \ddot{x} = \frac{1}{m}\bigl(u + f_{e} - b\,\dot{x} - k\,x\bigr).
     \label{eq:plant_accel}
@@ -494,8 +511,8 @@ The target impedance~\eqref{eq:target_impedance} is solved for the desired accel
     \ddot{x} = \ddot{x}_{r} + m_{d}^{-1}\bigl(f_{e} - b_{d}\,(\dot{x}-\dot{x}_{r}) - k_{d}\,(x-x_{r})\bigr).
     \label{eq:desired_accel}
 \end{equation}
-
-Both acceleration terms, the first being the "real" acceleration~\eqref{eq:plant_accel} and the second being the "desired" acceleration~\eqref{eq:desired_accel}, must equal each other for the system to exhibit the desired impedance behavior.
+\newpage
+For the system to satisfy the desired impedance behaviour, the actual acceleration~\eqref{eq:plant_accel} and the desired acceleration~\eqref{eq:desired_accel} must equal each other.
 \begin{equation}
     \frac{1}{m}\bigl(u + f_{e} - b\,\dot{x} - k\,x\bigr)
     = \ddot{x}_{r} + m_{d}^{-1}\bigl(f_{e} - b_{d}\,(\dot{x}-\dot{x}_{r}) - k_{d}\,(x-x_{r})\bigr).
@@ -510,7 +527,7 @@ Multiplying both sides by $m$ and solving for $u$:
     \label{eq:impedance_expanded}
 \end{equation}
 
-Rearranging~\eqref{eq:impedance_expanded} in such a way so that, if $m = m_d$, the equation simplifies into some terms representing the difference between the desired and actual impedance behavior:
+Collecting terms in $\dot{x}$, $x$, and $f_{e}$ gives the force--based impedance control law as presented in Equation~\eqref{eq:impedance_general}. 
 \begin{equation}
     u = \bigl(b - m\,m_{d}^{-1}\,b_{d}\bigr)\,\dot{x}
       + \bigl(k - m\,m_{d}^{-1}\,k_{d}\bigr)\,x
@@ -519,7 +536,7 @@ Rearranging~\eqref{eq:impedance_expanded} in such a way so that, if $m = m_d$, t
     \label{eq:impedance_general}
 \end{equation}
 
-When desired inertia $m_d$ equals the actual inertia $m$, the inertia ratio $m\,m_{d}^{-1}$ becomes one. This results in external force term $f_e$ being canceled, and Equation~\eqref{eq:impedance_general} reducing to:
+When desired inertia $m_d$ equals the actual inertia $m$, the inertia ratio $m\,m_{d}^{-1}$ becomes unity. This results in the external force term $f_e$ being canceled, and Equation~\eqref{eq:impedance_general} simplifies to:
 \begin{equation}
     u = (b - b_{d})\,\dot{x}
       + (k - k_{d})\,x
@@ -528,12 +545,11 @@ When desired inertia $m_d$ equals the actual inertia $m$, the inertia ratio $m\,
       + m\,\ddot{x}_{r}.
     \label{eq:impedance_md_equal_m}
 \end{equation}
-\newpage
-The elimination of $f_e$ from the control law holds only when $m = m_d$ exactly. In practice, the effective inertia of a robotic structure cannot be perfectly matched by a fixed nominal value, resulting in behaviour that is not conform to the simplified control law. Since the term representing the external force has been canceled, no external force sensor is required. This formulation represents a velocity and position feedback with feed--forward desired trajectory values. 
 
-An important limitation of this approach, is that contact force is only controlled indirectly by specifying a reference position. For example, if the desired spring constant $k_d$ is set to 500$N/m$ and the contact force should be 10$N$, the deviation from the reference position must be exactly 20$mm$. This cannot be guaranteed unless the physical properties and position of the environment are exactly know, which is of course not practical. As a consequence, impedance control can either guarantee accurate position tracking, by choosing a stiff value for $k_d$ for example, or force tracking, by choosing a soft value for $k_d$. A stiff spring will result in high forces as a result of small position errors, a soft spring will result in accurate force control, but with large position errors as a trade--off.
+The elimination of $f_e$ from the control law holds only when $m = m_d$ exactly. In practice, the effective inertia of a robotic structure cannot be perfectly matched by a fixed nominal value, resulting in behaviour that does not fully conform to the simplified control law. Since the term representing the external force has been canceled, no force sensor is required. This formulation represents a velocity and position feedback with feed--forward desired trajectory values. 
 
-A diagram of impedance control is shown in Figure~\ref{fig:impedance_control_diagram}. Note that only a reference position is used, instead of also concidering a reference velocity and acceleration, the usefullness of which depends on the application and measureable data.
+An important limitation of this approach is that contact force is only controlled indirectly by specifying a reference position. For example, for a rigid robotic structure in free space, the stiffness $k$ is considered \SI{0}{\newton\per\metre} and the desired spring constant $k_d$ is set to \SI{500}{\newton\per\metre}. If a contact force of \SI{10}{\newton} is desired, the deviation from the reference position must be exactly \SI{20}{\milli\metre}. This cannot be guaranteed unless the physical properties and position of the environment are exactly known, which is not always feasible. As a consequence, impedance control can either guarantee accurate position tracking or force tracking. A stiff value for $k_d$ will produce high forces for small position errors resulting in accurate position tracking. A soft spring will result in accurate force control, but with large position errors as a trade--off.
+A diagram of impedance control is shown in Figure~\ref{fig:impedance_control_diagram}. Note that only a reference position is used; whether reference velocity and acceleration are also considered depends on the application and the available measurements \cite{al-shukaActiveImpedanceControl2018, songImpedanceControlRobots2017, andersonHybridImpedanceControl1988, songTutorialSurveyComparison2019}.
 
 \begin{figure}[H]
     \centering
@@ -542,18 +558,19 @@ A diagram of impedance control is shown in Figure~\ref{fig:impedance_control_dia
     \label{fig:impedance_control_diagram}
 \end{figure}
 
+\subsubsection{Position--based impedance control}
+Position--based impedance control is commonly referred to as admittance control, and is, as previously stated, the inverse of impedance control which was discussed above. Where impedance control reacts to motion deviation by generating forces, admittance control reacts to forces by deviating from the desired motion. Contrary to impedance control, a force measurement is required, meaning that sensors need to be fitted to the contact point with the environment.
+
+A position--based impedance controller consists of two control loops as shown in Figure~\ref{fig:admittance_control_diagram}. The outer loop imposes the desired target impedance by generating a commanded reference position $x_c$, the inner position loop tracks that compliant reference position generated by the outer loop. 
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{impedance_control_u}
-    \caption{Mass--spring--damper system \cite{al-shukaActiveImpedanceControl2018}.}
-    \label{fig:impedance_control_msd}
+    \includegraphics[width=0.6\textwidth]{admittancecontrolscheme}
+    \caption{Admittance control diagram, with reference position $x_r$, compliant reference position $x_c$, measured position $x$, and measured external force $f_e$ \cite{al-shukaActiveImpedanceControl2018}.}
+    \label{fig:admittance_control_diagram}
 \end{figure}
 
-\subparagraph{Position/velocity--based impedance control}
-
-Position--based impedance control is commonly refered to as admittance control, and is, as previously stated, the inverse of the impedance control which was discussed above. Where impedance control reacts to motion deviation by generating forces, admittance control reacts to forces by deviating from the desired motion. Contrary to impedance control, a force measurement is required, meaning that external sensors need to be fitted to the contact point with the environment.
-
-A position--based impedance controller consists of two control loops as shown in Figure~\ref{fig:admittance_control_diagram}; the outer loop imposed the desired target impedance by generating a commanded reference position $x_c$, the inner position loop tracks that compliant reference position generated by the outer loop. The inner loop requires both the reference position $x_r$ and the measured external force $f_e$ as input to compute the value for $x_c$ as shown in Equation~\eqref{eq:admittance_filter}, where $x_c$ is the only unknown variable.
+The outer loop requires both the reference position $x_r$ and the measured external force $f_e$ as input to compute the value for $x_c$ as shown in Equation~\eqref{eq:admittance_filter}, where $x_c$ is the only unknown variable.
 \begin{equation}
     m_{d}\,(\ddot{x}_{c}-\ddot{x}_{r})
     + b_{d}\,(\dot{x}_{c}-\dot{x}_{r})
@@ -562,31 +579,25 @@ A position--based impedance controller consists of two control loops as shown in
     \label{eq:admittance_filter}
 \end{equation}
 
-When no external force is measured, $f_e = 0$, the commanded impedance reference position $x_c$ must equal $x_r$. When the external force $f_e \neq 0$, $x_c$ will deviate from $x_r$ depending on the desired impedance parameters $m_d$, $k_d$, and $b_d$. For example, when an external force $f_e = 10 N$ is applied and $k_d = 500 N/m$, not considering a reference velocity or acceleration, a steady--state deviation of $x_c - x_r = 20 mm$ is calculated. This position error is used as the input for a conventional position controller, for example a proportional--derivative (PD) controller as shown in Equation~\eqref{eq:inner_position_loop}, which tracks the commanded trajectory $x_c$.
+When no external force is measured ($f_e = \SI{0}{\newton}$), the commanded impedance reference position $x_c$ must equal $x_r$. When the external force $f_e \neq 0$, $x_c$ deviates from $x_r$ according to the desired impedance parameters $m_d$, $k_d$, and $b_d$. For example, when an external force $f_e = \SI{10}{\newton}$ is applied and $k_d = \SI{500}{\newton\per\metre}$, ignoring the velocity and acceleration terms at steady--state, a deviation of $x_c - x_r = \SI{20}{\milli\metre}$ is calculated. 
+
+This commanded position is used as the input for the inner loop, which can be a conventional position controller such as a proportional--derivative (PD) controller as shown in Equation~\eqref{eq:inner_position_loop}, which tracks the commanded trajectory $x_c$.
 
 \begin{equation}
     u = k_{p}\,(x_{c} - x) + k_{v}\,(\dot{x}_{c} - \dot{x}),
     \label{eq:inner_position_loop}
 \end{equation}
 
-The inner loop must be sufficiently stiff in order for the admittance controller to work. If the position control loop is compliant, the actual robot position will not accurately follow $x_c$. Concequently, the desired impedance felt by the operator becomes a combination of the outer impedance loop and the inner position loop, possibly creating unsafe behaviour.
+The inner loop has no knowledge of the desired impedance behaviour, its only purpose is to track the commanded position as accurate as possible. Therefore it must be sufficiently stiff in order for the admittance controller to work as intended. If the position control loop is compliant, the actual robot position will not accurately follow $x_c$. Consequently, the impedance felt by the operator becomes a combination of the outer impedance loop and the inner position loop, possibly creating unsafe behaviour \cite{al-shukaActiveImpedanceControl2018, songImpedanceControlRobots2017, andersonHybridImpedanceControl1988, songTutorialSurveyComparison2019}.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\textwidth]{admittancecontrolscheme}
-    \caption{Admittance control diagram, with reference position $x_r$, compliant reference position $x_c$, measured position $x$, and measured external force $f_e$ \cite{al-shukaActiveImpedanceControl2018}.}
-    \label{fig:admittance_control_diagram}
-\end{figure}
-
-\subparagraph{Position--based versus velocity--based inner loop}
-
-The inner loop can track either a position reference or a velocity reference. Choosing one over the other is depending on the application, which can be illustrated by imagining an operator applying a step force to the robotic structure. In collaborative load handling, there is no spring that pulls the robot arm back to a static reference position. In some cases, the reference position can be continuously updated; either way, the desired spring constant $k_d = 0 N/m$ to ensure the robotic structure to not pull back against the force applied by the operator. To further simplify, the desired inertia term $m_d$ and reference velocity $x_r$ is set to zero. This results in Equation~\eqref{eq:admittance_filter} to simplify into:
+\subsubsection{Position--based versus velocity--based inner loop}
+The inner loop can track either a commanded position $x_c$ or a commanded velocity $\dot{x}_c$. This choice depends on the application, which can be illustrated by considering a step force applied to the robotic structure by the human operator. In collaborative load handling, there is no spring that pulls the robot arm back to a static reference position. The human operator moves the robotic structure freely and expects it to stay wherever it is released, instead of pulling back. Therefore, in this example, the desired spring constant $k_d = \SI{0}{\newton\per\metre}$ to ensure that the robotic structure to not pull back against the force applied by the operator. To illustrate the difference between a position inner loop and a velocity inner loop, consider Equation~\eqref{eq:admittance_filter}, simplified by setting the desired inertia term $m_d$ and reference velocity $\dot{x}_r$ to zero. 
 \begin{equation}
     b_{d}\,\dot{x}_{c} = f_{e}
     \label{eq:admittance_damping_only}
 \end{equation}
 
-The step force applied by the human operate $f_e$ is constant after $t = 0^{+}$, resulting in Equation~\eqref{eq:admittance_damping_only_cteforce} and~\eqref{eq:admittance_damping_only_xdot}.
+The step force applied by the human operator $f_e$ is constant after $t = 0^{+}$, resulting in Equation~\eqref{eq:admittance_damping_only_cteforce} and~\eqref{eq:admittance_damping_only_xdot}.
 \begin{equation}
     b_{d}\,\dot{x}_{c} = 1
     \label{eq:admittance_damping_only_cteforce}
@@ -595,36 +606,239 @@ The step force applied by the human operate $f_e$ is constant after $t = 0^{+}$,
     \dot{x}_{c} = 1/b_{d}
     \label{eq:admittance_damping_only_xdot}
 \end{equation}
-A constant force will result in a constant velocity $\dot{x_c}$. Concequently, the commanded reference position $x_r$ grows linearly over time. This behavior results from the absence of the virtual spring which would create an equilibrium position. With a position--based inner loop, the controller tries to track this continuously growing commanded position, meaning that any lag in the inner loop can cause accumulation of the tracking error. Therefore, this approach requires aggressive tuning, which is more prone to instability issues.
+A constant force will result in a constant velocity $\dot{x_c}$. Consequently, the commanded reference position $x_c$ grows linearly over time. This behaviour results from the absence of the virtual spring which would create an equilibrium position. With a position--based inner loop, the controller tries to track this continuously growing commanded position, meaning that any lag in the inner loop can cause accumulation of the tracking error. Therefore, this approach requires aggressive tuning, which is more prone to instability issues.
 
-With a velocity--based inner loop, the controller tracks a commanded reference velocity $\dot{x_c}$ instead. Since $\dot{x_c}$ is constant for the theoretical step force applied by the operator, the controller tries to match a constant velocity instead of a continuously growing position. This approach allows for less agressive tuning, and thus a more stable controller.
+With a velocity--based inner loop, the controller tracks a commanded reference velocity $\dot{x_c}$ instead. Since $\dot{x_c}$ is constant for the theoretical step force applied by the operator, the controller tries to match a constant velocity instead of a continuously growing position. This approach allows for less aggressive tuning, and thus a more stable controller.
 
+The mass--spring--damper system with the commanded trajectory $x_c$ is shown in Figure~\ref{fig:admittance_msd}. The admittance controller combines the measured force $f_e$ with the reference position $x_r$. When the robotic structure should remain in continuous contact with the environment, such as in grinding applications, $x_r$ can be set slightly beyond the contact surface to maintain a constant contact force \cite{al-shukaActiveImpedanceControl2018, songImpedanceControlRobots2017, andersonHybridImpedanceControl1988, songTutorialSurveyComparison2019}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{Admittanceschematic}
+    \caption{Mass--spring--damper system with commanded position $x_c$ \cite{al-shukaActiveImpedanceControl2018}.}
+    \label{fig:admittance_msd}
+\end{figure}
 \subsubsection{Comparison of Force-Based and Position-Based Impedance Control}
 \label{subsubsec:impedance_comparison}
 
-Force--based impedance control commands torques directly and does not require an inner control loop. It can operate without a force sensor when the desired inertia is set equal to the actual inertia. To achieve stiff behavior, high values for the impedance parameters must be chosen, amplifying the sensor noise which can result in instabilities. As was stated before, either the environment or the robotic structure should be compliant. If the environment is stiff, the robotic structure must feel soft, meaning lower values for the impedance parameters can be chosen resulting in less sensor noise amplification.
+Force--based impedance control commands torques directly and does not require an inner control loop. It can operate without a force sensor when the desired inertia is set equal to the actual inertia. To achieve stiff behaviour, high values for the impedance parameters must be chosen, amplifying the sensor noise which can result in instabilities. As was stated before, either the environment or the robotic structure should be compliant. If the environment is stiff, the robotic structure must feel soft, meaning lower values for the impedance parameters can be chosen resulting in less sensor noise amplification.
 
-Admittance control requires both a force sensor and a stiff inner control loop. It is concequently better suited for stiff behaviour against compliant environments, such as a human operator. The performance depends on the quality of the inner loop and the force measurement. Most industrial manipulators are equipped motor drivers with integrated position controllers, and since admittance control uses an inner position loop, it can be implemented without redesigning the low-level control architecture.
-
-\section{State of the Art}
-
-
-
+Admittance control requires both a force sensor and a stiff inner control loop. It is consequently better suited for stiff behaviour against compliant environments, such as a human operator. The performance depends on the quality of the inner loop and the force measurement. Most industrial manipulators are equipped motor drivers with integrated position controllers, and since admittance control uses an inner position loop, it can be implemented without redesigning the low-level control architecture \cite{al-shukaActiveImpedanceControl2018, songImpedanceControlRobots2017, andersonHybridImpedanceControl1988, songTutorialSurveyComparison2019}.
+\newpage
 
 \subsection{Series elastic actuator}
 
-\subsection{Disturbance observer}
+In conventional machine design, the interface between a motor and its load is made as stiff as possible. As discussed previously, robotic systems are still predominantly used for position-control tasks, where high structural stiffness is beneficial. A stiff structure improves position accuracy, stability, and bandwidth for position control.
+ 
+When only the motor position is measured, a stiff structure minimises the position error between the motor shaft and the endpoint. For example, if a motor is connected to a rigid shaft as shown in Figure~\ref{fig:sea_rigid}, the angular position of the endpoint can be accurately represented by the motor encoder reading. When this shaft is replaced by a compliant component such as a rubber coupling, as shown in Figure~\ref{fig:sea_coupling}, the motor encoder no longer accurately reflects the angular position of the endpoint.
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{searigid}
+    \caption{Motor and load connected with a rigid shaft.}
+    \label{fig:sea_rigid}
+\end{figure}
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{seawithspring}
+    \caption{Motor and load connected with a compliant coupling.}
+    \label{fig:sea_coupling}
+\end{figure}
 
-\subsection{ROS}
 
-\subsection{Docker}
-
-
-Example equation:
+When the position sensor is placed after the elastic coupling, the elasticity becomes part of the feedback loop. The motor and load inertia are coupled through the elastic element, and a stiffer coupling increases the resonance frequency of the system, allowing a higher control bandwidth:
 \begin{equation}
-    \tau = K_s \, \theta_s
-    \label{eq:spring}
+    \omega_n = \sqrt{k \left(\frac{1}{J_m} + \frac{1}{J_l}\right)}
+    \label{eq:sea_resfreq}
 \end{equation}
+
+Most electric motors have poor torque density: they can only achieve high power output at high rotational speeds. Since mechanical power is the product of torque and angular velocity.
+\begin{equation}
+    P = \tau \cdot \omega
+    \label{eq:motor_power}
+\end{equation}
+
+A lightweight, high-speed motor requires a transmission to deliver useful torque at the low speeds typical of robotic joints. Unfortunately, gears introduce significant drawbacks such as backlash, friction, torque ripple, and reflected inertia. For a gear ratio of $N{:}1$, the reflected inertia at the output is
+\begin{equation}
+    J_{\text{reflected}} = J_{\text{motor}} \cdot N^{2}
+    \label{eq:reflected_inertia}
+\end{equation}
+This $N^2$ amplification means that shock loads on the output shaft produce very high forces on the gear teeth, and it is often the load rating of the gears that limits the allowable output torque. The high reflected inertia also makes the actuator difficult to backdrive, which is problematic for force control and safe interaction with unknown environments. Because of low torque density servo motors with a power rating much higher than the useful power output must be selected, resulting in expensive and oversized designs.
+
+\subsubsection{The series elastic concept}
+ 
+A solution to these problems was introduced by Pratt and Williamson, who proposed the Series Elastic Actuator (SEA). As the name describes, an elastic element is placed in series between the transmission output and the load, as illustrated in Figure~\ref{fig:sea_general}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{generalsea}
+    \caption{General SEA schematic reconstructed from \cite{prattSeriesElasticActuators1995}.}
+    \label{fig:sea_general}
+\end{figure}
+
+The spring obeys Hooke's law,
+\begin{equation}
+    F = k \cdot \delta x
+    \label{eq:hooke}
+\end{equation}
+so by measuring the spring deflection $\delta x$ and knowing the spring constant $k$, the force transmitted to the load can be calculated directly.
+
+Masuring force through a stiff transmission is inherently difficult; friction, backlash, and torque ripple influence the relationship between motor current and output force. The series elastic element resolves this by converting the force measurement into a displacement measurement. The output force is determined by the spring deflection, which is a position that can be measured accurately regardless of the transmission's non--linearities. The motor receives a torque command, but the feedback signal that signals the controller whether the output force is correct is the spring deflection which is a position measurement. In this way, the force sensing problem is transformed into a position sensing problem. A force control problem consequently becomes a position control problem, which is the strength of motor equiped with a transmission.
+
+\subsubsection{Benefits of series elasticity}
+ 
+The spring acts as a mechanical low-pass filter on shock loads. When the output is subjected to a sudden impact, the spring deflects and spreads the impulse over a longer duration, reducing the peak forces on the gear teeth. Only the output--side mass contributes to the initial impact, the reflected inertia $N^2 J_{\text{motor}}$ is decoupled from the output by the spring. The lengthened impulse also gives the control system more time to accelerate the motor inertia and respond to the external force.
+
+In a stiff actuator with force feedback, even a small displacement generates a large force reading. A high--gain feedback controller would respond aggressively, pulling back and causing the force to drop suddenly, resulting in chatter between the actuator and the load. To avoid this, the controller gains must be kept low, resulting in a slow system that is unable to respond to small forces.
+
+With the introduction of a compliant element a moderate displacement generates a small force reading. This allows higher control gains without risking instability. At frequencies within the control bandwidth, the force--feedback loop can effectively cancel the spring force entirely, creating the behaviour of a zero-rate spring (an infinite compliant spring). From Equation~\eqref{eq:sea_resfreq}, it is clear that when $k = \SI{0}{\newton\per\metre}$, the resonance frequency $\omega_n = \SI{0}{\radian\per\second}$. Since motor and load inertias cannot resonate with a zero--rate spring, the system is inherently stable when interacting with any passive object.
+
+At high frequencies, the impedance of a traditional stiff actuator is dominated by its inertia, while a SEA presents the impedance of the spring, which is safer for interactions with unknown environments. However, since the high--frequency impedance of the SEA is governed by the spring, a light load can potentially resonate with it. Since the physical robotic structure has a mass, the resonant frequency of the system is lowered into te range where the control loop operates effectively thus being able to control apparent impedance of the system.
+
+Because the force output of a SEA depends on the motor shaft position rather than the motor's internal torque, the transmission's non--linearities (such as friction, backlash, and torque ripple) do not directly affect the force measurement. These non--linearities affect the motor effort required to achieve a given shaft position, but since the force is measured via the spring deflection and incorporated in the feedback loop, the controller commands the correct motor motion regardless. This allows the use of less expensive gears and motors without sacrificing force--control quality.
+
+\subsubsection{Performance limits}
+The performance limits of a series elastic actuator can be understood by decomposing the required motor force. Consider the system shown in Figure~\ref{fig:sea_model}, where a motor with mass $M_m$ is connected to the load through a spring with stiffness $k_s$.
+ 
+% TODO: include figure of the SEA model (motor -- spring -- load)
+ 
+The spring force on the load is given by Hooke's law:
+\begin{equation}
+    F_l = k_s (x_m - x_l)
+    \label{eq:sea_spring}
+\end{equation}
+where $x_m$ is the motor position and $x_l$ is the load position. Newton's second law for the motor gives the net force to accelerate the motor mass:
+\begin{equation}
+    M_m \ddot{x}_m = F_m - F_l
+    \label{eq:sea_newton}
+\end{equation}
+Rearranging:
+\begin{equation}
+    F_m = F_l + M_m \ddot{x}_m
+    \label{eq:sea_fm_basic}
+\end{equation}
+The motor position can be expressed in terms of the load position and the spring force by rearranging Equation~\eqref{eq:sea_spring}:
+\begin{equation}
+    x_m = x_l + \frac{F_l}{k_s}
+    \label{eq:sea_xm}
+\end{equation}
+Differentiating twice:
+\begin{equation}
+    \ddot{x}_m = \ddot{x}_l + \frac{\ddot{F}_l}{k_s}
+    \label{eq:sea_xm_ddot}
+\end{equation}
+
+Substituting into Equation~\eqref{eq:sea_fm_basic}:
+\begin{equation}
+    F_m = F_l + M_m \ddot{x}_l + \frac{M_m}{k_s} \ddot{F}_l
+    \label{eq:sea_fm_time}
+\end{equation}
+
+To analyze the system in the frequency domain, sinusoidal steady--state signals are assumed. Any sinusoidal signal can be represented using a complex exponential of the form:
+\begin{equation}
+    x(t) = \hat{x} e^{j\omega t}, \quad F(t) = \hat{F} e^{j\omega t}
+\end{equation}
+where $\hat{x}$ and $\hat{F}$ are complex amplitudes and $\omega$ is the angular frequency.
+
+Using the complex exponential form allows derivatives to be computed easily. In particular, differentiating $e^{j\omega t}$ results in multiplication by $j\omega$, and the second derivative results in multiplication by $-\omega^2$.
+\begin{equation}
+    \frac{d}{dt} e^{j\omega t} = j\omega e^{j\omega t}, \quad
+    \frac{d^2}{dt^2} e^{j\omega t} = -\omega^2 e^{j\omega t}
+\end{equation}
+
+Therefore, the second derivatives can be replaced as:
+\begin{equation}
+    \ddot{x} \rightarrow -\omega^2 x, \quad \ddot{F} \rightarrow -\omega^2 F
+\end{equation}
+
+Applying these substitutions to Equation~\eqref{eq:sea_fm_time} gives:
+\begin{equation}
+    \boxed{F_m = F_l - \frac{M_m \omega^2}{k_s} F_l - M_m \omega^2 x_l}
+    \label{eq:sea_fm_freq}
+\end{equation}
+ 
+The three terms have the following physical interpretation:
+\begin{enumerate}
+    \item $F_L$: $F_l$ is the force applied to the load coming from the spring.
+    \item $F_ms$: $\dfrac{M_m \omega^2}{k_s} F_l$ is force used to accelerate the motor mass, which in turn will cause spring deformation. This term is unique to the SEA.
+    \item $F_mi$: $M_m \omega^2 X_l$ is the force required to accelerate the motor mass to track a moving load. This term exist regardless of the presence of a series spring.
+\end{enumerate}
+
+The force that is required by the motor is limited to $F_{\text{max}}$, which in practise can be a limit on the motor current to prevent overheating for example.
+
+\begin{equation}
+    \left| F_m \right| \leq F_{\max}
+\end{equation}
+
+The motor force constraint $|F_m| \leq F_{\max}$ can be visualised as a vector diagram (Figure~\ref{fig:VectorSEA}). The vector $F_m$ is the sum of three components, and its magnitude must stay inside a circle of radius $F_{\max}$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{sea_vector1}
+    \caption{Vector diagram reconstructed from \cite{prattSeriesElasticActuators1995}.}
+    \label{fig:VectorSEA}
+\end{figure}
+
+$F_l$ is arbitrarely aligned with the real axis. The second component (the SEA term) points in the opposite direction along the real axis, moving the starting point of the third vector to $F_l(1 - M_m\omega^2/K_s)$. From this new starting point, the third component ($-M_m\omega^2 X_l$) extends in the direction determined by the phase relationship between force and load motion. The final sum gives $F_m$.
+ 
+The series elasticity is beneficial for all frequencies $\omega < \sqrt{2\frac{k_s}{M_m}}$ given by Equation~\eqref{eq:sea_vector_limit}, since the vector $F_m$ gets smaller. The actuator can handle faster or larger load motions before saturating at $F_{\text{max}}$.
+\begin{equation}
+    \left|1 - \frac{M_m \omega^2}{k_s}\right| < 1
+    \label{eq:sea_vector_condition}
+\end{equation}
+Expanding the absolute value inequality:
+\begin{equation}
+    -1 < 1 - \frac{M_m \omega^2}{k_s} < 1
+\end{equation}
+The right--hand side gives $ \frac{M_m \omega^2}{k_s} \ge 0 $, which is always satisfied since $M_m > 0$, $k_s > 0$, and $\omega^2 \ge 0$. The left--hand side gives:
+\begin{equation}
+    \frac{M_m \omega^2}{k_s} < 2 \quad \Longrightarrow \quad \omega < \sqrt{\frac{2 k_s}{M_m}}
+    \label{eq:sea_vector_limit}
+\end{equation}
+
+The series elasticity improves or limits performance depends on the task. When the output force varies, the motor must move to change the spring deflection, and the motor's inertia and torque limits restrict how quickly this can happen and thus limit the bandwidth in which the actuator can guarantee a zero--rate spring. When a time--varying force $F(t)$ is commanded by generating motor motion defined by $x(t) = F(t)/k$, the load motion $x_l(t)$ can add constructive or destructive to the spring motion $x(t)$ depending on their relative amplitude and phase. When the load moves in a direction that naturally compresses the spring in the same direction as the desired force change, less motor motion is required and the effective bandwidth increases. When the load moves in the opposite direction, more motor motion is needed and bandwidth decreases
+
+The practical consequence for actuator design is that the spring stiffness should be chosen to match the task. For tasks requiring a constant force against a moving load, a softer spring causes small force errors and thus less motor effort. For tasks requiring varying forces on a stationary load, a stiffer spring is better because motor torque is transmitted more directly. No single spring stiffness is optimal for all tasks.
+
+\subsubsection{Control architectures}
+
+Pratt and Williamson proposed a control architecture that combines feedforward compensation with feedback correction. The architecture is shown in Figure~\ref{fig:sea_control_pratt}, where the transfer functions are derived from Equation~\eqref{eq:sea_fm_freq} by using $s = j\omega \rightarrow \omega^2 = -s^2$.
+
+% TODO: include control diagram from Paper 1 (Figure 8)
+
+The controller receives a desired output force $F_d$ and the measured spring force $F_l = k_s(x_m - x_l)$. The controller's task is to make $F_l$ track $F_d$.
+
+The force error $F_d - F_l$ is processed by a PID feedback loop. Feedforward terms compensate for the components of the required motor force derived in Equation~\eqref{eq:sea_fm_freq}. The first two terms, the desired output force and the motor acceleration needed to change the spring deflection, are fully compensated in the feedforward path. The third term, motor acceleration to track load motion, is only partially compensated by choosing a $K_b < 1$ to prevent instability. The combined feedforward and feedback output is a desired motor current, which translates to a motor torque \cite{prattSeriesElasticActuators1995}.\\
+\newpage
+
+Yu et al.\ proposed a cascaded control architecture consisting of three nested loops~\cite{yuLearningElasticitySeriesElastic2017}. The architecture is shown in Figure~\ref{fig:yuetalscheme}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{yuetal}
+    \caption{Torque control diagram from \cite{yuLearningElasticitySeriesElastic2017}.}
+    \label{fig:yuetalscheme}
+\end{figure}
+
+ 
+% TODO: include control diagram from Paper 3 (Figure 5)
+ 
+The outermost layer is the spring model, which converts the desired torque $\tau_{\text{des}}$ into a desired spring deflection $\delta_{\text{des}}$. For a linear spring, this conversion is:
+\begin{equation}
+    \delta_{\text{des}} = \frac{\tau_{\text{des}}}{K_s}
+    \label{eq:sea_defl_linear}
+\end{equation}
+
+When the spring exhibits nonlinear behaviour such as hysteresis, a data--driven model can be used instead. Yu et al.\ created their own model to better model the spring behaviour.
+ 
+The middle loop is a PID controller that drives the measured spring deflection $\delta$ towards the desired deflection $\delta_{\text{des}}$. The spring deflection is computed as the difference between two absolute encoders placed on either side of the elastic element. The output of this deflection controller is a motor current command.
+ 
+The innermost loop is a motor current controller (PID), which regulates the actual motor current to match the commanded value.
+ 
+Compared to the Pratt and Williamson architecture, the cascaded approach does not use explicit feedforward compensation for motor inertia or load motion. Instead, these effects are handled implicitly by the deflection PID. If friction or inertia causes the actual deflection to deviate from the desired value, the deflection controller increases the motor current until the error is corrected. The absence of feedforward terms makes the controller simpler to implement, at the cost of relying entirely on the feedback gains to reject disturbances.
+
+
+\cite{prattSeriesElasticActuators1995, prattSeriesElasticActuators2002, huResearchVariableImpedance2025b, yuLearningElasticitySeriesElastic2017}
 
 \section{State of the Art}
 

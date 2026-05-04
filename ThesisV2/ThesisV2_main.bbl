@@ -69,7 +69,7 @@
       \verb 10.3233/WOR-230642
       \endverb
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/TC3X263A/Oral et al. - 2024 - Evaluation of absenteeism and presenteeism status of factory employees.pdf
+      \verb /home/oskar/Zotero/storage/TC3X263A/Oral et al. - 2024 - Evaluation of absenteeism and presenteeism status of factory employees.pdf
       \endverb
       \verb{urlraw}
       \verb https://journals.sagepub.com/doi/10.3233/WOR-230642
@@ -100,7 +100,7 @@
       \field{langid}{english}
       \field{title}{Repetitive Strain Injuries}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/GUF9FF54/Yassi - Repetitive strain injuries.pdf
+      \verb /home/oskar/Zotero/storage/GUF9FF54/Yassi - Repetitive strain injuries.pdf
       \endverb
     \endentry
     \entry{vilellaMusculoskeletalExamination}{article}{}
@@ -129,7 +129,7 @@
       \field{langid}{english}
       \field{title}{Musculoskeletal {{Examination}}}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/A58ZX2T8/Vilella and Reddivari - Musculoskeletal Examination.pdf
+      \verb /home/oskar/Zotero/storage/A58ZX2T8/Vilella and Reddivari - Musculoskeletal Examination.pdf
       \endverb
     \endentry
     \entry{ibvMusculoskeletalDisordersCaused2017}{article}{}
@@ -156,7 +156,7 @@
       \field{year}{2017}
       \field{dateera}{ce}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/2FB4FB7S/IBV - 2017 - Musculoskeletal disorders caused by the most common job demands and ergonomic risks.pdf
+      \verb /home/oskar/Zotero/storage/2FB4FB7S/IBV - 2017 - Musculoskeletal disorders caused by the most common job demands and ergonomic risks.pdf
       \endverb
       \verb{urlraw}
       \verb https://ec.europa.eu/programmes/erasmus-plus/project-result-content/c7cc4b4d-52c9-4b5e-a282-46f53f5f5e98/D2.1.MSDs_job_demands_Revised.pdf
@@ -229,8 +229,8 @@
       \strng{authorbibnamehash}{297a20d00fbb20200965f6812ffc79c0}
       \strng{authornamehash}{53f0f57f7793b42bb3f3406e7a5d811e}
       \strng{authorfullhash}{297a20d00fbb20200965f6812ffc79c0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Introduction Low back pain (LBP), neck pain (NKP), osteoarthritis (OST) and rheumatoid arthritis (RHE) are among the musculoskeletal (MSK) disorders causing the greatest disability in terms of Years Lived with Disability. The current study aims to analyze the health and economic impact of these MSK disorders in Belgium, providing a summary of morbidity and mortality outcomes from 2013 to 2018, as well as direct and indirect costs from 2013 to 2017. Methods The health burden of LBP, NKP, OST and RHE in Belgium from 2013 to 2018 was summarized in terms of prevalence and disability-adjusted life years (DALY) using data from the Belgian health interview surveys (BHIS), the INTEGO database (Belgian registration network for general practitioners) and the Global Burden of Diseases study 2019. The economic burden included estimates of direct medical costs and indirect costs, measured by cost of work absenteeism. For this purpose, data of the respondents to the BHIS-2013 were linked with the national health insurance data (intermutualistic agency [IMA] database) 2013–2017. Results In 2018, 2.5 million Belgians were affected by at least one MSK disorder. OST represented the disorder with the highest number of cases for both men and women, followed by LBP. In the same year, MSK disorders contributed to a total of 180,746 DALYs for female and 116,063 DALYs for men. LBP appeared to be the largest contributor to the health burden of MSK. Having at least one MSK disorder costed on average 3 billion € in medical expenses and 2 billion € in indirect costs per year, with LBP being the most costly. Conclusion MSK disorders represent a major health and economic burden in Belgium. As their burden will probably continue to increase in the future, acting on the risk factors associated to these disorders is crucial to mitigate both the health and economic burden.}
@@ -255,7 +255,7 @@
       \verb 10.1186/s12963-023-00303-z
       \endverb
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/BETDDHYW/Gorasso et al. - 2023 - The health and economic burden of musculoskeletal disorders in Belgium from 2013 to 2018.pdf
+      \verb /home/oskar/Zotero/storage/BETDDHYW/Gorasso et al. - 2023 - The health and economic burden of musculoskeletal disorders in Belgium from 2013 to 2018.pdf
       \endverb
       \verb{urlraw}
       \verb https://pophealthmetrics.biomedcentral.com/articles/10.1186/s12963-023-00303-z
@@ -306,8 +306,8 @@
       \strng{editorbibnamehash}{4a17cf3c3b7f5b41d41d1508f5625fea}
       \strng{editornamehash}{4a17cf3c3b7f5b41d41d1508f5625fea}
       \strng{editorfullhash}{4a17cf3c3b7f5b41d41d1508f5625fea}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -317,7 +317,7 @@
       \field{pages}{63}
       \range{pages}{1}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/MWVU25DF/Bender et al. - StudyLeightweightRobots_FraunhoferIAO_2016-EN.pdf
+      \verb /home/oskar/Zotero/storage/MWVU25DF/Bender et al. - StudyLeightweightRobots_FraunhoferIAO_2016-EN.pdf
       \endverb
       \verb{urlraw}
       \verb https://publica-rest.fraunhofer.de/server/api/core/bitstreams/961b5036-c442-47db-84a6-b5334b4c1221/content
@@ -360,7 +360,7 @@
       \verb 10.2861/021129
       \endverb
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/HWUZ2L4F/European Parliament. Directorate General for Parliamentary Research Services. - 2023 - Analysis exploring risks and opportunities linked to the use of collaborative industrial robots in E.pdf
+      \verb /home/oskar/Zotero/storage/HWUZ2L4F/European Parliament. Directorate General for Parliamentary Research Services. - 2023 - Analysis exploring risks and opportunities linked to the use of collaborative industrial robots in E.pdf
       \endverb
       \verb{urlraw}
       \verb https://data.europa.eu/doi/10.2861/021129
@@ -416,7 +416,7 @@
       \verb 10.1016/j.procir.2018.01.026
       \endverb
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/NEBWJIDG/Rosenstrauch et al. - 2018 - Human robot collaboration - using kinect v2 for ISOTS 15066 speed and separation monitoring.pdf
+      \verb /home/oskar/Zotero/storage/NEBWJIDG/Rosenstrauch et al. - 2018 - Human robot collaboration - using kinect v2 for ISOTS 15066 speed and separation monitoring.pdf
       \endverb
       \verb{urlraw}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S2212827118300404
@@ -474,7 +474,7 @@
       \verb 10.1016/j.ssci.2020.104832
       \endverb
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/Y685PGPD/Chemweno et al. - 2020 - Orienting safety assurance with outcomes of hazard analysis and risk assessment A review of the ISO.pdf
+      \verb /home/oskar/Zotero/storage/Y685PGPD/Chemweno et al. - 2020 - Orienting safety assurance with outcomes of hazard analysis and risk assessment A review of the ISO.pdf
       \endverb
       \verb{urlraw}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0925753520302290
@@ -526,7 +526,7 @@
       \verb 10.1007/978-3-319-32552-1
       \endverb
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/NDJZK4M7/Siciliano and Khatib - 2016 - Springer Handbook of Robotics.pdf
+      \verb /home/oskar/Zotero/storage/NDJZK4M7/Siciliano and Khatib - 2016 - Springer Handbook of Robotics.pdf
       \endverb
       \verb{urlraw}
       \verb https://link.springer.com/10.1007/978-3-319-32552-1
@@ -564,8 +564,8 @@
       \strng{authorbibnamehash}{cd322a146f7c91dd5dbd5733de60fb76}
       \strng{authornamehash}{57214750763eedf2832c227e227173c6}
       \strng{authorfullhash}{cd322a146f7c91dd5dbd5733de60fb76}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The research behind this paper arose out of a need to use an open-source system that enables hand guiding of the robot effector using a force sensor. The paper deals with some existing solutions, including the solution based on the open-source framework Robot Operating System (ROS), in which the built-in motion planner MoveIt is used. The proposed concept of a hand-guiding system utilizes the output of the force–torque sensor mounted at the robot effector to obtain the desired motion, which is thereafter used for planning consequential motion trajectories. Some advantages and disadvantages of the built-in planner are discussed, and then the custom motion planning solution is proposed to overcome the identified drawbacks. Our planning algorithm uses polynomial interpolation and is suitable for continuous replanning of the consequential motion trajectories, which is necessary because the output from the sensor changes due to the hand action during robot motion. The resulting system is verified using a virtual robot in the ROS environment, which acts on the real Optoforce force–torque sensor HEX-70-CE-2000N. Furthermore, the workspace and the motion of the robot are restricted to a greater extent to achieve more realistic simulation.}
@@ -589,7 +589,7 @@
       \verb 10.2478/ama-2021-0023
       \endverb
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/U68TBU35/Gregor et al. - 2021 - Hand Guiding a Virtual Robot Using a Force Sensor.pdf
+      \verb /home/oskar/Zotero/storage/U68TBU35/Gregor et al. - 2021 - Hand Guiding a Virtual Robot Using a Force Sensor.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.sciendo.com/article/10.2478/ama-2021-0023
@@ -627,8 +627,8 @@
       \strng{authorbibnamehash}{2928fe60e31a70f059ee29dadea922ad}
       \strng{authornamehash}{f1ee8d61290d8704560a659227c12dc3}
       \strng{authorfullhash}{2928fe60e31a70f059ee29dadea922ad}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Collaborative robots cooperate with humans to assist them in undertaking simple-tocomplex tasks in several fields, including industry, education, agriculture, healthcare services, security, and space exploration. These robots play a vital role in the revolution of Industry 4.0, which defines new standards of manufacturing and the organization of products in the industry. Incorporating collaborative robots in the workspace improves efficiency, but it also introduces several safety risks. Effective safety measures then become indispensable to ensure safe and robust interaction. This paper presents the review of low-level control methodologies of a collaborative robot to assess the current status of human–robot collaboration over the last decade. First, we discuss the classification of human–robot collaboration, architectures of systems and the complex requirements on control strategies. The most commonly used control approaches were presented and discussed. Several methods of control, reported in industrial applications, are elaborated upon with a prime focus on HR-collaborative assembly operations. Since the physical HRC is a critical control problem for the co-manipulation task, this article identifies key control challenges such as the prediction of human intentions, safety, and human-caused disturbances in motion synchronization; the proposed solutions were analyzed afterwards. The discussion at the end of the paper summarizes the features of the control systems that should be incorporated within the systematic framework to allow the execution of a robotic task from global task planning to low-level control implementation for safe and robust interactions.}
@@ -654,7 +654,7 @@
       \verb 10.3390/app13010675
       \endverb
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/9VQT67H7/Hameed et al. - 2023 - Control System Design and Methods for Collaborative Robots Review.pdf
+      \verb /home/oskar/Zotero/storage/9VQT67H7/Hameed et al. - 2023 - Control System Design and Methods for Collaborative Robots Review.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.mdpi.com/2076-3417/13/1/675
@@ -712,8 +712,8 @@
       \strng{authorbibnamehash}{1aebfc7d8d4d9e5b3cda4d43e71d6af1}
       \strng{authornamehash}{b7eea034900ca38a1bbbafc90fd53ae6}
       \strng{authorfullhash}{1aebfc7d8d4d9e5b3cda4d43e71d6af1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Collaborative robotics possesses the potential to revolutionise industrial automation by offering affordable and accessible solutions with reasonable skill requirements. However, identifying the most valuable and appropriate applications for this technology remains a challenge. This study conducted a comprehensive literature review to analyse the existing collaborative robotics applications, and the results showed that only a limited number of applications can be considered true collaboration, with even fewer classified as intelligent collaboration. The study comprised a survey designed to offer valuable insights to not only enhance the state-of-the-art analysis in the identification of existing challenges in the field of collaborative robotics but also to provide motivation to guide future advancements. By leveraging the survey results, researchers and practitioners will be better equipped to navigate the complex landscape of collaborative robotics and develop innovative solutions to tackle the identified challenges. This study also informs on the latest research and development in the field.}
@@ -739,7 +739,7 @@
       \verb 10.1007/s10846-024-02141-z
       \endverb
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/EGYB7JC5/Montini et al. - 2024 - Collaborative Robotics A Survey From Literature and Practitioners Perspectives.pdf
+      \verb /home/oskar/Zotero/storage/EGYB7JC5/Montini et al. - 2024 - Collaborative Robotics A Survey From Literature and Practitioners Perspectives.pdf
       \endverb
       \verb{urlraw}
       \verb https://link.springer.com/10.1007/s10846-024-02141-z
@@ -749,8 +749,8 @@
       \endverb
     \endentry
     \entry{UR30CollaborativeRobot}{online}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{abstract}{Discover the UR30 collaborative robot from Universal Robots. With up to 35 kg payload and 1300 mm reach, this compact cobot is ideal for palletizing, machine tending, and heavy-duty material handling.}
       \field{langid}{american}
@@ -760,7 +760,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/MMVJ9BI6/ur30.html
+      \verb /home/oskar/Zotero/storage/MMVJ9BI6/ur30.html
       \endverb
       \verb{urlraw}
       \verb https://www.universal-robots.com/products/ur30/
@@ -784,7 +784,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/3YJX5ZSN/collaborative-robot.html
+      \verb /home/oskar/Zotero/storage/3YJX5ZSN/collaborative-robot.html
       \endverb
       \verb{urlraw}
       \verb https://www.fanucamerica.com/products/robots/series/collaborative-robot
@@ -823,7 +823,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/WYFEQ9MA/40390-hand-guiding-robots.html
+      \verb /home/oskar/Zotero/storage/WYFEQ9MA/40390-hand-guiding-robots.html
       \endverb
       \verb{urlraw}
       \verb https://www.techbriefs.com/component/content/article/40390-hand-guiding-robots
@@ -851,7 +851,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/LRNRPPFW/fanuc-robot-payload-collision-guard-configuration-guide.html
+      \verb /home/oskar/Zotero/storage/LRNRPPFW/fanuc-robot-payload-collision-guard-configuration-guide.html
       \endverb
       \verb{urlraw}
       \verb https://industrialmonitordirect.com/blogs/knowledgebase/fanuc-robot-payload-collision-guard-configuration-guide
@@ -884,7 +884,7 @@
       \field{year}{2019}
       \field{dateera}{ce}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/ILFRJ53I/Arakelian - 2019 - GRAVITY COMPENSATION IN ROBOTICS – A REVIEW.pdf
+      \verb /home/oskar/Zotero/storage/ILFRJ53I/Arakelian - 2019 - GRAVITY COMPENSATION IN ROBOTICS – A REVIEW.pdf
       \endverb
     \endentry
     \entry{IndustrialLiftAssist}{online}{}
@@ -902,7 +902,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/DBDU9NVR/toolbalancerarms-3arm.com.html
+      \verb /home/oskar/Zotero/storage/DBDU9NVR/toolbalancerarms-3arm.com.html
       \endverb
       \verb{urlraw}
       \verb https://toolbalancerarms-3arm.com/
@@ -921,7 +921,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/352B2DT4/downloads.html
+      \verb /home/oskar/Zotero/storage/352B2DT4/downloads.html
       \endverb
       \verb{urlraw}
       \verb https://www.suspa.com/in/downloads
@@ -945,7 +945,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/2VW2D23Q/www.transprotec.de.html
+      \verb /home/oskar/Zotero/storage/2VW2D23Q/www.transprotec.de.html
       \endverb
       \verb{urlraw}
       \verb https://www.transprotec.de/
@@ -976,7 +976,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/AXKX8CXC/index.html
+      \verb /home/oskar/Zotero/storage/AXKX8CXC/index.html
       \endverb
       \verb{urlraw}
       \verb https://en.wikipedia.org/w/index.php?title=Cobot&oldid=1348168033#cite_note-22
@@ -1000,7 +1000,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/49V74K2Z/industrial-manipulators.html
+      \verb /home/oskar/Zotero/storage/49V74K2Z/industrial-manipulators.html
       \endverb
       \verb{urlraw}
       \verb https://www.indevagroup.com/industrial-manipulators/
@@ -1063,7 +1063,7 @@
       \verb 10.1109/IROS.2003.1249248
       \endverb
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/7BKBN4NU/Colgate et al. - 2003 - Intelligent assist devices in industrial applications a review.pdf
+      \verb /home/oskar/Zotero/storage/7BKBN4NU/Colgate et al. - 2003 - Intelligent assist devices in industrial applications a review.pdf
       \endverb
       \verb{urlraw}
       \verb http://ieeexplore.ieee.org/document/1249248/
@@ -1111,8 +1111,8 @@
       \strng{authorbibnamehash}{d50891bcea7002d2d62c377362d80433}
       \strng{authornamehash}{98f4237fdddf1daa938d358d749c768c}
       \strng{authorfullhash}{d50891bcea7002d2d62c377362d80433}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{There are two main categories of force control schemes: hybrid position-force control and impedance control. However, the former does not take into account the dynamic interaction between the robot’s end effector and the environment. In contrast, impedance control includes regulation and stabilization of robot motion by creating a mathematical relationship between the interaction forces and the reference trajectories. It involves an energetic pair of a flow and an effort, instead of controlling a single position or a force. A mass-spring-damper impedance filter is generally used for safe interaction purposes. Tuning the parameters of the impedance filter is important and, if an unsuitable strategy is used, this can lead to unstable contact. Humans, however, have exceptionally effective control systems with advanced biological actuators. An individual can manipulate muscle stiffness to comply with the interaction forces. Accordingly, the parameters of the impedance filter should be time varying rather than value constant in order to match human behavior during interaction tasks. Therefore, this paper presents an overview of impedance control strategies including standard and extended control schemes. Standard controllers cover impedance and admittance architectures. Extended control schemes include admittance control with force tracking, variable impedance control, and impedance control of flexible joints. The categories of impedance control and their features and limitations are well introduced. Attention is paid to variable impedance control while considering the possible control schemes, the performance, stability, and the integration of constant compliant elements with the host robot.}
@@ -1137,13 +1137,456 @@
       \verb 10.1155/2018/8203054
       \endverb
       \verb{file}
-      \verb /home/oskardev/Zotero/storage/VHR2UIHE/Al-Shuka et al. - 2018 - Active Impedance Control of Bioinspired Motion Robotic Manipulators An Overview.pdf
+      \verb /home/oskar/Zotero/storage/VHR2UIHE/Al-Shuka et al. - 2018 - Active Impedance Control of Bioinspired Motion Robotic Manipulators An Overview.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.hindawi.com/journals/abb/2018/8203054/
       \endverb
       \verb{url}
       \verb https://www.hindawi.com/journals/abb/2018/8203054/
+      \endverb
+    \endentry
+    \entry{songImpedanceControlRobots2017}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=084a5a4ca7001b3de6f9cff059c7da9f}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e988f51e54f17a97250d9ab1c2034a06}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Yueqing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=195b848e06b67de7727ae2b5fe0edd98}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xuping},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chengdu}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{132bf3d252425d0fee5d166b59946218}
+      \strng{fullhash}{132bf3d252425d0fee5d166b59946218}
+      \strng{bibnamehash}{132bf3d252425d0fee5d166b59946218}
+      \strng{authorbibnamehash}{132bf3d252425d0fee5d166b59946218}
+      \strng{authornamehash}{132bf3d252425d0fee5d166b59946218}
+      \strng{authorfullhash}{132bf3d252425d0fee5d166b59946218}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Impedance control has received significant efforts in recent decades in robotics as impedance control aims to achieve the desired mechanical interaction with uncertain environment. This paper is dedicated to the overview of basic concepts and principles, implementation strategies, challenging research problems and interests, etc. The objective is to help readers quickly get into problems of their interests related to impedance control and provide guidance and insights in finding appropriate strategies and solutions.}
+      \field{booktitle}{2017 2nd {{International Conference}} on {{Cybernetics}}, {{Robotics}} and {{Control}} ({{CRC}})}
+      \field{eventtitle}{2017 2nd {{International Conference}} on {{Cybernetics}}, {{Robotics}} and {{Control}} ({{CRC}})}
+      \field{isbn}{978-1-5386-0677-3}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{shorttitle}{Impedance {{Control}} of {{Robots}}}
+      \field{title}{Impedance {{Control}} of {{Robots}}: {{An Overview}}}
+      \field{urlday}{10}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{51\bibrangedash 55}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/CRC.2017.20
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/9FFJ65B7/Song et al. - 2017 - Impedance Control of Robots An Overview.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/8328305/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/8328305/
+      \endverb
+    \endentry
+    \entry{andersonHybridImpedanceControl1988}{article}{}
+      \name{author}{2}{}{%
+        {{hash=44f716ae9c52c6e9e0952988d11b7582}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={R.J.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e9120aaec65cab36d4cb2a623900f475}{%
+           family={Spong},
+           familyi={S\bibinitperiod},
+           given={M.W.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{690c4065e2ec177f73389a08f856ff7b}
+      \strng{fullhash}{690c4065e2ec177f73389a08f856ff7b}
+      \strng{bibnamehash}{690c4065e2ec177f73389a08f856ff7b}
+      \strng{authorbibnamehash}{690c4065e2ec177f73389a08f856ff7b}
+      \strng{authornamehash}{690c4065e2ec177f73389a08f856ff7b}
+      \strng{authorfullhash}{690c4065e2ec177f73389a08f856ff7b}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In order for robots to improve their adaptability, it i s necessary for the underlying control strategies to become more sophisticated. This i s especially true in contact tasks such as grinding or dehurring where it i s desired not only for the robot to apply a steady force, hut also to reject undesirable high-frequency disturbances. This work presents a foundation for such force control strategies. Realizing that the type of control strategy that i s employed depends fundamentally on the characteristics of the environment, this correspondence classifies the types of environments by use of a duality condition, and demonstrates which control i s appropriate for each type of environment. A general control approach i s introduced, called hybrid impedance control (HIC), which in its simplest forms reduces to Khatih’s operational space control 131, or to Hogan’s impedance control [14]. The control law i s formulated in a general enough fashion, however, to allow for higher order controllers.}
+      \field{issn}{08824967}
+      \field{journaltitle}{IEEE Journal on Robotics and Automation}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{5}
+      \field{shortjournal}{IEEE J. Robot. Automat.}
+      \field{title}{Hybrid Impedance Control of Robotic Manipulators}
+      \field{urlday}{10}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{4}
+      \field{year}{1988}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{549\bibrangedash 556}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/56.20440
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/9X7LCMTY/Anderson and Spong - 1988 - Hybrid impedance control of robotic manipulators.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/20440/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/20440/
+      \endverb
+    \endentry
+    \entry{songTutorialSurveyComparison2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=084a5a4ca7001b3de6f9cff059c7da9f}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e988f51e54f17a97250d9ab1c2034a06}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Yueqing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=195b848e06b67de7727ae2b5fe0edd98}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xuping},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{132bf3d252425d0fee5d166b59946218}
+      \strng{fullhash}{132bf3d252425d0fee5d166b59946218}
+      \strng{bibnamehash}{132bf3d252425d0fee5d166b59946218}
+      \strng{authorbibnamehash}{132bf3d252425d0fee5d166b59946218}
+      \strng{authornamehash}{132bf3d252425d0fee5d166b59946218}
+      \strng{authorfullhash}{132bf3d252425d0fee5d166b59946218}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{There have been significant interests and efforts in the field of impedance control on robotic manipulation over last decades. Impedance control aims to achieve the desired mechanical interaction between the robotic equipment and its environment. This paper gives the overview and comparison of basic concepts and principles, implementation strategies, crucial techniques, and practical applications concerning the impedance control of robotic manipulation. This work attempts to serve as a tutorial to people outside the field and to promote discussion of a unified vision of impedance control within the field of robotic manipulation. The goal is to help readers quickly get into the problems of their interests related to impedance control of robotic manipulation and to provide guidance and insights in finding appropriate strategies and solutions.}
+      \field{issn}{0263-5747, 1469-8668}
+      \field{journaltitle}{Robotica}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{shortjournal}{Robotica}
+      \field{title}{A {{Tutorial Survey}} and {{Comparison}} of {{Impedance Control}} on {{Robotic Manipulation}}}
+      \field{urlday}{10}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{37}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{801\bibrangedash 836}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1017/S0263574718001339
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/6P3SLCDI/Song et al. - 2019 - A Tutorial Survey and Comparison of Impedance Control on Robotic Manipulation.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S0263574718001339/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S0263574718001339/type/journal_article
+      \endverb
+    \endentry
+    \entry{prattSeriesElasticActuators1995}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=adb072f1bbbff1fc1c73a5f5e83d2bba}{%
+           family={Pratt},
+           familyi={P\bibinitperiod},
+           given={G.A.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=fe89917f1116f944b27bc74ba1b813f6}{%
+           family={Williamson},
+           familyi={W\bibinitperiod},
+           given={M.M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Pittsburgh, PA, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Comput. Soc. Press}%
+      }
+      \strng{namehash}{da3b59cabc31c886a043b7c58229f0e2}
+      \strng{fullhash}{da3b59cabc31c886a043b7c58229f0e2}
+      \strng{bibnamehash}{da3b59cabc31c886a043b7c58229f0e2}
+      \strng{authorbibnamehash}{da3b59cabc31c886a043b7c58229f0e2}
+      \strng{authornamehash}{da3b59cabc31c886a043b7c58229f0e2}
+      \strng{authorfullhash}{da3b59cabc31c886a043b7c58229f0e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings 1995 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}}. {{Human Robot Interaction}} and {{Cooperative Robots}}}
+      \field{eventtitle}{1995 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}}. {{Human Robot Interaction}} and {{Cooperative Robots}}}
+      \field{isbn}{978-0-8186-7108-1}
+      \field{langid}{english}
+      \field{title}{Series Elastic Actuators}
+      \field{urlday}{12}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{1}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{399\bibrangedash 406}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IROS.1995.525827
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/6WJJZVBR/Pratt and Williamson - 1995 - Series elastic actuators.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/525827/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/525827/
+      \endverb
+    \endentry
+    \entry{yuLearningElasticitySeriesElastic2017}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=a89b6783ffa62e99a56d7b7d51971dd7}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Bingbin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1bad416a07ad3f82679257f0315645a9}{%
+           family={De\bibnamedelima Gea\bibnamedelima Fernández},
+           familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2ec7835ea7f8266bc2a6d2cc8378c304}{%
+           family={Kassahun},
+           familyi={K\bibinitperiod},
+           given={Yohannes},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d85fdca1eff3f9af7b8c0fa17fc2e2f0}{%
+           family={Bargsten},
+           familyi={B\bibinitperiod},
+           given={Vinzenz},
+           giveni={V\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=8e9e71ae4496824be3bb60e7b81b886f}{%
+           family={Benferhat},
+           familyi={B\bibinitperiod},
+           given={Salem},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c6041a949ee258cf7843a39df64d6341}{%
+           family={Tabia},
+           familyi={T\bibinitperiod},
+           given={Karim},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8391ea099678eb6e427c005f33ab583e}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={Moonis},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{8825013c23419869a878faaa8d316530}
+      \strng{fullhash}{241225fce5888ff69f8fba430413e726}
+      \strng{bibnamehash}{241225fce5888ff69f8fba430413e726}
+      \strng{authorbibnamehash}{241225fce5888ff69f8fba430413e726}
+      \strng{authornamehash}{8825013c23419869a878faaa8d316530}
+      \strng{authorfullhash}{241225fce5888ff69f8fba430413e726}
+      \strng{editorbibnamehash}{7448a2a04e3f0d45a59eeaa6104d1126}
+      \strng{editornamehash}{7448a2a04e3f0d45a59eeaa6104d1126}
+      \strng{editorfullhash}{7448a2a04e3f0d45a59eeaa6104d1126}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in {{Artificial Intelligence}}: {{From Theory}} to {{Practice}}}
+      \field{isbn}{978-3-319-60041-3 978-3-319-60042-0}
+      \field{langid}{english}
+      \field{title}{Learning the {{Elasticity}} of a {{Series-Elastic Actuator}} for {{Accurate Torque Control}}}
+      \field{urlday}{12}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{10350}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{543\bibrangedash 552}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/978-3-319-60042-0_60
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/6EDZUKHU/Yu et al. - 2017 - Learning the Elasticity of a Series-Elastic Actuator for Accurate Torque Control.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-319-60042-0_60
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-319-60042-0_60
+      \endverb
+    \endentry
+    \entry{prattSeriesElasticActuators2002}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7aada8d85f6ca72305930b4e798a6c15}{%
+           family={Pratt},
+           familyi={P\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=86cf43753f0a88646b96b1eff8e3918d}{%
+           family={Krupp},
+           familyi={K\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2426a27716d7cbc54aeb75540d9e8982}{%
+           family={Morse},
+           familyi={M\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{cac2e9748e49fbf3fa11a4bf542c9494}
+      \strng{fullhash}{cac2e9748e49fbf3fa11a4bf542c9494}
+      \strng{bibnamehash}{cac2e9748e49fbf3fa11a4bf542c9494}
+      \strng{authorbibnamehash}{cac2e9748e49fbf3fa11a4bf542c9494}
+      \strng{authornamehash}{cac2e9748e49fbf3fa11a4bf542c9494}
+      \strng{authorfullhash}{cac2e9748e49fbf3fa11a4bf542c9494}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Series Elastic Actuators provide many benefits in force control of robots in unconstrained environments. These benefits include high force fidelity, extremely low impedance, low friction, and good force control bandwidth. Series Elastic Actuators employ a novel mechanical design architecture which goes against the common machine design principal of “stiffer is better”. A compliant element is placed between the gear train and driven load to intentionally reduce the stiffness of the actuator. A position sensor measures the deflection, and the force output is accurately calculated using Hooke’s Law (F=Kx). A control loop then servos the actuator to the desired output force. The resulting actuator has inherent shock tolerance, high force fidelity and extremely low impedance. These characteristics are desirable in many applications including legged robots, exoskeletons for human performance amplification, robotic arms, haptic interfaces, and adaptive suspensions. We describe several variations of Series Elastic Actuators that have been developed using both electric and hydraulic components.}
+      \field{day}{1}
+      \field{issn}{0143-991X}
+      \field{journaltitle}{Industrial Robot: An International Journal}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{Series Elastic Actuators for High Fidelity Force Control}
+      \field{urlday}{12}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{29}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{234\bibrangedash 241}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1108/01439910210425522
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/92PX2EZG/Pratt et al. - 2002 - Series elastic actuators for high fidelity force control.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.emerald.com/ir/article/29/3/234-241/432405
+      \endverb
+      \verb{url}
+      \verb http://www.emerald.com/ir/article/29/3/234-241/432405
+      \endverb
+    \endentry
+    \entry{huResearchVariableImpedance2025b}{article}{}
+      \name{author}{5}{}{%
+        {{hash=4d8793fdccef90836b64df65cbdda6b2}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Bingshan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6c7a80ad608cb76d18182d2243d7acfc}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=976affc53da295214623e71bb6d27161}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Zhou},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=c7578448dca2bb24b1c03c0069f6aa11}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Fengchen},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e0092ad321657fb87b2ab2e5e7be1ee1}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Hongliu},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{f603f98201ad243d31f33f996ee4b4e0}
+      \strng{fullhash}{ac2a2b24986f5a3599ad13028320b8d7}
+      \strng{bibnamehash}{ac2a2b24986f5a3599ad13028320b8d7}
+      \strng{authorbibnamehash}{ac2a2b24986f5a3599ad13028320b8d7}
+      \strng{authornamehash}{f603f98201ad243d31f33f996ee4b4e0}
+      \strng{authorfullhash}{ac2a2b24986f5a3599ad13028320b8d7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper proposes a variable impedance control strategy based on the singular perturbation method to address the challenges of achieving accurate impedance characteristics and mitigating stability degradation in two-degree-of-freedom planar SEA-driven robots. By decomposing the system into fast and slow subsystems, we control them separately to improve tracking performance, disturbance rejection, and impedance control. A MATLAB/Simulink model was developed for simulation and compared with a traditional PD controller. The results show that the proposed controller outperforms the PD controller, maintaining position errors under 10\% and impedance errors under 30\% of those seen with the PD controller under external force input. Additionally, experimental validation confirmed the controller’s ability to optimally adjust robot stiffness in response to changes in the user’s limb-end stiffness, supporting the assist-as-needed strategy.}
+      \field{issn}{1729-8806, 1729-8814}
+      \field{journaltitle}{International Journal of Advanced Robotic Systems}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{4}
+      \field{shortjournal}{International Journal of Advanced Robotic Systems}
+      \field{title}{Research on Variable Impedance Control of {{SEA-driven}} Upper Limb Rehabilitation Robot Based on Singular Perturbation Method}
+      \field{urlday}{12}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{22}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{17298806251325135}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1177/17298806251325135
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/J5ZY6JZU/Hu et al. - 2025 - Research on variable impedance control of SEA-driven upper limb rehabilitation robot based on singul.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.sagepub.com/doi/10.1177/17298806251325135
+      \endverb
+      \verb{url}
+      \verb https://journals.sagepub.com/doi/10.1177/17298806251325135
       \endverb
     \endentry
   \enddatalist
