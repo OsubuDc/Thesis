@@ -802,13 +802,18 @@ The practical consequence for actuator design is that the spring stiffness shoul
 
 \subsubsection{Control architectures}
 
-Pratt and Williamson proposed a control architecture that combines feedforward compensation with feedback correction. The architecture is shown in Figure~\ref{fig:sea_control_pratt}, where the transfer functions are derived from Equation~\eqref{eq:sea_fm_freq} by using $s = j\omega \rightarrow \omega^2 = -s^2$.
+Pratt and Williamson proposed a control architecture that combines feedforward compensation with feedback correction. The architecture is shown in Figure~\ref{fig:sea_pratt}, where the transfer functions are derived from Equation~\eqref{eq:sea_fm_freq} by using $s = j\omega \rightarrow \omega^2 = -s^2$.
 
-% TODO: include control diagram from Paper 1 (Figure 8)
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{seacontrolscheme}
+    \caption{Torque control diagram with feedforward terms from \cite{prattSeriesElasticActuators1995}.}
+    \label{fig:sea_pratt}
+\end{figure}
 
 The controller receives a desired output force $F_d$ and the measured spring force $F_l = k_s(x_m - x_l)$. The controller's task is to make $F_l$ track $F_d$.
 
-The force error $F_d - F_l$ is processed by a PID feedback loop. Feedforward terms compensate for the components of the required motor force derived in Equation~\eqref{eq:sea_fm_freq}. The first two terms, the desired output force and the motor acceleration needed to change the spring deflection, are fully compensated in the feedforward path. The third term, motor acceleration to track load motion, is only partially compensated by choosing a $K_b < 1$ to prevent instability. The combined feedforward and feedback output is a desired motor current, which translates to a motor torque \cite{prattSeriesElasticActuators1995}.\\
+The force error $F_d - F_l$ is processed by a PID feedback loop. Feedforward terms compensate for the components of the required motor force derived in Equation~\eqref{eq:sea_fm_freq}. The first two terms, the desired output force and the motor acceleration needed to change the spring deflection, are fully compensated in the feedforward path. The third term, motor acceleration to track load motion, is only partially compensated by choosing a $K_b < 1$ to prevent instability. The combined feedforward and feedback output is a desired motor current, which translates to a motor torque \cite{prattSeriesElasticActuators1995}.
 \newpage
 
 Yu et al.\ proposed a cascaded control architecture consisting of three nested loops~\cite{yuLearningElasticitySeriesElastic2017}. The architecture is shown in Figure~\ref{fig:yuetalscheme}.
@@ -819,9 +824,6 @@ Yu et al.\ proposed a cascaded control architecture consisting of three nested l
     \caption{Torque control diagram from \cite{yuLearningElasticitySeriesElastic2017}.}
     \label{fig:yuetalscheme}
 \end{figure}
-
- 
-% TODO: include control diagram from Paper 3 (Figure 5)
  
 The outermost layer is the spring model, which converts the desired torque $\tau_{\text{des}}$ into a desired spring deflection $\delta_{\text{des}}$. For a linear spring, this conversion is:
 \begin{equation}

@@ -53,10 +53,10 @@
 \contentsline {chapter}{\numberline {5}Conclusion and Future Work}{29}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Conclusion}{29}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Future Work}{29}{section.5.2}%
-\contentsline {chapter}{References}{31}{chapter*.30}%
-\contentsline {chapter}{2D Manufacturing Drawings}{35}{appendix*.31}%
+\contentsline {chapter}{References}{31}{chapter*.31}%
+\contentsline {chapter}{2D Manufacturing Drawings}{35}{appendix*.32}%
 \contentsline {section}{\numberline {.1}CNC Part 1}{35}{section.Alph0.1}%
 \contentsline {section}{\numberline {.2}CNC Part 2}{35}{section.Alph0.2}%
 \contentsline {section}{\numberline {.3}CNC Part 3}{35}{section.Alph0.3}%
-\contentsline {chapter}{Additional Experimental Results}{37}{appendix*.32}%
-\contentsline {chapter}{Source Code}{39}{appendix*.33}%
+\contentsline {chapter}{Additional Experimental Results}{37}{appendix*.33}%
+\contentsline {chapter}{Source Code}{39}{appendix*.34}%

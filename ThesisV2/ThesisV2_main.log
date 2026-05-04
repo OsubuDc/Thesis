@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  4 MAY 2026 18:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  4 MAY 2026 20:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1280,7 +1280,7 @@ l.253 \newpage
 
 
 ]
-<Graphics//workspaces.png, id=413, 576.1525pt x 329.23pt>
+<Graphics//workspaces.png, id=416, 576.1525pt x 329.23pt>
 File: Graphics//workspaces.png Graphic file (type png)
 <use Graphics//workspaces.png>
 Package pdftex.def Info: Graphics//workspaces.png  used on input line 277.
@@ -1294,7 +1294,7 @@ been already used, duplicate ignored
                    \relax 
 l.282 
        [2]
-<Graphics//Human_robot_collaboration.png, id=426, 1515.6625pt x 690.58pt>
+<Graphics//Human_robot_collaboration.png, id=429, 1515.6625pt x 690.58pt>
 File: Graphics//Human_robot_collaboration.png Graphic file (type png)
 <use Graphics//Human_robot_collaboration.png>
 Package pdftex.def Info: Graphics//Human_robot_collaboration.png  used on input
@@ -1307,24 +1307,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 342--344
  []
 
 [5] [6]
-<Graphics//3arm.png, id=477, 984.67876pt x 564.1075pt>
+<Graphics//3arm.png, id=480, 984.67876pt x 564.1075pt>
 File: Graphics//3arm.png Graphic file (type png)
 <use Graphics//3arm.png>
 Package pdftex.def Info: Graphics//3arm.png  used on input line 365.
 (pdftex.def)             Requested size: 352.81552pt x 202.1231pt.
-<Graphics//Gasspringcharacteristic.png, id=480, 1218.5525pt x 587.19376pt>
+<Graphics//Gasspringcharacteristic.png, id=483, 1218.5525pt x 587.19376pt>
 File: Graphics//Gasspringcharacteristic.png Graphic file (type png)
 <use Graphics//Gasspringcharacteristic.png>
 Package pdftex.def Info: Graphics//Gasspringcharacteristic.png  used on input l
 ine 373.
 (pdftex.def)             Requested size: 352.81552pt x 170.01303pt.
  [7 <./Graphics//3arm.png> <./Graphics//Gasspringcharacteristic.png>]
-<Graphics//Springbalancer.png, id=491, 403.5075pt x 956.57375pt>
+<Graphics//Springbalancer.png, id=495, 403.5075pt x 956.57375pt>
 File: Graphics//Springbalancer.png Graphic file (type png)
 <use Graphics//Springbalancer.png>
 Package pdftex.def Info: Graphics//Springbalancer.png  used on input line 384.
 (pdftex.def)             Requested size: 44.10446pt x 104.55202pt.
-<Graphics//assemblyline.png, id=499, 927.465pt x 777.90625pt>
+<Graphics//assemblyline.png, id=503, 927.465pt x 777.90625pt>
 File: Graphics//assemblyline.png Graphic file (type png)
 <use Graphics//assemblyline.png>
 Package pdftex.def Info: Graphics//assemblyline.png  used on input line 397.
@@ -1350,13 +1350,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 421--422
 ]
 Chapter 2.
 [11]
-<Graphics//impedance_control.png, id=532, 461.725pt x 255.95625pt>
+<Graphics//impedance_control.png, id=535, 461.725pt x 255.95625pt>
 File: Graphics//impedance_control.png Graphic file (type png)
 <use Graphics//impedance_control.png>
 Package pdftex.def Info: Graphics//impedance_control.png  used on input line 45
 9.
 (pdftex.def)             Requested size: 220.50887pt x 122.2366pt.
-<Graphics//impedance_control_u.png, id=535, 366.36874pt x 298.11375pt>
+<Graphics//impedance_control_u.png, id=538, 366.36874pt x 298.11375pt>
 File: Graphics//impedance_control_u.png Graphic file (type png)
 <use Graphics//impedance_control_u.png>
 Package pdftex.def Info: Graphics//impedance_control_u.png  used on input line 
@@ -1369,7 +1369,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 469.
  [12 <./Graphics//impedance_control.png> <./Graphics//impedance_control_u.png>]
-<Graphics//generalapproachimpedancecontrol.png, id=550, 655.44875pt x 199.74625
+<Graphics//generalapproachimpedancecontrol.png, id=553, 655.44875pt x 199.74625
 pt>
 File: Graphics//generalapproachimpedancecontrol.png Graphic file (type png)
 <use Graphics//generalapproachimpedancecontrol.png>
@@ -1377,7 +1377,7 @@ Package pdftex.def Info: Graphics//generalapproachimpedancecontrol.png  used on
  input line 495.
 (pdftex.def)             Requested size: 352.81552pt x 107.52pt.
  [13 <./Graphics//generalapproachimpedancecontrol.png>]
-<Graphics//forcebaseddiagram.png, id=577, 366.36874pt x 125.46875pt>
+<Graphics//forcebaseddiagram.png, id=580, 366.36874pt x 125.46875pt>
 File: Graphics//forcebaseddiagram.png Graphic file (type png)
 <use Graphics//forcebaseddiagram.png>
 Package pdftex.def Info: Graphics//forcebaseddiagram.png  used on input line 55
@@ -1387,7 +1387,7 @@ Package pdftex.def Info: Graphics//forcebaseddiagram.png  used on input line 55
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-<Graphics//admittancecontrolscheme.png, id=589, 709.65125pt x 183.68625pt>
+<Graphics//admittancecontrolscheme.png, id=592, 709.65125pt x 183.68625pt>
 File: Graphics//admittancecontrolscheme.png Graphic file (type png)
 <use Graphics//admittancecontrolscheme.png>
 Package pdftex.def Info: Graphics//admittancecontrolscheme.png  used on input l
@@ -1396,7 +1396,7 @@ ine 568.
 
 [15 <./Graphics//forcebaseddiagram.png> <./Graphics//admittancecontrolscheme.pn
 g>]
-<Graphics//Admittanceschematic.png, id=611, 543.02875pt x 382.42876pt>
+<Graphics//Admittanceschematic.png, id=614, 543.02875pt x 382.42876pt>
 File: Graphics//Admittanceschematic.png Graphic file (type png)
 <use Graphics//Admittanceschematic.png>
 Package pdftex.def Info: Graphics//Admittanceschematic.png  used on input line 
@@ -1407,18 +1407,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
 [17 <./Graphics//Admittanceschematic.png>]
-<searigid.png, id=634, 221.82875pt x 61.22874pt>
+<searigid.png, id=637, 221.82875pt x 61.22874pt>
 File: searigid.png Graphic file (type png)
 <use searigid.png>
 Package pdftex.def Info: searigid.png  used on input line 636.
 (pdftex.def)             Requested size: 132.30666pt x 36.51889pt.
-<seawithspring.png, id=635, 312.16624pt x 61.22874pt>
+<seawithspring.png, id=638, 312.16624pt x 61.22874pt>
 File: seawithspring.png Graphic file (type png)
 <use seawithspring.png>
 Package pdftex.def Info: seawithspring.png  used on input line 643.
 (pdftex.def)             Requested size: 176.40439pt x 34.60083pt.
  [18 <./searigid.png> <./seawithspring.png>]
-<Graphics//generalsea.png, id=647, 382.42876pt x 101.37875pt>
+<Graphics//generalsea.png, id=650, 382.42876pt x 101.37875pt>
 File: Graphics//generalsea.png Graphic file (type png)
 <use Graphics//generalsea.png>
 Package pdftex.def Info: Graphics//generalsea.png  used on input line 674.
@@ -1432,7 +1432,7 @@ LaTeX Warning: Reference `fig:sea_model' on page 20 undefined on input line 701
 Underfull \vbox (badness 6893) has occurred while \output is active []
 
  [20]
-<Graphics//sea_vector1.png, id=672, 261.97874pt x 261.97874pt>
+<Graphics//sea_vector1.png, id=675, 261.97874pt x 261.97874pt>
 File: Graphics//sea_vector1.png Graphic file (type png)
 <use Graphics//sea_vector1.png>
 Package pdftex.def Info: Graphics//sea_vector1.png  used on input line 777.
@@ -1442,20 +1442,17 @@ Package pdftex.def Info: Graphics//sea_vector1.png  used on input line 777.
 Underfull \vbox (badness 1331) has occurred while \output is active []
 
  [22 <./Graphics//sea_vector1.png>]
-
-LaTeX Warning: Reference `fig:sea_control_pratt' on page 23 undefined on input 
-line 805.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 811--812
-
- []
-
-[23]
-<Graphics//yuetal.png, id=711, 673.51625pt x 202.7575pt>
+<Graphics//seacontrolscheme.png, id=705, 477.9456pt x 229.8186pt>
+File: Graphics//seacontrolscheme.png Graphic file (type png)
+<use Graphics//seacontrolscheme.png>
+Package pdftex.def Info: Graphics//seacontrolscheme.png  used on input line 809
+.
+(pdftex.def)             Requested size: 308.71106pt x 148.44402pt.
+ [23 <./Graphics//seacontrolscheme.png>]
+<Graphics//yuetal.png, id=719, 673.51625pt x 202.7575pt>
 File: Graphics//yuetal.png Graphic file (type png)
 <use Graphics//yuetal.png>
-Package pdftex.def Info: Graphics//yuetal.png  used on input line 818.
+Package pdftex.def Info: Graphics//yuetal.png  used on input line 823.
 (pdftex.def)             Requested size: 352.81552pt x 106.21414pt.
  [24 <./Graphics//yuetal.png>]
 Chapter 3.
@@ -1469,7 +1466,7 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
-84.
+86.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1479,7 +1476,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 885.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 887.
  [25
 
 ] [26]
@@ -1512,16 +1509,16 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `ThesisV2_main.out' has not changed.
-(rerunfilecheck)             Checksum: 621A773B8258D91E04D9204472CD373A;9788.
+(rerunfilecheck)             Checksum: F6471E254CFA610CB883EB5772C29B09;9788.
 Package logreq Info: Writing requests to 'ThesisV2_main.run.xml'.
 \openout1 = `ThesisV2_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32909 strings out of 478287
- 627746 string characters out of 5849289
- 1400038 words of memory out of 5000000
- 50161 multiletter control sequences out of 15000+600000
+ 32921 strings out of 478287
+ 628098 string characters out of 5849289
+ 1400215 words of memory out of 5000000
+ 50172 multiletter control sequences out of 15000+600000
  592770 words of font info for 232 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,12n,92p,2008b,2599s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1542,10 +1539,10 @@ xmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8
 </usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on ThesisV2_main.pdf (53 pages, 3143113 bytes).
+Output written on ThesisV2_main.pdf (53 pages, 3170791 bytes).
 PDF statistics:
- 1014 PDF objects out of 1200 (max. 8388607)
- 857 compressed objects within 9 object streams
- 205 named destinations out of 1000 (max. 500000)
- 69642 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1022 PDF objects out of 1200 (max. 8388607)
+ 862 compressed objects within 9 object streams
+ 206 named destinations out of 1000 (max. 500000)
+ 69647 words of extra memory for PDF output out of 74296 (max. 10000000)
 

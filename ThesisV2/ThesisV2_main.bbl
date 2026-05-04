@@ -147,8 +147,8 @@
       \strng{authorbibnamehash}{c10e3dd85813f7bc2dcb73905522a05d}
       \strng{authornamehash}{c10e3dd85813f7bc2dcb73905522a05d}
       \strng{authorfullhash}{c10e3dd85813f7bc2dcb73905522a05d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -508,8 +508,8 @@
       \strng{editorbibnamehash}{0bdecfa7d3574a8d04c99af970a7506e}
       \strng{editornamehash}{0bdecfa7d3574a8d04c99af970a7506e}
       \strng{editorfullhash}{0bdecfa7d3574a8d04c99af970a7506e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-319-32550-7 978-3-319-32552-1}
@@ -912,8 +912,8 @@
       \endverb
     \endentry
     \entry{CataloguesUserManuals}{online}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{title}{Catalogues, User Manuals, Certificates and Further Downloads from {{SUSPA}}}
       \field{urlday}{20}
@@ -1039,8 +1039,8 @@
       \strng{authorbibnamehash}{d7930255a51feb1bca1ec29d5526c4c0}
       \strng{authornamehash}{d7930255a51feb1bca1ec29d5526c4c0}
       \strng{authorfullhash}{d7930255a51feb1bca1ec29d5526c4c0}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The state-of-the-art in Intelligent Assist Devices (IADs) is reviewed. IADs are computer-controlled tools that enable production workers to lift, move and position payloads quickly, accurately, and safely. Several examples of industrial applications are given, illustrating typical configurations and functionality, including strength amplification and virtual surfaces. The concept of human intent sensing is introduced and discussed, as are IAD safety and control considerations.}
@@ -1347,8 +1347,8 @@
       \strng{authorbibnamehash}{da3b59cabc31c886a043b7c58229f0e2}
       \strng{authornamehash}{da3b59cabc31c886a043b7c58229f0e2}
       \strng{authorfullhash}{da3b59cabc31c886a043b7c58229f0e2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings 1995 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}}. {{Human Robot Interaction}} and {{Cooperative Robots}}}
@@ -1487,8 +1487,8 @@
       \strng{authorbibnamehash}{cac2e9748e49fbf3fa11a4bf542c9494}
       \strng{authornamehash}{cac2e9748e49fbf3fa11a4bf542c9494}
       \strng{authorfullhash}{cac2e9748e49fbf3fa11a4bf542c9494}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Series Elastic Actuators provide many benefits in force control of robots in unconstrained environments. These benefits include high force fidelity, extremely low impedance, low friction, and good force control bandwidth. Series Elastic Actuators employ a novel mechanical design architecture which goes against the common machine design principal of “stiffer is better”. A compliant element is placed between the gear train and driven load to intentionally reduce the stiffness of the actuator. A position sensor measures the deflection, and the force output is accurately calculated using Hooke’s Law (F=Kx). A control loop then servos the actuator to the desired output force. The resulting actuator has inherent shock tolerance, high force fidelity and extremely low impedance. These characteristics are desirable in many applications including legged robots, exoskeletons for human performance amplification, robotic arms, haptic interfaces, and adaptive suspensions. We describe several variations of Series Elastic Actuators that have been developed using both electric and hydraulic components.}
@@ -1555,8 +1555,8 @@
       \strng{authorbibnamehash}{ac2a2b24986f5a3599ad13028320b8d7}
       \strng{authornamehash}{f603f98201ad243d31f33f996ee4b4e0}
       \strng{authorfullhash}{ac2a2b24986f5a3599ad13028320b8d7}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper proposes a variable impedance control strategy based on the singular perturbation method to address the challenges of achieving accurate impedance characteristics and mitigating stability degradation in two-degree-of-freedom planar SEA-driven robots. By decomposing the system into fast and slow subsystems, we control them separately to improve tracking performance, disturbance rejection, and impedance control. A MATLAB/Simulink model was developed for simulation and compared with a traditional PD controller. The results show that the proposed controller outperforms the PD controller, maintaining position errors under 10\% and impedance errors under 30\% of those seen with the PD controller under external force input. Additionally, experimental validation confirmed the controller’s ability to optimally adjust robot stiffness in response to changes in the user’s limb-end stiffness, supporting the assist-as-needed strategy.}

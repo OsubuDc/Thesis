@@ -17,7 +17,8 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Motor and load connected with a compliant coupling.\relax }}{18}{figure.caption.21}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces General SEA schematic reconstructed from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{19}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Vector diagram reconstructed from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{22}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Torque control diagram from \blx@tocontentsinit {0}\cite {yuLearningElasticitySeriesElastic2017}.\relax }}{24}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Torque control diagram with feedforward terms from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{23}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Torque control diagram from \blx@tocontentsinit {0}\cite {yuLearningElasticitySeriesElastic2017}.\relax }}{24}{figure.caption.29}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
