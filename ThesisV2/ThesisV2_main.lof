@@ -17,11 +17,24 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Motor and load connected with a compliant coupling.\relax }}{18}{figure.caption.21}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces General SEA schematic reconstructed from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{19}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Vector diagram reconstructed from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{22}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Torque control diagram with feedforward terms from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{23}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Torque control diagram with feedforward terms reconstructed \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{23}{figure.caption.28}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Torque control diagram from \blx@tocontentsinit {0}\cite {yuLearningElasticitySeriesElastic2017}.\relax }}{24}{figure.caption.29}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Testbench overview\relax }}{27}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Testbench overview with lengths\relax }}{28}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Sideview testbench labeled overview\relax }}{28}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Shaft with surface on which an external torque will be applied.\relax }}{35}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Shaft fixed at the section where torque is transmitted to the robot link.\relax }}{35}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \SI {20}{\newton \metre } applied to the shaft surface.\relax }}{35}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Von Mises stress distribution under \SI {20}{\newton \metre } torque. Maximum stress of \SI {1030}{\mega \pascal } at the shoulder fillet.\relax }}{36}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Shoulder fixture with dimensions.\relax }}{37}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Elbow fixture with dimensions.\relax }}{37}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Cross--section of the shoulder fixture shown in green. From left to right, the KBK KBST2 size~8 coupling, the custom bearing retainer plate (blue), and the two bearings.\relax }}{38}{figure.caption.61}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Maxon Brushless DC Motor \blx@tocontentsinit {0}\cite {BLDCmotorenBorstellozeElektromotoren}.\relax }}{50}{figure.caption.65}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2}{\ignorespaces Technical data ESCON2 Compact 60/12 \blx@tocontentsinit {0}\cite {ESCON2Compact60}.\relax }}{51}{figure.caption.67}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3}{\ignorespaces KBST2 Rigid Shaft Coupling \blx@tocontentsinit {0}\cite {KBST2KBKAntriebstechnik}.\relax }}{54}{figure.caption.69}%
