@@ -7,34 +7,42 @@
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Spring balancer from Transprotec \blx@tocontentsinit {0}\cite {SpringBalancerBalancer}.\relax }}{8}{figure.caption.8}%
 \contentsline {figure}{\numberline {1.6}{\ignorespaces IAD integrated in an assembly line \blx@tocontentsinit {0}\cite {colgateIntelligentAssistDevices2003}.\relax }}{8}{figure.caption.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Impedance control for robotic structure in contact with an environment \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{12}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Mass--spring--damper system in contact with external force $f_e$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{12}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces General classification of the impedance control approaches \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{13}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Impedance control diagram, with reference position $x_r$, external force $f_r$ which in theory can be canceled, and a measured position $x$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{15}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Admittance control diagram, with reference position $x_r$, compliant reference position $x_c$, measured position $x$, and measured external force $f_e$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{15}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Mass--spring--damper system with commanded position $x_c$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{17}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Motor and load connected with a rigid shaft.\relax }}{18}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Motor and load connected with a compliant coupling.\relax }}{18}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces General SEA schematic reconstructed from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{19}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Vector diagram reconstructed from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{22}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Torque control diagram with feedforward terms reconstructed \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{23}{figure.caption.28}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Torque control diagram from \blx@tocontentsinit {0}\cite {yuLearningElasticitySeriesElastic2017}.\relax }}{24}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Impedance control for robotic structure in contact with an environment \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Mass--spring--damper system in contact with external force $f_e$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{13}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces General classification of the impedance control approaches \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{14}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Impedance control diagram, with reference position $x_r$, external force $f_e$ which in theory can be canceled, and a measured position $x$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Admittance control diagram, with reference position $x_r$, compliant reference position $x_c$, measured position $x$, and measured external force $f_e$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{17}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Mass--spring--damper system with commanded position $x_c$ \blx@tocontentsinit {0}\cite {al-shukaActiveImpedanceControl2018}.\relax }}{19}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Motor and load connected with a rigid shaft.\relax }}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Motor and load connected with a compliant coupling.\relax }}{20}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces General SEA schematic reconstructed from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{21}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Series elastic actuator model reconstructed from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{23}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Vector diagram reconstructed from \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{24}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Torque control diagram with feedforward terms reconstructed \blx@tocontentsinit {0}\cite {prattSeriesElasticActuators1995}.\relax }}{26}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Torque control diagram from \blx@tocontentsinit {0}\cite {yuLearningElasticitySeriesElastic2017}.\relax }}{27}{figure.caption.30}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Testbench overview\relax }}{27}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Testbench overview with lengths\relax }}{28}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Sideview testbench labeled overview\relax }}{28}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Shaft with surface on which an external torque will be applied.\relax }}{35}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Shaft fixed at the section where torque is transmitted to the robot link.\relax }}{35}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces \SI {20}{\newton \metre } applied to the shaft surface.\relax }}{35}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Von Mises stress distribution under \SI {20}{\newton \metre } torque. Maximum stress of \SI {1030}{\mega \pascal } at the shoulder fillet.\relax }}{36}{figure.caption.58}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Shoulder fixture with dimensions.\relax }}{37}{figure.caption.59}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Elbow fixture with dimensions.\relax }}{37}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Cross--section of the shoulder fixture shown in green. From left to right, the KBK KBST2 size~8 coupling, the custom bearing retainer plate (blue), and the two bearings.\relax }}{38}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Testbench overview with transmissions blurred to protect intellectual property.\relax }}{31}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Testbench overview with overall dimensions\relax }}{32}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Labeled side--view overview of the testbench\relax }}{32}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Shaft with surface on which an external torque will be applied.\relax }}{39}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Shaft fixed at the section where torque is transmitted to the robot link.\relax }}{39}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \SI {20}{\newton \metre } applied to the shaft surface.\relax }}{39}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Von Mises stress distribution under \SI {20}{\newton \metre } torque. Maximum stress of \SI {1030}{\mega \pascal } at the shoulder fillet.\relax }}{40}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Shoulder fixture with dimensions.\relax }}{41}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Elbow fixture with dimensions.\relax }}{41}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Cross-section of the shoulder fixture (green). From left to right: the KBK KBST2 size~8 coupling, the custom bearing retainer plate (blue), and the two bearings.\relax }}{42}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces \SI {60}{\newton } applied downward on the bearing surfaces.\relax }}{43}{figure.caption.65}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces FEA result for the downward bearing load case.\relax }}{44}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Annular friction surface on the shoulder fixture to which the torque is applied. Note that in this figure material has already been removed.\relax }}{45}{figure.caption.68}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces FEA result for the torque load case.\relax }}{45}{figure.caption.69}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Stainless steel base construction with overall dimensions.\relax }}{46}{figure.caption.70}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Cross section of the base structure. The red cross--shaped bracket connects the top and bottom halves.\relax }}{47}{figure.caption.71}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces View from the $zy$-plane with the front panels made transparent. On both sides, two bent brackets support the passive joint along the $z$-axis.\relax }}{47}{figure.caption.72}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Maxon Brushless DC Motor \blx@tocontentsinit {0}\cite {BLDCmotorenBorstellozeElektromotoren}.\relax }}{50}{figure.caption.65}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Maxon Brushless DC Motor \blx@tocontentsinit {0}\cite {BLDCmotorenBorstellozeElektromotoren}.\relax }}{60}{figure.caption.76}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2}{\ignorespaces Technical data ESCON2 Compact 60/12 \blx@tocontentsinit {0}\cite {ESCON2Compact60}.\relax }}{51}{figure.caption.67}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Technical data ESCON2 Compact 60/12 \blx@tocontentsinit {0}\cite {ESCON2Compact60}.\relax }}{61}{figure.caption.78}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3}{\ignorespaces KBST2 Rigid Shaft Coupling \blx@tocontentsinit {0}\cite {KBST2KBKAntriebstechnik}.\relax }}{54}{figure.caption.69}%
+\contentsline {figure}{\numberline {3}{\ignorespaces KBST2 Rigid Shaft Coupling \blx@tocontentsinit {0}\cite {KBST2KBKAntriebstechnik}.\relax }}{64}{figure.caption.80}%

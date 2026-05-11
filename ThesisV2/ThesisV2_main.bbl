@@ -807,8 +807,8 @@
       \strng{authorbibnamehash}{55bfd88086fe4c29c7d728fe38b17b04}
       \strng{authornamehash}{55bfd88086fe4c29c7d728fe38b17b04}
       \strng{authorfullhash}{55bfd88086fe4c29c7d728fe38b17b04}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{As more manufacturers implement robots, hand guidance tools and techniques will continue to expand in functionality and become even easier to use.}
@@ -1378,91 +1378,6 @@
       \verb http://ieeexplore.ieee.org/document/525827/
       \endverb
     \endentry
-    \entry{yuLearningElasticitySeriesElastic2017}{incollection}{}
-      \name{author}{4}{}{%
-        {{hash=a89b6783ffa62e99a56d7b7d51971dd7}{%
-           family={Yu},
-           familyi={Y\bibinitperiod},
-           given={Bingbin},
-           giveni={B\bibinitperiod}}}%
-        {{hash=1bad416a07ad3f82679257f0315645a9}{%
-           family={De\bibnamedelima Gea\bibnamedelima Fernández},
-           familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim F\bibinitperiod},
-           given={José},
-           giveni={J\bibinitperiod}}}%
-        {{hash=2ec7835ea7f8266bc2a6d2cc8378c304}{%
-           family={Kassahun},
-           familyi={K\bibinitperiod},
-           given={Yohannes},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=d85fdca1eff3f9af7b8c0fa17fc2e2f0}{%
-           family={Bargsten},
-           familyi={B\bibinitperiod},
-           given={Vinzenz},
-           giveni={V\bibinitperiod}}}%
-      }
-      \name{editor}{3}{}{%
-        {{hash=8e9e71ae4496824be3bb60e7b81b886f}{%
-           family={Benferhat},
-           familyi={B\bibinitperiod},
-           given={Salem},
-           giveni={S\bibinitperiod}}}%
-        {{hash=c6041a949ee258cf7843a39df64d6341}{%
-           family={Tabia},
-           familyi={T\bibinitperiod},
-           given={Karim},
-           giveni={K\bibinitperiod}}}%
-        {{hash=8391ea099678eb6e427c005f33ab583e}{%
-           family={Ali},
-           familyi={A\bibinitperiod},
-           given={Moonis},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Cham}%
-      }
-      \list{publisher}{1}{%
-        {Springer International Publishing}%
-      }
-      \strng{namehash}{8825013c23419869a878faaa8d316530}
-      \strng{fullhash}{241225fce5888ff69f8fba430413e726}
-      \strng{bibnamehash}{241225fce5888ff69f8fba430413e726}
-      \strng{authorbibnamehash}{241225fce5888ff69f8fba430413e726}
-      \strng{authornamehash}{8825013c23419869a878faaa8d316530}
-      \strng{authorfullhash}{241225fce5888ff69f8fba430413e726}
-      \strng{editorbibnamehash}{7448a2a04e3f0d45a59eeaa6104d1126}
-      \strng{editornamehash}{7448a2a04e3f0d45a59eeaa6104d1126}
-      \strng{editorfullhash}{7448a2a04e3f0d45a59eeaa6104d1126}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Advances in {{Artificial Intelligence}}: {{From Theory}} to {{Practice}}}
-      \field{isbn}{978-3-319-60041-3 978-3-319-60042-0}
-      \field{langid}{english}
-      \field{title}{Learning the {{Elasticity}} of a {{Series-Elastic Actuator}} for {{Accurate Torque Control}}}
-      \field{urlday}{12}
-      \field{urlmonth}{4}
-      \field{urlyear}{2026}
-      \field{volume}{10350}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{543\bibrangedash 552}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1007/978-3-319-60042-0_60
-      \endverb
-      \verb{file}
-      \verb /home/oskar/Zotero/storage/6EDZUKHU/Yu et al. - 2017 - Learning the Elasticity of a Series-Elastic Actuator for Accurate Torque Control.pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://link.springer.com/10.1007/978-3-319-60042-0_60
-      \endverb
-      \verb{url}
-      \verb http://link.springer.com/10.1007/978-3-319-60042-0_60
-      \endverb
-    \endentry
     \entry{prattSeriesElasticActuators2002}{article}{}
       \name{author}{3}{}{%
         {{hash=7aada8d85f6ca72305930b4e798a6c15}{%
@@ -1487,8 +1402,8 @@
       \strng{authorbibnamehash}{cac2e9748e49fbf3fa11a4bf542c9494}
       \strng{authornamehash}{cac2e9748e49fbf3fa11a4bf542c9494}
       \strng{authorfullhash}{cac2e9748e49fbf3fa11a4bf542c9494}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Series Elastic Actuators provide many benefits in force control of robots in unconstrained environments. These benefits include high force fidelity, extremely low impedance, low friction, and good force control bandwidth. Series Elastic Actuators employ a novel mechanical design architecture which goes against the common machine design principal of “stiffer is better”. A compliant element is placed between the gear train and driven load to intentionally reduce the stiffness of the actuator. A position sensor measures the deflection, and the force output is accurately calculated using Hooke’s Law (F=Kx). A control loop then servos the actuator to the desired output force. The resulting actuator has inherent shock tolerance, high force fidelity and extremely low impedance. These characteristics are desirable in many applications including legged robots, exoskeletons for human performance amplification, robotic arms, haptic interfaces, and adaptive suspensions. We describe several variations of Series Elastic Actuators that have been developed using both electric and hydraulic components.}
@@ -1555,8 +1470,8 @@
       \strng{authorbibnamehash}{ac2a2b24986f5a3599ad13028320b8d7}
       \strng{authornamehash}{f603f98201ad243d31f33f996ee4b4e0}
       \strng{authorfullhash}{ac2a2b24986f5a3599ad13028320b8d7}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper proposes a variable impedance control strategy based on the singular perturbation method to address the challenges of achieving accurate impedance characteristics and mitigating stability degradation in two-degree-of-freedom planar SEA-driven robots. By decomposing the system into fast and slow subsystems, we control them separately to improve tracking performance, disturbance rejection, and impedance control. A MATLAB/Simulink model was developed for simulation and compared with a traditional PD controller. The results show that the proposed controller outperforms the PD controller, maintaining position errors under 10\% and impedance errors under 30\% of those seen with the PD controller under external force input. Additionally, experimental validation confirmed the controller’s ability to optimally adjust robot stiffness in response to changes in the user’s limb-end stiffness, supporting the assist-as-needed strategy.}
@@ -1589,9 +1504,125 @@
       \verb https://journals.sagepub.com/doi/10.1177/17298806251325135
       \endverb
     \endentry
+    \entry{yuLearningElasticitySeriesElastic2017}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=a89b6783ffa62e99a56d7b7d51971dd7}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Bingbin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1bad416a07ad3f82679257f0315645a9}{%
+           family={De\bibnamedelima Gea\bibnamedelima Fernández},
+           familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2ec7835ea7f8266bc2a6d2cc8378c304}{%
+           family={Kassahun},
+           familyi={K\bibinitperiod},
+           given={Yohannes},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d85fdca1eff3f9af7b8c0fa17fc2e2f0}{%
+           family={Bargsten},
+           familyi={B\bibinitperiod},
+           given={Vinzenz},
+           giveni={V\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=8e9e71ae4496824be3bb60e7b81b886f}{%
+           family={Benferhat},
+           familyi={B\bibinitperiod},
+           given={Salem},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c6041a949ee258cf7843a39df64d6341}{%
+           family={Tabia},
+           familyi={T\bibinitperiod},
+           given={Karim},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8391ea099678eb6e427c005f33ab583e}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={Moonis},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{8825013c23419869a878faaa8d316530}
+      \strng{fullhash}{241225fce5888ff69f8fba430413e726}
+      \strng{bibnamehash}{241225fce5888ff69f8fba430413e726}
+      \strng{authorbibnamehash}{241225fce5888ff69f8fba430413e726}
+      \strng{authornamehash}{8825013c23419869a878faaa8d316530}
+      \strng{authorfullhash}{241225fce5888ff69f8fba430413e726}
+      \strng{editorbibnamehash}{7448a2a04e3f0d45a59eeaa6104d1126}
+      \strng{editornamehash}{7448a2a04e3f0d45a59eeaa6104d1126}
+      \strng{editorfullhash}{7448a2a04e3f0d45a59eeaa6104d1126}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in {{Artificial Intelligence}}: {{From Theory}} to {{Practice}}}
+      \field{isbn}{978-3-319-60041-3 978-3-319-60042-0}
+      \field{langid}{english}
+      \field{title}{Learning the {{Elasticity}} of a {{Series-Elastic Actuator}} for {{Accurate Torque Control}}}
+      \field{urlday}{12}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{10350}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{543\bibrangedash 552}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/978-3-319-60042-0_60
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/6EDZUKHU/Yu et al. - 2017 - Learning the Elasticity of a Series-Elastic Actuator for Accurate Torque Control.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-319-60042-0_60
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-319-60042-0_60
+      \endverb
+    \endentry
+    \entry{hurst}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=fc8563953b182f7ea157b1f7e174c01b}{%
+           family={Keving\bibnamedelima Green},
+           familyi={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Jonathan\bibnamedelima Hurst},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{fc8563953b182f7ea157b1f7e174c01b}
+      \strng{fullhash}{fc8563953b182f7ea157b1f7e174c01b}
+      \strng{bibnamehash}{fc8563953b182f7ea157b1f7e174c01b}
+      \strng{authorbibnamehash}{fc8563953b182f7ea157b1f7e174c01b}
+      \strng{authornamehash}{fc8563953b182f7ea157b1f7e174c01b}
+      \strng{authorfullhash}{fc8563953b182f7ea157b1f7e174c01b}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Series {{Elastic Actuators}}}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/9M3PA8SH/hurst_2020.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://mime.engineering.oregonstate.edu/research/drl/_documents/hurst_2020.pdf
+      \endverb
+      \verb{url}
+      \verb https://mime.engineering.oregonstate.edu/research/drl/_documents/hurst_2020.pdf
+      \endverb
+    \endentry
     \entry{ParallelKeysSelectable}{online}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{title}{Parallel {{Keys}} / {{Selectable Dimensions}} from {{MISUMI}} | {{MISUMI}}}
       \field{urlday}{7}
@@ -1606,8 +1637,8 @@
       \endverb
     \endentry
     \entry{16ParallelKeys}{online}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{title}{16 {{Parallel Keys According}} to {{DIN}} 6892}
       \field{urlday}{8}
@@ -1622,8 +1653,8 @@
       \endverb
     \endentry
     \entry{CNCMachiningTool}{online}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{title}{{{CNC}} Machining in {{Tool}} Steel {{S7}} | {{Manufacturing Materials}} - {{PCBWay}}}
       \field{urlday}{8}
@@ -1638,8 +1669,8 @@
       \endverb
     \endentry
     \entry{BLDCmotorenBorstellozeElektromotoren}{online}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{title}{{{BLDC-motoren}}: {{Borstelloze}} Elektromotoren | Maxon Group}
       \field{urlday}{6}
@@ -1654,8 +1685,8 @@
       \endverb
     \endentry
     \entry{ESCON2Compact60}{article}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{title}{{{ESCON2 Compact}} 60/12 {{Hardware Reference}}}

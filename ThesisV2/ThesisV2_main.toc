@@ -14,64 +14,69 @@
 \contentsline {chapter}{\numberline {2}Literature Review}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Theoretical Background}{11}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Impedance control}{11}{subsection.2.1.1}%
-\contentsline {subsubsection}{Force--based impedance control}{13}{subsubsection*.13}%
-\contentsline {subsubsection}{Position--based impedance control}{15}{subsubsection*.15}%
-\contentsline {subsubsection}{Position--based versus velocity--based inner loop}{16}{subsubsection*.17}%
-\contentsline {subsubsection}{Comparison of Force-Based and Position-Based Impedance Control}{17}{subsubsection*.19}%
-\contentsline {subsection}{\numberline {2.1.2}Series elastic actuator}{18}{subsection.2.1.2}%
-\contentsline {subsubsection}{The series elastic concept}{19}{subsubsection*.22}%
-\contentsline {subsubsection}{Benefits of series elasticity}{19}{subsubsection*.24}%
-\contentsline {subsubsection}{Performance limits}{20}{subsubsection*.25}%
-\contentsline {subsubsection}{Control architectures}{23}{subsubsection*.27}%
-\contentsline {chapter}{\numberline {3}Methodology}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}System Overview}{25}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Mechanical Design}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Overview}{27}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Parallel Key Verification According to DIN 6892}{30}{subsection.3.2.2}%
-\contentsline {subsubsection}{Loading Conditions}{30}{subsubsection*.33}%
-\contentsline {paragraph}{Static torque.}{30}{paragraph*.34}%
-\contentsline {paragraph}{Dynamic torque.}{30}{paragraph*.35}%
-\contentsline {paragraph}{Nominal torque.}{31}{paragraph*.36}%
-\contentsline {subsubsection}{Input Parameters}{31}{subsubsection*.37}%
-\contentsline {subsubsection}{Equivalent Torque}{32}{subsubsection*.40}%
-\contentsline {subsubsection}{Surface Pressure}{32}{subsubsection*.41}%
-\contentsline {subsubsection}{Permissible Surface Pressure}{32}{subsubsection*.42}%
-\contentsline {subsubsection}{Shaft Torsion Check}{32}{subsubsection*.44}%
-\contentsline {subsubsection}{Case 1: $2 \times 2$\,\si {\milli \metre } 1.4401 stainless steel key}{33}{subsubsection*.45}%
-\contentsline {subsubsection}{Case 2: $3 \times 3$\,\si {\milli \metre } 1.4401 stainless steel key}{33}{subsubsection*.47}%
-\contentsline {subsubsection}{Case 3: Oversized $3 \times 3$\,\si {\milli \metre } 1.7225 Key}{34}{subsubsection*.49}%
-\contentsline {subsubsection}{Comparison and Design Choice}{34}{subsubsection*.51}%
-\contentsline {subsection}{\numberline {3.2.3}Static Study on Shaft Shoulder Radius}{35}{subsection.3.2.3}%
-\contentsline {subsubsection}{Model Setup}{35}{subsubsection*.53}%
-\contentsline {subsubsection}{Results}{36}{subsubsection*.57}%
-\contentsline {subsection}{\numberline {3.2.4}Design and analysis of the joint fixtures}{37}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Hardware Architecture}{39}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}CAN Bus Topology}{39}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Sensor Architecture}{39}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Sensor and Actuator Modeling}{39}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}SET Spring Model}{39}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Motor and Transmission Model}{39}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Control Architecture}{39}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}State Machine}{39}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Gravity Compensation and Floating Mode}{39}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Weighing Mode}{39}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Carrying Mode}{39}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Put-Down Mode}{39}{subsection.3.5.5}%
-\contentsline {section}{\numberline {3.6}Software Implementation}{39}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Real-Time Architecture}{39}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Configuration}{39}{subsection.3.6.2}%
-\contentsline {chapter}{\numberline {4}Validation and Results}{41}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Experimental Setup}{41}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Hardware Configuration}{41}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Parameter Identification}{41}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Spring and Sensor Characterization}{41}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Controller Performance}{41}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Assisted Load Handling Evaluation}{41}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Discussion}{41}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{43}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future Work}{43}{section.5.2}%
-\contentsline {chapter}{References}{45}{chapter*.63}%
-\contentsline {chapter}{Maxon Motor Datasheet}{49}{appendix*.64}%
-\contentsline {chapter}{ESCON2 Compact 60/12 Datasheet}{51}{appendix*.66}%
-\contentsline {chapter}{KBST2 Datasheet}{53}{appendix*.68}%
+\contentsline {subsubsection}{Force--based impedance control}{14}{subsubsection*.13}%
+\contentsline {subsubsection}{Position--based impedance control}{17}{subsubsection*.15}%
+\contentsline {subsubsection}{Position--based versus velocity--based inner loop}{18}{subsubsection*.17}%
+\contentsline {subsubsection}{Comparison of Force-Based and Position-Based Impedance Control}{19}{subsubsection*.19}%
+\contentsline {subsection}{\numberline {2.1.2}Series elastic actuator}{20}{subsection.2.1.2}%
+\contentsline {subsubsection}{The series elastic concept}{21}{subsubsection*.22}%
+\contentsline {subsubsection}{Benefits of series elasticity}{21}{subsubsection*.24}%
+\contentsline {subsubsection}{Performance limits}{23}{subsubsection*.25}%
+\contentsline {subsubsection}{Control architectures}{26}{subsubsection*.28}%
+\contentsline {chapter}{\numberline {3}Methodology}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}System Overview}{29}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Mechanical Design}{31}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}General overview}{31}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Design Motivation and Constraints}{33}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Parallel Key Verification According to DIN 6892}{34}{subsection.3.2.3}%
+\contentsline {subsubsection}{Loading Conditions}{34}{subsubsection*.34}%
+\contentsline {paragraph}{Static torque.}{34}{paragraph*.35}%
+\contentsline {paragraph}{Dynamic torque.}{34}{paragraph*.36}%
+\contentsline {paragraph}{Nominal torque.}{35}{paragraph*.37}%
+\contentsline {subsubsection}{Input Parameters}{35}{subsubsection*.38}%
+\contentsline {subsubsection}{Equivalent Torque}{35}{subsubsection*.41}%
+\contentsline {subsubsection}{Surface Pressure}{35}{subsubsection*.42}%
+\contentsline {subsubsection}{Permissible Surface Pressure}{36}{subsubsection*.43}%
+\contentsline {subsubsection}{Shaft Torsion Check}{36}{subsubsection*.45}%
+\contentsline {subsubsection}{Case 1: $2 \times 2$\,\si {\milli \metre } 1.4401 stainless steel key}{37}{subsubsection*.46}%
+\contentsline {subsubsection}{Case 2: $3 \times 3$\,\si {\milli \metre } 1.4401 stainless steel key}{37}{subsubsection*.48}%
+\contentsline {subsubsection}{Case 3: Oversized $3 \times 3$\,\si {\milli \metre } 1.7225 Key}{38}{subsubsection*.50}%
+\contentsline {subsubsection}{Comparison and Design Choice}{38}{subsubsection*.52}%
+\contentsline {subsection}{\numberline {3.2.4}Static Study on Shaft Shoulder Radius}{39}{subsection.3.2.4}%
+\contentsline {subsubsection}{Model Setup}{39}{subsubsection*.54}%
+\contentsline {subsubsection}{Results}{40}{subsubsection*.58}%
+\contentsline {subsection}{\numberline {3.2.5}Design and Analysis of the Joint Fixtures}{41}{subsection.3.2.5}%
+\contentsline {subsubsection}{Weight Reduction}{43}{subsubsection*.63}%
+\contentsline {paragraph}{Load case 1: Bearing loads.}{43}{paragraph*.64}%
+\contentsline {paragraph}{Load case 2: Torque.}{45}{paragraph*.67}%
+\contentsline {subsection}{\numberline {3.2.6}Base Structure}{46}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Hardware Architecture}{48}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}CAN Bus Topology}{48}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Sensor Architecture}{48}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Sensor and Actuator Modeling}{48}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}SET Spring Model}{48}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Motor and Transmission Model}{48}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Control Architecture}{48}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}State Machine}{48}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Gravity Compensation and Floating Mode}{48}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Weighing Mode}{48}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Carrying Mode}{48}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Put-Down Mode}{48}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}Software Implementation}{48}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Real-Time Architecture}{48}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Configuration}{49}{subsection.3.6.2}%
+\contentsline {chapter}{\numberline {4}Validation and Results}{51}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Experimental Setup}{51}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Hardware Configuration}{51}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Parameter Identification}{51}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Spring and Sensor Characterization}{51}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Controller Performance}{51}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Assisted Load Handling Evaluation}{51}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Discussion}{51}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{53}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{53}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{53}{section.5.2}%
+\contentsline {chapter}{References}{55}{chapter*.74}%
+\contentsline {chapter}{Maxon Motor Datasheet}{59}{appendix*.75}%
+\contentsline {chapter}{ESCON2 Compact 60/12 Datasheet}{61}{appendix*.77}%
+\contentsline {chapter}{KBST2 Datasheet}{63}{appendix*.79}%
