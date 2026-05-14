@@ -463,7 +463,6 @@ When two mechanical bodies interact, the interaction can be characterized by the
 In conventional robotic applications, the robotic structure is stiff, position--controlled, and has a high inertia compared to its environment, like a human worker or payloads. It follows a defined trajectory and resists external forces; in this scenario, the robotic structure behaves as an impedance. The environment, whether it is a workpiece, or a human worker, yields to externally applied forces and is typically modelled as an admittance. As an example, pushing a trolley or compressing a pillow by applying an external force can clarify this concept; in both cases the environment moves or deforms in response to an applied force. 
 
 The impedance or admittance assignment is context--dependent. A rigid concrete wall presents an impedance that is much higher than that of a lightweight robotic structure; from the perspective of the robotic structure, it must yield to its much stiffer environment. 
-\newpage
 
 A human operator physically guiding a robotic arm applies forces and expects the robotic structure to move; the human worker behaves like an impedance, while the robotic structure behaves like an admittance. Impedance control modifies the mechanical impedance of a robotic structure to control how it behaves relative to its environment. It achieves this by shaping the relationship between the motion of the robot and the forces it exchanges with its environment, so that from the outside, the robot feels like a different mechanical system than it physically is.
 
@@ -527,7 +526,6 @@ The target impedance~\eqref{eq:target_impedance} is solved for the desired accel
     \ddot{x} = \ddot{x}_{r} + m_{d}^{-1}\bigl(f_{e} - b_{d}\,(\dot{x}-\dot{x}_{r}) - k_{d}\,(x-x_{r})\bigr).
     \label{eq:desired_accel}
 \end{equation}
-\newpage
 
 For the system to satisfy the desired impedance behaviour, the actual acceleration~\eqref{eq:plant_accel} and the desired acceleration~\eqref{eq:desired_accel} must equal each other.
 \begin{equation}
@@ -995,7 +993,7 @@ To accelerate the arm from rest, additional torque is required to overcome the m
     J_{\text{arm}} = \sum_{i} m_i \cdot r_i^2 = 1.2 \cdot 0.2^2 + 1.0 \cdot 0.4^2 = 0.048 + 0.160 = \SI{0.208}{\kilogram\metre\squared}
     \label{eq:arm_inertia}
 \end{equation}
- 
+ COMMENT: maybe we should say why 5rad/s²? is there some norm or reasoning we can use
 The torque transmitted through the coupling is determined by the arm--side inertia and the gravitational load. An angular acceleration of $\alpha = \SI{5}{\radian\per\second\squared}$ is adopted, corresponding to a $90^\circ$ sweep from rest in approximately \SI{0.8}{\second}. The dynamic torque contribution is:
  
 \begin{equation}
@@ -1411,7 +1409,7 @@ The FEA result, shown in Figure~\ref{fig:fea_torque}, indicates that material ar
 \newpage
 
 \subsection{Base Structure}
-
+\label{subsec:base_structure}
 The base structure serves as the stationary foundation of the testbench and carries the passive joint. It was fabricated entirely from \SI{2}{\milli\metre} thick stainless steel AISI~304 sheet metal. This material was selected because of its high strength and stiffness even at low sheet thickness, it is readily available in standard sheet formats, and it is well suited to conventional sheet metal fabrication processes such as laser cutting and bending. Additionally, stainless steel's high density is advantageous here, unlike the moving links of the robot, the base benefits from a high mass as it must keep the testbench stationary during operation. No effort was therefore made to reduce the weight of the base. The overall dimensions of the base are shown in Figure~\ref{fig:BaseDimensions}.
 
 \begin{figure}[H]
@@ -1430,108 +1428,527 @@ The primary design constraints were manufacturability and ease of assembly rathe
     \label{fig:RedCross}
 \end{figure}
 
-Several standard sheet metal design rules were adhered to throughout the base design. Holes were placed outside the minimum leg length zone of the bend, which for \SI{2}{\milli\metre} stainless steel at \SI{90}{\degree} corresponds to approximately \SI{9,2}{\milli\metre} from the bend line. This prevents hole deformation caused by material flow inside the V--block of the press brake during bending. The spacing between consecutive bends was kept larger than the rib height so that already--bent flanges would not collide with the press brake tooling during subsequent bending operations.
+Several standard sheet metal design rules were adhered to throughout the base design. Holes were placed outside the minimum leg length zone of the bend, which for \SI{2}{\milli\metre} stainless steel at \SI{90}{\degree} corresponds to approximately \SI{9.2}{\milli\metre} from the bend line. This prevents hole deformation caused by material flow inside the V--block of the press brake during bending. The spacing between consecutive bends was kept larger than the rib height so that already--bent flanges would not collide with the press brake tooling during subsequent bending operations.
 
 Figure~\ref{fig:TransparentViewBase} shows a view from the $zy$-plane, where the front panels have been made transparent to show the internal structure. The passive joint is mounted to the base with four bent brackets, two on each side.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{TransparentViewBase}
-    \caption{View from the $zy$-plane with the front panels made transparent. On both sides, two bent brackets support the passive joint along the $z$-axis.}
+    \includegraphics[width=0.4\textwidth]{RedBrackets}
+    \caption{View from the $zy$-plane. Bent brackets, shown in red, support the passive joint.}
     \label{fig:TransparentViewBase}
 \end{figure}
 \newpage
 
 A deliberate effort was made to maximise the use of identical parts throughout the base assembly. This served a dual purpose; it eliminated the possibility of orientation or placement errors during the bending process, and it simplified assembly since parts could not be installed in the wrong position. The geometry also provides internal clearance, allowing hand access for bolting components together.
 
-All bolted connections use M3 through--bolts with nuts, and four mounting holes are provided in the bottom panel, allowing the base to be bolted to a heavy plate or workbench for additional stability.
+All bolted connections use M3 through--bolts with nuts, and four mounting holes are provided in the bottom panel, allowing the base to be bolted to a heavy plate or workbench for additional stability, as shown in Figure~\ref{fig:bottomHoles}.
 
-ADD PICTURE FROM BOTTOM SHOWING THE HOLES FOR MOUNTING TO BASE PLATE
-
-add picture with wrongly bended part
-
-\section{Hardware Architecture}
-
-\subsection{CAN Bus Topology}
-
-\subsection{Sensor Architecture}
-
-\section{Sensor and Actuator Modeling}
-
-\subsection{SET Spring Model}
-
-\subsection{Motor and Transmission Model}
-
-\section{Control Architecture}
-
-\subsection{State Machine}
-
-\subsection{Gravity Compensation and Floating Mode}
-
-\subsection{Weighing Mode}
-
-\subsection{Carrying Mode}
-
-\subsection{Put-Down Mode}
-
-\section{Software Implementation}
-
-\subsection{Real-Time Architecture}
-
-Example code listing:
-\begin{lstlisting}[language=C++, caption={Example listing.}, label={lst:example}]
-while (running) {
-    clock_nanosleep(...);
-    // your code here
-}
-\end{lstlisting}
-
-\subsection{Configuration}
-
-
-% ============================================================
-\chapter{Validation and Results}
-\label{ch:validation}
-% ============================================================
-
-\section{Experimental Setup}
-
-\subsection{Hardware Configuration}
-
-\subsection{Parameter Identification}
-
-\section{Spring and Sensor Characterization}
-
-\section{Controller Performance}
-
-\section{Assisted Load Handling Evaluation}
-
-\section{Discussion}
-
-Example table:
-\begin{table}[htbp]
+\begin{figure}[H]
     \centering
-    \caption{Example results table.}
-    \label{tab:example}
-    \begin{tabular}{@{}lcc@{}}
-        \toprule
-        Metric  & Target  & Achieved \\
-        \midrule
-        Value 1 & X       & Y        \\
-        Value 2 & X       & Y        \\
-        \bottomrule
-    \end{tabular}
-\end{table}
+    \includegraphics[width=0.6\textwidth]{bottomHoles}
+    \caption{Bottom view of base structure, showing the four holes available for mounting the base to a heavy plate or workbench.}
+    \label{fig:bottomHoles}
+\end{figure}
 
+\subsection{Passive Joint}
+The passive joint provides rotation about the vertical $z$-axis and is mounted to the top of the base structure by means of four bent stainless steel brackets, as described in Section~\ref{subsec:base_structure}. It is referred to as passive because, unlike the shoulder and elbow joints, it has no actuation unit. When the operator rotates the arm about the $z$--axis, the only resistance encountered is the inertia of the rotating assembly. This is analogous to the vertical direction, where weight compensation eliminates gravitational load so that the operator only feels inertia. Active actuation of this joint is therefore not required for the intended assisted load handling task. The mechanical design nevertheless reserves space for a future transmission and motor, so that autonomous movement or impedance control can be implemented at a later stage without redesigning the base structure.
+ 
+The same flanged shaft coupling used at the shoulder and elbow links is used at the passive joint. This coupling connects the vertical shaft to the sheet metal part that links the passive joint to the shoulder fixture. A cross--section of the passive joint assembly is shown in Figure~\ref{fig:Cross_sectionPassivejoint}.
+\newpage
 
-% ============================================================
-\chapter{Conclusion and Future Work}
-\label{ch:conclusion}
-% ============================================================
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Schermafbeelding 2026-05-05 104649}
+    \caption{Cross--section of the passive joint. The purple volume represents a mock transmission included to verify that sufficient space remains for future implementation. The blue part is a custom bearing retainer plate that constrains the bearing axially. The conical shaft with conical adapter ring supports the weight of the robotic arm. The flanged coupling (black) is bolted to the mounting plate on which the shoulder fixture sits, and is connected to the shaft by a parallel key. Two set screws prevent accidental upward displacement of the flanged coupling.}
+    \label{fig:Cross_sectionPassivejoint}
+\end{figure}
+ 
+Unlike the actuated joints, where a longer shaft directly increases the moment arm of the transmission and motor mass, the passive joint has no such constraint. The additional axial space was used to design a shaft with a conical transition rather than a sharp step. The lower portion of the shaft has a nominal diameter of \SI{8}{\milli\metre}, matching the flanged coupling bore. This diameter transitions through a conical section to \SI{25}{\milli\metre}, where a standard conical adapter ring with a matching taper angle provides a flat seating surface for the flanged coupling above it. The shaft then steps to a diameter of \SI{30}{\milli\metre}, which forms the abutment shoulder for the bearings. The conical geometry increases the shaft cross--section in the region of highest bending stress and provides a gradual transition that is inherently more favourable than a right--angle shoulder with a fillet, where the abrupt change in cross--section introduces a higher stress concentration. The shaft abutment radii and tolerances were again designed following SKF catalogue guidelines, as was done for the actuated joints.
+ 
+The shaft is supported by two deep groove ball bearings arranged vertically. The centre--to--centre distance between the bearings is \SI{37}{\milli\metre}, composed of a \SI{25}{\milli\metre} spacer between the inner rings and one half--width of each bearing (\SI{6}{\milli\metre} each).
+ 
+A FEA was used to verify the shaft design. The two bearing surfaces were fixed and the worst--case loading was applied, corresponding to the fully stretched arm configuration. The gravitational loads were multiplied by a safety factor of~2 to conservatively account for dynamic effects during operation. The applied loads were \SI{24}{\newton} at \SI{0,2}{\metre} and \SI{20}{\newton} at \SI{0,4}{\metre}. The loading configuration and dimensions are shown in Figure~\ref{fig:shaftfeawithforces}.
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{shaftFea.drawio}
+    \caption{Loading configuration and dimensions for the passive joint shaft FEA. Fixed supports are applied at the bearing surfaces.}
+    \label{fig:shaftfeawithforces}
+\end{figure}
+ 
+The resulting peak von~Mises stress was \SI{84,5}{\mega\pascal}, located at the transition between the cylindrical and conical shaft sections, as shown in Figure~\ref{fig:passive_joint_fea}. Compared to the yield strength of \SI{2050}{\mega\pascal}, this corresponds to a safety factor of approximately~24.
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{FeaResults}
+    \caption{Von~Mises stress distribution on the passive joint shaft under conservative loading (\SI{24}{\newton} at \SI{0,2}{\metre} and \SI{20}{\newton} at \SI{0,4}{\metre}). Peak stress: \SI{84,5}{\mega\pascal}.}
+    \label{fig:passive_joint_fea}
+\end{figure}
+\newpage
 
-\section{Conclusion}
+The large safety margin confirms that the shaft is well within its structural limits for the applied loading.
+ 
+Regarding the bearing spacing, the moment from the arm and payload is loaded on the two SKF 6005--2Z bearings. Given the low mass of the arm assembly and the high static load rating of the 6005--2Z ($C_0 = \SI{6550}{\newton}$), the resulting radial loads are a small fraction of the bearing capacity at any reasonable spacing. The centre--to--centre distance of \SI{37}{\milli\metre} was therefore determined by the available axial space within the base structure and manufacturability considerations rather than by a bearing load optimisation.
 
-\section{Future Work}
+As shown in Figure~\ref{fig:ballrolers}, six ball rollers are mounted on the upper half of the base structure. The rotating platform rests on these ball rollers, which carry the full axial load from the weight of the arm assembly. The four bent brackets are then tightened to fix the passive joint assembly in the $xy$--plane, preventing lateral displacement. This also simplifies assembly; the platform is placed onto the ball rollers and can be positioned before the brackets are tightened. The ball rollers are spaced by 3D--printed spacers, allowing the vertical clearance to be adjusted. Implementation required only additional holes in the sheet metal and inexpensive off--the--shelf components.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{ballrolers}
+    \caption{Top--down view of the base structure showing the six ball rollers that support the rotating platform.}
+    \label{fig:ballrolers}
+\end{figure}
+\newpage
+
+\subsection{Aluminium Link Structures}
+
+The aluminium link structures connect the joint fixtures and together form the robotic arm. The links are fabricated from EN~AW--5754 (AlMg3) sheet metal, selected for its good formability. Each link consists of two nested U--shaped profiles; a larger outer profile and a smaller inner profile with ribs, bolted together through matching holes to form a closed box. A bolted assembly was chosen over welding to simplify assembly and avoid fabrication risks. Welding thin aluminium sheet is difficult due to its high thermal conductivity and low melting point, which make burn--through likely; a welded construction would therefore have required stainless steel, significantly increasing the mass. As with the base structure, the link design follows the same standardised parts and manufacturability constraints outlined in Section~\ref{subsec:base_structure}. Practical considerations such as mounting points and routing space for cables inside the link were integrated into the design. The upper arm link is shown in green and the forearm link in red in Figure~\ref{fig:NumbersOverview}. To reduce mass, a topology optimisation study was performed on both links and the strength of the final design was validated with a FEA.
+
+\subsubsection{Upper Arm Link}
+
+The upper arm link connects the shoulder joint to the elbow joint. The link before topology optimisation is shown in Figure~\ref{fig:SideOnderSL}. The link consists of three bent sheet metal parts, therefore a single--body model was created in SolidWorks by merging the assembly into one part to perform the topology study.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{SideOnderSL}
+    \caption{Single--body model of the upper arm link used for the topology study, combining the two nested U--profiles and the end flange into one part.}
+    \label{fig:SideOnderSL}
+\end{figure}
+
+The topology study was set up on the single--body model, which has a mass of \SI{209,42}{\gram} before optimisation. Forces were applied to represent the weights of the transmission--motor assembly, the elbow joint fixture, the elbow joint shaft with flanged couplings, and the payload at the end--effector. A downward force of \SI{15}{\newton} was applied at the elbow side with an offset to account for the centre of gravity of the transmission--motor assembly, which introduces a torque in addition to the gravitational force. At the end--effector side, a force of \SI{25}{\newton} was applied. The estimated static load at this point is approximately \SI{11}{\newton}, composed of the \SI{1}{\kilo\gram} payload and the mass of the forearm link. The applied value of \SI{25}{\newton} includes a safety factor of approximately~2, consistent with the approach used for the passive joint shaft verification. This margin also ensures that the link remains structurally adequate should the payload capacity be increased in the future, for instance by upgrading to the stronger 1.7225 key documented in Section~\ref{subsec:referToThisFea}. The structure was fixed at the four bolt holes on either side, where the flanged couplings connect the link to the joint shafts. The loading configuration is shown in Figures~\ref{fig:UnderarmSideforce} and~\ref{fig:Underarm_eeforce}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{UnderarmSideforce}
+    \caption{Side view of the upper arm link showing the applied forces for the topology study.}
+    \label{fig:UnderarmSideforce}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Underarm_eeforce}
+    \caption{End--effector side of the upper arm link showing the applied payload force.}
+    \label{fig:Underarm_eeforce}
+\end{figure}
+
+The resulting topology optimisation reduced the link mass to approximately \SI{147}{\gram}, a reduction of \SI{30}{\percent}. The topology result was then applied to the link geometry by removing material from the corresponding regions. The topology result and the design with applied material removal are compared side by side in the following figures. For each view, the topology result is shown on the left and the applied material removal on the right.
+\newpage
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{FLTOPtop}
+        \caption{Top view upper arm: topology result.}
+        \label{fig:FLTOPtop}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{sl_topview}
+        \caption{Top view upper arm: applied material removal.}
+        \label{fig:sl_topview}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{FLSIDETOP}
+        \caption{Side view upper arm: topology result.}
+        \label{fig:FLSIDETOP}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{sl_othersideview}
+        \caption{Side view upper arm: applied material removal.}
+        \label{fig:sl_othersideview}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{FLSIDETOP2}
+        \caption{Opposite side upper arm: topology result.}
+        \label{fig:FLSIDETOP2}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fl_sideview}
+        \caption{Opposite side upper arm: applied material removal.}
+        \label{fig:fl_sideview}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{UndersideFLTop}
+        \caption{Underside upper arm: topology result.}
+        \label{fig:UndersideFLTop}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fl_bottomview}
+        \caption{Underside upper arm: applied material removal.}
+        \label{fig:fl_bottomview}
+    \end{minipage}
+\end{figure}
+
+The design with applied material removal was validated with a static FEA using the same forces and boundary conditions as the topology study. The von~Mises stress distribution is shown in Figures~\ref{fig:cutout_sideview_otherside} through~\ref{fig:Cutout_VM_sideview}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{cutout_sideview_otherside}
+    \caption{Von~Mises stress distribution upper arm: side view.}
+    \label{fig:cutout_sideview_otherside}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{CutoutVM_SIDETOP}
+    \caption{Von~Mises stress distribution upper arm: top view.}
+    \label{fig:CutoutVM_SIDETOP}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Cutout_VM_sideview}
+    \caption{Von~Mises stress distribution upper arm: opposite side view.}
+    \label{fig:Cutout_VM_sideview}
+\end{figure}
+
+The peak von~Mises stress is \SI{22,9}{\mega\pascal}, located at the edge of one of the fixture holes where the boundary condition is applied. In reality, the load transfer at these holes occurs through bolt clamping and friction over the flange surface rather than through the hole edges alone, so this local stress concentration is an artifact of the fixed boundary condition. Away from the fixture holes, the stresses are significantly lower. Compared to the yield strength of EN~AW--5754 ($R_{p0,2} \geq \SI{80}{\mega\pascal}$), the peak stress gives a safety factor of at least~3,5, even including the boundary condition artifact. The displacement under the applied loading is shown in Figure~\ref{fig:sideview_uresmm}. The maximum displacement is \SI{9,4e-2}{\milli\metre}, which is negligible relative to the link dimensions.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{sideview_uresmm}
+    \caption{Displacement distribution of the upper arm link under the applied loading. Maximum displacement: \SI{9,4e-2}{\milli\metre}.}
+    \label{fig:sideview_uresmm}
+\end{figure}
+
+The final manufactured design, incorporating the topology--guided material removal with adjustments for bend zone clearances, is shown in Figures~\ref{fig:actualmanufactured_sidetop} through~\ref{fig:actual_manufactured_bttomu}. The flange plate that connects the link to the joint fixture is shown in Figure~\ref{fig:frontplate}.
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{actualmanufactured_sidetop}
+        \caption{Final design upper arm: isometric view.}
+        \label{fig:actualmanufactured_sidetop}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{actualmanufactured_topview}
+        \caption{Final design upper arm: top view.}
+        \label{fig:actualmanufactured_topview}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{actualManufacturedPart_sideview}
+        \caption{Final design upper arm: opposite side view.}
+        \label{fig:actualManufacturedPart_sideview}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{actualmanufactured_othersideview}
+        \caption{Final design upper arm: side view.}
+        \label{fig:actualmanufactured_othersideview}
+    \end{minipage}
+\end{figure}
+\newpage
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{actual_manufactured_bttomu}
+        \caption{Final design upper arm: inner U--profile.}
+        \label{fig:actual_manufactured_bttomu}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{frontplate}
+        \caption{Flange plate connecting the upper arm link to the joint fixture.}
+        \label{fig:frontplate}
+    \end{minipage}
+\end{figure}
+
+\subsubsection{Forearm Link}
+
+The forearm link connects the elbow joint to the end--effector. An identical design and analysis approach was followed as for the upper arm link. The structure was fixed at the four bolt holes and a downward force of \SI{25}{\newton} was applied at the end--effector, consistent with the loading used for the upper arm link. The mass of the forearm link before topology optimisation is \SI{155}{\gram}. The closed single--body model used for the topology study is shown in Figure~\ref{fig:Forearmfortopology}, and the applied forces are shown in Figure~\ref{fig:forearm_appliedforces}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Forearmfortopology}
+    \caption{Single--body model of the forearm link used for the topology study.}
+    \label{fig:Forearmfortopology}
+\end{figure}
+\newpage
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{forearm_appliedforces}
+    \caption{Applied force for the forearm link topology study.}
+    \label{fig:forearm_appliedforces}
+\end{figure}
+
+The topology result and the design with applied material removal are compared side by side in the following figures.
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{forearmTop_sideview}
+        \caption{Side view forearm: topology result.}
+        \label{fig:forearmTop_sideview}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{forearmMaterialremoved_sideview}
+        \caption{Side view forearm: applied material removal.}
+        \label{fig:forearmMaterialremoved_sideview}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{forearm_top_topview}
+        \caption{Top view forearm: topology result.}
+        \label{fig:forearm_top_topview}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{forearmtopviewcutout}
+        \caption{Top view forearm: applied material removal.}
+        \label{fig:forearmtopviewcutout}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{forearm_undersideToplogy}
+        \caption{Underside forearm: topology result.}
+        \label{fig:forearm_undersideToplogy}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{forearm_materialremoved_under}
+        \caption{Underside forearm: applied material removal.}
+        \label{fig:forearm_materialremoved_under}
+    \end{minipage}
+\end{figure}
+
+In addition to the vertical loading, a horizontal force of \SI{25}{\newton} was applied at the end--effector mounting point for the FEA validation, as shown in Figure~\ref{fig:torqueforearm}. This lateral load simulates the force exerted by the operator when rotating the arm about the passive joint axis or when pushing the payload sideways. To verify that this value is conservative, the horizontal force required to accelerate the fully stretched arm about the $z$--axis can be estimated. With a moment of inertia of $J_z = \SI{1,2}{\kilo\gram} \cdot \SI{0,2}{\metre}^2 + \SI{1,0}{\kilo\gram} \cdot \SI{0,4}{\metre}^2 = \SI{0,208}{\kilo\gram\metre\squared}$ and an angular acceleration of $\alpha = \SI{4,9}{\radian\per\second\squared}$ (corresponding to a $90^\circ$ sweep in \SI{0,8}{\second}), the required torque is $T_z = J_z \cdot \alpha = \SI{1,0}{\newton\metre}$. At the end--effector (\SI{0,4}{\metre} from the $z$--axis), this corresponds to a horizontal force of only \SI{2,6}{\newton}. The applied \SI{25}{\newton} therefore exceeds the expected operational loading by approximately a factor of ten.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{torqueforearm}
+    \caption{Horizontal force applied at the end--effector mounting point.}
+    \label{fig:torqueforearm}
+\end{figure}
+
+The von~Mises stress distribution from the FEA validation is shown in Figure~\ref{fig:forearmvonmiseundersideview}. The peak von~Mises stress is \SI{38,3}{\mega\pascal}. Compared to the yield strength of EN~AW--5754 ($R_{p0,2} \geq \SI{80}{\mega\pascal}$), this gives a safety factor of at least~2,1. Given that the applied horizontal load is approximately ten times the expected operational force, the actual safety margin during normal operation is substantially higher.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{forearmvonmiseundersideview}
+    \caption{Von~Mises stress distribution of the forearm link.}
+    \label{fig:forearmvonmiseundersideview}
+\end{figure}
+
+\newpage
+
+The displacement under the applied loading is shown in Figures~\ref{fig:Forearmuresmm} and~\ref{fig:forearmuresfrontview}. The maximum displacement is \SI{3,1e-1}{\milli\metre}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Forearmuresmm}
+    \caption{Side view of displacement of the forearm link. Maximum displacement: \SI{3,1e-1}{\milli\metre}.}
+    \label{fig:Forearmuresmm}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{forearmuresfrontview}
+    \caption{Front view of displacement of the forearm link.}
+    \label{fig:forearmuresfrontview}
+\end{figure}
+
+The applied material removal was then adjusted to account for manufacturing constraints. A key constraint is that material cannot be removed within the bend zone of the sheet metal. If cutouts extend into the V--block, the part will deforms incorrectly during bending, as illustrated in Figures~\ref{fig:FailedTopview} and~\ref{fig:FailedSideView}. The correctly bent part with cutouts placed outside the bend zone is shown in Figure~\ref{fig:CorrectTopview}. This constraint limits the amount of material that can be removed compared to the topology result and requires adding back material in the bend regions.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{FailedTopview}
+    \caption{Top view of an incorrectly manufactured part: cutouts extending into the bend zone cause deformation during bending.}
+    \label{fig:FailedTopview}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{FailedSideView}
+    \caption{Side view of the same incorrectly manufactured part, showing the deformed bend line.}
+    \label{fig:FailedSideView}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{CorrectTopview}
+    \caption{Correctly manufactured part with cutouts placed outside the bend zone.}
+    \label{fig:CorrectTopview}
+\end{figure}
+
+The final manufactured forearm link design is shown in Figures~\ref{fig:manufacturedforearm_sideview} through~\ref{fig:manufactured_forearm_inneru}. The final manufactured mass is \SI{130}{\gram}, a reduction of \SI{16}{\percent} compared to the original \SI{155}{\gram}.
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{manufacturedforearm_sideview}
+        \caption{Final forearm design: side view.}
+        \label{fig:manufacturedforearm_sideview}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{manufacturedforearm_topview}
+        \caption{Final forearm design: top view.}
+        \label{fig:manufacturedforearm_topview}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{manufactured_forearm_inneru}
+    \caption{Final forearm design: inner U--profile.}
+    \label{fig:manufactured_forearm_inneru}
+\end{figure}
+\newpage
+
+\subsection{Joint End Stop}
+
+When the upper arm and forearm become collinear, the elbow approaches a kinematic singularity. For a planar two--link manipulator, the end--effector velocity is related to the joint velocities through the Jacobian matrix
+
+\begin{equation}
+    \dot{\bm{x}} = \bm{J}(\bm{q}) \dot{\bm{q}}
+\end{equation}
+
+For this configuration, the determinant of the Jacobian is
+
+\begin{equation}
+    \det(\bm{J}) = l_1 l_2 \sin(q_2)
+\end{equation}
+
+where $q_2$ is the elbow angle and $l_1$, $l_2$ are the link lengths. As the arm approaches the fully extended configuration, $\sin(q_2)$ approaches zero, causing the Jacobian to lose rank. This means that the columns of the Jacobian become linearly dependent: different joint motions produce motion in the same end--effector direction instead of independent directions. The arm therefore loses one degree of controllable motion and can no longer generate or resist forces in the lost direction. In this case, the elbow loses its ability to resist forces acting along the line of the arm.
+
+To prevent operation near this singular configuration, a mechanical end stop is installed at the elbow joint. The end stop consists of a shock absorber mounted to the upper arm and an adjustable contact plate mounted to the forearm. The contact plate position can be tuned using slotted mounting holes, allowing the engagement point to be set before full extension is reached.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{endstop_sideview}
+    \caption{Side view of the mechanical end stop at the elbow joint.}
+    \label{fig:endstop_sideview}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{endstop_topview}
+    \caption{Top view of the mechanical end stop showing the slotted mounting holes for position adjustment.}
+    \label{fig:endstop_topview}
+\end{figure}
+
+Rather than producing a rigid impact, the shock absorber provides force feedback over a stroke of \SI{10}{\milli\metre}. This reduces impact loads on the mechanism and provides the operator with a gradual increase in resisting force as the arm approaches its motion limit. The compliant stop gives the operator time to react before the hard limit is reached, resulting in safer operation.
+\newpage
+
+\subsection{End--Effector}
+
+The end--effector consists of a cylindrical pen supported by two flanged linear bearings, providing free axial sliding with minimal friction. Loads can be attached by sliding the pen out, mounting the payload, and reinserting the pen. Alternatively, a platform can be mounted on the pen onto which weights can be stacked, as shown in Figure~\ref{fig:End_effector_overview}. Two 3D--printed guides  create a \SI{4}{\milli\metre} gap to limit sway of the payload. A cross--section of the end--effector assembly is shown in Figure~\ref{fig:Endeffector_cross_section}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{End_effector_overview}
+    \caption{Overview of the end--effector with the weight platform mounted.}
+    \label{fig:End_effector_overview}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Endeffector_cross_section}
+    \caption{Cross--section of the end--effector showing the pen, flanged linear bearings, and 3D--printed guides.}
+    \label{fig:Endeffector_cross_section}
+\end{figure}
+
+\chapter{Sensors and Data communication}
+
+\subsection{Communication Architecture}
+\label{sec:communication-architecture}
+
+The proposed controller runs on the Jetson Orin~NX at a rate of \SI{1}{\kilo\hertz}; the motivation for this choice is discussed in Chapter~\ref{ch:control}. The Jetson Orin~NX was selected because it provides a native CAN interface, avoiding the need for an external USB-to-CAN adapter.
+
+Three motor drivers were considered: the ESCON, the ESCON2, and the EPOS4. The ESCON uses block commutation, which produces a torque ripple of approximately \SI{14}{\percent}. In contrast, the ESCON2 employs field--oriented control (FOC) with sinusoidal commutation, significantly reducing torque ripple. Since the application is hand--guided and collaborative, the operator directly perceives the motor torque through the arm, making smooth torque generation desirable. Although the EPOS4 additionally supports position control modes, this functionality is not required because the Jetson controller commands torque. The ESCON2 Compact 60/12 was therefore selected, as it provides CANopen--based torque control with FOC commutation ~\cite{EPOS4ESCON2ESCON2025}.
+
+All communication is carried out over a single CAN bus operating at \SI{1}{\mega\bit\per\second}, following the CANopen protocol stack (CiA~301) with the CiA~402 drive profile. The Jetson acts as the CANopen master. Three slave nodes are present on the bus:
+
+\begin{enumerate}[noitemsep]
+    \item ESCON2 Compact 60/12 shoulder joint: Maxon servo controller operating in Cyclic Synchronous Torque (CST) mode. It receives a torque set-point from the master and returns the motor encoder position.
+
+    \item ESCON2 Compact 60/12 elbow joint: identical role and configuration as the shoulder controller.
+
+    \item STM32G474RE sensor node: this microcontroller is the interface between the joint--side sensors and the CAN bus. The node reads two AS5048A magnetic rotary encoders over the Serial Peripheral Interface (SPI) to obtain the joint positions, and two spring--deflection potentiometers through an ADS1256 24--bit analog--to--digital converter (ADC), also connected via SPI. The four sensor measurements are packed into a single 8--byte CAN frame, corresponding to the maximum payload of a standard CAN frame.
+\end{enumerate}
+
+Figure~\ref{fig:can-topology} shows the bus topology, including the \SI{120}{\ohm} termination resistors at both ends of the bus as required by the ESCON2 datasheet.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{esconschematic}
+    \caption{Example of ESCON CAN bus topology with master and slave nodes. Termination resistors of \SI{120}{\ohm} are placed at both ends of the bus.}
+    \label{fig:can-topology}
+\end{figure}
+
+The joint--side angular position is measured using two AS5048A contactless 14--bit absolute position sensors, as shown in Figure~\ref{fig:adapterboard}. The magnets are mounted on the joint shafts, while the sensors are mounted on the joint fixtures. With a resolution of 16384 positions per revolution, the sensor provides an angular resolution of approximately \SI{0.022}{\degree}. The AS5048A is specifically marketed for robotic joint position measurements. The sensor tolerates radial and axial misalignment, air-gap variations, and temperature variations over a range of \SI{-40}{\degreeCelsius} to \SI{150}{\degreeCelsius}, which simplifies mechanical integration ~\cite{AmsAS5048AHighResolution}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{AS5048A-AB-1.0_sml(200x200)}
+    \caption{The AS5048A adapter board used for joint-side position 		sensing~\cite{AS5048ATS_EK_ABAmsOSRAM}.}
+\label{fig:adapterboard}
+\end{figure}
+
+The spring deflection in each transmission is measured by a potentiometer whose output voltage is digitised by an ADS1256 24--bit ADC. However, since potentiometers operate through sliding mechanical contact, they are subject to wear, noise, and drift caused by temperature variation and mechanical degradation. Their long--term suitability for this application has therefore not yet been validated. The AS5048A joint--side position sensors, combined with the motor encoder positions, provide an independent measurement of the spring deflection. This redundancy allows the potentiometer readings to be validated against the encoder--based measurements and makes it possible to characterise potentiometer degradation over time, including temperature effects and wear.
+
+\newpage
+
+\subsection{STM32 Sensor Node}
+\label{sec:stm32-sensor-node}
+ 
+The STM32G474RE reads the joint--side sensors over two separate SPI buses. The two AS5048A encoders share the first bus (SPI1). The ADS1256 ADC is connected to the second bus (SPI2), which operates at up to \SI{1,92}{\mega\hertz}. Two buses are used because of this difference in maximum clock speed.
+ 
+The STM32 combines all four readings into a single TPDO: two AS5048A joint positions and two spring-deflection potentiometer readings, each stored as an unsigned 16-bit value. Since the ADS1256 provides a native 24-bit output, the potentiometer measurements are reduced to 16~bits before transmission by discarding the eight least significant bits of the ADC result. This still yields a resolution of approximately \SI{0,0015}{\percent} of full scale, well below the typical linearity tolerance of a mechanical potentiometer (\SI{0,5}{\percent} to \SI{1}{\percent}). This allows all four sensor values to fit within a single 8-byte CAN frame without any meaningful loss of information.
+ 
+The TPDO uses a fixed payload structure in which each measurement is assigned to a predefined byte position within the 8-byte CAN frame. Each sensor value occupies two bytes and is transmitted as an unsigned 16-bit integer. The receiver reconstructs the measurements by decoding the payload according to this predefined mapping.
 
 % ============================================================
 %  BACK MATTER

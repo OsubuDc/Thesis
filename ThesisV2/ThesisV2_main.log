@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  10 MAY 2026 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  14 MAY 2026 10:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1122,7 +1122,29 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ThesisV2_main.bbl' found.
 
-(./ThesisV2_main.bbl)
+(./ThesisV2_main.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                as5048a-ds
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                escon2-hwref
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                waveshare-adda
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 141.
 Package biblatex Info: Reference segment=0 on input line 141.
 
@@ -1242,32 +1264,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [5])
+)
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [5])
 \tf@toc=\write6
 \openout6 = `ThesisV2_main.toc'.
 
- [6]
-(./ThesisV2_main.lof
+
+[6] (./ThesisV2_main.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7
 
-])
+]
+[8]
+Underfull \vbox (badness 1087) has occurred while \output is active []
+
+ [9])
 \tf@lof=\write7
 \openout7 = `ThesisV2_main.lof'.
 
 
-[8] (./ThesisV2_main.lot)
+[10] (./ThesisV2_main.lot)
 \tf@lot=\write8
 \openout8 = `ThesisV2_main.lot'.
 
- [9
-
-] [10
-
-] [11
+ [11
 
 ] [12
+
+] [13
+
+] [14
 
 ]
 Chapter 1.
@@ -1284,7 +1313,7 @@ l.265 \newpage
 
 
 ]
-<Graphics//workspaces.png, id=497, 576.1525pt x 329.23pt>
+<Graphics//workspaces.png, id=527, 576.1525pt x 329.23pt>
 File: Graphics//workspaces.png Graphic file (type png)
 <use Graphics//workspaces.png>
 Package pdftex.def Info: Graphics//workspaces.png  used on input line 289.
@@ -1298,7 +1327,7 @@ been already used, duplicate ignored
                    \relax 
 l.294 
        [2]
-<Graphics//Human_robot_collaboration.png, id=511, 1515.6625pt x 690.58pt>
+<Graphics//Human_robot_collaboration.png, id=540, 1515.6625pt x 690.58pt>
 File: Graphics//Human_robot_collaboration.png Graphic file (type png)
 <use Graphics//Human_robot_collaboration.png>
 Package pdftex.def Info: Graphics//Human_robot_collaboration.png  used on input
@@ -1311,24 +1340,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 354--356
  []
 
 [5] [6]
-<Graphics//3arm.png, id=562, 984.67876pt x 564.1075pt>
+<Graphics//3arm.png, id=591, 984.67876pt x 564.1075pt>
 File: Graphics//3arm.png Graphic file (type png)
 <use Graphics//3arm.png>
 Package pdftex.def Info: Graphics//3arm.png  used on input line 377.
 (pdftex.def)             Requested size: 352.81552pt x 202.1231pt.
-<Graphics//Gasspringcharacteristic.png, id=565, 1218.5525pt x 587.19376pt>
+<Graphics//Gasspringcharacteristic.png, id=594, 1218.5525pt x 587.19376pt>
 File: Graphics//Gasspringcharacteristic.png Graphic file (type png)
 <use Graphics//Gasspringcharacteristic.png>
 Package pdftex.def Info: Graphics//Gasspringcharacteristic.png  used on input l
 ine 385.
 (pdftex.def)             Requested size: 352.81552pt x 170.01303pt.
  [7 <./Graphics//3arm.png> <./Graphics//Gasspringcharacteristic.png>]
-<Graphics//Springbalancer.png, id=576, 403.5075pt x 956.57375pt>
+<Graphics//Springbalancer.png, id=605, 403.5075pt x 956.57375pt>
 File: Graphics//Springbalancer.png Graphic file (type png)
 <use Graphics//Springbalancer.png>
 Package pdftex.def Info: Graphics//Springbalancer.png  used on input line 396.
 (pdftex.def)             Requested size: 44.10446pt x 104.55202pt.
-<Graphics//assemblyline.png, id=584, 927.465pt x 777.90625pt>
+<Graphics//assemblyline.png, id=613, 927.465pt x 777.90625pt>
 File: Graphics//assemblyline.png Graphic file (type png)
 <use Graphics//assemblyline.png>
 Package pdftex.def Info: Graphics//assemblyline.png  used on input line 409.
@@ -1345,344 +1374,689 @@ Underfull \hbox (badness 10000) in paragraph at lines 431--432
  []
 
 
+LaTeX Warning: Reference `ch:validation' on page 9 undefined on input line 433.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 433--434
 
  []
+
+
+LaTeX Warning: Reference `ch:conclusion' on page 9 undefined on input line 435.
+
 
 [9] [10
 
 ]
 Chapter 2.
-[11] [12]
-<Graphics//impedance_control.png, id=619, 461.725pt x 255.95625pt>
+[11]
+<Graphics//impedance_control.png, id=642, 461.725pt x 255.95625pt>
 File: Graphics//impedance_control.png Graphic file (type png)
 <use Graphics//impedance_control.png>
 Package pdftex.def Info: Graphics//impedance_control.png  used on input line 47
-4.
+3.
 (pdftex.def)             Requested size: 220.50887pt x 122.2366pt.
-<Graphics//impedance_control_u.png, id=622, 366.36874pt x 298.11375pt>
+<Graphics//impedance_control_u.png, id=645, 366.36874pt x 298.11375pt>
 File: Graphics//impedance_control_u.png Graphic file (type png)
 <use Graphics//impedance_control_u.png>
 Package pdftex.def Info: Graphics//impedance_control_u.png  used on input line 
-483.
+482.
 (pdftex.def)             Requested size: 132.30666pt x 107.65747pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 484.
+(Font)              <10> on input line 483.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 484.
+(Font)              <7> on input line 483.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 484.
- [13 <./Graphics//impedance_control.png> <./Graphics//impedance_control_u.png>]
-<Graphics//generalapproachimpedancecontrol.png, id=638, 655.44875pt x 199.74625
+(Font)              <5> on input line 483.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./Graphics//impedance_control.png>]
+<Graphics//generalapproachimpedancecontrol.png, id=659, 655.44875pt x 199.74625
 pt>
 File: Graphics//generalapproachimpedancecontrol.png Graphic file (type png)
 <use Graphics//generalapproachimpedancecontrol.png>
 Package pdftex.def Info: Graphics//generalapproachimpedancecontrol.png  used on
- input line 511.
+ input line 510.
 (pdftex.def)             Requested size: 352.81552pt x 107.52pt.
 
 
-LaTeX Warning: Reference `' on page 14 undefined on input line 517.
+LaTeX Warning: Reference `' on page 13 undefined on input line 516.
 
-
-Underfull \vbox (badness 1796) has occurred while \output is active []
-
- [14 <./Graphics//generalapproachimpedancecontrol.png>] [15]
-<Graphics//forcebaseddiagram.png, id=669, 366.36874pt x 125.46875pt>
+[13 <./Graphics//impedance_control_u.png> <./Graphics//generalapproachimpedance
+control.png>] [14]
+<Graphics//forcebaseddiagram.png, id=694, 366.36874pt x 125.46875pt>
 File: Graphics//forcebaseddiagram.png Graphic file (type png)
 <use Graphics//forcebaseddiagram.png>
 Package pdftex.def Info: Graphics//forcebaseddiagram.png  used on input line 57
-3.
+1.
 (pdftex.def)             Requested size: 176.40439pt x 60.41383pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
-<Graphics//admittancecontrolscheme.png, id=681, 709.65125pt x 183.68625pt>
+<Graphics//admittancecontrolscheme.png, id=698, 709.65125pt x 183.68625pt>
 File: Graphics//admittancecontrolscheme.png Graphic file (type png)
 <use Graphics//admittancecontrolscheme.png>
 Package pdftex.def Info: Graphics//admittancecontrolscheme.png  used on input l
-ine 585.
+ine 583.
 (pdftex.def)             Requested size: 264.61333pt x 68.49257pt.
-
-[17 <./Graphics//forcebaseddiagram.png> <./Graphics//admittancecontrolscheme.pn
-g>]
-<Graphics//Admittanceschematic.png, id=704, 543.02875pt x 382.42876pt>
+ [15 <./Graphics//forcebaseddiagram.png> <./Graphics//admittancecontrolscheme.p
+ng>] [16]
+<Graphics//Admittanceschematic.png, id=729, 543.02875pt x 382.42876pt>
 File: Graphics//Admittanceschematic.png Graphic file (type png)
 <use Graphics//Admittanceschematic.png>
 Package pdftex.def Info: Graphics//Admittanceschematic.png  used on input line 
-633.
+631.
 (pdftex.def)             Requested size: 132.30666pt x 93.17358pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
-[19 <./Graphics//Admittanceschematic.png>]
-<Graphics//searigid.png, id=725, 221.82875pt x 61.22874pt>
+ [17 <./Graphics//Admittanceschematic.png>]
+<Graphics//searigid.png, id=742, 221.82875pt x 61.22874pt>
 File: Graphics//searigid.png Graphic file (type png)
 <use Graphics//searigid.png>
-Package pdftex.def Info: Graphics//searigid.png  used on input line 654.
+Package pdftex.def Info: Graphics//searigid.png  used on input line 652.
 (pdftex.def)             Requested size: 132.30666pt x 36.51889pt.
-<Graphics//seawithspring.png, id=726, 312.16624pt x 61.22874pt>
+<Graphics//seawithspring.png, id=743, 312.16624pt x 61.22874pt>
 File: Graphics//seawithspring.png Graphic file (type png)
 <use Graphics//seawithspring.png>
-Package pdftex.def Info: Graphics//seawithspring.png  used on input line 661.
+Package pdftex.def Info: Graphics//seawithspring.png  used on input line 659.
 (pdftex.def)             Requested size: 176.40439pt x 34.60083pt.
- [20 <./Graphics//searigid.png> <./Graphics//seawithspring.png>]
-<Graphics//generalsea.png, id=740, 382.42876pt x 101.37875pt>
+ [18 <./Graphics//searigid.png> <./Graphics//seawithspring.png>]
+<Graphics//generalsea.png, id=757, 382.42876pt x 101.37875pt>
 File: Graphics//generalsea.png Graphic file (type png)
 <use Graphics//generalsea.png>
-Package pdftex.def Info: Graphics//generalsea.png  used on input line 695.
+Package pdftex.def Info: Graphics//generalsea.png  used on input line 693.
 (pdftex.def)             Requested size: 176.40439pt x 46.76317pt.
- [21 <./Graphics//generalsea.png>] [22]
-<Graphics//sea_spring_motormass.png, id=763, 240.9pt x 110.4125pt>
+ [19 <./Graphics//generalsea.png>] [20]
+<Graphics//sea_spring_motormass.png, id=781, 240.9pt x 110.4125pt>
 File: Graphics//sea_spring_motormass.png Graphic file (type png)
 <use Graphics//sea_spring_motormass.png>
 Package pdftex.def Info: Graphics//sea_spring_motormass.png  used on input line
- 727.
+ 725.
 (pdftex.def)             Requested size: 176.40439pt x 80.85484pt.
- [23 <./Graphics//sea_spring_motormass.png>]
-<Graphics//sea_vector1.png, id=785, 261.97874pt x 261.97874pt>
+ [21 <./Graphics//sea_spring_motormass.png>]
+<Graphics//sea_vector1.png, id=802, 261.97874pt x 261.97874pt>
 File: Graphics//sea_vector1.png Graphic file (type png)
 <use Graphics//sea_vector1.png>
-Package pdftex.def Info: Graphics//sea_vector1.png  used on input line 804.
+Package pdftex.def Info: Graphics//sea_vector1.png  used on input line 802.
 (pdftex.def)             Requested size: 176.40439pt x 176.40828pt.
- [24 <./Graphics//sea_vector1.png>] [25]
-<Graphics//seacontrolscheme.png, id=814, 477.9456pt x 229.8186pt>
+ [22 <./Graphics//sea_vector1.png>] [23]
+<Graphics//seacontrolscheme.png, id=831, 477.9456pt x 229.8186pt>
 File: Graphics//seacontrolscheme.png Graphic file (type png)
 <use Graphics//seacontrolscheme.png>
-Package pdftex.def Info: Graphics//seacontrolscheme.png  used on input line 837
+Package pdftex.def Info: Graphics//seacontrolscheme.png  used on input line 835
 .
 (pdftex.def)             Requested size: 308.71106pt x 148.44402pt.
-
-[26 <./Graphics//seacontrolscheme.png>]
-<Graphics//yuetal.png, id=827, 673.51625pt x 202.7575pt>
+ [24 <./Graphics//seacontrolscheme.png>]
+<Graphics//yuetal.png, id=844, 673.51625pt x 202.7575pt>
 File: Graphics//yuetal.png Graphic file (type png)
 <use Graphics//yuetal.png>
-Package pdftex.def Info: Graphics//yuetal.png  used on input line 851.
+Package pdftex.def Info: Graphics//yuetal.png  used on input line 849.
 (pdftex.def)             Requested size: 352.81552pt x 106.21414pt.
- [27 <./Graphics//yuetal.png>] [28
+ [25 <./Graphics//yuetal.png>] [26
 
 ]
 Chapter 3.
-[29] [30]
-<Graphics//OverviewWithAxisSET.png, id=856, 498.86375pt x 536.0025pt>
+[27] [28]
+<Graphics//OverviewWithAxisSET.png, id=873, 498.86375pt x 536.0025pt>
 File: Graphics//OverviewWithAxisSET.png Graphic file (type png)
 <use Graphics//OverviewWithAxisSET.png>
 Package pdftex.def Info: Graphics//OverviewWithAxisSET.png  used on input line 
-909.
+907.
 (pdftex.def)             Requested size: 352.81552pt x 379.09227pt.
-<Graphics//LengthOverview.png, id=859, 420.042pt x 502.386pt>
+<Graphics//LengthOverview.png, id=876, 420.042pt x 502.386pt>
 File: Graphics//LengthOverview.png Graphic file (type png)
 <use Graphics//LengthOverview.png>
-Package pdftex.def Info: Graphics//LengthOverview.png  used on input line 918.
+Package pdftex.def Info: Graphics//LengthOverview.png  used on input line 916.
 (pdftex.def)             Requested size: 264.61333pt x 316.48952pt.
 
 Underfull \vbox (badness 2573) has occurred while \output is active []
 
- [31 <./Graphics//OverviewWithAxisSET.png>]
-<Graphics//NumbersOverview.png, id=865, 528.228pt x 503.7pt>
+ [29 <./Graphics//OverviewWithAxisSET.png>]
+<Graphics//NumbersOverview.png, id=882, 528.228pt x 503.7pt>
 File: Graphics//NumbersOverview.png Graphic file (type png)
 <use Graphics//NumbersOverview.png>
-Package pdftex.def Info: Graphics//NumbersOverview.png  used on input line 925.
+Package pdftex.def Info: Graphics//NumbersOverview.png  used on input line 923.
 
 (pdftex.def)             Requested size: 308.71106pt x 294.37509pt.
 
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
- [32 <./Graphics//LengthOverview.png> <./Graphics//NumbersOverview.png>] [33] [
-34] [35]
-[36] [37] [38]
-<Graphics//shaftsurface-Photoroom.png, id=959, 957.5775pt x 109.40875pt>
+ [30 <./Graphics//LengthOverview.png> <./Graphics//NumbersOverview.png>] [31] [
+32] [33]
+[34] [35] [36]
+<Graphics//shaftsurface-Photoroom.png, id=976, 957.5775pt x 109.40875pt>
 File: Graphics//shaftsurface-Photoroom.png Graphic file (type png)
 <use Graphics//shaftsurface-Photoroom.png>
 Package pdftex.def Info: Graphics//shaftsurface-Photoroom.png  used on input li
-ne 1282.
+ne 1280.
 (pdftex.def)             Requested size: 352.81552pt x 40.3103pt.
-<Graphics//shaftfixed-Photoroom.png, id=961, 945.5325pt x 184.69pt>
+<Graphics//shaftfixed-Photoroom.png, id=978, 945.5325pt x 184.69pt>
 File: Graphics//shaftfixed-Photoroom.png Graphic file (type png)
 <use Graphics//shaftfixed-Photoroom.png>
 Package pdftex.def Info: Graphics//shaftfixed-Photoroom.png  used on input line
- 1291.
+ 1289.
 (pdftex.def)             Requested size: 352.81552pt x 68.91475pt.
-<Graphics//Shaft-20nm-Photoroom.png, id=964, 956.57375pt x 160.6pt>
+<Graphics//Shaft-20nm-Photoroom.png, id=981, 956.57375pt x 160.6pt>
 File: Graphics//Shaft-20nm-Photoroom.png Graphic file (type png)
 <use Graphics//Shaft-20nm-Photoroom.png>
 Package pdftex.def Info: Graphics//Shaft-20nm-Photoroom.png  used on input line
- 1300.
+ 1298.
 (pdftex.def)             Requested size: 352.81552pt x 59.23482pt.
- [39 <./Graphics//shaftsurface-Photoroom.png> <./Graphics//shaftfixed-Photoroom
+ [37 <./Graphics//shaftsurface-Photoroom.png> <./Graphics//shaftfixed-Photoroom
 .png> <./Graphics//Shaft-20nm-Photoroom.png>]
-<Graphics//shaft_20nm_max-Photoroom.png, id=974, 760.8425pt x 681.54625pt>
+<Graphics//shaft_20nm_max-Photoroom.png, id=991, 760.8425pt x 681.54625pt>
 File: Graphics//shaft_20nm_max-Photoroom.png Graphic file (type png)
 <use Graphics//shaft_20nm_max-Photoroom.png>
 Package pdftex.def Info: Graphics//shaft_20nm_max-Photoroom.png  used on input 
-line 1330.
+line 1328.
 (pdftex.def)             Requested size: 264.61333pt x 237.03682pt.
 
 Underfull \vbox (badness 3701) has occurred while \output is active []
 
- [40 <./Graphics//shaft_20nm_max-Photoroom.png>]
-<Graphics//ShoulderWithLengths.png, id=986, 825.0825pt x 724.7075pt>
+ [38 <./Graphics//shaft_20nm_max-Photoroom.png>]
+<Graphics//ShoulderWithLengths.png, id=1003, 825.0825pt x 724.7075pt>
 File: Graphics//ShoulderWithLengths.png Graphic file (type png)
 <use Graphics//ShoulderWithLengths.png>
 Package pdftex.def Info: Graphics//ShoulderWithLengths.png  used on input line 
-1342.
+1340.
 (pdftex.def)             Requested size: 264.61333pt x 232.41982pt.
-<Graphics//Elbowfixturedimensions.png, id=987, 848.16875pt x 713.66624pt>
+<Graphics//Elbowfixturedimensions.png, id=1004, 848.16875pt x 713.66624pt>
 File: Graphics//Elbowfixturedimensions.png Graphic file (type png)
 <use Graphics//Elbowfixturedimensions.png>
 Package pdftex.def Info: Graphics//Elbowfixturedimensions.png  used on input li
-ne 1349.
+ne 1347.
 (pdftex.def)             Requested size: 264.61333pt x 222.6499pt.
- [41 <./Graphics//ShoulderWithLengths.png> <./Graphics//Elbowfixturedimensions.
+ [39 <./Graphics//ShoulderWithLengths.png> <./Graphics//Elbowfixturedimensions.
 png>]
-<Graphics//Crosssection.png, id=996, 834.11626pt x 298.11375pt>
+<Graphics//Crosssection.png, id=1014, 834.11626pt x 298.11375pt>
 File: Graphics//Crosssection.png Graphic file (type png)
 <use Graphics//Crosssection.png>
-Package pdftex.def Info: Graphics//Crosssection.png  used on input line 1358.
+Package pdftex.def Info: Graphics//Crosssection.png  used on input line 1356.
 (pdftex.def)             Requested size: 352.81552pt x 126.0985pt.
- [42 <./Graphics//Crosssection.png>]
-<Graphics//ShoulderForces.png, id=1003, 691.58376pt x 694.595pt>
+ [40 <./Graphics//Crosssection.png>]
+<Graphics//ShoulderForces.png, id=1021, 691.58376pt x 694.595pt>
 File: Graphics//ShoulderForces.png Graphic file (type png)
 <use Graphics//ShoulderForces.png>
-Package pdftex.def Info: Graphics//ShoulderForces.png  used on input line 1378.
+Package pdftex.def Info: Graphics//ShoulderForces.png  used on input line 1376.
 
 (pdftex.def)             Requested size: 264.61333pt x 265.7718pt.
 
-[43 <./Graphics//ShoulderForces.png>]
-<Graphics//FeaForces.png, id=1013, 703.62875pt x 702.625pt>
+[41 <./Graphics//ShoulderForces.png>]
+<Graphics//FeaForces.png, id=1030, 703.62875pt x 702.625pt>
 File: Graphics//FeaForces.png Graphic file (type png)
 <use Graphics//FeaForces.png>
-Package pdftex.def Info: Graphics//FeaForces.png  used on input line 1387.
+Package pdftex.def Info: Graphics//FeaForces.png  used on input line 1385.
 (pdftex.def)             Requested size: 264.61333pt x 264.2342pt.
- [44 <./Graphics//FeaForces.png>]
-<Graphics//appliedtorqueshoulder.png, id=1021, 711.65875pt x 733.74126pt>
+ [42 <./Graphics//FeaForces.png>]
+<Graphics//appliedtorqueshoulder.png, id=1038, 711.65875pt x 733.74126pt>
 File: Graphics//appliedtorqueshoulder.png Graphic file (type png)
 <use Graphics//appliedtorqueshoulder.png>
 Package pdftex.def Info: Graphics//appliedtorqueshoulder.png  used on input lin
-e 1397.
+e 1395.
 (pdftex.def)             Requested size: 176.40439pt x 181.86742pt.
-<Graphics//feaShoulder.png, id=1023, 711.65875pt x 733.74126pt>
+<Graphics//feaShoulder.png, id=1040, 711.65875pt x 733.74126pt>
 File: Graphics//feaShoulder.png Graphic file (type png)
 <use Graphics//feaShoulder.png>
-Package pdftex.def Info: Graphics//feaShoulder.png  used on input line 1406.
+Package pdftex.def Info: Graphics//feaShoulder.png  used on input line 1404.
 (pdftex.def)             Requested size: 220.50887pt x 227.34547pt.
- [45 <./Graphics//appliedtorqueshoulder.png> <./Graphics//feaShoulder.png>]
-<Graphics//BaseWithDimensionsAndCoordsystem.png, id=1032, 678.535pt x 718.685pt
+ [43 <./Graphics//appliedtorqueshoulder.png> <./Graphics//feaShoulder.png>]
+<Graphics//BaseWithDimensionsAndCoordsystem.png, id=1049, 678.535pt x 718.685pt
 >
 File: Graphics//BaseWithDimensionsAndCoordsystem.png Graphic file (type png)
 <use Graphics//BaseWithDimensionsAndCoordsystem.png>
 Package pdftex.def Info: Graphics//BaseWithDimensionsAndCoordsystem.png  used o
-n input line 1419.
+n input line 1417.
 (pdftex.def)             Requested size: 264.61333pt x 280.26408pt.
-<Graphics//RedCross.png, id=1034, 553.06625pt x 649.42625pt>
+<Graphics//RedCross.png, id=1051, 553.06625pt x 649.42625pt>
 File: Graphics//RedCross.png Graphic file (type png)
 <use Graphics//RedCross.png>
-Package pdftex.def Info: Graphics//RedCross.png  used on input line 1428.
+Package pdftex.def Info: Graphics//RedCross.png  used on input line 1426.
 (pdftex.def)             Requested size: 176.40439pt x 207.13689pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46 <./Graphics//BaseWithDimensionsAndCoordsystem.png>]
-<Graphics//TransparentViewBase.png, id=1041, 658.46pt x 781.92125pt>
-File: Graphics//TransparentViewBase.png Graphic file (type png)
-<use Graphics//TransparentViewBase.png>
-Package pdftex.def Info: Graphics//TransparentViewBase.png  used on input line 
-1439.
-(pdftex.def)             Requested size: 176.40439pt x 209.47505pt.
- [47 <./Graphics//RedCross.png> <./Graphics//TransparentViewBase.png>]
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-480.
+ [44 <./Graphics//BaseWithDimensionsAndCoordsystem.png>]
+<Graphics//RedBrackets.png, id=1058, 656.4525pt x 782.925pt>
+File: Graphics//RedBrackets.png Graphic file (type png)
+<use Graphics//RedBrackets.png>
+Package pdftex.def Info: Graphics//RedBrackets.png  used on input line 1437.
+(pdftex.def)             Requested size: 176.40439pt x 210.38907pt.
+ [45 <./Graphics//RedCross.png> <./Graphics//RedBrackets.png>]
+<Graphics//bottomHoles.png, id=1067, 885.3075pt x 412.54124pt>
+File: Graphics//bottomHoles.png Graphic file (type png)
+<use Graphics//bottomHoles.png>
+Package pdftex.def Info: Graphics//bottomHoles.png  used on input line 1449.
+(pdftex.def)             Requested size: 264.61333pt x 123.3038pt.
+ [46 <./Graphics//bottomHoles.png>]
+<Graphics//Schermafbeelding 2026-05-05 104649.png, id=1075, 280.04625pt x 548.8
+0031pt>
+File: Graphics//Schermafbeelding 2026-05-05 104649.png Graphic file (type png)
+<use Graphics//Schermafbeelding 2026-05-05 104649.png>
+Package pdftex.def Info: Graphics//Schermafbeelding 2026-05-05 104649.png  used
+ on input line 1462.
+(pdftex.def)             Requested size: 176.40439pt x 345.71251pt.
+ [47 <./Graphics//Schermafbeelding 2026-05-05 104649.png>]
+<Graphics//shaftFea.drawio.png, id=1082, 794.97pt x 352.31625pt>
+File: Graphics//shaftFea.drawio.png Graphic file (type png)
+<use Graphics//shaftFea.drawio.png>
+Package pdftex.def Info: Graphics//shaftFea.drawio.png  used on input line 1475
+.
+(pdftex.def)             Requested size: 308.71106pt x 136.8168pt.
+<Graphics//FeaResults.png, id=1084, 541.02126pt x 804.00375pt>
+File: Graphics//FeaResults.png Graphic file (type png)
+<use Graphics//FeaResults.png>
+Package pdftex.def Info: Graphics//FeaResults.png  used on input line 1484.
+(pdftex.def)             Requested size: 176.40439pt x 262.14462pt.
+ [48 <./Graphics//shaftFea.drawio.png> <./Graphics//FeaResults.png>]
+<Graphics//ballrolers.png, id=1092, 478.03593pt x 475.7775pt>
+File: Graphics//ballrolers.png Graphic file (type png)
+<use Graphics//ballrolers.png>
+Package pdftex.def Info: Graphics//ballrolers.png  used on input line 1498.
+(pdftex.def)             Requested size: 176.40439pt x 175.57028pt.
+ [49 <./Graphics//ballrolers.png>]
+<Graphics//SideOnderSL.png, id=1101, 395.4775pt x 291.0875pt>
+File: Graphics//SideOnderSL.png Graphic file (type png)
+<use Graphics//SideOnderSL.png>
+Package pdftex.def Info: Graphics//SideOnderSL.png  used on input line 1514.
+(pdftex.def)             Requested size: 264.61333pt x 194.76555pt.
+ [50 <./Graphics//SideOnderSL.png>]
+<Graphics//UnderarmSideforce.png, id=1111, 511.9125pt x 259.97125pt>
+File: Graphics//UnderarmSideforce.png Graphic file (type png)
+<use Graphics//UnderarmSideforce.png>
+Package pdftex.def Info: Graphics//UnderarmSideforce.png  used on input line 15
+23.
+(pdftex.def)             Requested size: 308.71106pt x 156.77731pt.
+<Graphics//Underarm_eeforce.png, id=1112, 1131.22626pt x 254.9525pt>
+File: Graphics//Underarm_eeforce.png Graphic file (type png)
+<use Graphics//Underarm_eeforce.png>
+Package pdftex.def Info: Graphics//Underarm_eeforce.png  used on input line 153
+0.
+(pdftex.def)             Requested size: 308.71106pt x 69.57335pt.
+ [51 <./Graphics//UnderarmSideforce.png> <./Graphics//Underarm_eeforce.png>]
+<Graphics//FLTOPtop.png, id=1120, 969.6225pt x 279.0425pt>
+File: Graphics//FLTOPtop.png Graphic file (type png)
+<use Graphics//FLTOPtop.png>
+Package pdftex.def Info: Graphics//FLTOPtop.png  used on input line 1542.
+(pdftex.def)             Requested size: 211.68661pt x 60.91692pt.
+<Graphics//sl_topview.png, id=1121, 866.23625pt x 299.1175pt>
+File: Graphics//sl_topview.png Graphic file (type png)
+<use Graphics//sl_topview.png>
+Package pdftex.def Info: Graphics//sl_topview.png  used on input line 1549.
+(pdftex.def)             Requested size: 211.68661pt x 73.095pt.
+<Graphics//FLSIDETOP.png, id=1122, 977.6525pt x 299.1175pt>
+File: Graphics//FLSIDETOP.png Graphic file (type png)
+<use Graphics//FLSIDETOP.png>
+Package pdftex.def Info: Graphics//FLSIDETOP.png  used on input line 1559.
+(pdftex.def)             Requested size: 211.68661pt x 64.76541pt.
+<Graphics//sl_othersideview.png, id=1123, 861.2175pt x 305.14pt>
+File: Graphics//sl_othersideview.png Graphic file (type png)
+<use Graphics//sl_othersideview.png>
+Package pdftex.def Info: Graphics//sl_othersideview.png  used on input line 156
+6.
+(pdftex.def)             Requested size: 211.68661pt x 74.99973pt.
+<Graphics//FLSIDETOP2.png, id=1124, 987.69pt x 293.095pt>
+File: Graphics//FLSIDETOP2.png Graphic file (type png)
+<use Graphics//FLSIDETOP2.png>
+Package pdftex.def Info: Graphics//FLSIDETOP2.png  used on input line 1576.
+(pdftex.def)             Requested size: 211.68661pt x 62.81741pt.
+<Graphics//fl_sideview.png, id=1125, 867.24pt x 320.19624pt>
+File: Graphics//fl_sideview.png Graphic file (type png)
+<use Graphics//fl_sideview.png>
+Package pdftex.def Info: Graphics//fl_sideview.png  used on input line 1583.
+(pdftex.def)             Requested size: 211.68661pt x 78.15317pt.
+<Graphics//UndersideFLTop.png, id=1126, 991.705pt x 300.12125pt>
+File: Graphics//UndersideFLTop.png Graphic file (type png)
+<use Graphics//UndersideFLTop.png>
+Package pdftex.def Info: Graphics//UndersideFLTop.png  used on input line 1593.
 
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+(pdftex.def)             Requested size: 211.68661pt x 64.06227pt.
+<Graphics//fl_bottomview.png, id=1127, 867.24pt x 302.12875pt>
+File: Graphics//fl_bottomview.png Graphic file (type png)
+<use Graphics//fl_bottomview.png>
+Package pdftex.def Info: Graphics//fl_bottomview.png  used on input line 1600.
+(pdftex.def)             Requested size: 211.68661pt x 73.74327pt.
+<Graphics//cutout_sideview_otherside.png, id=1130, 1064.97874pt x 430.60875pt>
+File: Graphics//cutout_sideview_otherside.png Graphic file (type png)
+<use Graphics//cutout_sideview_otherside.png>
+Package pdftex.def Info: Graphics//cutout_sideview_otherside.png  used on input
+ line 1610.
+(pdftex.def)             Requested size: 264.61333pt x 106.98828pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52 <./Graphics//FLTOPtop.png> <./Graphics//sl_topview.png> <./Graphics//FLSID
+ETOP.png> <./Graphics//sl_othersideview.png> <./Graphics//FLSIDETOP2.png> <./Gr
+aphics//fl_sideview.png> <./Graphics//UndersideFLTop.png> <./Graphics//fl_botto
+mview.png>]
+<Graphics//CutoutVM_SIDETOP.png, id=1143, 963.6pt x 500.87125pt>
+File: Graphics//CutoutVM_SIDETOP.png Graphic file (type png)
+<use Graphics//CutoutVM_SIDETOP.png>
+Package pdftex.def Info: Graphics//CutoutVM_SIDETOP.png  used on input line 161
+7.
+(pdftex.def)             Requested size: 264.61333pt x 137.53748pt.
+<Graphics//Cutout_VM_sideview.png, id=1144, 1063.975pt x 409.53pt>
+File: Graphics//Cutout_VM_sideview.png Graphic file (type png)
+<use Graphics//Cutout_VM_sideview.png>
+Package pdftex.def Info: Graphics//Cutout_VM_sideview.png  used on input line 1
+624.
+(pdftex.def)             Requested size: 264.61333pt x 101.85109pt.
+<Graphics//sideview_uresmm.png, id=1146, 1010.77625pt x 435.6275pt>
+File: Graphics//sideview_uresmm.png Graphic file (type png)
+<use Graphics//sideview_uresmm.png>
+Package pdftex.def Info: Graphics//sideview_uresmm.png  used on input line 1633
+.
+(pdftex.def)             Requested size: 264.61333pt x 114.04483pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53 <./Graphics//cutout_sideview_otherside.png> <./Graphics//CutoutVM_SIDETOP.
+png> <./Graphics//Cutout_VM_sideview.png>]
+<Graphics//actualmanufactured_sidetop.png, id=1158, 811.03pt x 654.445pt>
+File: Graphics//actualmanufactured_sidetop.png Graphic file (type png)
+<use Graphics//actualmanufactured_sidetop.png>
+Package pdftex.def Info: Graphics//actualmanufactured_sidetop.png  used on inpu
+t line 1644.
+(pdftex.def)             Requested size: 211.68661pt x 170.81076pt.
+<Graphics//actualmanufactured_topview.png, id=1159, 924.45375pt x 288.07625pt>
+File: Graphics//actualmanufactured_topview.png Graphic file (type png)
+<use Graphics//actualmanufactured_topview.png>
+Package pdftex.def Info: Graphics//actualmanufactured_topview.png  used on inpu
+t line 1651.
+(pdftex.def)             Requested size: 211.68661pt x 65.96602pt.
+<Graphics//actualManufacturedPart_sideview.png, id=1160, 920.43875pt x 210.7875
+pt>
+File: Graphics//actualManufacturedPart_sideview.png Graphic file (type png)
+<use Graphics//actualManufacturedPart_sideview.png>
+Package pdftex.def Info: Graphics//actualManufacturedPart_sideview.png  used on
+ input line 1661.
+(pdftex.def)             Requested size: 211.68661pt x 48.47688pt.
+<Graphics//actualmanufactured_othersideview.png, id=1161, 916.42375pt x 207.776
+25pt>
+File: Graphics//actualmanufactured_othersideview.png Graphic file (type png)
+<use Graphics//actualmanufactured_othersideview.png>
+Package pdftex.def Info: Graphics//actualmanufactured_othersideview.png  used o
+n input line 1668.
+(pdftex.def)             Requested size: 211.68661pt x 47.99359pt.
+ [54 <./Graphics//sideview_uresmm.png> <./Graphics//actualmanufactured_sidetop.
+png> <./Graphics//actualmanufactured_topview.png> <./Graphics//actualManufactur
+edPart_sideview.png> <./Graphics//actualmanufactured_othersideview.png>]
+<Graphics//actual_manufactured_bttomu.png, id=1173, 879.285pt x 499.8675pt>
+File: Graphics//actual_manufactured_bttomu.png Graphic file (type png)
+<use Graphics//actual_manufactured_bttomu.png>
+Package pdftex.def Info: Graphics//actual_manufactured_bttomu.png  used on inpu
+t line 1679.
+(pdftex.def)             Requested size: 211.68661pt x 120.33676pt.
+<Graphics//frontplate.png, id=1174, 897.3525pt x 734.745pt>
+File: Graphics//frontplate.png Graphic file (type png)
+<use Graphics//frontplate.png>
+Package pdftex.def Info: Graphics//frontplate.png  used on input line 1686.
+(pdftex.def)             Requested size: 211.68661pt x 173.32655pt.
+<Graphics//Forearmfortopology.png, id=1177, 660.4675pt x 490.83376pt>
+File: Graphics//Forearmfortopology.png Graphic file (type png)
+<use Graphics//Forearmfortopology.png>
+Package pdftex.def Info: Graphics//Forearmfortopology.png  used on input line 1
+698.
+(pdftex.def)             Requested size: 264.61333pt x 196.65207pt.
+ [55 <./Graphics//actual_manufactured_bttomu.png> <./Graphics//frontplate.png> 
+<./Graphics//Forearmfortopology.png>]
+<Graphics//forearm_appliedforces.png, id=1186, 871.255pt x 274.02374pt>
+File: Graphics//forearm_appliedforces.png Graphic file (type png)
+<use Graphics//forearm_appliedforces.png>
+Package pdftex.def Info: Graphics//forearm_appliedforces.png  used on input lin
+e 1706.
+(pdftex.def)             Requested size: 264.61333pt x 83.2238pt.
+<Graphics//forearmTop_sideview.png, id=1187, 985.6825pt x 225.84375pt>
+File: Graphics//forearmTop_sideview.png Graphic file (type png)
+<use Graphics//forearmTop_sideview.png>
+Package pdftex.def Info: Graphics//forearmTop_sideview.png  used on input line 
+1717.
+(pdftex.def)             Requested size: 211.68661pt x 48.5003pt.
+<Graphics//forearmMaterialremoved_sideview.png, id=1188, 848.16875pt x 174.6525
+pt>
+File: Graphics//forearmMaterialremoved_sideview.png Graphic file (type png)
+<use Graphics//forearmMaterialremoved_sideview.png>
+Package pdftex.def Info: Graphics//forearmMaterialremoved_sideview.png  used on
+ input line 1724.
+(pdftex.def)             Requested size: 211.68661pt x 43.5884pt.
+<Graphics//forearm_top_topview.png, id=1189, 965.6075pt x 213.79875pt>
+File: Graphics//forearm_top_topview.png Graphic file (type png)
+<use Graphics//forearm_top_topview.png>
+Package pdftex.def Info: Graphics//forearm_top_topview.png  used on input line 
+1734.
+(pdftex.def)             Requested size: 211.68661pt x 46.86948pt.
+<Graphics//forearmtopviewcutout.png, id=1190, 847.165pt x 197.73875pt>
+File: Graphics//forearmtopviewcutout.png Graphic file (type png)
+<use Graphics//forearmtopviewcutout.png>
+Package pdftex.def Info: Graphics//forearmtopviewcutout.png  used on input line
+ 1741.
+(pdftex.def)             Requested size: 211.68661pt x 49.41042pt.
+<Graphics//forearm_undersideToplogy.png, id=1191, 965.6075pt x 225.84375pt>
+File: Graphics//forearm_undersideToplogy.png Graphic file (type png)
+<use Graphics//forearm_undersideToplogy.png>
+Package pdftex.def Info: Graphics//forearm_undersideToplogy.png  used on input 
+line 1751.
+(pdftex.def)             Requested size: 211.68661pt x 49.51003pt.
+<Graphics//forearm_materialremoved_under.png, id=1192, 848.16875pt x 200.75pt>
+File: Graphics//forearm_materialremoved_under.png Graphic file (type png)
+<use Graphics//forearm_materialremoved_under.png>
+Package pdftex.def Info: Graphics//forearm_materialremoved_under.png  used on i
+nput line 1758.
+(pdftex.def)             Requested size: 211.68661pt x 50.1016pt.
+<Graphics//torqueforearm.png, id=1194, 346.29375pt x 494.84875pt>
+File: Graphics//torqueforearm.png Graphic file (type png)
+<use Graphics//torqueforearm.png>
+Package pdftex.def Info: Graphics//torqueforearm.png  used on input line 1768.
+(pdftex.def)             Requested size: 176.40439pt x 252.0826pt.
+
+Underfull \vbox (badness 2409) has occurred while \output is active []
+
+ [56 <./Graphics//forearm_appliedforces.png> <./Graphics//forearmTop_sideview.p
+ng> <./Graphics//forearmMaterialremoved_sideview.png> <./Graphics//forearm_top_
+topview.png> <./Graphics//forearmtopviewcutout.png> <./Graphics//forearm_unders
+ideToplogy.png> <./Graphics//forearm_materialremoved_under.png>]
+<Graphics//forearmvonmiseundersideview.png, id=1207, 1100.11pt x 616.3025pt>
+File: Graphics//forearmvonmiseundersideview.png Graphic file (type png)
+<use Graphics//forearmvonmiseundersideview.png>
+Package pdftex.def Info: Graphics//forearmvonmiseundersideview.png  used on inp
+ut line 1777.
+(pdftex.def)             Requested size: 264.61333pt x 148.23535pt.
+ [57 <./Graphics//torqueforearm.png> <./Graphics//forearmvonmiseundersideview.p
+ng>]
+<Graphics//Forearmuresmm.png, id=1217, 967.615pt x 359.3425pt>
+File: Graphics//Forearmuresmm.png Graphic file (type png)
+<use Graphics//Forearmuresmm.png>
+Package pdftex.def Info: Graphics//Forearmuresmm.png  used on input line 1788.
+(pdftex.def)             Requested size: 264.61333pt x 98.26843pt.
+<Graphics//forearmuresfrontview.png, id=1218, 695.59875pt x 526.96875pt>
+File: Graphics//forearmuresfrontview.png Graphic file (type png)
+<use Graphics//forearmuresfrontview.png>
+Package pdftex.def Info: Graphics//forearmuresfrontview.png  used on input line
+ 1795.
+(pdftex.def)             Requested size: 220.50887pt x 167.04938pt.
+<Graphics//FailedTopview.png, id=1222, 1710.39pt x 789.95125pt>
+File: Graphics//FailedTopview.png Graphic file (type png)
+<use Graphics//FailedTopview.png>
+Package pdftex.def Info: Graphics//FailedTopview.png  used on input line 1804.
+(pdftex.def)             Requested size: 220.50887pt x 101.84145pt.
+<Graphics//FailedSideView.png, id=1223, 2090.81125pt x 813.0375pt>
+File: Graphics//FailedSideView.png Graphic file (type png)
+<use Graphics//FailedSideView.png>
+Package pdftex.def Info: Graphics//FailedSideView.png  used on input line 1811.
+
+(pdftex.def)             Requested size: 220.50887pt x 85.73743pt.
+
+Underfull \vbox (badness 2735) has occurred while \output is active []
+
+ [58 <./Graphics//Forearmuresmm.png> <./Graphics//forearmuresfrontview.png> <./
+Graphics//FailedTopview.png>]
+<Graphics//CorrectTopview.png, id=1231, 1489.565pt x 711.65875pt>
+File: Graphics//CorrectTopview.png Graphic file (type png)
+<use Graphics//CorrectTopview.png>
+Package pdftex.def Info: Graphics//CorrectTopview.png  used on input line 1818.
+
+(pdftex.def)             Requested size: 220.50887pt x 105.34338pt.
+<Graphics//manufacturedforearm_sideview.png, id=1234, 1222.5675pt x 243.91125pt
+>
+File: Graphics//manufacturedforearm_sideview.png Graphic file (type png)
+<use Graphics//manufacturedforearm_sideview.png>
+Package pdftex.def Info: Graphics//manufacturedforearm_sideview.png  used on in
+put line 1829.
+(pdftex.def)             Requested size: 211.68661pt x 42.23105pt.
+<Graphics//manufacturedforearm_topview.png, id=1235, 593.21625pt x 140.525pt>
+File: Graphics//manufacturedforearm_topview.png Graphic file (type png)
+<use Graphics//manufacturedforearm_topview.png>
+Package pdftex.def Info: Graphics//manufacturedforearm_topview.png  used on inp
+ut line 1836.
+(pdftex.def)             Requested size: 211.68661pt x 50.1451pt.
+<Graphics//manufactured_forearm_inneru.png, id=1236, 958.58125pt x 474.77374pt>
+
+File: Graphics//manufactured_forearm_inneru.png Graphic file (type png)
+<use Graphics//manufactured_forearm_inneru.png>
+Package pdftex.def Info: Graphics//manufactured_forearm_inneru.png  used on inp
+ut line 1844.
+(pdftex.def)             Requested size: 220.50887pt x 109.21014pt.
+ [59 <./Graphics//FailedSideView.png> <./Graphics//CorrectTopview.png> <./Graph
+ics//manufacturedforearm_sideview.png> <./Graphics//manufacturedforearm_topview
+.png> <./Graphics//manufactured_forearm_inneru.png>]
+<Graphics//endstop_sideview.png, id=1246, 519.9425pt x 517.935pt>
+File: Graphics//endstop_sideview.png Graphic file (type png)
+<use Graphics//endstop_sideview.png>
+Package pdftex.def Info: Graphics//endstop_sideview.png  used on input line 187
+0.
+(pdftex.def)             Requested size: 264.61333pt x 263.59013pt.
+<Graphics//endstop_topview.png, id=1247, 578.16pt x 551.05875pt>
+File: Graphics//endstop_topview.png Graphic file (type png)
+<use Graphics//endstop_topview.png>
+Package pdftex.def Info: Graphics//endstop_topview.png  used on input line 1877
+.
+(pdftex.def)             Requested size: 264.61333pt x 252.2036pt.
+
+Underfull \vbox (badness 2261) has occurred while \output is active []
+
+ [60 <./Graphics//endstop_sideview.png>] [61 <./Graphics//endstop_topview.png>]
+<Graphics//End_effector_overview.png, id=1262, 314.17375pt x 441.65pt>
+File: Graphics//End_effector_overview.png Graphic file (type png)
+<use Graphics//End_effector_overview.png>
+Package pdftex.def Info: Graphics//End_effector_overview.png  used on input lin
+e 1891.
+(pdftex.def)             Requested size: 220.50887pt x 309.97504pt.
+<Graphics//Endeffector_cross_section.png, id=1263, 941.5175pt x 480.79625pt>
+File: Graphics//Endeffector_cross_section.png Graphic file (type png)
+<use Graphics//Endeffector_cross_section.png>
+Package pdftex.def Info: Graphics//Endeffector_cross_section.png  used on input
+ line 1898.
+(pdftex.def)             Requested size: 264.61333pt x 135.12823pt.
+ [62 <./Graphics//End_effector_overview.png> <./Graphics//Endeffector_cross_sec
+tion.png>]
+Chapter 4.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1905.
+
+
+LaTeX Warning: Reference `ch:control' on page 63 undefined on input line 1908.
+
+<Graphics//esconschematic.png, id=1272, 789.95125pt x 318.18875pt>
+File: Graphics//esconschematic.png Graphic file (type png)
+<use Graphics//esconschematic.png>
+Package pdftex.def Info: Graphics//esconschematic.png  used on input line 1926.
+
+(pdftex.def)             Requested size: 264.61333pt x 106.58539pt.
+[63
+
+]
+<Graphics//AS5048A-AB-1.0_sml(200x200).jpg, id=1284, 198.7425pt x 112.42pt>
+File: Graphics//AS5048A-AB-1.0_sml(200x200).jpg Graphic file (type jpg)
+<use Graphics//AS5048A-AB-1.0_sml(200x200).jpg>
+Package pdftex.def Info: Graphics//AS5048A-AB-1.0_sml(200x200).jpg  used on inp
+ut line 1935.
+(pdftex.def)             Requested size: 176.40439pt x 99.7876pt.
+ [64 <./Graphics//esconschematic.png> <./Graphics//AS5048A-AB-1.0_sml(200x200).
+jpg>]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+949.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1481.
- [48] [49] [50
 
-]
-Chapter 4.
-[51] [52
+Overfull \hbox (51.73935pt too wide) in paragraph at lines 1956--1968
+ [][] 
+ []
 
-]
-Chapter 5.
-[53] [54
+
+LaTeX Warning: Citation 'escon2-hwref' on page 65 undefined on input line 1975.
+
+
+
+LaTeX Warning: Citation 'as5048a-ds' on page 65 undefined on input line 1975.
+
+
+LaTeX Warning: Citation 'waveshare-adda' on page 65 undefined on input line 197
+5.
+
+[65] [66
 
 ]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [55
+ [67
 
-] [56] [57]
-Overfull \hbox (71.58377pt too wide) in paragraph at lines 1539--1539
+] [68] [69]
+Overfull \hbox (71.58377pt too wide) in paragraph at lines 1981--1981
 \T1/lmtt/m/n/10.95 eassistant . eu / fileadmin / dokumente / eassistant / etc /
  HTMLHandbuch / en / eAssistantHandbch16 .
  []
 
-[58]
+[70] [71] [72
+
+]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Graphics//MaxonMotor.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<Graphics//MaxonMotor.pdf, id=1189, 598.235pt x 845.1575pt>
+<Graphics//MaxonMotor.pdf, id=1423, 598.235pt x 845.1575pt>
 File: Graphics//MaxonMotor.pdf Graphic file (type pdf)
 <use Graphics//MaxonMotor.pdf>
-Package pdftex.def Info: Graphics//MaxonMotor.pdf  used on input line 1548.
+Package pdftex.def Info: Graphics//MaxonMotor.pdf  used on input line 1990.
 (pdftex.def)             Requested size: 396.91325pt x 560.74597pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59
-
-]
+ [73]
 Overfull \vbox (3.49628pt too high) has occurred while \output is active []
 
 
-[60 <./Graphics//MaxonMotor.pdf>]
+[74 <./Graphics//MaxonMotor.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Graphics//escon2p9.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Graphics//escon2p9.pdf, id=1210, 598.235pt x 845.1575pt>
+<Graphics//escon2p9.pdf, id=1443, 598.235pt x 845.1575pt>
 File: Graphics//escon2p9.pdf Graphic file (type pdf)
 <use Graphics//escon2p9.pdf>
-Package pdftex.def Info: Graphics//escon2p9.pdf  used on input line 1558.
+Package pdftex.def Info: Graphics//escon2p9.pdf  used on input line 2000.
 (pdftex.def)             Requested size: 352.81552pt x 498.44516pt.
-[61
+[75
 
- <./Graphics//escon2p9.pdf>] [62
+ <./Graphics//escon2p9.pdf>] [76
 
 ]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Graphics//KBST2.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Graphics//KBST2.pdf, id=1258, 598.235pt x 845.1575pt>
+<Graphics//KBST2.pdf, id=1492, 598.235pt x 845.1575pt>
 File: Graphics//KBST2.pdf Graphic file (type pdf)
 <use Graphics//KBST2.pdf>
-Package pdftex.def Info: Graphics//KBST2.pdf  used on input line 1568.
+Package pdftex.def Info: Graphics//KBST2.pdf  used on input line 2010.
 (pdftex.def)             Requested size: 396.91325pt x 560.74597pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
+ [77]
 Overfull \vbox (3.49628pt too high) has occurred while \output is active []
 
 
-[64 <./Graphics//KBST2.pdf>] (./ThesisV2_main.aux)
+[78 <./Graphics//KBST2.pdf>] (./ThesisV2_main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1690,22 +2064,22 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `ThesisV2_main.out' has not changed.
-(rerunfilecheck)             Checksum: 0340D670537316BA097F8A723AD3FB17;10696.
+(rerunfilecheck)             Checksum: 5CC2D4AA2A0AB34040F80F1841D030DD;7241.
 Package logreq Info: Writing requests to 'ThesisV2_main.run.xml'.
 \openout1 = `ThesisV2_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33392 strings out of 478287
- 639898 string characters out of 5849289
- 1411801 words of memory out of 5000000
- 50481 multiletter control sequences out of 15000+600000
- 594770 words of font info for 255 fonts, out of 8000000 for 9000
+ 33696 strings out of 478287
+ 657476 string characters out of 5849289
+ 1389960 words of memory out of 5000000
+ 50676 multiletter control sequences out of 15000+600000
+ 594821 words of font info for 289 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,13n,92p,2008b,2603s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/f
 onts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts
@@ -1714,17 +2088,17 @@ pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts
 /public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ThesisV2_main.pdf (78 pages, 6597885 bytes).
+xmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ThesisV2_main.pdf (94 pages, 17257749 bytes).
 PDF statistics:
- 1496 PDF objects out of 1728 (max. 8388607)
- 1230 compressed objects within 13 object streams
- 322 named destinations out of 1000 (max. 500000)
- 69768 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1737 PDF objects out of 2073 (max. 8388607)
+ 1355 compressed objects within 14 object streams
+ 364 named destinations out of 1000 (max. 500000)
+ 70898 words of extra memory for PDF output out of 74296 (max. 10000000)
 

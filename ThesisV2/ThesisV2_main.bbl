@@ -773,8 +773,8 @@
       \list{organization}{1}{%
         {fanucamerica}%
       }
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{abstract}{Cobots from FANUC are safe, reliable, and offer more payload, speed and reach options than any other brand. Find a Cobot that meets your application needs, today.}
       \field{langid}{english}
@@ -934,8 +934,8 @@
       \list{organization}{1}{%
         {transprotec}%
       }
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{abstract}{Spring balancers - Lift ergonomically, work safely! For loads from 0-200 kg with 1-3 m rope extension. Discover now!}
       \field{langid}{american}
@@ -1668,9 +1668,81 @@
       \verb https://www.pcbway.com/rapid-prototyping/cnc-machining/metal/tool-steel/Tool-steel-S7/
       \endverb
     \endentry
-    \entry{BLDCmotorenBorstellozeElektromotoren}{online}{}
+    \entry{EPOS4ESCON2ESCON2025}{online}{}
+      \list{organization}{1}{%
+        {maxon Support}%
+      }
       \field{sortinit}{9}
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Topic: I need a controller for my motor but I do not know how to select the right one. Solution: maxon offers mainly three different controller product lines: EPOS4Position, Speed, and Current ...}
+      \field{day}{2}
+      \field{langid}{american}
+      \field{month}{6}
+      \field{shorttitle}{{{EPOS4}}, {{ESCON2}}, {{ESCON}}}
+      \field{title}{{{EPOS4}}, {{ESCON2}}, {{ESCON}}: {{What}} Controller Should {{I}} Select?}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/6YK7MDNK/360015382019-EPOS4-ESCON2-ESCON-What-controller-should-I-select.html
+      \endverb
+      \verb{urlraw}
+      \verb https://support.maxongroup.com/hc/en-us/articles/360015382019-EPOS4-ESCON2-ESCON-What-controller-should-I-select
+      \endverb
+      \verb{url}
+      \verb https://support.maxongroup.com/hc/en-us/articles/360015382019-EPOS4-ESCON2-ESCON-What-controller-should-I-select
+      \endverb
+    \endentry
+    \entry{AmsAS5048AHighResolution}{online}{}
+      \list{organization}{1}{%
+        {ams-osram}%
+      }
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The AS5048A is a 14-bit rotary position sensor (previously known as encoder) for absolute angular measurement and with a PWM (=pulse width modulation) output over a full turn of 360° based on contactless magnetic sensor technology. This device fits perfectly for on-axis applications where a simple 2-pole magnet rotates above or below the sensor IC and the zero position can be programmed into the device simply with a SPI command. The absolute magnet angular position is measured with a resolution of 14 bit = 16384 positions per revolution and it is provided as a digital value on the serial interface (SPI).With two decades of magnetic sensor system know-how, we have broad experience in selecting the most suitable magnets. ams experts recommend the following magnet suppliers.}
+      \field{langid}{american}
+      \field{title}{Ams {{AS5048A High-Resolution Position Sensor Position Sensors}} - Ams-Osram - Ams}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/QJL6E4QP/ams-as5048a-high-resolution-position-sensor.html
+      \endverb
+      \verb{urlraw}
+      \verb https://ams-osram.com/products/sensor-solutions/position-sensors/ams-as5048a-high-resolution-position-sensor
+      \endverb
+      \verb{url}
+      \verb https://ams-osram.com/products/sensor-solutions/position-sensors/ams-as5048a-high-resolution-position-sensor
+      \endverb
+    \endentry
+    \entry{AS5048ATS_EK_ABAmsOSRAM}{online}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{title}{{{AS5048A-TS}}\_{{EK}}\_{{AB}} | Ams {{OSRAM Adapter Board Position Sensor Development Kit}} for {{AS5048A Angle Position}} | {{RS}}}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/WUTITPRT/2018309.html
+      \endverb
+      \verb{urlraw}
+      \verb https://benl.rs-online.com/web/p/sensor-development-tools/2018309?cm_mmc=BE-PLA-DS3A-_-google-_-CSS_BENL_NL_Pmax_1224-_--_-2018309&matchtype&gclsrc=aw.ds&gad_source=1&gad_campaignid=22040006570
+      \endverb
+      \verb{url}
+      \verb https://benl.rs-online.com/web/p/sensor-development-tools/2018309?cm_mmc=BE-PLA-DS3A-_-google-_-CSS_BENL_NL_Pmax_1224-_--_-2018309&matchtype&gclsrc=aw.ds&gad_source=1&gad_campaignid=22040006570
+      \endverb
+    \endentry
+    \entry{BLDCmotorenBorstellozeElektromotoren}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{title}{{{BLDC-motoren}}: {{Borstelloze}} Elektromotoren | Maxon Group}
       \field{urlday}{6}
@@ -1685,8 +1757,8 @@
       \endverb
     \endentry
     \entry{ESCON2Compact60}{article}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{title}{{{ESCON2 Compact}} 60/12 {{Hardware Reference}}}
@@ -1695,8 +1767,8 @@
       \endverb
     \endentry
     \entry{KBST2KBKAntriebstechnik}{online}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{title}{{{KBST2}} | {{KBK Antriebstechnik GmbH}}}
       \field{urlday}{8}
@@ -1711,6 +1783,9 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{as5048a-ds}
+  \missing{escon2-hwref}
+  \missing{waveshare-adda}
 \endrefsection
 \endinput
 
