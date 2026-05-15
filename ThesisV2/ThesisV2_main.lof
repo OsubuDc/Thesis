@@ -95,15 +95,16 @@
 \contentsline {figure}{\numberline {3.72}{\ignorespaces Standard CAN data frame format~\blx@tocontentsinit {0}\cite {ESCON2CommunicationGuide}.\relax }}{67}{figure.caption.122}%
 \contentsline {figure}{\numberline {3.73}{\ignorespaces AS5048A SPI command/response sequence~\blx@tocontentsinit {0}\cite {AmsAS5048AHighResolutiona}.\relax }}{69}{figure.caption.124}%
 \contentsline {figure}{\numberline {3.74}{\ignorespaces ADS1256 sequence~\blx@tocontentsinit {0}\cite {ADS1256DataSheet}.\relax }}{69}{figure.caption.125}%
+\contentsline {figure}{\numberline {3.75}{\ignorespaces Robot control based on inverse dynamics in external coordinates from~\blx@tocontentsinit {0}\cite {sicilianoSpringerHandbookRobotics2016a}.\relax }}{70}{figure.caption.126}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {75}{\ignorespaces Maxon Brushless DC Motor \blx@tocontentsinit {0}\cite {BLDCmotorenBorstellozeElektromotoren}.\relax }}{78}{figure.caption.128}%
+\contentsline {figure}{\numberline {76}{\ignorespaces Maxon Brushless DC Motor \blx@tocontentsinit {0}\cite {BLDCmotorenBorstellozeElektromotoren}.\relax }}{80}{figure.caption.129}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {76}{\ignorespaces Technical data ESCON2 Compact 60/12 \blx@tocontentsinit {0}\cite {ESCON2Compact60}.\relax }}{79}{figure.caption.130}%
+\contentsline {figure}{\numberline {77}{\ignorespaces Technical data ESCON2 Compact 60/12 \blx@tocontentsinit {0}\cite {ESCON2Compact60}.\relax }}{81}{figure.caption.131}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {77}{\ignorespaces Peterson's stress concentration factors for a torsion shaft with a semicircular end keyseat\blx@tocontentsinit {0}\cite {doi:https://doi.org/10.1002/9780470211106.ch5}.\relax }}{82}{figure.caption.132}%
+\contentsline {figure}{\numberline {78}{\ignorespaces Peterson's stress concentration factors for a torsion shaft with a semicircular end keyseat\blx@tocontentsinit {0}\cite {doi:https://doi.org/10.1002/9780470211106.ch5}.\relax }}{84}{figure.caption.133}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {78}{\ignorespaces ADS1256 datasheet\blx@tocontentsinit {0}\cite {ADS1256DataSheet}.\relax }}{83}{figure.caption.134}%
+\contentsline {figure}{\numberline {79}{\ignorespaces ADS1256 datasheet\blx@tocontentsinit {0}\cite {ADS1256DataSheet}.\relax }}{85}{figure.caption.135}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {79}{\ignorespaces AS5048A datasheet\blx@tocontentsinit {0}\cite {AmsAS5048AHighResolutiona}.\relax }}{85}{figure.caption.136}%
+\contentsline {figure}{\numberline {80}{\ignorespaces AS5048A datasheet\blx@tocontentsinit {0}\cite {AmsAS5048AHighResolutiona}.\relax }}{87}{figure.caption.137}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {80}{\ignorespaces AS5048A capacitance\blx@tocontentsinit {0}\cite {AmsAS5048AHighResolutiona}.\relax }}{87}{figure.caption.138}%
+\contentsline {figure}{\numberline {81}{\ignorespaces AS5048A capacitance\blx@tocontentsinit {0}\cite {AmsAS5048AHighResolutiona}.\relax }}{89}{figure.caption.139}%

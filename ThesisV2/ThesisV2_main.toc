@@ -62,10 +62,14 @@
 \contentsline {subsubsection}{STM32 Sensor Node}{67}{subsubsection*.119}%
 \contentsline {subsubsection}{Communication schematic}{67}{subsubsection*.120}%
 \contentsline {subsubsection}{Bus Timing}{67}{subsubsection*.121}%
-\contentsline {chapter}{References}{71}{chapter*.126}%
-\contentsline {chapter}{Maxon Motor Datasheet}{77}{appendix*.127}%
-\contentsline {chapter}{ESCON2 Compact 60/12 Datasheet}{79}{appendix*.129}%
-\contentsline {chapter}{Peterson's stress concentration factors}{81}{appendix*.131}%
-\contentsline {chapter}{ADS1256 Datasheet}{83}{appendix*.133}%
-\contentsline {chapter}{AS5048A Datasheet}{85}{appendix*.135}%
-\contentsline {chapter}{AS5048A Capacitance}{87}{appendix*.137}%
+\contentsline {section}{\numberline {3.4}Simulation Environment}{70}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Inverse Dynamics Control}{70}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Soft Joint Limits}{71}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Simulation Pipeline}{72}{subsection.3.4.3}%
+\contentsline {chapter}{References}{73}{chapter*.127}%
+\contentsline {chapter}{Maxon Motor Datasheet}{79}{appendix*.128}%
+\contentsline {chapter}{ESCON2 Compact 60/12 Datasheet}{81}{appendix*.130}%
+\contentsline {chapter}{Peterson's stress concentration factors}{83}{appendix*.132}%
+\contentsline {chapter}{ADS1256 Datasheet}{85}{appendix*.134}%
+\contentsline {chapter}{AS5048A Datasheet}{87}{appendix*.136}%
+\contentsline {chapter}{AS5048A Capacitance}{89}{appendix*.138}%

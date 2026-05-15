@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  15 MAY 2026 14:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  15 MAY 2026 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,15 +521,44 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks36
+\c@algorithm=\count318
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count319
+\c@ALG@rem=\count320
+\c@ALG@nested=\count321
+\ALG@tlm=\skip61
+\ALG@thistlm=\skip62
+\c@ALG@Lnr=\count322
+\c@ALG@blocknr=\count323
+\c@ALG@storecount=\count324
+\c@ALG@tmpcounter=\count325
+\ALG@tmplength=\skip63
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
-\csq@reset=\count318
-\csq@gtype=\count319
-\csq@glevel=\count320
-\csq@qlevel=\count321
-\csq@maxlvl=\count322
-\csq@tshold=\count323
-\csq@ltx@everypar=\toks36
+\csq@reset=\count326
+\csq@gtype=\count327
+\csq@glevel=\count328
+\csq@qlevel=\count329
+\csq@maxlvl=\count330
+\csq@tshold=\count331
+\csq@ltx@everypar=\toks37
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
@@ -551,74 +580,71 @@ Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count324
+\lrq@indent=\count332
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count325
-\c@listtotal=\count326
-\c@listcount=\count327
-\c@liststart=\count328
-\c@liststop=\count329
-\c@citecount=\count330
-\c@citetotal=\count331
-\c@multicitecount=\count332
-\c@multicitetotal=\count333
-\c@instcount=\count334
-\c@maxnames=\count335
-\c@minnames=\count336
-\c@maxitems=\count337
-\c@minitems=\count338
-\c@citecounter=\count339
-\c@maxcitecounter=\count340
-\c@savedcitecounter=\count341
-\c@uniquelist=\count342
-\c@uniquename=\count343
-\c@refsection=\count344
-\c@refsegment=\count345
-\c@maxextratitle=\count346
-\c@maxextratitleyear=\count347
-\c@maxextraname=\count348
-\c@maxextradate=\count349
-\c@maxextraalpha=\count350
-\c@abbrvpenalty=\count351
-\c@highnamepenalty=\count352
-\c@lownamepenalty=\count353
-\c@maxparens=\count354
-\c@parenlevel=\count355
-\blx@tempcnta=\count356
-\blx@tempcntb=\count357
-\blx@tempcntc=\count358
-\c@blx@maxsection=\count359
-\c@blx@maxsegment@0=\count360
-\blx@notetype=\count361
-\blx@parenlevel@text=\count362
-\blx@parenlevel@foot=\count363
-\c@blx@sectionciteorder@0=\count364
-\blx@entrysetcounter=\count365
-\blx@biblioinstance=\count366
-\labelnumberwidth=\skip61
-\labelalphawidth=\skip62
-\biblabelsep=\skip63
-\bibitemsep=\skip64
-\bibnamesep=\skip65
-\bibinitsep=\skip66
-\bibparsep=\skip67
-\bibhang=\skip68
+\c@tabx@nest=\count333
+\c@listtotal=\count334
+\c@listcount=\count335
+\c@liststart=\count336
+\c@liststop=\count337
+\c@citecount=\count338
+\c@citetotal=\count339
+\c@multicitecount=\count340
+\c@multicitetotal=\count341
+\c@instcount=\count342
+\c@maxnames=\count343
+\c@minnames=\count344
+\c@maxitems=\count345
+\c@minitems=\count346
+\c@citecounter=\count347
+\c@maxcitecounter=\count348
+\c@savedcitecounter=\count349
+\c@uniquelist=\count350
+\c@uniquename=\count351
+\c@refsection=\count352
+\c@refsegment=\count353
+\c@maxextratitle=\count354
+\c@maxextratitleyear=\count355
+\c@maxextraname=\count356
+\c@maxextradate=\count357
+\c@maxextraalpha=\count358
+\c@abbrvpenalty=\count359
+\c@highnamepenalty=\count360
+\c@lownamepenalty=\count361
+\c@maxparens=\count362
+\c@parenlevel=\count363
+\blx@tempcnta=\count364
+\blx@tempcntb=\count365
+\blx@tempcntc=\count366
+\c@blx@maxsection=\count367
+\c@blx@maxsegment@0=\count368
+\blx@notetype=\count369
+\blx@parenlevel@text=\count370
+\blx@parenlevel@foot=\count371
+\c@blx@sectionciteorder@0=\count372
+\blx@entrysetcounter=\count373
+\blx@biblioinstance=\count374
+\labelnumberwidth=\skip64
+\labelalphawidth=\skip65
+\biblabelsep=\skip66
+\bibitemsep=\skip67
+\bibnamesep=\skip68
+\bibinitsep=\skip69
+\bibparsep=\skip70
+\bibhang=\skip71
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language88
-\c@mincomprange=\count367
-\c@maxcomprange=\count368
-\c@mincompwidth=\count369
+\c@mincomprange=\count375
+\c@maxcomprange=\count376
+\c@mincompwidth=\count377
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -629,88 +655,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count370
-\c@savedafterword=\count371
-\c@annotator=\count372
-\c@savedannotator=\count373
-\c@author=\count374
-\c@savedauthor=\count375
-\c@bookauthor=\count376
-\c@savedbookauthor=\count377
-\c@commentator=\count378
-\c@savedcommentator=\count379
-\c@editor=\count380
-\c@savededitor=\count381
-\c@editora=\count382
-\c@savededitora=\count383
-\c@editorb=\count384
-\c@savededitorb=\count385
-\c@editorc=\count386
-\c@savededitorc=\count387
-\c@foreword=\count388
-\c@savedforeword=\count389
-\c@holder=\count390
-\c@savedholder=\count391
-\c@introduction=\count392
-\c@savedintroduction=\count393
-\c@namea=\count394
-\c@savednamea=\count395
-\c@nameb=\count396
-\c@savednameb=\count397
-\c@namec=\count398
-\c@savednamec=\count399
-\c@translator=\count400
-\c@savedtranslator=\count401
-\c@shortauthor=\count402
-\c@savedshortauthor=\count403
-\c@shorteditor=\count404
-\c@savedshorteditor=\count405
-\c@labelname=\count406
-\c@savedlabelname=\count407
-\c@institution=\count408
-\c@savedinstitution=\count409
-\c@lista=\count410
-\c@savedlista=\count411
-\c@listb=\count412
-\c@savedlistb=\count413
-\c@listc=\count414
-\c@savedlistc=\count415
-\c@listd=\count416
-\c@savedlistd=\count417
-\c@liste=\count418
-\c@savedliste=\count419
-\c@listf=\count420
-\c@savedlistf=\count421
-\c@location=\count422
-\c@savedlocation=\count423
-\c@organization=\count424
-\c@savedorganization=\count425
-\c@origlocation=\count426
-\c@savedoriglocation=\count427
-\c@origpublisher=\count428
-\c@savedorigpublisher=\count429
-\c@publisher=\count430
-\c@savedpublisher=\count431
-\c@language=\count432
-\c@savedlanguage=\count433
-\c@origlanguage=\count434
-\c@savedoriglanguage=\count435
-\c@pageref=\count436
-\c@savedpageref=\count437
-\shorthandwidth=\skip69
-\shortjournalwidth=\skip70
-\shortserieswidth=\skip71
-\shorttitlewidth=\skip72
-\shortauthorwidth=\skip73
-\shorteditorwidth=\skip74
-\locallabelnumberwidth=\skip75
-\locallabelalphawidth=\skip76
-\localshorthandwidth=\skip77
-\localshortjournalwidth=\skip78
-\localshortserieswidth=\skip79
-\localshorttitlewidth=\skip80
-\localshortauthorwidth=\skip81
-\localshorteditorwidth=\skip82
+\c@afterword=\count378
+\c@savedafterword=\count379
+\c@annotator=\count380
+\c@savedannotator=\count381
+\c@author=\count382
+\c@savedauthor=\count383
+\c@bookauthor=\count384
+\c@savedbookauthor=\count385
+\c@commentator=\count386
+\c@savedcommentator=\count387
+\c@editor=\count388
+\c@savededitor=\count389
+\c@editora=\count390
+\c@savededitora=\count391
+\c@editorb=\count392
+\c@savededitorb=\count393
+\c@editorc=\count394
+\c@savededitorc=\count395
+\c@foreword=\count396
+\c@savedforeword=\count397
+\c@holder=\count398
+\c@savedholder=\count399
+\c@introduction=\count400
+\c@savedintroduction=\count401
+\c@namea=\count402
+\c@savednamea=\count403
+\c@nameb=\count404
+\c@savednameb=\count405
+\c@namec=\count406
+\c@savednamec=\count407
+\c@translator=\count408
+\c@savedtranslator=\count409
+\c@shortauthor=\count410
+\c@savedshortauthor=\count411
+\c@shorteditor=\count412
+\c@savedshorteditor=\count413
+\c@labelname=\count414
+\c@savedlabelname=\count415
+\c@institution=\count416
+\c@savedinstitution=\count417
+\c@lista=\count418
+\c@savedlista=\count419
+\c@listb=\count420
+\c@savedlistb=\count421
+\c@listc=\count422
+\c@savedlistc=\count423
+\c@listd=\count424
+\c@savedlistd=\count425
+\c@liste=\count426
+\c@savedliste=\count427
+\c@listf=\count428
+\c@savedlistf=\count429
+\c@location=\count430
+\c@savedlocation=\count431
+\c@organization=\count432
+\c@savedorganization=\count433
+\c@origlocation=\count434
+\c@savedoriglocation=\count435
+\c@origpublisher=\count436
+\c@savedorigpublisher=\count437
+\c@publisher=\count438
+\c@savedpublisher=\count439
+\c@language=\count440
+\c@savedlanguage=\count441
+\c@origlanguage=\count442
+\c@savedoriglanguage=\count443
+\c@pageref=\count444
+\c@savedpageref=\count445
+\shorthandwidth=\skip72
+\shortjournalwidth=\skip73
+\shortserieswidth=\skip74
+\shorttitlewidth=\skip75
+\shortauthorwidth=\skip76
+\shorteditorwidth=\skip77
+\locallabelnumberwidth=\skip78
+\locallabelalphawidth=\skip79
+\localshorthandwidth=\skip80
+\localshortjournalwidth=\skip81
+\localshortserieswidth=\skip82
+\localshorttitlewidth=\skip83
+\localshortauthorwidth=\skip84
+\localshorteditorwidth=\skip85
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -722,19 +748,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count438
-\c@textcitetotal=\count439
-\c@textcitemaxnames=\count440
-\c@biburlbigbreakpenalty=\count441
-\c@biburlbreakpenalty=\count442
-\c@biburlnumpenalty=\count443
-\c@biburlucpenalty=\count444
-\c@biburllcpenalty=\count445
+\c@textcitecount=\count446
+\c@textcitetotal=\count447
+\c@textcitemaxnames=\count448
+\c@biburlbigbreakpenalty=\count449
+\c@biburlbreakpenalty=\count450
+\c@biburlnumpenalty=\count451
+\c@biburlucpenalty=\count452
+\c@biburllcpenalty=\count453
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count446
+\c@smartand=\count454
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
@@ -756,8 +782,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count447
-\c@bbx:relatedtotal=\count448
+\c@bbx:relatedcount=\count455
+\c@bbx:relatedtotal=\count456
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
@@ -769,10 +795,10 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count449
-\c@cbx@tempcntb=\count450
-\c@cbx@tempcntc=\count451
-\c@cbx@tempcntd=\count452
+\c@cbx@tempcnta=\count457
+\c@cbx@tempcntb=\count458
+\c@cbx@tempcntc=\count459
+\c@cbx@tempcntd=\count460
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -814,9 +840,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count453
-\Gm@cntv=\count454
-\c@Gm@tempcnt=\count455
+\Gm@cnth=\count461
+\Gm@cntv=\count462
+\c@Gm@tempcnt=\count463
 \Gm@bindingoffset=\dimen262
 \Gm@wd@mp=\dimen263
 \Gm@odd@mp=\dimen264
@@ -825,29 +851,29 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen267
 \Gm@layouthoffset=\dimen268
 \Gm@layoutvoffset=\dimen269
-\Gm@dimlist=\toks37
+\Gm@dimlist=\toks38
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
 rs
-\f@nch@headwidth=\skip83
-\f@nch@O@elh=\skip84
-\f@nch@O@erh=\skip85
-\f@nch@O@olh=\skip86
-\f@nch@O@orh=\skip87
-\f@nch@O@elf=\skip88
-\f@nch@O@erf=\skip89
-\f@nch@O@olf=\skip90
-\f@nch@O@orf=\skip91
+\f@nch@headwidth=\skip86
+\f@nch@O@elh=\skip87
+\f@nch@O@erh=\skip88
+\f@nch@O@olh=\skip89
+\f@nch@O@orh=\skip90
+\f@nch@O@elf=\skip91
+\f@nch@O@erf=\skip92
+\f@nch@O@olf=\skip93
+\f@nch@O@orf=\skip94
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box70
-\beforetitleunit=\skip92
-\aftertitleunit=\skip93
+\beforetitleunit=\skip95
+\aftertitleunit=\skip96
 \ttl@plus=\dimen270
 \ttl@minus=\dimen271
-\ttl@toksa=\toks38
+\ttl@toksa=\toks39
 \titlewidth=\dimen272
 \titlewidthlast=\dimen273
 \titlewidthfirst=\dimen274
@@ -858,42 +884,42 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip94
-\cftbeforetoctitleskip=\skip95
-\cftaftertoctitleskip=\skip96
-\cftbeforepartskip=\skip97
-\cftpartnumwidth=\skip98
-\cftpartindent=\skip99
-\cftbeforechapskip=\skip100
-\cftchapindent=\skip101
-\cftchapnumwidth=\skip102
-\cftbeforesecskip=\skip103
-\cftsecindent=\skip104
-\cftsecnumwidth=\skip105
-\cftbeforesubsecskip=\skip106
-\cftsubsecindent=\skip107
-\cftsubsecnumwidth=\skip108
-\cftbeforesubsubsecskip=\skip109
-\cftsubsubsecindent=\skip110
-\cftsubsubsecnumwidth=\skip111
-\cftbeforeparaskip=\skip112
-\cftparaindent=\skip113
-\cftparanumwidth=\skip114
-\cftbeforesubparaskip=\skip115
-\cftsubparaindent=\skip116
-\cftsubparanumwidth=\skip117
-\cftbeforeloftitleskip=\skip118
-\cftafterloftitleskip=\skip119
-\cftbeforefigskip=\skip120
-\cftfigindent=\skip121
-\cftfignumwidth=\skip122
-\c@lofdepth=\count456
-\c@lotdepth=\count457
-\cftbeforelottitleskip=\skip123
-\cftafterlottitleskip=\skip124
-\cftbeforetabskip=\skip125
-\cfttabindent=\skip126
-\cfttabnumwidth=\skip127
+\cftparskip=\skip97
+\cftbeforetoctitleskip=\skip98
+\cftaftertoctitleskip=\skip99
+\cftbeforepartskip=\skip100
+\cftpartnumwidth=\skip101
+\cftpartindent=\skip102
+\cftbeforechapskip=\skip103
+\cftchapindent=\skip104
+\cftchapnumwidth=\skip105
+\cftbeforesecskip=\skip106
+\cftsecindent=\skip107
+\cftsecnumwidth=\skip108
+\cftbeforesubsecskip=\skip109
+\cftsubsecindent=\skip110
+\cftsubsecnumwidth=\skip111
+\cftbeforesubsubsecskip=\skip112
+\cftsubsubsecindent=\skip113
+\cftsubsubsecnumwidth=\skip114
+\cftbeforeparaskip=\skip115
+\cftparaindent=\skip116
+\cftparanumwidth=\skip117
+\cftbeforesubparaskip=\skip118
+\cftsubparaindent=\skip119
+\cftsubparanumwidth=\skip120
+\cftbeforeloftitleskip=\skip121
+\cftafterloftitleskip=\skip122
+\cftbeforefigskip=\skip123
+\cftfigindent=\skip124
+\cftfignumwidth=\skip125
+\c@lofdepth=\count464
+\c@lotdepth=\count465
+\cftbeforelottitleskip=\skip126
+\cftafterlottitleskip=\skip127
+\cftbeforetabskip=\skip128
+\cfttabindent=\skip129
+\cfttabnumwidth=\skip130
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
@@ -911,8 +937,8 @@ Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
 \@linkdim=\dimen275
-\Hy@linkcounter=\count458
-\Hy@pagecounter=\count459
+\Hy@linkcounter=\count466
+\Hy@pagecounter=\count467
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
@@ -929,7 +955,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count460
+\Hy@SavedSpaceFactor=\count468
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
@@ -956,7 +982,7 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count461
+\c@Hy@tempcnt=\count469
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen276
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
@@ -966,7 +992,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count462
+\Fld@menulength=\count470
 \Field@Width=\dimen277
 \Fld@charsize=\dimen278
 Package hyperref Info: Hyper figures OFF on input line 6076.
@@ -983,9 +1009,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count463
-\c@Item=\count464
-\c@Hfootnote=\count465
+\Hy@abspage=\count471
+\c@Item=\count472
+\c@Hfootnote=\count473
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -997,8 +1023,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count466
-\c@bookmark@seq@number=\count467
+\Fld@listcount=\count474
+\c@bookmark@seq@number=\count475
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1009,23 +1035,23 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip128
+\Hy@SectionHShift=\skip131
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip129
+\labelindent=\skip132
 \enit@outerparindent=\dimen279
-\enit@toks=\toks39
+\enit@toks=\toks40
 \enit@inbox=\box71
-\enit@count@id=\count468
-\enitdp@description=\count469
+\enit@count@id=\count476
+\enitdp@description=\count477
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 14
-1.
+4.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1051,36 +1077,36 @@ LaTeX Warning: Label `eq:torsion_sf' multiply defined.
 )
 \openout1 = `ThesisV2_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Info: Redefining \microtypecontext on input line 141.
-Package microtype Info: Applying patch `item' on input line 141.
-Package microtype Info: Applying patch `toc' on input line 141.
-Package microtype Info: Applying patch `eqnum' on input line 141.
-Package microtype Info: Applying patch `footnote' on input line 141.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Info: Redefining \microtypecontext on input line 144.
+Package microtype Info: Applying patch `item' on input line 144.
+Package microtype Info: Applying patch `toc' on input line 144.
+Package microtype Info: Applying patch `eqnum' on input line 144.
+Package microtype Info: Applying patch `footnote' on input line 144.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 141.
+LaTeX Info: Redefining \showhyphens on input line 144.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1094,21 +1120,21 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 141.
+or `english'. on input line 144.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count470
+\scratchcounter=\count478
 \scratchdimen=\dimen280
 \scratchbox=\box72
-\nofMPsegments=\count471
-\nofMParguments=\count472
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count473
+\nofMPsegments=\count479
+\nofMParguments=\count480
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count481
 \MPscratchDim=\dimen281
-\MPnumerator=\count474
-\makeMPintoPDFobject=\count475
-\everyMPtoPDFconversion=\toks41
+\MPnumerator=\count482
+\makeMPintoPDFobject=\count483
+\everyMPtoPDFconversion=\toks42
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1122,7 +1148,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count476
+\c@lstlisting=\count484
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1138,8 +1164,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ThesisV2_main.bbl' found.
 
 (./ThesisV2_main.bbl)
-Package biblatex Info: Reference section=0 on input line 141.
-Package biblatex Info: Reference segment=0 on input line 141.
+Package biblatex Info: Reference section=0 on input line 144.
+Package biblatex Info: Reference segment=0 on input line 144.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1175,7 +1201,7 @@ Package biblatex Info: Reference segment=0 on input line 141.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 141.
+Package hyperref Info: Link coloring ON on input line 144.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1185,11 +1211,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count477
+\c@section@level=\count485
 )
-LaTeX Info: Redefining \ref on input line 141.
-LaTeX Info: Redefining \pageref on input line 141.
-LaTeX Info: Redefining \nameref on input line 141.
+LaTeX Info: Redefining \ref on input line 144.
+LaTeX Info: Redefining \pageref on input line 144.
+LaTeX Info: Redefining \nameref on input line 144.
 
 (./ThesisV2_main.out) (./ThesisV2_main.out)
 \@outlinefile=\write5
@@ -1291,22 +1317,22 @@ Underfull \vbox (badness 1755) has occurred while \output is active []
 ]
 Chapter 1.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-50.
+53.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.265 \newpage
+l.268 \newpage
                [1
 
 
 ]
-<Graphics//workspaces.png, id=564, 576.1525pt x 329.23pt>
+<Graphics//workspaces.png, id=588, 576.1525pt x 329.23pt>
 File: Graphics//workspaces.png Graphic file (type png)
 <use Graphics//workspaces.png>
-Package pdftex.def Info: Graphics//workspaces.png  used on input line 289.
+Package pdftex.def Info: Graphics//workspaces.png  used on input line 292.
 (pdftex.def)             Requested size: 352.81552pt x 201.61368pt.
 
 Underfull \vbox (badness 2229) has occurred while \output is active []
@@ -1315,65 +1341,65 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.294 
+l.297 
        [2]
-<Graphics//Human_robot_collaboration.png, id=577, 1515.6625pt x 690.58pt>
+<Graphics//Human_robot_collaboration.png, id=601, 1515.6625pt x 690.58pt>
 File: Graphics//Human_robot_collaboration.png Graphic file (type png)
 <use Graphics//Human_robot_collaboration.png>
 Package pdftex.def Info: Graphics//Human_robot_collaboration.png  used on input
- line 301.
+ line 304.
 (pdftex.def)             Requested size: 352.81552pt x 160.74786pt.
  [3 <./Graphics//workspaces.png> <./Graphics//Human_robot_collaboration.png>] [
 4]
-Underfull \hbox (badness 10000) in paragraph at lines 354--356
+Underfull \hbox (badness 10000) in paragraph at lines 357--359
 
  []
 
 [5] [6]
-<Graphics//3arm.png, id=628, 984.67876pt x 564.1075pt>
+<Graphics//3arm.png, id=651, 984.67876pt x 564.1075pt>
 File: Graphics//3arm.png Graphic file (type png)
 <use Graphics//3arm.png>
-Package pdftex.def Info: Graphics//3arm.png  used on input line 377.
+Package pdftex.def Info: Graphics//3arm.png  used on input line 380.
 (pdftex.def)             Requested size: 352.81552pt x 202.1231pt.
-<Graphics//Gasspringcharacteristic.png, id=631, 1218.5525pt x 587.19376pt>
+<Graphics//Gasspringcharacteristic.png, id=654, 1218.5525pt x 587.19376pt>
 File: Graphics//Gasspringcharacteristic.png Graphic file (type png)
 <use Graphics//Gasspringcharacteristic.png>
 Package pdftex.def Info: Graphics//Gasspringcharacteristic.png  used on input l
-ine 385.
+ine 388.
 (pdftex.def)             Requested size: 352.81552pt x 170.01303pt.
  [7 <./Graphics//3arm.png> <./Graphics//Gasspringcharacteristic.png>]
-<Graphics//Springbalancer.png, id=642, 403.5075pt x 956.57375pt>
+<Graphics//Springbalancer.png, id=666, 403.5075pt x 956.57375pt>
 File: Graphics//Springbalancer.png Graphic file (type png)
 <use Graphics//Springbalancer.png>
-Package pdftex.def Info: Graphics//Springbalancer.png  used on input line 396.
+Package pdftex.def Info: Graphics//Springbalancer.png  used on input line 399.
 (pdftex.def)             Requested size: 44.10446pt x 104.55202pt.
-<Graphics//assemblyline.png, id=650, 927.465pt x 777.90625pt>
+<Graphics//assemblyline.png, id=674, 927.465pt x 777.90625pt>
 File: Graphics//assemblyline.png Graphic file (type png)
 <use Graphics//assemblyline.png>
-Package pdftex.def Info: Graphics//assemblyline.png  used on input line 409.
+Package pdftex.def Info: Graphics//assemblyline.png  used on input line 412.
 (pdftex.def)             Requested size: 176.40439pt x 147.95802pt.
 
 [8 <./Graphics//Springbalancer.png> <./Graphics//assemblyline.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 429--430
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--432
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
 
-LaTeX Warning: Reference `ch:validation' on page 9 undefined on input line 433.
+LaTeX Warning: Reference `ch:validation' on page 9 undefined on input line 436.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
 
-LaTeX Warning: Reference `ch:conclusion' on page 9 undefined on input line 435.
+LaTeX Warning: Reference `ch:conclusion' on page 9 undefined on input line 438.
 
 
 [9] [10
@@ -1381,128 +1407,128 @@ LaTeX Warning: Reference `ch:conclusion' on page 9 undefined on input line 435.
 ]
 Chapter 2.
 [11]
-<Graphics//impedance_control.png, id=680, 461.725pt x 255.95625pt>
+<Graphics//impedance_control.png, id=703, 461.725pt x 255.95625pt>
 File: Graphics//impedance_control.png Graphic file (type png)
 <use Graphics//impedance_control.png>
 Package pdftex.def Info: Graphics//impedance_control.png  used on input line 47
-3.
+6.
 (pdftex.def)             Requested size: 220.50887pt x 122.2366pt.
-<Graphics//impedance_control_u.png, id=683, 366.36874pt x 298.11375pt>
+<Graphics//impedance_control_u.png, id=706, 366.36874pt x 298.11375pt>
 File: Graphics//impedance_control_u.png Graphic file (type png)
 <use Graphics//impedance_control_u.png>
 Package pdftex.def Info: Graphics//impedance_control_u.png  used on input line 
-482.
+485.
 (pdftex.def)             Requested size: 132.30666pt x 107.65747pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 483.
+(Font)              <10> on input line 486.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 483.
+(Font)              <7> on input line 486.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 483.
+(Font)              <5> on input line 486.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12 <./Graphics//impedance_control.png>]
-<Graphics//generalapproachimpedancecontrol.png, id=696, 655.44875pt x 199.74625
+<Graphics//generalapproachimpedancecontrol.png, id=719, 655.44875pt x 199.74625
 pt>
 File: Graphics//generalapproachimpedancecontrol.png Graphic file (type png)
 <use Graphics//generalapproachimpedancecontrol.png>
 Package pdftex.def Info: Graphics//generalapproachimpedancecontrol.png  used on
- input line 510.
+ input line 513.
 (pdftex.def)             Requested size: 352.81552pt x 107.52pt.
 
 
-LaTeX Warning: Reference `' on page 13 undefined on input line 516.
+LaTeX Warning: Reference `' on page 13 undefined on input line 519.
 
 [13 <./Graphics//impedance_control_u.png> <./Graphics//generalapproachimpedance
 control.png>] [14]
-<Graphics//forcebaseddiagram.png, id=731, 366.36874pt x 125.46875pt>
+<Graphics//forcebaseddiagram.png, id=754, 366.36874pt x 125.46875pt>
 File: Graphics//forcebaseddiagram.png Graphic file (type png)
 <use Graphics//forcebaseddiagram.png>
 Package pdftex.def Info: Graphics//forcebaseddiagram.png  used on input line 57
-1.
+4.
 (pdftex.def)             Requested size: 176.40439pt x 60.41383pt.
-<Graphics//admittancecontrolscheme.png, id=735, 709.65125pt x 183.68625pt>
+<Graphics//admittancecontrolscheme.png, id=758, 709.65125pt x 183.68625pt>
 File: Graphics//admittancecontrolscheme.png Graphic file (type png)
 <use Graphics//admittancecontrolscheme.png>
 Package pdftex.def Info: Graphics//admittancecontrolscheme.png  used on input l
-ine 583.
+ine 586.
 (pdftex.def)             Requested size: 264.61333pt x 68.49257pt.
  [15 <./Graphics//forcebaseddiagram.png> <./Graphics//admittancecontrolscheme.p
 ng>] [16]
-<Graphics//Admittanceschematic.png, id=766, 543.02875pt x 382.42876pt>
+<Graphics//Admittanceschematic.png, id=789, 543.02875pt x 382.42876pt>
 File: Graphics//Admittanceschematic.png Graphic file (type png)
 <use Graphics//Admittanceschematic.png>
 Package pdftex.def Info: Graphics//Admittanceschematic.png  used on input line 
-631.
+634.
 (pdftex.def)             Requested size: 132.30666pt x 93.17358pt.
  [17 <./Graphics//Admittanceschematic.png>]
-<Graphics//searigid.png, id=779, 221.82875pt x 61.22874pt>
+<Graphics//searigid.png, id=803, 221.82875pt x 61.22874pt>
 File: Graphics//searigid.png Graphic file (type png)
 <use Graphics//searigid.png>
-Package pdftex.def Info: Graphics//searigid.png  used on input line 652.
+Package pdftex.def Info: Graphics//searigid.png  used on input line 655.
 (pdftex.def)             Requested size: 132.30666pt x 36.51889pt.
-<Graphics//seawithspring.png, id=780, 312.16624pt x 61.22874pt>
+<Graphics//seawithspring.png, id=804, 312.16624pt x 61.22874pt>
 File: Graphics//seawithspring.png Graphic file (type png)
 <use Graphics//seawithspring.png>
-Package pdftex.def Info: Graphics//seawithspring.png  used on input line 659.
+Package pdftex.def Info: Graphics//seawithspring.png  used on input line 662.
 (pdftex.def)             Requested size: 176.40439pt x 34.60083pt.
  [18 <./Graphics//searigid.png> <./Graphics//seawithspring.png>]
-<Graphics//generalsea.png, id=795, 382.42876pt x 101.37875pt>
+<Graphics//generalsea.png, id=818, 382.42876pt x 101.37875pt>
 File: Graphics//generalsea.png Graphic file (type png)
 <use Graphics//generalsea.png>
-Package pdftex.def Info: Graphics//generalsea.png  used on input line 693.
+Package pdftex.def Info: Graphics//generalsea.png  used on input line 696.
 (pdftex.def)             Requested size: 176.40439pt x 46.76317pt.
  [19 <./Graphics//generalsea.png>] [20]
-<Graphics//sea_spring_motormass.png, id=818, 240.9pt x 110.4125pt>
+<Graphics//sea_spring_motormass.png, id=841, 240.9pt x 110.4125pt>
 File: Graphics//sea_spring_motormass.png Graphic file (type png)
 <use Graphics//sea_spring_motormass.png>
 Package pdftex.def Info: Graphics//sea_spring_motormass.png  used on input line
- 725.
+ 728.
 (pdftex.def)             Requested size: 176.40439pt x 80.85484pt.
  [21 <./Graphics//sea_spring_motormass.png>]
-<Graphics//sea_vector1.png, id=839, 261.97874pt x 261.97874pt>
+<Graphics//sea_vector1.png, id=862, 261.97874pt x 261.97874pt>
 File: Graphics//sea_vector1.png Graphic file (type png)
 <use Graphics//sea_vector1.png>
-Package pdftex.def Info: Graphics//sea_vector1.png  used on input line 802.
+Package pdftex.def Info: Graphics//sea_vector1.png  used on input line 805.
 (pdftex.def)             Requested size: 176.40439pt x 176.40828pt.
  [22 <./Graphics//sea_vector1.png>] [23]
-<Graphics//seacontrolscheme.png, id=868, 477.9456pt x 229.8186pt>
+<Graphics//seacontrolscheme.png, id=891, 477.9456pt x 229.8186pt>
 File: Graphics//seacontrolscheme.png Graphic file (type png)
 <use Graphics//seacontrolscheme.png>
-Package pdftex.def Info: Graphics//seacontrolscheme.png  used on input line 835
+Package pdftex.def Info: Graphics//seacontrolscheme.png  used on input line 838
 .
 (pdftex.def)             Requested size: 308.71106pt x 148.44402pt.
  [24 <./Graphics//seacontrolscheme.png>]
-<Graphics//yuetal.png, id=881, 673.51625pt x 202.7575pt>
+<Graphics//yuetal.png, id=904, 673.51625pt x 202.7575pt>
 File: Graphics//yuetal.png Graphic file (type png)
 <use Graphics//yuetal.png>
-Package pdftex.def Info: Graphics//yuetal.png  used on input line 849.
+Package pdftex.def Info: Graphics//yuetal.png  used on input line 852.
 (pdftex.def)             Requested size: 352.81552pt x 106.21414pt.
  [25 <./Graphics//yuetal.png>] [26
 
 ]
 Chapter 3.
 [27] [28]
-<Graphics//OverviewWithAxisSET.png, id=911, 498.86375pt x 536.0025pt>
+<Graphics//OverviewWithAxisSET.png, id=934, 498.86375pt x 536.0025pt>
 File: Graphics//OverviewWithAxisSET.png Graphic file (type png)
 <use Graphics//OverviewWithAxisSET.png>
 Package pdftex.def Info: Graphics//OverviewWithAxisSET.png  used on input line 
-907.
+910.
 (pdftex.def)             Requested size: 352.81552pt x 379.09227pt.
-<Graphics//LengthOverview.png, id=914, 420.042pt x 502.386pt>
+<Graphics//LengthOverview.png, id=937, 420.042pt x 502.386pt>
 File: Graphics//LengthOverview.png Graphic file (type png)
 <use Graphics//LengthOverview.png>
-Package pdftex.def Info: Graphics//LengthOverview.png  used on input line 916.
+Package pdftex.def Info: Graphics//LengthOverview.png  used on input line 919.
 (pdftex.def)             Requested size: 264.61333pt x 316.48952pt.
 
 Underfull \vbox (badness 2573) has occurred while \output is active []
 
  [29 <./Graphics//OverviewWithAxisSET.png>]
-<Graphics//NumbersOverview.png, id=920, 528.228pt x 503.7pt>
+<Graphics//NumbersOverview.png, id=943, 528.228pt x 503.7pt>
 File: Graphics//NumbersOverview.png Graphic file (type png)
 <use Graphics//NumbersOverview.png>
-Package pdftex.def Info: Graphics//NumbersOverview.png  used on input line 923.
+Package pdftex.def Info: Graphics//NumbersOverview.png  used on input line 926.
 
 (pdftex.def)             Requested size: 308.71106pt x 294.37509pt.
 
@@ -1511,223 +1537,223 @@ Underfull \vbox (badness 1024) has occurred while \output is active []
  [30 <./Graphics//LengthOverview.png> <./Graphics//NumbersOverview.png>] [31]
 
 LaTeX Warning: Reference `app:KBST2Datasheet' on page 32 undefined on input lin
-e 975.
+e 978.
 
 [32] [33] [34] [35] [36]
-<Graphics//shaftsurface-Photoroom.png, id=1013, 957.5775pt x 109.40875pt>
+<Graphics//shaftsurface-Photoroom.png, id=1037, 957.5775pt x 109.40875pt>
 File: Graphics//shaftsurface-Photoroom.png Graphic file (type png)
 <use Graphics//shaftsurface-Photoroom.png>
 Package pdftex.def Info: Graphics//shaftsurface-Photoroom.png  used on input li
-ne 1281.
+ne 1284.
 (pdftex.def)             Requested size: 352.81552pt x 40.3103pt.
-<Graphics//shaftfixed-Photoroom.png, id=1015, 945.5325pt x 184.69pt>
+<Graphics//shaftfixed-Photoroom.png, id=1039, 945.5325pt x 184.69pt>
 File: Graphics//shaftfixed-Photoroom.png Graphic file (type png)
 <use Graphics//shaftfixed-Photoroom.png>
 Package pdftex.def Info: Graphics//shaftfixed-Photoroom.png  used on input line
- 1290.
+ 1293.
 (pdftex.def)             Requested size: 352.81552pt x 68.91475pt.
-<Graphics//35nmshaft.png, id=1018, 978.65625pt x 170.6375pt>
+<Graphics//35nmshaft.png, id=1042, 978.65625pt x 170.6375pt>
 File: Graphics//35nmshaft.png Graphic file (type png)
 <use Graphics//35nmshaft.png>
-Package pdftex.def Info: Graphics//35nmshaft.png  used on input line 1299.
+Package pdftex.def Info: Graphics//35nmshaft.png  used on input line 1302.
 (pdftex.def)             Requested size: 352.81552pt x 61.51797pt.
  [37 <./Graphics//shaftsurface-Photoroom.png> <./Graphics//shaftfixed-Photoroom
 .png>]
-<Graphics//backgroundremoved_35nm.png, id=1029, 1088.065pt x 379.4175pt>
+<Graphics//backgroundremoved_35nm.png, id=1052, 1088.065pt x 379.4175pt>
 File: Graphics//backgroundremoved_35nm.png Graphic file (type png)
 <use Graphics//backgroundremoved_35nm.png>
 Package pdftex.def Info: Graphics//backgroundremoved_35nm.png  used on input li
-ne 1317.
+ne 1320.
 (pdftex.def)             Requested size: 352.81552pt x 123.03133pt.
  [38 <./Graphics//35nmshaft.png> <./Graphics//backgroundremoved_35nm.png>]
-<Graphics//ShoulderWithLengths.png, id=1045, 825.0825pt x 724.7075pt>
+<Graphics//ShoulderWithLengths.png, id=1068, 825.0825pt x 724.7075pt>
 File: Graphics//ShoulderWithLengths.png Graphic file (type png)
 <use Graphics//ShoulderWithLengths.png>
 Package pdftex.def Info: Graphics//ShoulderWithLengths.png  used on input line 
-1358.
+1361.
 (pdftex.def)             Requested size: 220.50887pt x 193.68317pt.
-<Graphics//Elbowfixturedimensions.png, id=1046, 848.16875pt x 713.66624pt>
+<Graphics//Elbowfixturedimensions.png, id=1069, 848.16875pt x 713.66624pt>
 File: Graphics//Elbowfixturedimensions.png Graphic file (type png)
 <use Graphics//Elbowfixturedimensions.png>
 Package pdftex.def Info: Graphics//Elbowfixturedimensions.png  used on input li
-ne 1365.
+ne 1368.
 (pdftex.def)             Requested size: 220.50887pt x 185.53795pt.
  [39 <./Graphics//ShoulderWithLengths.png> <./Graphics//Elbowfixturedimensions.
 png>]
-<Graphics//Crosssection.png, id=1055, 834.11626pt x 298.11375pt>
+<Graphics//Crosssection.png, id=1078, 834.11626pt x 298.11375pt>
 File: Graphics//Crosssection.png Graphic file (type png)
 <use Graphics//Crosssection.png>
-Package pdftex.def Info: Graphics//Crosssection.png  used on input line 1374.
+Package pdftex.def Info: Graphics//Crosssection.png  used on input line 1377.
 (pdftex.def)             Requested size: 352.81552pt x 126.0985pt.
  [40 <./Graphics//Crosssection.png>]
-<Graphics//ShoulderForces.png, id=1062, 691.58376pt x 694.595pt>
+<Graphics//ShoulderForces.png, id=1085, 691.58376pt x 694.595pt>
 File: Graphics//ShoulderForces.png Graphic file (type png)
 <use Graphics//ShoulderForces.png>
-Package pdftex.def Info: Graphics//ShoulderForces.png  used on input line 1394.
+Package pdftex.def Info: Graphics//ShoulderForces.png  used on input line 1397.
 
 (pdftex.def)             Requested size: 264.61333pt x 265.7718pt.
  [41 <./Graphics//ShoulderForces.png>]
-<Graphics//FeaForces.png, id=1071, 703.62875pt x 702.625pt>
+<Graphics//FeaForces.png, id=1094, 703.62875pt x 702.625pt>
 File: Graphics//FeaForces.png Graphic file (type png)
 <use Graphics//FeaForces.png>
-Package pdftex.def Info: Graphics//FeaForces.png  used on input line 1403.
+Package pdftex.def Info: Graphics//FeaForces.png  used on input line 1406.
 (pdftex.def)             Requested size: 264.61333pt x 264.2342pt.
  [42 <./Graphics//FeaForces.png>]
-<Graphics//appliedtorqueshoulder.png, id=1079, 711.65875pt x 733.74126pt>
+<Graphics//appliedtorqueshoulder.png, id=1102, 711.65875pt x 733.74126pt>
 File: Graphics//appliedtorqueshoulder.png Graphic file (type png)
 <use Graphics//appliedtorqueshoulder.png>
 Package pdftex.def Info: Graphics//appliedtorqueshoulder.png  used on input lin
-e 1413.
+e 1416.
 (pdftex.def)             Requested size: 176.40439pt x 181.86742pt.
-<Graphics//feaShoulder.png, id=1081, 711.65875pt x 733.74126pt>
+<Graphics//feaShoulder.png, id=1104, 711.65875pt x 733.74126pt>
 File: Graphics//feaShoulder.png Graphic file (type png)
 <use Graphics//feaShoulder.png>
-Package pdftex.def Info: Graphics//feaShoulder.png  used on input line 1422.
+Package pdftex.def Info: Graphics//feaShoulder.png  used on input line 1425.
 (pdftex.def)             Requested size: 220.50887pt x 227.34547pt.
  [43 <./Graphics//appliedtorqueshoulder.png> <./Graphics//feaShoulder.png>]
-<Graphics//VonMisesFEA_Fixture.png, id=1095, 762.85pt x 638.385pt>
+<Graphics//VonMisesFEA_Fixture.png, id=1118, 762.85pt x 638.385pt>
 File: Graphics//VonMisesFEA_Fixture.png Graphic file (type png)
 <use Graphics//VonMisesFEA_Fixture.png>
 Package pdftex.def Info: Graphics//VonMisesFEA_Fixture.png  used on input line 
-1439.
+1442.
 (pdftex.def)             Requested size: 220.50887pt x 184.52296pt.
-<Graphics//uresFixture.png, id=1096, 702.625pt x 640.3925pt>
+<Graphics//uresFixture.png, id=1119, 702.625pt x 640.3925pt>
 File: Graphics//uresFixture.png Graphic file (type png)
 <use Graphics//uresFixture.png>
-Package pdftex.def Info: Graphics//uresFixture.png  used on input line 1446.
+Package pdftex.def Info: Graphics//uresFixture.png  used on input line 1449.
 (pdftex.def)             Requested size: 220.50887pt x 200.97229pt.
  [44 <./Graphics//VonMisesFEA_Fixture.png> <./Graphics//uresFixture.png>]
-<Graphics//TorqueVM.png, id=1106, 752.8125pt x 516.93124pt>
+<Graphics//TorqueVM.png, id=1129, 752.8125pt x 516.93124pt>
 File: Graphics//TorqueVM.png Graphic file (type png)
 <use Graphics//TorqueVM.png>
-Package pdftex.def Info: Graphics//TorqueVM.png  used on input line 1454.
+Package pdftex.def Info: Graphics//TorqueVM.png  used on input line 1457.
 (pdftex.def)             Requested size: 220.50887pt x 151.41277pt.
-<Graphics//Torque_mm.png, id=1107, 686.565pt x 514.92375pt>
+<Graphics//Torque_mm.png, id=1130, 686.565pt x 514.92375pt>
 File: Graphics//Torque_mm.png Graphic file (type png)
 <use Graphics//Torque_mm.png>
-Package pdftex.def Info: Graphics//Torque_mm.png  used on input line 1461.
+Package pdftex.def Info: Graphics//Torque_mm.png  used on input line 1464.
 (pdftex.def)             Requested size: 220.50887pt x 165.3761pt.
  [45 <./Graphics//TorqueVM.png> <./Graphics//Torque_mm.png>]
-<Graphics//BaseWithDimensionsAndCoordsystem.png, id=1116, 678.535pt x 718.685pt
+<Graphics//BaseWithDimensionsAndCoordsystem.png, id=1139, 678.535pt x 718.685pt
 >
 File: Graphics//BaseWithDimensionsAndCoordsystem.png Graphic file (type png)
 <use Graphics//BaseWithDimensionsAndCoordsystem.png>
 Package pdftex.def Info: Graphics//BaseWithDimensionsAndCoordsystem.png  used o
-n input line 1473.
+n input line 1476.
 (pdftex.def)             Requested size: 264.61333pt x 280.26408pt.
-<Graphics//RedCross.png, id=1118, 553.06625pt x 649.42625pt>
+<Graphics//RedCross.png, id=1141, 553.06625pt x 649.42625pt>
 File: Graphics//RedCross.png Graphic file (type png)
 <use Graphics//RedCross.png>
-Package pdftex.def Info: Graphics//RedCross.png  used on input line 1482.
+Package pdftex.def Info: Graphics//RedCross.png  used on input line 1485.
 (pdftex.def)             Requested size: 176.40439pt x 207.13689pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46 <./Graphics//BaseWithDimensionsAndCoordsystem.png>]
-<Graphics//RedBrackets.png, id=1125, 656.4525pt x 782.925pt>
+<Graphics//RedBrackets.png, id=1148, 656.4525pt x 782.925pt>
 File: Graphics//RedBrackets.png Graphic file (type png)
 <use Graphics//RedBrackets.png>
-Package pdftex.def Info: Graphics//RedBrackets.png  used on input line 1493.
+Package pdftex.def Info: Graphics//RedBrackets.png  used on input line 1496.
 (pdftex.def)             Requested size: 176.40439pt x 210.38907pt.
  [47 <./Graphics//RedCross.png> <./Graphics//RedBrackets.png>]
-<Graphics//bottomHoles.png, id=1133, 885.3075pt x 412.54124pt>
+<Graphics//bottomHoles.png, id=1157, 885.3075pt x 412.54124pt>
 File: Graphics//bottomHoles.png Graphic file (type png)
 <use Graphics//bottomHoles.png>
-Package pdftex.def Info: Graphics//bottomHoles.png  used on input line 1505.
+Package pdftex.def Info: Graphics//bottomHoles.png  used on input line 1508.
 (pdftex.def)             Requested size: 264.61333pt x 123.3038pt.
  [48 <./Graphics//bottomHoles.png>]
-<Graphics//Schermafbeelding 2026-05-05 104649.png, id=1141, 280.04625pt x 548.8
+<Graphics//Schermafbeelding 2026-05-05 104649.png, id=1165, 280.04625pt x 548.8
 0031pt>
 File: Graphics//Schermafbeelding 2026-05-05 104649.png Graphic file (type png)
 <use Graphics//Schermafbeelding 2026-05-05 104649.png>
 Package pdftex.def Info: Graphics//Schermafbeelding 2026-05-05 104649.png  used
- on input line 1518.
+ on input line 1521.
 (pdftex.def)             Requested size: 176.40439pt x 345.71251pt.
  [49 <./Graphics//Schermafbeelding 2026-05-05 104649.png>]
-<Graphics//shaftFea.drawio.png, id=1148, 794.97pt x 352.31625pt>
+<Graphics//shaftFea.drawio.png, id=1172, 794.97pt x 352.31625pt>
 File: Graphics//shaftFea.drawio.png Graphic file (type png)
 <use Graphics//shaftFea.drawio.png>
-Package pdftex.def Info: Graphics//shaftFea.drawio.png  used on input line 1531
+Package pdftex.def Info: Graphics//shaftFea.drawio.png  used on input line 1534
 .
 (pdftex.def)             Requested size: 308.71106pt x 136.8168pt.
-<Graphics//FeaResults.png, id=1150, 541.02126pt x 804.00375pt>
+<Graphics//FeaResults.png, id=1174, 541.02126pt x 804.00375pt>
 File: Graphics//FeaResults.png Graphic file (type png)
 <use Graphics//FeaResults.png>
-Package pdftex.def Info: Graphics//FeaResults.png  used on input line 1540.
+Package pdftex.def Info: Graphics//FeaResults.png  used on input line 1543.
 (pdftex.def)             Requested size: 176.40439pt x 262.14462pt.
  [50 <./Graphics//shaftFea.drawio.png> <./Graphics//FeaResults.png>]
-<Graphics//ballrolers.png, id=1159, 478.03593pt x 475.7775pt>
+<Graphics//ballrolers.png, id=1182, 478.03593pt x 475.7775pt>
 File: Graphics//ballrolers.png Graphic file (type png)
 <use Graphics//ballrolers.png>
-Package pdftex.def Info: Graphics//ballrolers.png  used on input line 1554.
+Package pdftex.def Info: Graphics//ballrolers.png  used on input line 1557.
 (pdftex.def)             Requested size: 176.40439pt x 175.57028pt.
  [51 <./Graphics//ballrolers.png>]
-<Graphics//SideOnderSL.png, id=1169, 395.4775pt x 291.0875pt>
+<Graphics//SideOnderSL.png, id=1192, 395.4775pt x 291.0875pt>
 File: Graphics//SideOnderSL.png Graphic file (type png)
 <use Graphics//SideOnderSL.png>
-Package pdftex.def Info: Graphics//SideOnderSL.png  used on input line 1570.
+Package pdftex.def Info: Graphics//SideOnderSL.png  used on input line 1573.
 (pdftex.def)             Requested size: 264.61333pt x 194.76555pt.
  [52 <./Graphics//SideOnderSL.png>]
-<Graphics//UnderarmSideforce.png, id=1179, 511.9125pt x 259.97125pt>
+<Graphics//UnderarmSideforce.png, id=1202, 511.9125pt x 259.97125pt>
 File: Graphics//UnderarmSideforce.png Graphic file (type png)
 <use Graphics//UnderarmSideforce.png>
 Package pdftex.def Info: Graphics//UnderarmSideforce.png  used on input line 15
-79.
+82.
 (pdftex.def)             Requested size: 308.71106pt x 156.77731pt.
-<Graphics//Underarm_eeforce.png, id=1180, 1131.22626pt x 254.9525pt>
+<Graphics//Underarm_eeforce.png, id=1203, 1131.22626pt x 254.9525pt>
 File: Graphics//Underarm_eeforce.png Graphic file (type png)
 <use Graphics//Underarm_eeforce.png>
 Package pdftex.def Info: Graphics//Underarm_eeforce.png  used on input line 158
-6.
+9.
 (pdftex.def)             Requested size: 308.71106pt x 69.57335pt.
  [53 <./Graphics//UnderarmSideforce.png> <./Graphics//Underarm_eeforce.png>]
-<Graphics//FLTOPtop.png, id=1187, 969.6225pt x 279.0425pt>
+<Graphics//FLTOPtop.png, id=1210, 969.6225pt x 279.0425pt>
 File: Graphics//FLTOPtop.png Graphic file (type png)
 <use Graphics//FLTOPtop.png>
-Package pdftex.def Info: Graphics//FLTOPtop.png  used on input line 1598.
+Package pdftex.def Info: Graphics//FLTOPtop.png  used on input line 1601.
 (pdftex.def)             Requested size: 211.68661pt x 60.91692pt.
-<Graphics//sl_topview.png, id=1188, 866.23625pt x 299.1175pt>
+<Graphics//sl_topview.png, id=1211, 866.23625pt x 299.1175pt>
 File: Graphics//sl_topview.png Graphic file (type png)
 <use Graphics//sl_topview.png>
-Package pdftex.def Info: Graphics//sl_topview.png  used on input line 1605.
+Package pdftex.def Info: Graphics//sl_topview.png  used on input line 1608.
 (pdftex.def)             Requested size: 211.68661pt x 73.095pt.
-<Graphics//FLSIDETOP.png, id=1189, 977.6525pt x 299.1175pt>
+<Graphics//FLSIDETOP.png, id=1212, 977.6525pt x 299.1175pt>
 File: Graphics//FLSIDETOP.png Graphic file (type png)
 <use Graphics//FLSIDETOP.png>
-Package pdftex.def Info: Graphics//FLSIDETOP.png  used on input line 1615.
+Package pdftex.def Info: Graphics//FLSIDETOP.png  used on input line 1618.
 (pdftex.def)             Requested size: 211.68661pt x 64.76541pt.
-<Graphics//sl_othersideview.png, id=1190, 861.2175pt x 305.14pt>
+<Graphics//sl_othersideview.png, id=1213, 861.2175pt x 305.14pt>
 File: Graphics//sl_othersideview.png Graphic file (type png)
 <use Graphics//sl_othersideview.png>
 Package pdftex.def Info: Graphics//sl_othersideview.png  used on input line 162
-2.
+5.
 (pdftex.def)             Requested size: 211.68661pt x 74.99973pt.
-<Graphics//FLSIDETOP2.png, id=1191, 987.69pt x 293.095pt>
+<Graphics//FLSIDETOP2.png, id=1214, 987.69pt x 293.095pt>
 File: Graphics//FLSIDETOP2.png Graphic file (type png)
 <use Graphics//FLSIDETOP2.png>
-Package pdftex.def Info: Graphics//FLSIDETOP2.png  used on input line 1632.
+Package pdftex.def Info: Graphics//FLSIDETOP2.png  used on input line 1635.
 (pdftex.def)             Requested size: 211.68661pt x 62.81741pt.
-<Graphics//fl_sideview.png, id=1192, 867.24pt x 320.19624pt>
+<Graphics//fl_sideview.png, id=1215, 867.24pt x 320.19624pt>
 File: Graphics//fl_sideview.png Graphic file (type png)
 <use Graphics//fl_sideview.png>
-Package pdftex.def Info: Graphics//fl_sideview.png  used on input line 1639.
+Package pdftex.def Info: Graphics//fl_sideview.png  used on input line 1642.
 (pdftex.def)             Requested size: 211.68661pt x 78.15317pt.
-<Graphics//UndersideFLTop.png, id=1193, 991.705pt x 300.12125pt>
+<Graphics//UndersideFLTop.png, id=1216, 991.705pt x 300.12125pt>
 File: Graphics//UndersideFLTop.png Graphic file (type png)
 <use Graphics//UndersideFLTop.png>
-Package pdftex.def Info: Graphics//UndersideFLTop.png  used on input line 1649.
+Package pdftex.def Info: Graphics//UndersideFLTop.png  used on input line 1652.
 
 (pdftex.def)             Requested size: 211.68661pt x 64.06227pt.
-<Graphics//fl_bottomview.png, id=1194, 867.24pt x 302.12875pt>
+<Graphics//fl_bottomview.png, id=1217, 867.24pt x 302.12875pt>
 File: Graphics//fl_bottomview.png Graphic file (type png)
 <use Graphics//fl_bottomview.png>
-Package pdftex.def Info: Graphics//fl_bottomview.png  used on input line 1656.
+Package pdftex.def Info: Graphics//fl_bottomview.png  used on input line 1659.
 (pdftex.def)             Requested size: 211.68661pt x 73.74327pt.
-<Graphics//cutout_sideview_otherside.png, id=1197, 1064.97874pt x 430.60875pt>
+<Graphics//cutout_sideview_otherside.png, id=1220, 1064.97874pt x 430.60875pt>
 File: Graphics//cutout_sideview_otherside.png Graphic file (type png)
 <use Graphics//cutout_sideview_otherside.png>
 Package pdftex.def Info: Graphics//cutout_sideview_otherside.png  used on input
- line 1666.
+ line 1669.
 (pdftex.def)             Requested size: 264.61333pt x 106.98828pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1736,22 +1762,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ETOP.png> <./Graphics//sl_othersideview.png> <./Graphics//FLSIDETOP2.png> <./Gr
 aphics//fl_sideview.png> <./Graphics//UndersideFLTop.png> <./Graphics//fl_botto
 mview.png>]
-<Graphics//CutoutVM_SIDETOP.png, id=1210, 963.6pt x 500.87125pt>
+<Graphics//CutoutVM_SIDETOP.png, id=1233, 963.6pt x 500.87125pt>
 File: Graphics//CutoutVM_SIDETOP.png Graphic file (type png)
 <use Graphics//CutoutVM_SIDETOP.png>
 Package pdftex.def Info: Graphics//CutoutVM_SIDETOP.png  used on input line 167
-3.
+6.
 (pdftex.def)             Requested size: 264.61333pt x 137.53748pt.
-<Graphics//Cutout_VM_sideview.png, id=1211, 1063.975pt x 409.53pt>
+<Graphics//Cutout_VM_sideview.png, id=1234, 1063.975pt x 409.53pt>
 File: Graphics//Cutout_VM_sideview.png Graphic file (type png)
 <use Graphics//Cutout_VM_sideview.png>
 Package pdftex.def Info: Graphics//Cutout_VM_sideview.png  used on input line 1
-680.
+683.
 (pdftex.def)             Requested size: 264.61333pt x 101.85109pt.
-<Graphics//sideview_uresmm.png, id=1213, 1010.77625pt x 435.6275pt>
+<Graphics//sideview_uresmm.png, id=1236, 1010.77625pt x 435.6275pt>
 File: Graphics//sideview_uresmm.png Graphic file (type png)
 <use Graphics//sideview_uresmm.png>
-Package pdftex.def Info: Graphics//sideview_uresmm.png  used on input line 1689
+Package pdftex.def Info: Graphics//sideview_uresmm.png  used on input line 1692
 .
 (pdftex.def)             Requested size: 264.61333pt x 114.04483pt.
 
@@ -1759,101 +1785,101 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [55 <./Graphics//cutout_sideview_otherside.png> <./Graphics//CutoutVM_SIDETOP.
 png> <./Graphics//Cutout_VM_sideview.png>]
-<Graphics//actualmanufactured_sidetop.png, id=1224, 811.03pt x 654.445pt>
+<Graphics//actualmanufactured_sidetop.png, id=1247, 811.03pt x 654.445pt>
 File: Graphics//actualmanufactured_sidetop.png Graphic file (type png)
 <use Graphics//actualmanufactured_sidetop.png>
 Package pdftex.def Info: Graphics//actualmanufactured_sidetop.png  used on inpu
-t line 1700.
+t line 1703.
 (pdftex.def)             Requested size: 211.68661pt x 170.81076pt.
-<Graphics//actualmanufactured_topview.png, id=1225, 924.45375pt x 288.07625pt>
+<Graphics//actualmanufactured_topview.png, id=1248, 924.45375pt x 288.07625pt>
 File: Graphics//actualmanufactured_topview.png Graphic file (type png)
 <use Graphics//actualmanufactured_topview.png>
 Package pdftex.def Info: Graphics//actualmanufactured_topview.png  used on inpu
-t line 1707.
+t line 1710.
 (pdftex.def)             Requested size: 211.68661pt x 65.96602pt.
-<Graphics//actualManufacturedPart_sideview.png, id=1226, 920.43875pt x 210.7875
+<Graphics//actualManufacturedPart_sideview.png, id=1249, 920.43875pt x 210.7875
 pt>
 File: Graphics//actualManufacturedPart_sideview.png Graphic file (type png)
 <use Graphics//actualManufacturedPart_sideview.png>
 Package pdftex.def Info: Graphics//actualManufacturedPart_sideview.png  used on
- input line 1717.
+ input line 1720.
 (pdftex.def)             Requested size: 211.68661pt x 48.47688pt.
-<Graphics//actualmanufactured_othersideview.png, id=1227, 916.42375pt x 207.776
+<Graphics//actualmanufactured_othersideview.png, id=1250, 916.42375pt x 207.776
 25pt>
 File: Graphics//actualmanufactured_othersideview.png Graphic file (type png)
 <use Graphics//actualmanufactured_othersideview.png>
 Package pdftex.def Info: Graphics//actualmanufactured_othersideview.png  used o
-n input line 1724.
+n input line 1727.
 (pdftex.def)             Requested size: 211.68661pt x 47.99359pt.
  [56 <./Graphics//sideview_uresmm.png> <./Graphics//actualmanufactured_sidetop.
 png> <./Graphics//actualmanufactured_topview.png> <./Graphics//actualManufactur
 edPart_sideview.png> <./Graphics//actualmanufactured_othersideview.png>]
-<Graphics//actual_manufactured_bttomu.png, id=1237, 879.285pt x 499.8675pt>
+<Graphics//actual_manufactured_bttomu.png, id=1260, 879.285pt x 499.8675pt>
 File: Graphics//actual_manufactured_bttomu.png Graphic file (type png)
 <use Graphics//actual_manufactured_bttomu.png>
 Package pdftex.def Info: Graphics//actual_manufactured_bttomu.png  used on inpu
-t line 1735.
+t line 1738.
 (pdftex.def)             Requested size: 211.68661pt x 120.33676pt.
-<Graphics//frontplate.png, id=1238, 897.3525pt x 734.745pt>
+<Graphics//frontplate.png, id=1261, 897.3525pt x 734.745pt>
 File: Graphics//frontplate.png Graphic file (type png)
 <use Graphics//frontplate.png>
-Package pdftex.def Info: Graphics//frontplate.png  used on input line 1742.
+Package pdftex.def Info: Graphics//frontplate.png  used on input line 1745.
 (pdftex.def)             Requested size: 211.68661pt x 173.32655pt.
-<Graphics//Forearmfortopology.png, id=1241, 660.4675pt x 490.83376pt>
+<Graphics//Forearmfortopology.png, id=1264, 660.4675pt x 490.83376pt>
 File: Graphics//Forearmfortopology.png Graphic file (type png)
 <use Graphics//Forearmfortopology.png>
 Package pdftex.def Info: Graphics//Forearmfortopology.png  used on input line 1
-754.
+757.
 (pdftex.def)             Requested size: 264.61333pt x 196.65207pt.
  [57 <./Graphics//actual_manufactured_bttomu.png> <./Graphics//frontplate.png> 
 <./Graphics//Forearmfortopology.png>]
-<Graphics//forearm_appliedforces.png, id=1251, 871.255pt x 274.02374pt>
+<Graphics//forearm_appliedforces.png, id=1274, 871.255pt x 274.02374pt>
 File: Graphics//forearm_appliedforces.png Graphic file (type png)
 <use Graphics//forearm_appliedforces.png>
 Package pdftex.def Info: Graphics//forearm_appliedforces.png  used on input lin
-e 1762.
+e 1765.
 (pdftex.def)             Requested size: 264.61333pt x 83.2238pt.
-<Graphics//forearmTop_sideview.png, id=1252, 985.6825pt x 225.84375pt>
+<Graphics//forearmTop_sideview.png, id=1275, 985.6825pt x 225.84375pt>
 File: Graphics//forearmTop_sideview.png Graphic file (type png)
 <use Graphics//forearmTop_sideview.png>
 Package pdftex.def Info: Graphics//forearmTop_sideview.png  used on input line 
-1773.
+1776.
 (pdftex.def)             Requested size: 211.68661pt x 48.5003pt.
-<Graphics//forearmMaterialremoved_sideview.png, id=1253, 848.16875pt x 174.6525
+<Graphics//forearmMaterialremoved_sideview.png, id=1276, 848.16875pt x 174.6525
 pt>
 File: Graphics//forearmMaterialremoved_sideview.png Graphic file (type png)
 <use Graphics//forearmMaterialremoved_sideview.png>
 Package pdftex.def Info: Graphics//forearmMaterialremoved_sideview.png  used on
- input line 1780.
+ input line 1783.
 (pdftex.def)             Requested size: 211.68661pt x 43.5884pt.
-<Graphics//forearm_top_topview.png, id=1254, 965.6075pt x 213.79875pt>
+<Graphics//forearm_top_topview.png, id=1277, 965.6075pt x 213.79875pt>
 File: Graphics//forearm_top_topview.png Graphic file (type png)
 <use Graphics//forearm_top_topview.png>
 Package pdftex.def Info: Graphics//forearm_top_topview.png  used on input line 
-1790.
+1793.
 (pdftex.def)             Requested size: 211.68661pt x 46.86948pt.
-<Graphics//forearmtopviewcutout.png, id=1255, 847.165pt x 197.73875pt>
+<Graphics//forearmtopviewcutout.png, id=1278, 847.165pt x 197.73875pt>
 File: Graphics//forearmtopviewcutout.png Graphic file (type png)
 <use Graphics//forearmtopviewcutout.png>
 Package pdftex.def Info: Graphics//forearmtopviewcutout.png  used on input line
- 1797.
+ 1800.
 (pdftex.def)             Requested size: 211.68661pt x 49.41042pt.
-<Graphics//forearm_undersideToplogy.png, id=1256, 965.6075pt x 225.84375pt>
+<Graphics//forearm_undersideToplogy.png, id=1279, 965.6075pt x 225.84375pt>
 File: Graphics//forearm_undersideToplogy.png Graphic file (type png)
 <use Graphics//forearm_undersideToplogy.png>
 Package pdftex.def Info: Graphics//forearm_undersideToplogy.png  used on input 
-line 1807.
+line 1810.
 (pdftex.def)             Requested size: 211.68661pt x 49.51003pt.
-<Graphics//forearm_materialremoved_under.png, id=1257, 848.16875pt x 200.75pt>
+<Graphics//forearm_materialremoved_under.png, id=1280, 848.16875pt x 200.75pt>
 File: Graphics//forearm_materialremoved_under.png Graphic file (type png)
 <use Graphics//forearm_materialremoved_under.png>
 Package pdftex.def Info: Graphics//forearm_materialremoved_under.png  used on i
-nput line 1814.
+nput line 1817.
 (pdftex.def)             Requested size: 211.68661pt x 50.1016pt.
-<Graphics//torqueforearm.png, id=1259, 346.29375pt x 494.84875pt>
+<Graphics//torqueforearm.png, id=1282, 346.29375pt x 494.84875pt>
 File: Graphics//torqueforearm.png Graphic file (type png)
 <use Graphics//torqueforearm.png>
-Package pdftex.def Info: Graphics//torqueforearm.png  used on input line 1824.
+Package pdftex.def Info: Graphics//torqueforearm.png  used on input line 1827.
 (pdftex.def)             Requested size: 176.40439pt x 252.0826pt.
 
 Underfull \vbox (badness 2409) has occurred while \output is active []
@@ -1862,34 +1888,34 @@ Underfull \vbox (badness 2409) has occurred while \output is active []
 ng> <./Graphics//forearmMaterialremoved_sideview.png> <./Graphics//forearm_top_
 topview.png> <./Graphics//forearmtopviewcutout.png> <./Graphics//forearm_unders
 ideToplogy.png> <./Graphics//forearm_materialremoved_under.png>]
-<Graphics//forearmvonmiseundersideview.png, id=1272, 1100.11pt x 616.3025pt>
+<Graphics//forearmvonmiseundersideview.png, id=1295, 1100.11pt x 616.3025pt>
 File: Graphics//forearmvonmiseundersideview.png Graphic file (type png)
 <use Graphics//forearmvonmiseundersideview.png>
 Package pdftex.def Info: Graphics//forearmvonmiseundersideview.png  used on inp
-ut line 1833.
+ut line 1836.
 (pdftex.def)             Requested size: 264.61333pt x 148.23535pt.
  [59 <./Graphics//torqueforearm.png> <./Graphics//forearmvonmiseundersideview.p
 ng>]
-<Graphics//Forearmuresmm.png, id=1281, 967.615pt x 359.3425pt>
+<Graphics//Forearmuresmm.png, id=1304, 967.615pt x 359.3425pt>
 File: Graphics//Forearmuresmm.png Graphic file (type png)
 <use Graphics//Forearmuresmm.png>
-Package pdftex.def Info: Graphics//Forearmuresmm.png  used on input line 1844.
+Package pdftex.def Info: Graphics//Forearmuresmm.png  used on input line 1847.
 (pdftex.def)             Requested size: 264.61333pt x 98.26843pt.
-<Graphics//forearmuresfrontview.png, id=1282, 695.59875pt x 526.96875pt>
+<Graphics//forearmuresfrontview.png, id=1305, 695.59875pt x 526.96875pt>
 File: Graphics//forearmuresfrontview.png Graphic file (type png)
 <use Graphics//forearmuresfrontview.png>
 Package pdftex.def Info: Graphics//forearmuresfrontview.png  used on input line
- 1851.
+ 1854.
 (pdftex.def)             Requested size: 220.50887pt x 167.04938pt.
-<Graphics//FailedTopview.png, id=1286, 1710.39pt x 789.95125pt>
+<Graphics//FailedTopview.png, id=1309, 1710.39pt x 789.95125pt>
 File: Graphics//FailedTopview.png Graphic file (type png)
 <use Graphics//FailedTopview.png>
-Package pdftex.def Info: Graphics//FailedTopview.png  used on input line 1860.
+Package pdftex.def Info: Graphics//FailedTopview.png  used on input line 1863.
 (pdftex.def)             Requested size: 220.50887pt x 101.84145pt.
-<Graphics//FailedSideView.png, id=1287, 2090.81125pt x 813.0375pt>
+<Graphics//FailedSideView.png, id=1310, 2090.81125pt x 813.0375pt>
 File: Graphics//FailedSideView.png Graphic file (type png)
 <use Graphics//FailedSideView.png>
-Package pdftex.def Info: Graphics//FailedSideView.png  used on input line 1867.
+Package pdftex.def Info: Graphics//FailedSideView.png  used on input line 1870.
 
 (pdftex.def)             Requested size: 220.50887pt x 85.73743pt.
 
@@ -1897,122 +1923,122 @@ Underfull \vbox (badness 2735) has occurred while \output is active []
 
  [60 <./Graphics//Forearmuresmm.png> <./Graphics//forearmuresfrontview.png> <./
 Graphics//FailedTopview.png>]
-<Graphics//CorrectTopview.png, id=1295, 1489.565pt x 711.65875pt>
+<Graphics//CorrectTopview.png, id=1318, 1489.565pt x 711.65875pt>
 File: Graphics//CorrectTopview.png Graphic file (type png)
 <use Graphics//CorrectTopview.png>
-Package pdftex.def Info: Graphics//CorrectTopview.png  used on input line 1874.
+Package pdftex.def Info: Graphics//CorrectTopview.png  used on input line 1877.
 
 (pdftex.def)             Requested size: 220.50887pt x 105.34338pt.
-<Graphics//manufacturedforearm_sideview.png, id=1298, 1222.5675pt x 243.91125pt
+<Graphics//manufacturedforearm_sideview.png, id=1321, 1222.5675pt x 243.91125pt
 >
 File: Graphics//manufacturedforearm_sideview.png Graphic file (type png)
 <use Graphics//manufacturedforearm_sideview.png>
 Package pdftex.def Info: Graphics//manufacturedforearm_sideview.png  used on in
-put line 1885.
+put line 1888.
 (pdftex.def)             Requested size: 211.68661pt x 42.23105pt.
-<Graphics//manufacturedforearm_topview.png, id=1299, 593.21625pt x 140.525pt>
+<Graphics//manufacturedforearm_topview.png, id=1322, 593.21625pt x 140.525pt>
 File: Graphics//manufacturedforearm_topview.png Graphic file (type png)
 <use Graphics//manufacturedforearm_topview.png>
 Package pdftex.def Info: Graphics//manufacturedforearm_topview.png  used on inp
-ut line 1892.
+ut line 1895.
 (pdftex.def)             Requested size: 211.68661pt x 50.1451pt.
-<Graphics//manufactured_forearm_inneru.png, id=1300, 958.58125pt x 474.77374pt>
+<Graphics//manufactured_forearm_inneru.png, id=1323, 958.58125pt x 474.77374pt>
 
 File: Graphics//manufactured_forearm_inneru.png Graphic file (type png)
 <use Graphics//manufactured_forearm_inneru.png>
 Package pdftex.def Info: Graphics//manufactured_forearm_inneru.png  used on inp
-ut line 1900.
+ut line 1903.
 (pdftex.def)             Requested size: 220.50887pt x 109.21014pt.
  [61 <./Graphics//FailedSideView.png> <./Graphics//CorrectTopview.png> <./Graph
 ics//manufacturedforearm_sideview.png> <./Graphics//manufacturedforearm_topview
 .png> <./Graphics//manufactured_forearm_inneru.png>]
-<Graphics//endstop_sideview.png, id=1310, 519.9425pt x 517.935pt>
+<Graphics//endstop_sideview.png, id=1334, 519.9425pt x 517.935pt>
 File: Graphics//endstop_sideview.png Graphic file (type png)
 <use Graphics//endstop_sideview.png>
 Package pdftex.def Info: Graphics//endstop_sideview.png  used on input line 192
-6.
+9.
 (pdftex.def)             Requested size: 264.61333pt x 263.59013pt.
-<Graphics//endstop_topview.png, id=1311, 578.16pt x 551.05875pt>
+<Graphics//endstop_topview.png, id=1335, 578.16pt x 551.05875pt>
 File: Graphics//endstop_topview.png Graphic file (type png)
 <use Graphics//endstop_topview.png>
-Package pdftex.def Info: Graphics//endstop_topview.png  used on input line 1933
+Package pdftex.def Info: Graphics//endstop_topview.png  used on input line 1936
 .
 (pdftex.def)             Requested size: 264.61333pt x 252.2036pt.
 
 Underfull \vbox (badness 2261) has occurred while \output is active []
 
  [62 <./Graphics//endstop_sideview.png>] [63 <./Graphics//endstop_topview.png>]
-<Graphics//End_effector_overview.png, id=1328, 314.17375pt x 441.65pt>
+<Graphics//End_effector_overview.png, id=1351, 314.17375pt x 441.65pt>
 File: Graphics//End_effector_overview.png Graphic file (type png)
 <use Graphics//End_effector_overview.png>
 Package pdftex.def Info: Graphics//End_effector_overview.png  used on input lin
-e 1947.
+e 1950.
 (pdftex.def)             Requested size: 220.50887pt x 309.97504pt.
-<Graphics//Endeffector_cross_section.png, id=1329, 941.5175pt x 480.79625pt>
+<Graphics//Endeffector_cross_section.png, id=1352, 941.5175pt x 480.79625pt>
 File: Graphics//Endeffector_cross_section.png Graphic file (type png)
 <use Graphics//Endeffector_cross_section.png>
 Package pdftex.def Info: Graphics//Endeffector_cross_section.png  used on input
- line 1954.
+ line 1957.
 (pdftex.def)             Requested size: 264.61333pt x 135.12823pt.
 
 
-LaTeX Warning: Reference `ch:control' on page 64 undefined on input line 1964.
+LaTeX Warning: Reference `ch:control' on page 64 undefined on input line 1967.
 
 
 Underfull \vbox (badness 5050) has occurred while \output is active []
 
  [64 <./Graphics//End_effector_overview.png> <./Graphics//Endeffector_cross_sec
 tion.png>]
-<Graphics//esconschematic.png, id=1338, 789.95125pt x 318.18875pt>
+<Graphics//esconschematic.png, id=1361, 789.95125pt x 318.18875pt>
 File: Graphics//esconschematic.png Graphic file (type png)
 <use Graphics//esconschematic.png>
-Package pdftex.def Info: Graphics//esconschematic.png  used on input line 1982.
+Package pdftex.def Info: Graphics//esconschematic.png  used on input line 1985.
 
 (pdftex.def)             Requested size: 264.61333pt x 106.58539pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65]
-<Graphics//AS5048A-AB-1.0_sml(200x200).jpg, id=1351, 198.7425pt x 112.42pt>
+<Graphics//AS5048A-AB-1.0_sml(200x200).jpg, id=1374, 198.7425pt x 112.42pt>
 File: Graphics//AS5048A-AB-1.0_sml(200x200).jpg Graphic file (type jpg)
 <use Graphics//AS5048A-AB-1.0_sml(200x200).jpg>
 Package pdftex.def Info: Graphics//AS5048A-AB-1.0_sml(200x200).jpg  used on inp
-ut line 1991.
+ut line 1994.
 (pdftex.def)             Requested size: 176.40439pt x 99.7876pt.
 
 [66 <./Graphics//esconschematic.png> <./Graphics//AS5048A-AB-1.0_sml(200x200).j
 pg>]
-<Graphics//can_frame.png, id=1367, 565.11125pt x 67.25125pt>
+<Graphics//can_frame.png, id=1390, 565.11125pt x 67.25125pt>
 File: Graphics//can_frame.png Graphic file (type png)
 <use Graphics//can_frame.png>
-Package pdftex.def Info: Graphics//can_frame.png  used on input line 2019.
+Package pdftex.def Info: Graphics//can_frame.png  used on input line 2022.
 (pdftex.def)             Requested size: 441.01773pt x 52.48448pt.
- [67 <./Graphics//can_frame.png>]
-Overfull \hbox (74.72885pt too wide) in paragraph at lines 2045--2060
- [][] 
- []
-
-[68]
-<Graphics//send_receiveAS.png, id=1389, 685.56125pt x 282.05376pt>
+ [67 <./Graphics//can_frame.png>] [68]
+<Graphics//send_receiveAS.png, id=1412, 685.56125pt x 282.05376pt>
 File: Graphics//send_receiveAS.png Graphic file (type png)
 <use Graphics//send_receiveAS.png>
-Package pdftex.def Info: Graphics//send_receiveAS.png  used on input line 2076.
+Package pdftex.def Info: Graphics//send_receiveAS.png  used on input line 2079.
 
 (pdftex.def)             Requested size: 352.81552pt x 145.15816pt.
-<Graphics//ads_timing.png, id=1393, 709.65125pt x 208.78pt>
+<Graphics//ads_timing.png, id=1416, 709.65125pt x 208.78pt>
 File: Graphics//ads_timing.png Graphic file (type png)
 <use Graphics//ads_timing.png>
-Package pdftex.def Info: Graphics//ads_timing.png  used on input line 2092.
+Package pdftex.def Info: Graphics//ads_timing.png  used on input line 2095.
 (pdftex.def)             Requested size: 352.81552pt x 103.80037pt.
  [69 <./Graphics//send_receiveAS.png> <./Graphics//ads_timing.png>]
-[70
+<Graphics//springer.png, id=1432, 793.96625pt x 722.7pt>
+File: Graphics//springer.png Graphic file (type png)
+<use Graphics//springer.png>
+Package pdftex.def Info: Graphics//springer.png  used on input line 2129.
+(pdftex.def)             Requested size: 352.81552pt x 321.15387pt.
+ [70 <./Graphics//springer.png>]
 
-]
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
+LaTeX Warning: Reference `fig:sim-pipeline' on page 71 undefined on input line 
+2184.
+
+[71]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-115.
+191.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -2020,88 +2046,93 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [71
+ [72]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+ [73
 
-] [72] [73]
-Overfull \hbox (71.58377pt too wide) in paragraph at lines 2115--2115
+
+] [74] [75]
+Overfull \hbox (71.58377pt too wide) in paragraph at lines 2210--2210
 \T1/lmtt/m/n/10.95 eassistant . eu / fileadmin / dokumente / eassistant / etc /
  HTMLHandbuch / en / eAssistantHandbch16 .
  []
 
-[74] [75] [76
+[76] [77] [78
 
 ]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Graphics//MaxonMotor.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<Graphics//MaxonMotor.pdf, id=1541, 598.235pt x 845.1575pt>
+<Graphics//MaxonMotor.pdf, id=1595, 598.235pt x 845.1575pt>
 File: Graphics//MaxonMotor.pdf Graphic file (type pdf)
 <use Graphics//MaxonMotor.pdf>
-Package pdftex.def Info: Graphics//MaxonMotor.pdf  used on input line 2124.
+Package pdftex.def Info: Graphics//MaxonMotor.pdf  used on input line 2219.
 (pdftex.def)             Requested size: 396.91325pt x 560.74597pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77]
+ [79]
 Overfull \vbox (3.49628pt too high) has occurred while \output is active []
 
 
-[78 <./Graphics//MaxonMotor.pdf>]
+[80 <./Graphics//MaxonMotor.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Graphics//escon2p9.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Graphics//escon2p9.pdf, id=1561, 598.235pt x 845.1575pt>
+<Graphics//escon2p9.pdf, id=1615, 598.235pt x 845.1575pt>
 File: Graphics//escon2p9.pdf Graphic file (type pdf)
 <use Graphics//escon2p9.pdf>
-Package pdftex.def Info: Graphics//escon2p9.pdf  used on input line 2134.
+Package pdftex.def Info: Graphics//escon2p9.pdf  used on input line 2229.
 (pdftex.def)             Requested size: 352.81552pt x 498.44516pt.
-[79
+[81
 
- <./Graphics//escon2p9.pdf>] [80
+ <./Graphics//escon2p9.pdf>] [82
 
 ]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Graphics//pearsonKfactor.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Graphics//pearsonKfactor.pdf, id=1609, 433.62pt x 651.43375pt>
+<Graphics//pearsonKfactor.pdf, id=1665, 433.62pt x 651.43375pt>
 File: Graphics//pearsonKfactor.pdf Graphic file (type pdf)
 <use Graphics//pearsonKfactor.pdf>
-Package pdftex.def Info: Graphics//pearsonKfactor.pdf  used on input line 2144.
+Package pdftex.def Info: Graphics//pearsonKfactor.pdf  used on input line 2239.
 
 (pdftex.def)             Requested size: 352.81552pt x 530.06393pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81]
+ [83]
 Overfull \vbox (21.20416pt too high) has occurred while \output is active []
 
 
-[82 <./Graphics//pearsonKfactor.pdf>]
-<Graphics//ADS_timingdatasheet.png, id=1628, 712.6625pt x 759.83875pt>
+[84 <./Graphics//pearsonKfactor.pdf>]
+<Graphics//ADS_timingdatasheet.png, id=1683, 712.6625pt x 759.83875pt>
 File: Graphics//ADS_timingdatasheet.png Graphic file (type png)
 <use Graphics//ADS_timingdatasheet.png>
 Package pdftex.def Info: Graphics//ADS_timingdatasheet.png  used on input line 
-2155.
+2250.
 (pdftex.def)             Requested size: 396.91325pt x 423.18796pt.
- [83
+ [85
 
- <./Graphics//ADS_timingdatasheet.png>] [84
+ <./Graphics//ADS_timingdatasheet.png>] [86
 
 ]
-<Graphics//AsTiming.png, id=1641, 790.955pt x 846.16125pt>
+<Graphics//AsTiming.png, id=1695, 790.955pt x 846.16125pt>
 File: Graphics//AsTiming.png Graphic file (type png)
 <use Graphics//AsTiming.png>
-Package pdftex.def Info: Graphics//AsTiming.png  used on input line 2165.
+Package pdftex.def Info: Graphics//AsTiming.png  used on input line 2260.
 (pdftex.def)             Requested size: 396.91325pt x 424.61604pt.
- [85 <./Graphics//AsTiming.png>] [86
+ [87 <./Graphics//AsTiming.png>] [88
 
 ]
-<Graphics//Astable.png, id=1653, 788.9475pt x 403.5075pt>
+<Graphics//Astable.png, id=1708, 788.9475pt x 403.5075pt>
 File: Graphics//Astable.png Graphic file (type png)
 <use Graphics//Astable.png>
-Package pdftex.def Info: Graphics//Astable.png  used on input line 2175.
+Package pdftex.def Info: Graphics//Astable.png  used on input line 2270.
 (pdftex.def)             Requested size: 396.91325pt x 203.00313pt.
- [87 <./Graphics//Astable.png>]
+ [89 <./Graphics//Astable.png>]
 (./ThesisV2_main.aux)
 
 LaTeX Warning: There were undefined references.
@@ -2110,17 +2141,17 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `ThesisV2_main.out' has not changed.
-(rerunfilecheck)             Checksum: 3F282F3544866E06A2E76591281A5F91;7469.
+(rerunfilecheck)             Checksum: 5461E873D004AFD3A83CCF0F729E8A29;8260.
 Package logreq Info: Writing requests to 'ThesisV2_main.run.xml'.
 \openout1 = `ThesisV2_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33877 strings out of 478287
- 662238 string characters out of 5849289
- 1390611 words of memory out of 5000000
- 50821 multiletter control sequences out of 15000+600000
- 594850 words of font info for 289 fonts, out of 8000000 for 9000
+ 34469 strings out of 478287
+ 672030 string characters out of 5849289
+ 1399091 words of memory out of 5000000
+ 51379 multiletter control sequences out of 15000+600000
+ 595130 words of font info for 292 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,13n,92p,2008b,2616s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2128,23 +2159,24 @@ ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/f
 onts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ThesisV2_main.pdf (103 pages, 18343211 bytes).
+pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
+6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msbm10.pfb>
+Output written on ThesisV2_main.pdf (105 pages, 18429725 bytes).
 PDF statistics:
- 1850 PDF objects out of 2073 (max. 8388607)
- 1447 compressed objects within 15 object streams
- 400 named destinations out of 1000 (max. 500000)
- 70956 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1914 PDF objects out of 2073 (max. 8388607)
+ 1502 compressed objects within 16 object streams
+ 417 named destinations out of 1000 (max. 500000)
+ 70993 words of extra memory for PDF output out of 74296 (max. 10000000)
 

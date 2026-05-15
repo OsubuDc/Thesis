@@ -43,8 +43,8 @@
       \strng{authorbibnamehash}{5feb7797816f2fe0058152f0edf2d661}
       \strng{authornamehash}{5feb7797816f2fe0058152f0edf2d661}
       \strng{authorfullhash}{5feb7797816f2fe0058152f0edf2d661}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{BACKGROUND: While absenteeism refers to not attending work, presenteeism is defined as not being present at work. These two conditions, which negatively affect employee health, can be indicators of work efficiency, work peace, work safety and work engagement. OBJECTIVE: Several factors were evaluated in this study concerning absenteeism and presenteeism among factory workers. METHODS: This cross-sectional study was conducted among workers in a factory operating in a heavy industry in southern Turkey in 2021. A survey consisting of 57 questions was applied to 152 factory workers by face-to-face interview method. The participants’ behaviour over the last month was evaluated regarding absenteeism and presenteeism. RESULTS: It was reported that 24 (15.8\%) of all employees were absent from work in the last month (absenteeism), excluding holidays and sick leave, and that 20 (13.2\%) employees engaged in presenteeism, working when they should not have been at the workplace. There was a high absenteeism rate among employees who had an acute illness and were dissatisfied with their jobs. Several factors have been associated with presenteeism, including poor economic conditions, family health problems, previous unemployment, working overtime, job dissatisfaction, poor relationships with colleagues and difficulty finding a replacement, acute illness, sleep problems and fatigue. CONCLUSIONS: To increase the productivity and commitment of employees, it may be useful to identify the reasons for absenteeism and present behaviours, to facilitate effective interpersonal communication skills by examining the organisational climate of employees, and to regulate workload based on a comprehensive assessment of the health status of employees.}
@@ -344,8 +344,8 @@
       \strng{authorbibnamehash}{4419a57518c94322b0bb82ff5f2c3b34}
       \strng{authornamehash}{4419a57518c94322b0bb82ff5f2c3b34}
       \strng{authorfullhash}{4419a57518c94322b0bb82ff5f2c3b34}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -836,8 +836,8 @@
       \list{organization}{1}{%
         {Industrial Monitor Direct}%
       }
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{abstract}{Resolve FANUC Disturbance Excess alarms by configuring payload and collision guard settings. Expert recommendations for multiple payloads, sensitivity levels, and speed optimization.}
       \field{day}{11}
@@ -1177,8 +1177,8 @@
       \strng{authornamehash}{132bf3d252425d0fee5d166b59946218}
       \strng{authorfullhash}{132bf3d252425d0fee5d166b59946218}
       \field{extraname}{1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Impedance control has received significant efforts in recent decades in robotics as impedance control aims to achieve the desired mechanical interaction with uncertain environment. This paper is dedicated to the overview of basic concepts and principles, implementation strategies, challenging research problems and interests, etc. The objective is to help readers quickly get into problems of their interests related to impedance control and provide guidance and insights in finding appropriate strategies and solutions.}
@@ -1229,8 +1229,8 @@
       \strng{authorbibnamehash}{690c4065e2ec177f73389a08f856ff7b}
       \strng{authornamehash}{690c4065e2ec177f73389a08f856ff7b}
       \strng{authorfullhash}{690c4065e2ec177f73389a08f856ff7b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In order for robots to improve their adaptability, it i s necessary for the underlying control strategies to become more sophisticated. This i s especially true in contact tasks such as grinding or dehurring where it i s desired not only for the robot to apply a steady force, hut also to reject undesirable high-frequency disturbances. This work presents a foundation for such force control strategies. Realizing that the type of control strategy that i s employed depends fundamentally on the characteristics of the environment, this correspondence classifies the types of environments by use of a duality condition, and demonstrates which control i s appropriate for each type of environment. A general control approach i s introduced, called hybrid impedance control (HIC), which in its simplest forms reduces to Khatih’s operational space control 131, or to Hogan’s impedance control [14]. The control law i s formulated in a general enough fashion, however, to allow for higher order controllers.}
@@ -1288,8 +1288,8 @@
       \strng{authornamehash}{132bf3d252425d0fee5d166b59946218}
       \strng{authorfullhash}{132bf3d252425d0fee5d166b59946218}
       \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{There have been significant interests and efforts in the field of impedance control on robotic manipulation over last decades. Impedance control aims to achieve the desired mechanical interaction between the robotic equipment and its environment. This paper gives the overview and comparison of basic concepts and principles, implementation strategies, crucial techniques, and practical applications concerning the impedance control of robotic manipulation. This work attempts to serve as a tutorial to people outside the field and to promote discussion of a unified vision of impedance control within the field of robotic manipulation. The goal is to help readers quickly get into the problems of their interests related to impedance control of robotic manipulation and to provide guidance and insights in finding appropriate strategies and solutions.}
@@ -1621,8 +1621,8 @@
       \endverb
     \endentry
     \entry{ParallelKeysSelectable}{online}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{title}{Parallel {{Keys}} / {{Selectable Dimensions}} from {{MISUMI}} | {{MISUMI}}}
       \field{urlday}{7}
@@ -1824,6 +1824,25 @@
       \endverb
       \verb{url}
       \verb https://www.ti.com/product/ADS1256
+      \endverb
+    \endentry
+    \entry{Pinocchio}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Pinocchio}
+      \field{urlday}{15}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/3B5IJ49Y/pinocchio.html
+      \endverb
+      \verb{urlraw}
+      \verb https://stack-of-tasks.github.io/pinocchio/
+      \endverb
+      \verb{url}
+      \verb https://stack-of-tasks.github.io/pinocchio/
       \endverb
     \endentry
     \entry{BLDCmotorenBorstellozeElektromotoren}{online}{}

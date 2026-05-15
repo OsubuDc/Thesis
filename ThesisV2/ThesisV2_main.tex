@@ -37,6 +37,9 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.97,0.97,0.97}
 
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},
     commentstyle=\color{codegreen},
@@ -2044,7 +2047,7 @@ All data frames are assumed to carry the maximum payload of 8~bytes (DLC~=~8), e
     \centering
     \begin{tabular}{l c c c}
         \toprule
-        Frame & DLC [bytes] & Frame length [bits] & Worst-case duration with bit stuffing included \\
+        Frame & DLC [bytes] & Frame length [bits] & Worst--case with bit stuffing\\
         \midrule
         SYNC                & 0 & 47  & $\approx \SI{56}{\micro\second}$ \\
         ESCON2 \#1 TPDO     & 8 & 111 & $\approx \SI{133}{\micro\second}$ \\
@@ -2056,7 +2059,7 @@ All data frames are assumed to carry the maximum payload of 8~bytes (DLC~=~8), e
         \textbf{Total}      &   &     & $\approx \SI{721}{\micro\second}$ \\
         \bottomrule
     \end{tabular}
-    \caption{Worst-case CAN bus timing per control cycle at 
+    \caption{Worst--case CAN bus timing per control cycle at 
     \SI{1}{\mega\bit\per\second}.}
     \label{tab:bus-timing}
 \end{table}
@@ -2107,6 +2110,98 @@ The total SPI clock cycles is calculated:
 At \SI{1,33}{\mega\hertz} this corresponds to approximately \SI{96}{\micro\second}. The total sensor acquisition time including dead time is approximately \SI{110}{\micro\second}, which is well within 
 the \SI{322}{\micro\second} available before the STM32 TPDO slot on 
 the bus.
+\newpage
+
+\section{Simulation Environment}
+A simulation environment was developed in ROS~2 for two purposes. First, it allows control algorithms to be tested with full visualisation. Secondly, it provides insight into system behaviour that proved valuable during the early design phase, particularly for identifying and tuning soft joint limits.
+
+The simulator takes a URDF robot description and trajectory waypoints which are specified via YAML files. YAML configuration files allow the user to easily and quickly change parameters in the code. This simulation uses robot control based on inverse dynamics as is explained in Section~\ref{subsec:inverse-dynamics}. Robot state data such as joint positions, velocities, accelerations, and torques are exported in CSV format, which can be used for plotting and post--processing.
+
+The simulation currently uses an inverse dynamics controller to verify the correct functioning of the framework. The inverse dynamics function can be replaced with impedance control, admittance control, or any other control law without affecting the surrounding infrastructure. The URDF loading, YAML trajectory parsing, Docker environment, ROS~2 communication, RViz visualisation, and CSV data logging all remain unchanged.
+
+\subsection{Inverse Dynamics Control}
+\label{subsec:inverse-dynamics}
+
+The simulation uses a task--space inverse dynamics controller as described by Bajd et al.~\cite{sicilianoSpringerHandbookRobotics2016a}. The block diagram of this control scheme is shown in Figure~\ref{fig:simulation_schematic}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{springer}
+    \caption{Robot control based on inverse dynamics in external coordinates from~\cite{sicilianoSpringerHandbookRobotics2016a}.}
+    \label{fig:simulation_schematic}
+\end{figure}
+
+The controller computes the commanded end--effector acceleration from a Proportional Derivative (PD) law in Cartesian space. The desired position, velocity, and acceleration trajectories are represented by $\mathbf{x}_r$, $\dot{\mathbf{x}}_r$, and $\ddot{\mathbf{x}}_r$, respectively. The commanded acceleration is then computed as
+
+\begin{equation}\label{eq:xyz-acc}
+    \ddot{\mathbf{x}}_{\mathrm{cmd}} =
+    \ddot{\mathbf{x}}_r +
+    \mathbf{K_p}(\mathbf{x}_r - \mathbf{x}) +
+    \mathbf{K_d}(\dot{\mathbf{x}}_r - \dot{\mathbf{x}})
+\end{equation}
+
+where $\mathbf{x}$ and $\dot{\mathbf{x}}$ are the measured end--effector position and velocity. It can be noted that the schematic does not include acceleration feedback. In practice, acceleration is often not measured directly, since robotic systems typically only provide position measurements through encoders. Velocity and acceleration are consequently obtained through numerical differentiation, which amplifies measurement noise FIND SOURCE FOR THIS.
+
+$\mathbf{K_p}$ and $\mathbf{K_d}$ are diagonal gain matrices. This Cartesian acceleration is mapped to joint space through the Jacobian inverse:
+
+\begin{equation}\label{eq:joint-acc}
+    \mathbf{y} =
+    \mathbf{J}^{-1}\left(
+    \ddot{\mathbf{x}}_{\mathrm{cmd}} - \dot{\mathbf{J}}\,\dot{\mathbf{q}}
+    \right)
+\end{equation}
+
+The required joint torques are obtained from the rigid--body dynamics:
+
+\begin{equation}\label{eq:torques}
+    \boldsymbol{\tau}_{\mathrm{ctrl}} =
+    \mathbf{B}(\mathbf{q})\,\mathbf{y} +
+    \mathbf{n}(\mathbf{q}, \dot{\mathbf{q}})
+\end{equation}
+
+where $\mathbf{B}(\mathbf{q})$ is the joint--space inertia matrix obtained via the Composite Rigid Body Algorithm (CRBA), and $\mathbf{n}(\mathbf{q}, \dot{\mathbf{q}}) = \mathbf{C}(\mathbf{q}, \dot{\mathbf{q}})\dot{\mathbf{q}} + \mathbf{g}(\mathbf{q})$ contains the Coriolis, centrifugal, and gravitational terms computed through the Recursive Newton--Euler Algorithm (RNEA). Both algorithms are provided by the Pinocchio rigid--body dynamics library~\cite{Pinocchio}.
+
+\subsection{Soft Joint Limits}
+\label{subsec:soft-limits}
+
+Physical joint limits are enforced in the simulation through a spring--damper endstop rather than hard constraints. Each joint $i$ has defined lower and upper angular limits $q_{\min,i}$ and $q_{\max,i}$, corresponding to the mechanical range of motion. An angular soft zone of width $\delta$ is defined inward from each limit, meaning that it engages before ariving at the joint limit.
+
+\begin{equation}\label{eq:soft-limit}
+    \tau_{\mathrm{limit},i} = 
+    \begin{cases}
+        k\,\bigl[(q_{\min,i} + \delta) - q_i\bigr] - b\,\dot{q}_i & \text{if } q_i < q_{\min,i} + \delta \text{ and } \dot{q}_i < 0 \\[4pt]
+        k\,\bigl[(q_{\min,i} + \delta) - q_i\bigr] & \text{if } q_i < q_{\min,i} + \delta \text{ and } \dot{q}_i \geq 0 \\[4pt]
+        0 & \text{otherwise}
+    \end{cases}
+\end{equation}
+
+where $q_i$ is the current joint angle, $\dot{q}_i$ is the joint angular velocity, $k$ is the torsional spring stiffness, and $b$ is the damping coefficient. An analogous expression applies at the upper limit $q_{\max,i}$.
+
+The damping term is applied only when the joint moves further into the limit ($\dot{q}_i < 0$ at the lower limit, $\dot{q}_i > 0$ at the upper limit). When the joint moves away from the limit, the damper does not generate a torque, allowing the joint to leave the soft zone. This one--directional damping prevents the endstop from trapping the joint in the limit boundary.
+
+\subsection{Simulation Pipeline}\label{subsec:sim-pipeline}
+
+Figure~\ref{fig:sim-pipeline} illustrates the complete simulation pipeline from input specification to post-processing. The process is structured as follows:
+
+\begin{enumerate}[nosep]
+    \item \textbf{Input specification.} The robot geometry and inertial properties are defined in a URDF file exported from SolidWorks. Desired end-effector waypoints and feedforward velocities are specified in a YAML configuration file, decoupling the trajectory definition from the controller code.
+    
+    \item \textbf{Containerised environment.} The entire ROS~2 workspace, including the Pinocchio dynamics library and all dependencies, is encapsulated in a Docker image. This ensures reproducibility across machines and eliminates manual dependency management.
+    
+    \item \textbf{Simulation node.} A single C++ ROS~2 node loads the URDF model into Pinocchio and parses the YAML waypoints at startup. At each timestep ($\Delta t = \SI{0.1}{\milli\second}$), the node evaluates the inverse dynamics controller (Section~\ref{subsec:inverse-dynamics}), applies joint damping and soft endstop torques (Section~\ref{subsec:soft-limits}), integrates the state forward using Euler integration, and publishes the resulting joint positions to the \texttt{/joint\_states} ROS~2 topic.
+    
+    \item \textbf{Visualisation.} RViz subscribes to the published joint states and renders the robot model in real time, providing immediate visual feedback during controller tuning.
+    
+    \item \textbf{Data export and analysis.} Joint positions, velocities, accelerations, and all torque components (control, damping, endstop, total) are logged to timestamped CSV files. These are imported into MATLAB for plotting and validation.
+\end{enumerate}
+
+% Placeholder for pipeline figure — could be a tikz block diagram or an image
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=\textwidth]{sim_pipeline}
+%     \caption{Simulation pipeline from input specification to post-processing.}
+%     \label{fig:sim-pipeline}
+% \end{figure}
 % ============================================================
 %  BACK MATTER
 % ============================================================
