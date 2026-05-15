@@ -49,18 +49,23 @@
 \contentsline {subsubsection}{Weight Reduction}{41}{subsubsection*.63}%
 \contentsline {paragraph}{Load case 1: Bearing loads.}{41}{paragraph*.64}%
 \contentsline {paragraph}{Load case 2: Torque.}{43}{paragraph*.67}%
-\contentsline {subsection}{\numberline {3.2.6}Base Structure}{44}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Passive Joint}{46}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}Aluminium Link Structures}{50}{subsection.3.2.8}%
-\contentsline {subsubsection}{Upper Arm Link}{50}{subsubsection*.78}%
-\contentsline {subsubsection}{Forearm Link}{55}{subsubsection*.93}%
-\contentsline {subsection}{\numberline {3.2.9}Joint End Stop}{60}{subsection.3.2.9}%
-\contentsline {subsection}{\numberline {3.2.10}End--Effector}{62}{subsection.3.2.10}%
-\contentsline {chapter}{\numberline {4}Sensors and Data communication}{63}{chapter.4}%
-\contentsline {subsection}{\numberline {4.0.1}Communication Architecture}{63}{subsection.4.0.1}%
-\contentsline {subsection}{\numberline {4.0.2}CAN Frame Layout}{65}{subsection.4.0.2}%
-\contentsline {subsection}{\numberline {4.0.3}Bus Timing}{65}{subsection.4.0.3}%
-\contentsline {chapter}{References}{67}{chapter*.115}%
-\contentsline {chapter}{Maxon Motor Datasheet}{73}{appendix*.116}%
-\contentsline {chapter}{ESCON2 Compact 60/12 Datasheet}{75}{appendix*.118}%
-\contentsline {chapter}{KBST2 Datasheet}{77}{appendix*.120}%
+\contentsline {paragraph}{FEA verification.}{44}{paragraph*.70}%
+\contentsline {subsection}{\numberline {3.2.6}Base Structure}{46}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Passive Joint}{48}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Aluminium Link Structures}{52}{subsection.3.2.8}%
+\contentsline {subsubsection}{Upper Arm Link}{52}{subsubsection*.83}%
+\contentsline {subsubsection}{Forearm Link}{57}{subsubsection*.98}%
+\contentsline {subsection}{\numberline {3.2.9}Joint End Stop}{62}{subsection.3.2.9}%
+\contentsline {subsection}{\numberline {3.2.10}End--Effector}{64}{subsection.3.2.10}%
+\contentsline {section}{\numberline {3.3}Sensors and Data communication}{65}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Communication Architecture}{65}{subsection.3.3.1}%
+\contentsline {subsubsection}{STM32 Sensor Node}{67}{subsubsection*.119}%
+\contentsline {subsubsection}{Communication schematic}{67}{subsubsection*.120}%
+\contentsline {subsubsection}{Bus Timing}{67}{subsubsection*.121}%
+\contentsline {chapter}{References}{71}{chapter*.126}%
+\contentsline {chapter}{Maxon Motor Datasheet}{77}{appendix*.127}%
+\contentsline {chapter}{ESCON2 Compact 60/12 Datasheet}{79}{appendix*.129}%
+\contentsline {chapter}{Peterson's stress concentration factors}{81}{appendix*.131}%
+\contentsline {chapter}{ADS1256 Datasheet}{83}{appendix*.133}%
+\contentsline {chapter}{AS5048A Datasheet}{85}{appendix*.135}%
+\contentsline {chapter}{AS5048A Capacitance}{87}{appendix*.137}%

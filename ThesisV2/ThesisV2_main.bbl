@@ -92,8 +92,8 @@
       \strng{authorbibnamehash}{45f37f59b8cad3d2b58fbe8db8eb4506}
       \strng{authornamehash}{45f37f59b8cad3d2b58fbe8db8eb4506}
       \strng{authorfullhash}{45f37f59b8cad3d2b58fbe8db8eb4506}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{THE LANCET}
@@ -122,8 +122,8 @@
       \strng{authorbibnamehash}{51aaaaf6868842622bf8784c5dd0ef04}
       \strng{authornamehash}{51aaaaf6868842622bf8784c5dd0ef04}
       \strng{authorfullhash}{51aaaaf6868842622bf8784c5dd0ef04}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -147,8 +147,8 @@
       \strng{authorbibnamehash}{c10e3dd85813f7bc2dcb73905522a05d}
       \strng{authornamehash}{c10e3dd85813f7bc2dcb73905522a05d}
       \strng{authorfullhash}{c10e3dd85813f7bc2dcb73905522a05d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -229,8 +229,8 @@
       \strng{authorbibnamehash}{297a20d00fbb20200965f6812ffc79c0}
       \strng{authornamehash}{53f0f57f7793b42bb3f3406e7a5d811e}
       \strng{authorfullhash}{297a20d00fbb20200965f6812ffc79c0}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Introduction Low back pain (LBP), neck pain (NKP), osteoarthritis (OST) and rheumatoid arthritis (RHE) are among the musculoskeletal (MSK) disorders causing the greatest disability in terms of Years Lived with Disability. The current study aims to analyze the health and economic impact of these MSK disorders in Belgium, providing a summary of morbidity and mortality outcomes from 2013 to 2018, as well as direct and indirect costs from 2013 to 2017. Methods The health burden of LBP, NKP, OST and RHE in Belgium from 2013 to 2018 was summarized in terms of prevalence and disability-adjusted life years (DALY) using data from the Belgian health interview surveys (BHIS), the INTEGO database (Belgian registration network for general practitioners) and the Global Burden of Diseases study 2019. The economic burden included estimates of direct medical costs and indirect costs, measured by cost of work absenteeism. For this purpose, data of the respondents to the BHIS-2013 were linked with the national health insurance data (intermutualistic agency [IMA] database) 2013–2017. Results In 2018, 2.5 million Belgians were affected by at least one MSK disorder. OST represented the disorder with the highest number of cases for both men and women, followed by LBP. In the same year, MSK disorders contributed to a total of 180,746 DALYs for female and 116,063 DALYs for men. LBP appeared to be the largest contributor to the health burden of MSK. Having at least one MSK disorder costed on average 3 billion € in medical expenses and 2 billion € in indirect costs per year, with LBP being the most costly. Conclusion MSK disorders represent a major health and economic burden in Belgium. As their burden will probably continue to increase in the future, acting on the risk factors associated to these disorders is crucial to mitigate both the health and economic burden.}
@@ -306,8 +306,8 @@
       \strng{editorbibnamehash}{4a17cf3c3b7f5b41d41d1508f5625fea}
       \strng{editornamehash}{4a17cf3c3b7f5b41d41d1508f5625fea}
       \strng{editorfullhash}{4a17cf3c3b7f5b41d41d1508f5625fea}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -393,8 +393,8 @@
       \strng{authorbibnamehash}{67380c34aa0f04c5786db62239aa80d1}
       \strng{authornamehash}{67380c34aa0f04c5786db62239aa80d1}
       \strng{authorfullhash}{67380c34aa0f04c5786db62239aa80d1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In today’s business environment, the trend towards more product variety and customization is unbroken. Due to this development, the need of agile and reconfigurable production systems emerged to cope with various products and product families. To design and optimize production systems as well as to choose the optimal product matches, product analysis methods are needed. Indeed, most of the known methods aim to analyze a product or one product family on the physical level. Different product families, however, may differ largely in terms of the number and nature of components. This fact impedes an efficient comparison and choice of appropriate product family combinations for the production system. A new methodology is proposed to analyze existing products in view of their functional and physical architecture. The aim is to cluster these products in new assembly oriented product families for the optimization of existing assembly lines and the creation of future reconfigurable assembly systems. Based on Datum Flow Chain, the physical structure of the products is analyzed. Functional subassemblies are identified, and a functional analysis is performed. Moreover, a hybrid functional and physical architecture graph (HyFPAG) is the output which depicts the similarity between product families by providing design support to both, production system planners and product designers. An illustrative example of a nail-clipper is used to explain the proposed methodology. An industrial case study on two product families of steering columns of thyssenkrupp Presta France is then carried out to give a first industrial evaluation of the proposed approach.}
@@ -449,8 +449,8 @@
       \strng{authorbibnamehash}{4c6515d78583bc617f9db3867202b416}
       \strng{authornamehash}{4c6515d78583bc617f9db3867202b416}
       \strng{authorfullhash}{4c6515d78583bc617f9db3867202b416}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Close interactions with a human operator are an important safety concern for collaborative robot systems. For safety assurance, robot integrators are required to demonstrate that they have taken steps to identify potential hazards, which may be embedded in collaborative tasks, or embedded within the collaborative workspace. Consequently, design safeguards are developed to mitigate unintended contact, which may be hazardous to the human co-worker, while performing cooperative or collaborative tasks. The ISO 15066 standard proposes guidelines, which designers, integrators, and users need to consider when embedding passive and active safeguards on the robot system, or while designing collaborative workspaces. Importantly, the standard premises such safeguards on structured hazard analysis and risk assessment processes. However, from studies in literature, it is often unclear how designers, integrators or users can orient design safeguards to outcomes of hazard analysis and risk assessment. Often it is unclear which steps designers need to follow, or which methods they can use to analyze hazards and assess risks, which may occur when robot systems and human co-worker perform collaborative/cooperative manufacturing tasks. Consequently, verifying the sufficiency of design safeguards to mitigate hazardous interactions in a manufacturing cell is challenging. This article reviews requirements for safety assurance of collaborative robot systems discussed in the recent ISO 15066 standard for collaborative robots and how such safeguards are realized in studies discussed in literature. The review explores gaps and propose a framework based on the ISO 31000 for orienting design safeguards for collaborative robots to outcomes of hazard analysis and risk assessment.}
@@ -508,8 +508,8 @@
       \strng{editorbibnamehash}{0bdecfa7d3574a8d04c99af970a7506e}
       \strng{editornamehash}{0bdecfa7d3574a8d04c99af970a7506e}
       \strng{editorfullhash}{0bdecfa7d3574a8d04c99af970a7506e}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-319-32550-7 978-3-319-32552-1}
@@ -564,8 +564,8 @@
       \strng{authorbibnamehash}{cd322a146f7c91dd5dbd5733de60fb76}
       \strng{authornamehash}{57214750763eedf2832c227e227173c6}
       \strng{authorfullhash}{cd322a146f7c91dd5dbd5733de60fb76}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The research behind this paper arose out of a need to use an open-source system that enables hand guiding of the robot effector using a force sensor. The paper deals with some existing solutions, including the solution based on the open-source framework Robot Operating System (ROS), in which the built-in motion planner MoveIt is used. The proposed concept of a hand-guiding system utilizes the output of the force–torque sensor mounted at the robot effector to obtain the desired motion, which is thereafter used for planning consequential motion trajectories. Some advantages and disadvantages of the built-in planner are discussed, and then the custom motion planning solution is proposed to overcome the identified drawbacks. Our planning algorithm uses polynomial interpolation and is suitable for continuous replanning of the consequential motion trajectories, which is necessary because the output from the sensor changes due to the hand action during robot motion. The resulting system is verified using a virtual robot in the ROS environment, which acts on the real Optoforce force–torque sensor HEX-70-CE-2000N. Furthermore, the workspace and the motion of the robot are restricted to a greater extent to achieve more realistic simulation.}
@@ -627,8 +627,8 @@
       \strng{authorbibnamehash}{2928fe60e31a70f059ee29dadea922ad}
       \strng{authornamehash}{f1ee8d61290d8704560a659227c12dc3}
       \strng{authorfullhash}{2928fe60e31a70f059ee29dadea922ad}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Collaborative robots cooperate with humans to assist them in undertaking simple-tocomplex tasks in several fields, including industry, education, agriculture, healthcare services, security, and space exploration. These robots play a vital role in the revolution of Industry 4.0, which defines new standards of manufacturing and the organization of products in the industry. Incorporating collaborative robots in the workspace improves efficiency, but it also introduces several safety risks. Effective safety measures then become indispensable to ensure safe and robust interaction. This paper presents the review of low-level control methodologies of a collaborative robot to assess the current status of human–robot collaboration over the last decade. First, we discuss the classification of human–robot collaboration, architectures of systems and the complex requirements on control strategies. The most commonly used control approaches were presented and discussed. Several methods of control, reported in industrial applications, are elaborated upon with a prime focus on HR-collaborative assembly operations. Since the physical HRC is a critical control problem for the co-manipulation task, this article identifies key control challenges such as the prediction of human intentions, safety, and human-caused disturbances in motion synchronization; the proposed solutions were analyzed afterwards. The discussion at the end of the paper summarizes the features of the control systems that should be incorporated within the systematic framework to allow the execution of a robotic task from global task planning to low-level control implementation for safe and robust interactions.}
@@ -712,8 +712,8 @@
       \strng{authorbibnamehash}{1aebfc7d8d4d9e5b3cda4d43e71d6af1}
       \strng{authornamehash}{b7eea034900ca38a1bbbafc90fd53ae6}
       \strng{authorfullhash}{1aebfc7d8d4d9e5b3cda4d43e71d6af1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Collaborative robotics possesses the potential to revolutionise industrial automation by offering affordable and accessible solutions with reasonable skill requirements. However, identifying the most valuable and appropriate applications for this technology remains a challenge. This study conducted a comprehensive literature review to analyse the existing collaborative robotics applications, and the results showed that only a limited number of applications can be considered true collaboration, with even fewer classified as intelligent collaboration. The study comprised a survey designed to offer valuable insights to not only enhance the state-of-the-art analysis in the identification of existing challenges in the field of collaborative robotics but also to provide motivation to guide future advancements. By leveraging the survey results, researchers and practitioners will be better equipped to navigate the complex landscape of collaborative robotics and develop innovative solutions to tackle the identified challenges. This study also informs on the latest research and development in the field.}
@@ -749,8 +749,8 @@
       \endverb
     \endentry
     \entry{UR30CollaborativeRobot}{online}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{abstract}{Discover the UR30 collaborative robot from Universal Robots. With up to 35 kg payload and 1300 mm reach, this compact cobot is ideal for palletizing, machine tending, and heavy-duty material handling.}
       \field{langid}{american}
@@ -874,8 +874,8 @@
       \strng{authorbibnamehash}{53ca94df5e32bdd64eb3216d26de1026}
       \strng{authornamehash}{53ca94df5e32bdd64eb3216d26de1026}
       \strng{authorfullhash}{53ca94df5e32bdd64eb3216d26de1026}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Gravity compensation is a well-known technique in robot design to achieve equilibrium throughout the range of motion and as a result to reduce the loads on the actuators. Therefore, it is desirable and commonly implemented in many situations. Various design concepts for gravity compensation are available in the literature. This paper proposes an overview of gravity compensation methods applied in robotics. In order to classify the considered balancing schemes three principal groups are distinguished due to the nature of the compensation force: counterweight, spring or active force developed by an auxiliary actuator. The author believes that such an arrangement of gravity compensation methods allows one to carry out a systematized analysis and provides a comprehensive view on the problem. Particular attention has been given to the coupled Hand-operated Balanced Manipulator (HOBM) and Lightweight Robot (LWR). The aim of such a cooperation is to displace heavy payloads with less powerful robots.}
@@ -891,8 +891,8 @@
       \list{organization}{1}{%
         {3ARM - Tool Balancers \& Manipulators Arms}%
       }
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{abstract}{3ARM® delivers tool balancer arms, articulating arms, and ergonomic lift-assist devices designed for safer, faster, and precise manufacturing tasks.}
       \field{langid}{american}
@@ -912,8 +912,8 @@
       \endverb
     \endentry
     \entry{CataloguesUserManuals}{online}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{Catalogues, User Manuals, Certificates and Further Downloads from {{SUSPA}}}
       \field{urlday}{20}
@@ -955,8 +955,8 @@
       \endverb
     \endentry
     \entry{Cobot2026}{inreference}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{abstract}{A cobot, or collaborative robot, also known as a companion robot, is a robot intended for direct human-robot interaction within a shared space, or where humans and robots are in close proximity. Cobot applications contrast with traditional industrial robot applications in which robots are isolated from human contact or the humans are protected by robotic tech vests. Cobot safety may rely on lightweight construction materials, rounded edges, and inherent limitation of speed and force, or on sensors and software that ensure safe behavior.}
       \field{annotation}{Page Version ID: 1348168033}
@@ -989,8 +989,8 @@
       \list{organization}{1}{%
         {Indeva Group}%
       }
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{abstract}{INDEVA industrial manipulators: a complete range of ergonomic and safe load handling solutions: intelligent devices for handling and pneumatic devices.}
       \field{langid}{american}
@@ -1039,8 +1039,8 @@
       \strng{authorbibnamehash}{d7930255a51feb1bca1ec29d5526c4c0}
       \strng{authornamehash}{d7930255a51feb1bca1ec29d5526c4c0}
       \strng{authorfullhash}{d7930255a51feb1bca1ec29d5526c4c0}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The state-of-the-art in Intelligent Assist Devices (IADs) is reviewed. IADs are computer-controlled tools that enable production workers to lift, move and position payloads quickly, accurately, and safely. Several examples of industrial applications are given, illustrating typical configurations and functionality, including strength amplification and virtual surfaces. The concept of human intent sensing is introduced and discussed, as are IAD safety and control considerations.}
@@ -1111,8 +1111,8 @@
       \strng{authorbibnamehash}{d50891bcea7002d2d62c377362d80433}
       \strng{authornamehash}{98f4237fdddf1daa938d358d749c768c}
       \strng{authorfullhash}{d50891bcea7002d2d62c377362d80433}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{There are two main categories of force control schemes: hybrid position-force control and impedance control. However, the former does not take into account the dynamic interaction between the robot’s end effector and the environment. In contrast, impedance control includes regulation and stabilization of robot motion by creating a mathematical relationship between the interaction forces and the reference trajectories. It involves an energetic pair of a flow and an effort, instead of controlling a single position or a force. A mass-spring-damper impedance filter is generally used for safe interaction purposes. Tuning the parameters of the impedance filter is important and, if an unsuitable strategy is used, this can lead to unstable contact. Humans, however, have exceptionally effective control systems with advanced biological actuators. An individual can manipulate muscle stiffness to comply with the interaction forces. Accordingly, the parameters of the impedance filter should be time varying rather than value constant in order to match human behavior during interaction tasks. Therefore, this paper presents an overview of impedance control strategies including standard and extended control schemes. Standard controllers cover impedance and admittance architectures. Extended control schemes include admittance control with force tracking, variable impedance control, and impedance control of flexible joints. The categories of impedance control and their features and limitations are well introduced. Attention is paid to variable impedance control while considering the possible control schemes, the performance, stability, and the integration of constant compliant elements with the host robot.}
@@ -1347,8 +1347,8 @@
       \strng{authorbibnamehash}{da3b59cabc31c886a043b7c58229f0e2}
       \strng{authornamehash}{da3b59cabc31c886a043b7c58229f0e2}
       \strng{authorfullhash}{da3b59cabc31c886a043b7c58229f0e2}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings 1995 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}}. {{Human Robot Interaction}} and {{Cooperative Robots}}}
@@ -1402,8 +1402,8 @@
       \strng{authorbibnamehash}{cac2e9748e49fbf3fa11a4bf542c9494}
       \strng{authornamehash}{cac2e9748e49fbf3fa11a4bf542c9494}
       \strng{authorfullhash}{cac2e9748e49fbf3fa11a4bf542c9494}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Series Elastic Actuators provide many benefits in force control of robots in unconstrained environments. These benefits include high force fidelity, extremely low impedance, low friction, and good force control bandwidth. Series Elastic Actuators employ a novel mechanical design architecture which goes against the common machine design principal of “stiffer is better”. A compliant element is placed between the gear train and driven load to intentionally reduce the stiffness of the actuator. A position sensor measures the deflection, and the force output is accurately calculated using Hooke’s Law (F=Kx). A control loop then servos the actuator to the desired output force. The resulting actuator has inherent shock tolerance, high force fidelity and extremely low impedance. These characteristics are desirable in many applications including legged robots, exoskeletons for human performance amplification, robotic arms, haptic interfaces, and adaptive suspensions. We describe several variations of Series Elastic Actuators that have been developed using both electric and hydraulic components.}
@@ -1470,8 +1470,8 @@
       \strng{authorbibnamehash}{ac2a2b24986f5a3599ad13028320b8d7}
       \strng{authornamehash}{f603f98201ad243d31f33f996ee4b4e0}
       \strng{authorfullhash}{ac2a2b24986f5a3599ad13028320b8d7}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper proposes a variable impedance control strategy based on the singular perturbation method to address the challenges of achieving accurate impedance characteristics and mitigating stability degradation in two-degree-of-freedom planar SEA-driven robots. By decomposing the system into fast and slow subsystems, we control them separately to improve tracking performance, disturbance rejection, and impedance control. A MATLAB/Simulink model was developed for simulation and compared with a traditional PD controller. The results show that the proposed controller outperforms the PD controller, maintaining position errors under 10\% and impedance errors under 30\% of those seen with the PD controller under external force input. Additionally, experimental validation confirmed the controller’s ability to optimally adjust robot stiffness in response to changes in the user’s limb-end stiffness, supporting the assist-as-needed strategy.}
@@ -1559,8 +1559,8 @@
       \strng{editorbibnamehash}{7448a2a04e3f0d45a59eeaa6104d1126}
       \strng{editornamehash}{7448a2a04e3f0d45a59eeaa6104d1126}
       \strng{editorfullhash}{7448a2a04e3f0d45a59eeaa6104d1126}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in {{Artificial Intelligence}}: {{From Theory}} to {{Practice}}}
@@ -1603,8 +1603,8 @@
       \strng{authorbibnamehash}{fc8563953b182f7ea157b1f7e174c01b}
       \strng{authornamehash}{fc8563953b182f7ea157b1f7e174c01b}
       \strng{authorfullhash}{fc8563953b182f7ea157b1f7e174c01b}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Series {{Elastic Actuators}}}
@@ -1637,8 +1637,8 @@
       \endverb
     \endentry
     \entry{16ParallelKeys}{online}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{title}{16 {{Parallel Keys According}} to {{DIN}} 6892}
       \field{urlday}{8}
@@ -1653,8 +1653,8 @@
       \endverb
     \endentry
     \entry{CNCMachiningTool}{online}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{title}{{{CNC}} Machining in {{Tool}} Steel {{S7}} | {{Manufacturing Materials}} - {{PCBWay}}}
       \field{urlday}{8}
@@ -1672,8 +1672,8 @@
       \list{organization}{1}{%
         {maxon Support}%
       }
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Topic: I need a controller for my motor but I do not know how to select the right one. Solution: maxon offers mainly three different controller product lines: EPOS4Position, Speed, and Current ...}
       \field{day}{2}
@@ -1697,12 +1697,22 @@
       \verb https://support.maxongroup.com/hc/en-us/articles/360015382019-EPOS4-ESCON2-ESCON-What-controller-should-I-select
       \endverb
     \endentry
+    \entry{ESCON2CommunicationGuide}{article}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{{{ESCON2 Communication Guide}}}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/A8QDMPUF/ESCON2 Communication Guide.pdf
+      \endverb
+    \endentry
     \entry{AmsAS5048AHighResolution}{online}{}
       \list{organization}{1}{%
         {ams-osram}%
       }
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{abstract}{The AS5048A is a 14-bit rotary position sensor (previously known as encoder) for absolute angular measurement and with a PWM (=pulse width modulation) output over a full turn of 360° based on contactless magnetic sensor technology. This device fits perfectly for on-axis applications where a simple 2-pole magnet rotates above or below the sensor IC and the zero position can be programmed into the device simply with a SPI command. The absolute magnet angular position is measured with a resolution of 14 bit = 16384 positions per revolution and it is provided as a digital value on the serial interface (SPI).With two decades of magnetic sensor system know-how, we have broad experience in selecting the most suitable magnets. ams experts recommend the following magnet suppliers.}
       \field{langid}{american}
@@ -1722,8 +1732,8 @@
       \endverb
     \endentry
     \entry{AS5048ATS_EK_ABAmsOSRAM}{online}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{title}{{{AS5048A-TS}}\_{{EK}}\_{{AB}} | Ams {{OSRAM Adapter Board Position Sensor Development Kit}} for {{AS5048A Angle Position}} | {{RS}}}
       \field{urlday}{13}
@@ -1738,6 +1748,82 @@
       \endverb
       \verb{url}
       \verb https://benl.rs-online.com/web/p/sensor-development-tools/2018309?cm_mmc=BE-PLA-DS3A-_-google-_-CSS_BENL_NL_Pmax_1224-_--_-2018309&matchtype&gclsrc=aw.ds&gad_source=1&gad_campaignid=22040006570
+      \endverb
+    \endentry
+    \entry{GettingStartedSPI}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Getting Started with {{SPI}} - Stm32mcu}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI
+      \endverb
+      \verb{url}
+      \verb https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI
+      \endverb
+    \endentry
+    \entry{Category6Cable}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Category 6 {{Cable}} - {{7814A}}}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/FH4PYP8Z/7814a.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.belden.com/en/products/Cable/Ethernet-Cable/Category-6-Cable/7814a
+      \endverb
+      \verb{url}
+      \verb https://www.belden.com/en/products/Cable/Ethernet-Cable/Category-6-Cable/7814a
+      \endverb
+    \endentry
+    \entry{AmsAS5048AHighResolutiona}{online}{}
+      \list{organization}{1}{%
+        {ams-osram}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The AS5048A is a 14-bit rotary position sensor (previously known as encoder) for absolute angular measurement and with a PWM (=pulse width modulation) output over a full turn of 360° based on contactless magnetic sensor technology. This device fits perfectly for on-axis applications where a simple 2-pole magnet rotates above or below the sensor IC and the zero position can be programmed into the device simply with a SPI command. The absolute magnet angular position is measured with a resolution of 14 bit = 16384 positions per revolution and it is provided as a digital value on the serial interface (SPI).With two decades of magnetic sensor system know-how, we have broad experience in selecting the most suitable magnets. ams experts recommend the following magnet suppliers.}
+      \field{langid}{american}
+      \field{title}{Ams {{AS5048A High-Resolution Position Sensor Position Sensors}} - Ams-Osram - Ams}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/CAGTQYVC/ams-as5048a-high-resolution-position-sensor.html
+      \endverb
+      \verb{urlraw}
+      \verb https://ams-osram.com/products/sensor-solutions/position-sensors/ams-as5048a-high-resolution-position-sensor
+      \endverb
+      \verb{url}
+      \verb https://ams-osram.com/products/sensor-solutions/position-sensors/ams-as5048a-high-resolution-position-sensor
+      \endverb
+    \endentry
+    \entry{ADS1256DataSheet}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{{ADS1256}} Data Sheet, Product Information and Support | {{TI}}.Com}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ti.com/product/ADS1256
+      \endverb
+      \verb{url}
+      \verb https://www.ti.com/product/ADS1256
       \endverb
     \endentry
     \entry{BLDCmotorenBorstellozeElektromotoren}{online}{}
@@ -1766,26 +1852,36 @@
       \verb /home/oskar/Zotero/storage/IIBQPCJL/ESCON2 Compact 6012 Hardware Reference.pdf
       \endverb
     \endentry
-    \entry{KBST2KBKAntriebstechnik}{online}{}
+    \entry{doi:https://doi.org/10.1002/9780470211106.ch5}{incollection}{}
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Ltd}%
+      }
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{title}{{{KBST2}} | {{KBK Antriebstechnik GmbH}}}
-      \field{urlday}{8}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
+      \field{abstract}{Summary This chapter contains sections titled: Notation Shaft with Keyseat Splined Shaft in Torsion Gear Teeth Press- or Shrink-Fitted Members Bolt and Nut Bolt Head, Turbine-Blade, or Compressor-Blade Fastening (T-Head) Lug Joint Curved Bar Helical Spring Crankshaft Crane Hook U-Shaped Member Angle and Box Sections Cylindrical Pressure Vessel with Torispherical Ends Tubular Joints References Charts}
+      \field{booktitle}{Peterson's Stress Concentration Factors}
+      \field{isbn}{978-0-470-21110-6}
+      \field{title}{Miscellaneous Design Elements}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{401\bibrangedash 456}
+      \range{pages}{56}
+      \verb{doi}
+      \verb 10.1002/9780470211106.ch5
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/9780470211106.ch5
+      \endverb
       \verb{urlraw}
-      \verb https://www.kbk-antriebstechnik.de/en/products/rigid-shaft-couplings/kbst2-1
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/9780470211106.ch5
       \endverb
       \verb{url}
-      \verb https://www.kbk-antriebstechnik.de/en/products/rigid-shaft-couplings/kbst2-1
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/9780470211106.ch5
       \endverb
+      \keyw{curved bar stress concentration,lug joint stress concentration factor,miscellaneous design elements,offshore structures and tubular joints,splined shaft in torsion}
     \endentry
   \enddatalist
-  \missing{as5048a-ds}
-  \missing{escon2-hwref}
-  \missing{waveshare-adda}
 \endrefsection
 \endinput
 

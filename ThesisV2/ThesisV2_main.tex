@@ -945,20 +945,21 @@ Each active joint employs the novel elastic transmission. Two transmission sizes
 
 Two Maxon brushless DC motors are used with the specifications provided in Appendix~\ref{app:MaxonMotorDatasheet}:
 \begin{itemize}
-	\item Nominal (max.~continuous) torque: \SI{221}{\milli\newton\meter}
-	\item Stall torque: \SI{1140}{\milli\newton\meter}
+	\item Nominal (max.~continuous) torque: \SI{0.221}{\newton\meter}
+	\item Stall torque: \SI{1.14}{\newton\meter}
 \end{itemize}
  
-The motor drivers are ESCON2 Compact 60/12 with a maximum continuous output current of 12\,A and peak current capability of 24\,A for durations less than 10\,s as shown in Appendix~\ref{app:ESCON2Datasheet}.The motor stall torque of \SI{1140}{\milli\newton\meter} is achieved at a stall current of 51.4\,A. However, the ESCON2 driver can only provide a maximum peak current of 24\,A for durations less than \SI{10}{\second}. Therefore, the peak torque that can be delivered is limited by the driver current:
+The motor drivers are ESCON2 Compact 60/12 with a maximum continuous output current of 12\,A and peak current capability of 24\,A for durations less than 10\,s as shown in Appendix~\ref{app:ESCON2Datasheet}.The motor stall torque of \SI{1.140}{\newton\meter} is achieved at a stall current of 51.4\,A. However, the ESCON2 driver can only provide a maximum peak current of 24\,A for durations less than \SI{10}{\second}. Therefore, the peak torque that can be delivered is limited by the driver current:
 
 \begin{equation}
-\tau_{\text{motor, peak}} = \tau_{\text{stall}} \cdot \frac{I_{\text{peak}}}{I_{\text{stall}}} = 1140\,\text{mNm} \cdot \frac{24}{51.4} \approx 534\,\text{mNm}
+\tau_{\text{motor, peak}} = \tau_{\text{stall}} \cdot \frac{I_{\text{peak}}}{I_{\text{stall}}} = 1.14\,\text{Nm} \cdot \frac{24}{51.4} \approx 0.534\,\text{Nm}
 \end{equation}
 
 With transmission ratio $r$, this corresponds to a peak output shaft torque of:
 
 \begin{equation}
-\tau_{\text{output, peak}} = \tau_{\text{motor, peak}} \cdot r = 534\,\text{mNm} \cdot 299 \approx 160\,\text{Nm}
+\tau_{\text{output, peak}} = \tau_{\text{motor, peak}} \cdot r = 0.534\,\text{Nm} \cdot 299
+\approx 160\,\text{Nm}
 \end{equation}
 
 At nominal operating conditions, the motors delivers a continuous torque of 221\,mNm at 3.53\,A. With the transmission reduction ratio of $r = 299$ for the shoulder joint, the nominal output shaft torque is:
@@ -967,7 +968,7 @@ At nominal operating conditions, the motors delivers a continuous torque of 221\
 \tau_{\text{output, nominal}} = \tau_{\text{motor, nominal}} \cdot r = 221\,\text{mNm} \cdot 299 \approx 66\,\text{Nm}
 \end{equation}
 
-This nominal torque represents the maximum sustained torque that can be continuously applied without overheating of the motor.
+This nominal torque represents the maximum sustained torque that can be continuously applied without overheating of the motor. Both the nominal and peak motor output torques exceed the \SI{16}{\newton\meter} transmission limit. Safe operation therefore requires software torque limitation, which can be implemented in the configuration of the ESCON2 motor drivers, and in the control loop.
 \subsection{Parallel Key Verification According to DIN 6892}
 \label{subsec:key_verification}
  
@@ -993,7 +994,7 @@ To accelerate the arm from rest, additional torque is required to overcome the m
     J_{\text{arm}} = \sum_{i} m_i \cdot r_i^2 = 1.2 \cdot 0.2^2 + 1.0 \cdot 0.4^2 = 0.048 + 0.160 = \SI{0.208}{\kilogram\metre\squared}
     \label{eq:arm_inertia}
 \end{equation}
- COMMENT: maybe we should say why 5rad/s²? is there some norm or reasoning we can use
+
 The torque transmitted through the coupling is determined by the arm--side inertia and the gravitational load. An angular acceleration of $\alpha = \SI{5}{\radian\per\second\squared}$ is adopted, corresponding to a $90^\circ$ sweep from rest in approximately \SI{0.8}{\second}. The dynamic torque contribution is:
  
 \begin{equation}
@@ -1064,7 +1065,7 @@ According to DIN~6885:1968-08, the standard key for a shaft diameter of $d = \SI
 The equivalent torque accounts for the application factor:
  
 \begin{equation}
-    T_{\text{eq}} = K_A \cdot T_{\text{nom}} = 1.25 \cdot 7320 = \SI{9150}{\newton\milli\metre}
+    T_{\text{eq}} = K_A \cdot T_{\text{nom}} = 1.25 \cdot 7320 = \SI{9.15}{\newton\metre}
     \label{eq:equivalent_torque}
 \end{equation}
  
@@ -1105,7 +1106,7 @@ The permissible values for the key and shaft are listed in Table~\ref{tab:p_zul}
  
 \subsubsection{Shaft Torsion Check}
  
-The keyway causes stress concentration. A torsional stress concentration factor of $K_{ts} = 3.0$ is adopted based on Peterson's stress concentration factors. This check is common to all three cases as it depends only on shaft geometry and material:
+The keyway causes stress concentration. A torsional stress concentration factor of $K_{ts} = 3.0$ is adopted from Peterson's Stress Concentration Factors (see Appendix~\ref{app:peterson}). This check is common to all three cases, as it depends only on the shaft geometry and material:
  
 \begin{equation}
     W_p = \frac{\pi \cdot d^3}{16} = \frac{\pi \cdot 8^3}{16} = \SI{100.5}{\milli\metre\cubed}
@@ -1282,7 +1283,7 @@ A surface was created around the circumference of the shaft where the coupling i
     \label{fig:Shaft_surface}
 \end{figure}
  
-The shaft was fixed at the section where the torque is transmitted to the robot link, as shown in Figure~\ref{fig:Shaft_fixed}. The two keyways on this side are the actual torque transfer features, but since the interest lies in the stress flow through the radius rather than the keyway stress, the fixed boundary is applied to the circumference.
+The shaft was fixed at the section where torque is transmitted to the robot link, as shown in Figure~\ref{fig:Shaft_fixed}. Although the two keyways are the actual torque--transmitting features, the objective of the analysis is to evaluate the stress flow through the fillet radius rather than the keyway stresses. Therefore, the fixed boundary condition was applied to the shaft circumference. Since the boundary condition is located sufficiently far from the abutment fillet, its influence on the fillet stress distribution is negligible.
  
 \begin{figure}[H]
     \centering
@@ -1291,44 +1292,61 @@ The shaft was fixed at the section where the torque is transmitted to the robot 
     \label{fig:Shaft_fixed}
 \end{figure} 
 
-An external torque of \SI{20}{\newton\metre} is applied to this surface, as shown in Figure~\ref{fig:Shaft_torque}. This value was chosen to exceed the equivalent torque $T_{\text{eq}} = \SI{9.15}{\newton\metre}$ from the key calculation by a significant margin.The shaft torsion check from Section~\ref{subsec:key_verification} can be repeated for \SI{20}{\newton\metre}:
+An external torque of \SI{35}{\newton\metre} is applied to this surface, as shown in Figure~\ref{fig:Shaft_torque}. As calculated in Section~\ref{subsec:key_verification}, the upgraded key material allows a maximum transmissible torque of \SI{34.5}{\newton\metre}.
  
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{Shaft-20nm-Photoroom}
-    \caption{\SI{20}{\newton\metre} applied to the shaft surface.}
+    \includegraphics[width=0.8\textwidth]{35nmshaft}
+    \caption{\SI{35}{\newton\metre} applied to the shaft surface.}
     \label{fig:Shaft_torque}
 \end{figure}
- 
-\begin{equation}
-    \tau = \frac{T}{W_p} = \frac{20000}{100.5} = \SI{199}{\mega\pascal}
-    \label{eq:shaft_torsion_20nm}
-\end{equation}
- 
-\begin{equation}
-    S_{\text{torsion}} = \frac{\tau_{\text{allow}}}{\tau} = \frac{1183}{199} = 5.9 \geq 1.5
-    \label{eq:shaft_torsion_sf_20nm}
-\end{equation}
- 
-The analytical torsion check confirms that the shaft material can comfortably withstand \SI{20}{\newton\metre} in pure torsion. The Finite Element Analysis (FEA) study examines whether the stress concentration at the shoulder fillet changes this conclusion.
- 
+  
 \subsubsection{Results}
- 
-The resulting von Mises stress distribution is shown in Figure~\ref{fig:shaft_vm}. The maximum stress of \SI{1030}{\mega\pascal} occurs at the shoulder fillet radius, confirming that this is the critical location on the shaft. Comparing this to the yield strength of the S7 tool steel:
- 
+
+The resulting von Mises stress distribution is shown in Figure~\ref{fig:shaft_vm}. The maximum stress of \SI{1575}{\mega\pascal} occurs at the shoulder fillet radius, confirming that this is the critical location on the shaft.
+
 \begin{equation}
-    S_{\text{shoulder}} = \frac{R_{p0.2}}{\sigma_{\text{vM,max}}} = \frac{2050}{1030} = 2.0 \geq 1.5
+    S_{\text{shoulder}} = \frac{R_{p0.2}}{\sigma_{\text{vM,max}}} = \frac{2050}{1575} = 1.30
     \label{eq:shaft_shoulder_sf}
 \end{equation}
- 
-The safety factor of 2.0 at the shoulder radius exceeds the required minimum of 1.5, confirming that the shaft does not yield at the fillet even under the overstated \SI{20}{\newton\metre} load. The FEA result also illustrates the significant stress concentration effect of the shoulder: the analytical nominal torsional stress at \SI{20}{\newton\metre} is \SI{199}{\mega\pascal}, while the peak von Mises stress at the fillet is \SI{1030}{\mega\pascal}. This underlines the importance of the high yield strength of the S7 tool steel in maintaining safety margins at geometric discontinuities.
- 
+
+The safety factor of 1.30 at the shoulder radius is below the general design target of 1.5. However, this load case represents the absolute upper bound. The \SI{35}{\newton\metre} corresponds to the ultimate transmissible torque of the upgraded 42CrMo4 key connection as calculated in Section~\ref{subsec:key_verification}).
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{shaft_20nm_max-Photoroom}
-    \caption{Von Mises stress distribution under \SI{20}{\newton\metre} torque. Maximum stress of \SI{1030}{\mega\pascal} at the shoulder fillet.}
+    \includegraphics[width=0.8\textwidth]{backgroundremoved_35nm}
+    \caption{Von Mises stress distribution under \SI{35}{\newton\metre} torque. Maximum stress of \SI{1575}{\mega\pascal} at the shoulder fillet.}
     \label{fig:shaft_vm}
 \end{figure}
+
+The keyway stress concentration is again verified at this upper--bound torque:
+
+\begin{equation}
+    W_p = \frac{\pi \cdot d^3}{16} = \frac{\pi \cdot 8^3}{16} = \SI{100.5}{\milli\metre\cubed}
+    \label{eq:polar_modulus}
+\end{equation}
+
+\begin{equation}
+    \tau_{\text{nom}} = \frac{T}{W_p} = \frac{35\,000}{100.5} = \SI{348}{\mega\pascal}
+    \label{eq:torsion_stress}
+\end{equation}
+
+\begin{equation}
+    \tau_{\text{eff}} = K_{ts} \cdot \tau_{\text{nom}} = 3.0 \cdot 348 = \SI{1045}{\mega\pascal}
+    \label{eq:torsion_stress_eff}
+\end{equation}
+
+\begin{equation}
+    \tau_{\text{allow}} = \frac{R_{p0.2}}{\sqrt{3}} = \frac{2050}{1.732} = \SI{1183}{\mega\pascal}
+    \label{eq:torsion_allow}
+\end{equation}
+
+\begin{equation}
+    S_{\text{torsion}} = \frac{\tau_{\text{allow}}}{\tau_{\text{eff}}} = \frac{1183}{1045} = 1.13
+    \label{eq:torsion_sf}
+\end{equation}
+
+The torsion safety factor of 1.13 at the keyway is also below the 1.5 target. The same justification applies: this load level can only be reached with the upgraded 42CrMo4 key installed, and even then represents the key connection's ultimate capacity rather than a design service load. The shaft geometry is therefore adequate for all realistic operating conditions.
 
 \subsection{Design and Analysis of the Joint Fixtures}
 \label{subsec:joint_fixtures}
@@ -1337,14 +1355,14 @@ Since the transmission is rigidly coupled to the joint shaft, precise alignment 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{ShoulderWithLengths}
+    \includegraphics[width=0.5\textwidth]{ShoulderWithLengths}
     \caption{Shoulder fixture with dimensions.}
     \label{fig:shoulder_fixture_dimensions}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{Elbowfixturedimensions}
+    \includegraphics[width=0.5\textwidth]{Elbowfixturedimensions}
     \caption{Elbow fixture with dimensions.}
     \label{fig:elbow_fixture_dimensions}
 \end{figure}
@@ -1364,9 +1382,9 @@ The shoulder and elbow fixtures share the same geometry; the elbow fixture is a 
 
 \subsubsection{Weight Reduction}
 
-The structural integrity of the fixtures was verified using FEA, with a safety factor of~1.25 and longitudinal symmetry imposed as constraints. Since the shoulder and elbow fixtures share the same geometry, only the analysis of the shoulder fixture is presented below; the same method applies to the elbow fixture. The final shape was arrived at through a combination of iterative FEA and design-for-manufacture considerations. For example, fillet radii are unified across the part to allow a single tool pass, and flat clamping surfaces are preserved for CNC fixturing.
+The structural integrity of the fixtures was verified using FEA. The selected material, EN~AW~6061-T6, has a yield strength $R_{p0.2} = \SI{276}{\mega\pascal}$ and a tensile strength $R_m = \SI{310}{\mega\pascal}$. Since the shoulder and elbow fixtures share the same geometry, only the analysis of the shoulder fixture is presented below; the same method applies to the elbow fixture. The final shape was arrived at through a combination of a topolgy study with a minimum static safety factor of 1.25 and longitudinal symmetry, iterative FEA, and design--for--manufacture considerations. For example, fillet radii are unified across the part to allow a single tool pass, and flat clamping surfaces are preserved for CNC fixturing.
 
-Given that the fixture geometry is largely governed by bearing seat and circlip groove requirements rather than structural demand, the resulting stress levels remain well within the material's yield strength under both loading cases. The primary objective of the FEA was therefore not to verify structural integrity but to guide weight reduction: material was iteratively removed from non-critical regions while preserving the bearing seat walls, circlip groove dimensions, and the bearing retainer plate interface.
+Given that the fixture geometry is largely governed by bearing seat and circlip groove requirements rather than structural demand, the resulting stress levels remain well within the material's yield strength under both loading cases. The primary objective of the FEA was therefore not to verify structural integrity but to guide weight reduction: material was iteratively removed from non--critical regions while preserving the bearing seat walls, circlip groove dimensions, and the bearing retainer plate interface.
 
 \paragraph{Load case 1: Bearing loads.}
 A downward force was applied to the bearing surfaces to simulate the static loading imposed by the arm and payload. The total weight of the robotic arm including payload is estimated at approximately \SI{2.5}{\kilogram}, corresponding to approximately \SI{25}{\newton}. A load of \SI{60}{\newton} was applied to the bearing surfaces as shown in Figure~\ref{fig:Applied_forces}, providing a substantial safety margin.
@@ -1378,12 +1396,12 @@ A downward force was applied to the bearing surfaces to simulate the static load
     \label{fig:Applied_forces}
 \end{figure}
 
-Initially, the FEA indicated that a vertical column of material aligned with the applied force would be sufficient. However, in practice the arm is also subject to horizontal forces, and a purely vertical structure would be insufficient in that direction. A forked structure was therefore adopted, extending from the bearing seats outward to the sides of the fixture. This design choice was subsequently validated by FEA, as shown in Figure~\ref{fig:fea_forces}. Although the result suggests that further material removal is possible, this does not account for manufacturability constraints such as the tangential radii connecting the legs and the material required around the through-holes next to the bearing seats.
+Initially, the topology result indicated that a vertical column of material aligned with the applied force would be sufficient. However, in practice the arm is also subject to horizontal forces, and a purely vertical structure would be insufficient in that direction. A forked structure was therefore adopted, extending from the bearing seats outward to the sides of the fixture. This design choice was subsequently evaluated through a topology study, as shown in Figure~\ref{fig:fea_forces}. Although the result suggests that further material removal is possible, this does not account for manufacturability constraints such as the tangential radii connecting the legs and the material required around the through--holes next to the bearing seats.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{FeaForces}
-    \caption{FEA result for the downward bearing load case.}
+    \caption{Topology result for the downward bearing load case.}
     \label{fig:fea_forces}
 \end{figure}
 \newpage
@@ -1397,15 +1415,53 @@ A torque was applied to simulate the load path through the transmission interfac
     \label{fig:Applied_torque}
 \end{figure}
 
-The FEA result, shown in Figure~\ref{fig:fea_torque}, indicates that material around the centering feature can be largely removed. This result is physically unrealisable as it would leave the centering feature unsupported. A support structure was added with manufacturability constraints in mind.
+The topology result, shown in Figure~\ref{fig:fea_torque}, indicates that material around the centering feature can be largely removed. This result is physically unrealisable as it would leave the centering feature unsupported. A support structure was added with manufacturability constraints in mind.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{feaShoulder}
-    \caption{FEA result for the torque load case.}
+    \caption{Topology result for the torque load case.}
     \label{fig:fea_torque}
 \end{figure}
 
+\newpage
+
+\paragraph{FEA verification.}
+
+After the weight--reduced geometry was finalised based on the topology results and manufacturability constraints, a static FEA was performed on the final shape to verify the stress and displacement levels under both load cases.
+
+Under the \SI{60}{\newton} bearing load (Figure~\ref{fig:Applied_forces}), the maximum von Mises stress is \SI{6.08e-3}{\mega\pascal} and the maximum displacement is \SI{9.05e-6}{\milli\metre}, as shown in Figures~\ref{fig:fixture_vm_force} and~\ref{fig:fixture_ures_force} respectively. Under the \SI{35}{\newton\metre} torque (Figure~\ref{fig:Applied_torque}), the maximum von Mises stress is \SI{9.73}{\mega\pascal} and the maximum displacement is \SI{9.92e-3}{\milli\metre}, as shown in Figures~\ref{fig:fixture_vm_torque} and~\ref{fig:fixture_ures_torque} respectively.
+
+In both cases the stresses are negligible compared to the yield strength of \SI{276}{\mega\pascal}, confirming that the fixture geometry is vastly overdesigned from a structural standpoint. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{VonMisesFEA_Fixture}
+    \caption{Von Mises stress distribution under \SI{60}{\newton} bearing load. Maximum stress: \SI{6.08e-3}{\mega\pascal}.}
+    \label{fig:fixture_vm_force}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{uresFixture}
+    \caption{Displacement under \SI{60}{\newton} bearing load. Maximum displacement: \SI{9.05e-6}{\milli\metre}.}
+    \label{fig:fixture_ures_force}
+\end{figure}
+\newpage
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{TorqueVM}
+    \caption{Von Mises stress distribution under \SI{35}{\newton\metre} torque. Maximum stress: \SI{9.73}{\mega\pascal}.}
+    \label{fig:fixture_vm_torque}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Torque_mm}
+    \caption{Displacement under \SI{35}{\newton\metre} torque. Maximum displacement: \SI{9.92e-3}{\milli\metre}.}
+    \label{fig:fixture_ures_torque}
+\end{figure}
 \newpage
 
 \subsection{Base Structure}
@@ -1900,7 +1956,7 @@ The end--effector consists of a cylindrical pen supported by two flanged linear 
     \label{fig:Endeffector_cross_section}
 \end{figure}
 
-\chapter{Sensors and Data communication}
+\section{Sensors and Data communication}
 
 \subsection{Communication Architecture}
 \label{sec:communication-architecture}
@@ -1919,12 +1975,12 @@ All communication is carried out over a single CAN bus operating at \SI{1}{\mega
     \item STM32G474RE sensor node: this microcontroller is the interface between the joint--side sensors and the CAN bus. The node reads two AS5048A magnetic rotary encoders over the Serial Peripheral Interface (SPI) to obtain the joint positions, and two spring--deflection potentiometers through an ADS1256 24--bit analog--to--digital converter (ADC), also connected via SPI. The four sensor measurements are packed into a single 8--byte CAN frame, corresponding to the maximum payload of a standard CAN frame.
 \end{enumerate}
 
-Figure~\ref{fig:can-topology} shows the bus topology, including the \SI{120}{\ohm} termination resistors at both ends of the bus as required by the ESCON2 datasheet.
+Figure~\ref{fig:can-topology} shows an example of a CAN bus topology, including the required \SI{120}{\ohm} termination resistors at both ends of the bus. In this schematic, the third node is replaced by the STM32 sensor node.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{esconschematic}
-    \caption{Example of ESCON CAN bus topology with master and slave nodes. Termination resistors of \SI{120}{\ohm} are placed at both ends of the bus.}
+    \caption{Example of ESCON CAN bus topology with master and slave nodes. Termination resistors of \SI{120}{\ohm} are placed at both ends of the bus from~\cite{ESCON2CommunicationGuide}.}
     \label{fig:can-topology}
 \end{figure}
 
@@ -1937,19 +1993,120 @@ The joint--side angular position is measured using two AS5048A contactless 14--b
 \label{fig:adapterboard}
 \end{figure}
 
-The spring deflection in each transmission is measured by a potentiometer whose output voltage is digitised by an ADS1256 24--bit ADC. However, since potentiometers operate through sliding mechanical contact, they are subject to wear, noise, and drift caused by temperature variation and mechanical degradation. Their long--term suitability for this application has therefore not yet been validated. The AS5048A joint--side position sensors, combined with the motor encoder positions, provide an independent measurement of the spring deflection. This redundancy allows the potentiometer readings to be validated against the encoder--based measurements and makes it possible to characterise potentiometer degradation over time, including temperature effects and wear.
+The spring deflection in each transmission is measured by a potentiometer whose output voltage is an analog signal digitised by an ADS1256 24--bit ADC. However, since potentiometers operate through sliding mechanical contact, they are subject to wear, noise, and drift caused by temperature variation and mechanical degradation. Their long--term suitability for this application has therefore not yet been validated. The AS5048A joint--side position sensors, combined with the motor encoder positions, provide an independent measurement of the spring deflection. This redundancy allows the potentiometer readings to be validated against the encoder--based measurements and makes it possible to characterise potentiometer degradation over time, including temperature effects and wear.
 
 \newpage
 
-\subsection{STM32 Sensor Node}
+\subsubsection{STM32 Sensor Node}
 \label{sec:stm32-sensor-node}
  
-The STM32G474RE reads the joint--side sensors over two separate SPI buses. The two AS5048A encoders share the first bus (SPI1). The ADS1256 ADC is connected to the second bus (SPI2), which operates at up to \SI{1,92}{\mega\hertz}. Two buses are used because of this difference in maximum clock speed.
- 
-The STM32 combines all four readings into a single TPDO: two AS5048A joint positions and two spring-deflection potentiometer readings, each stored as an unsigned 16-bit value. Since the ADS1256 provides a native 24-bit output, the potentiometer measurements are reduced to 16~bits before transmission by discarding the eight least significant bits of the ADC result. This still yields a resolution of approximately \SI{0,0015}{\percent} of full scale, well below the typical linearity tolerance of a mechanical potentiometer (\SI{0,5}{\percent} to \SI{1}{\percent}). This allows all four sensor values to fit within a single 8-byte CAN frame without any meaningful loss of information.
- 
-The TPDO uses a fixed payload structure in which each measurement is assigned to a predefined byte position within the 8-byte CAN frame. Each sensor value occupies two bytes and is transmitted as an unsigned 16-bit integer. The receiver reconstructs the measurements by decoding the payload according to this predefined mapping.
+The two joint--side position sensors and the ADC are connected to the STM32G474RE on a single SPI bus. The two AS5048A position sensors are connected via \SI{50}{\centi\metre} Cat~6 cables, while the Waveshare ADS1256 board is placed directly next to the STM32. The SPI clock frequency is set to \SI{1.33}{\mega\hertz}, resulting from a \SI{170}{\mega\hertz} peripheral clock with a prescaler of 128~\cite{GettingStartedSPI}. This remains within the \SI{1.92}{\mega\hertz} maximum of the ADS1256~(Appendix~\ref{app:ADS1256datasheet}).
 
+Although the AS5048A specifies a maximum SPI clock frequency of up to \SI{10}{\mega\hertz} under a \SI{50}{\pico\farad} load condition (Appendix~\ref{app:AS5048AdatasheetCap}, Appendix~\ref{app:AS5048Adatasheet}), the \SI{50}{\centi\metre} Cat~6 cables introduce additional capacitive loading~\cite{Category6Cable}. This increases the effective load beyond the datasheet reference condition, motivating the use of a more conservative SPI clock frequency.
+
+The STM32G474RE connects to the CAN bus via its integrated FDCAN peripheral, configured in Classical CAN mode to be compatible with the CANopen protocol used by the ESCON2 motor drivers. An external SN65HVD230 CAN transceiver provides the physical CAN bus interface.
+
+\subsubsection{Communication schematic}
+
+\subsubsection{Bus Timing}
+\label{sec:bus-timing}
+
+To verify that the \SI{1}{\kilo\hertz} control rate is achievable, the worst--case bus occupancy per cycle is calculated. A standard CAN data frame consists of the following fields, illustrated in Figure~\ref{fig:can-frame}: Start of Frame (1~bit), Arbitration 
+Field (12~bits), Control Field (6~bits), Data Field (0 to 64~bits), Cyclic Redundancy Check Field (16~bits), Acknowledge Field (2~bits), End of Frame (7~bits), and Intermission field(3~bits). For a detailed description of each field: ESCON2 Communication Guide~\cite{ESCON2CommunicationGuide}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{can_frame}
+    \caption{Standard CAN data frame 
+    format~\cite{ESCON2CommunicationGuide}.}
+    \label{fig:can-frame}
+\end{figure}
+
+The nominal frame length in bits is therefore:
+
+\begin{equation}
+    N_{\text{bits}} = 1 + 12 + 6 + 8 \cdot \text{DLC} + 16 + 2 + 7 
+    + 3 = 47 + 8 \cdot \text{DLC}
+    \label{eq:can-frame-bits}
+\end{equation}
+
+where DLC is the Data Length Code, specifying the number of data bytes in the CAN frame. CAN uses bit stuffing to maintain clock synchronisation between nodes on the bus. Since CAN nodes rely on signal transitions to keep their internal clocks synchronised, multiple bits with the same value could cause the nodes become desynchronised. To prevent this, the transmitter inserts a complementary bit after every five consecutive bits of the same value. In the worst case, this adds one extra bit for every five original bits, resulting in a \SI{20}{\percent} increase. This process is called bit stuffing. The worst--case duration of a frame at \SI{1}{\mega\bit\per\second} is :
+
+\begin{equation}
+    t_{\text{frame}} = \frac{N_{\text{bits}} \times 1{,}2}
+    {\SI{1}{\mega\bit\per\second}}
+    \label{eq:can-frame-time}
+\end{equation}
+
+All data frames are assumed to carry the maximum payload of 8~bytes (DLC~=~8), except for the SYNC frame which carries no data (DLC~=~0). Table~\ref{tab:bus-timing} shows the resulting frame durations, where the frame length is the amount of bytes before bit stuffing.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{l c c c}
+        \toprule
+        Frame & DLC [bytes] & Frame length [bits] & Worst-case duration with bit stuffing included \\
+        \midrule
+        SYNC                & 0 & 47  & $\approx \SI{56}{\micro\second}$ \\
+        ESCON2 \#1 TPDO     & 8 & 111 & $\approx \SI{133}{\micro\second}$ \\
+        ESCON2 \#2 TPDO     & 8 & 111 & $\approx \SI{133}{\micro\second}$ \\
+        STM32 TPDO          & 8 & 111 & $\approx \SI{133}{\micro\second}$ \\
+        ESCON2 \#1 RPDO     & 8 & 111 & $\approx \SI{133}{\micro\second}$ \\
+        ESCON2 \#2 RPDO     & 8 & 111 & $\approx \SI{133}{\micro\second}$ \\
+        \midrule
+        \textbf{Total}      &   &     & $\approx \SI{721}{\micro\second}$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Worst-case CAN bus timing per control cycle at 
+    \SI{1}{\mega\bit\per\second}.}
+    \label{tab:bus-timing}
+\end{table}
+
+Even in this worst case, the total bus occupancy is approximately \SI{721}{\micro\second}, or \SI{72}{\percent} of the \SI{1}{\milli\second} cycle period. 
+
+When multiple nodes attempt to transmit after receiving SYNC, the frame with the lowest COB-ID is transmitted first. A Transmit Process Data Object (TPDO) is a CAN frame sent by a slave node to the master, while a Receive Process Data Object (RPDO) is a CAN frame sent by the master to a slave. Since the ESCON2 TPDOs are configured to have lower COB-IDs than the STM32 TPDO, the two motor driver frames are always transmitted first. This gives the STM32 approximately \SI{322}{\micro\second} (the SYNC frame plus two ESCON2 TPDOs) to complete its SPI sensor acquisition before its own TPDO can be sent on the CAN bus.
+
+The AS5048A needs two 16--bit SPI transactions per read action. The first transmits the read command, and the sensor returns the requested data during the second transaction, as shown in Figure~\ref{fig:as5048a-spi-read}. Reading both AS5048A sensors 
+therefore requires four 16--bit transactions, totalling 64~clock cycles. Between each transaction, three timing constraints must be respected. A minimum time $t_H = \SI{50}{\nano\second}$ from the last clock edge to the chip--select rising edge, a chip--select high time $T_{\text{CSnH}} = \SI{350}{\nano\second}$ between two transmissions, and a setup time $t_L = \SI{350}{\nano\second}$ from the chip--select falling edge to 
+the first clock edge (Appendix~\ref{app:AS5048Adatasheet}). This results in a dead time of \SI{750}{\nano\second} per gap, or approximately \SI{2,25}{\micro\second} for the three gaps between 
+four transactions.
+\newpage
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{send_receiveAS}
+    \caption{AS5048A SPI command/response 
+    sequence~\cite{AmsAS5048AHighResolutiona}.}
+    \label{fig:as5048a-spi-read}
+\end{figure}
+
+For the ADS1256, each channel read consists of an 8--bit RDATA command followed by 24~bits of data, totalling 32~clock cycles per channel. The ADS1256 additionally requires a delay $t_6$ of 50 master clock cycles between the command and the data output, as can be seen in Figure~\ref{fig:ads-timing}.
+
+\begin{equation}
+    t_6 = 50 \cdot \frac{1}{\SI{7,68}{\mega\hertz}} \approx 
+    \SI{6,5}{\micro\second}
+    \label{eq:t6-delay}
+\end{equation}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ads_timing}
+    \caption{ADS1256 sequence~\cite{ADS1256DataSheet}.}
+    \label{fig:ads-timing}
+\end{figure}
+
+The value for $t_6$ can be found in Appendix~\ref{app:ADS1256datasheet}. Since both potentiometer channels are read, this delay occurs twice, adding approximately \SI{13}{\micro\second} of waiting time to the total data acquisition.
+
+The total SPI clock cycles is calculated:
+\begin{equation}
+    N_{\text{SPI}} = \underbrace{4 \cdot 16}_{\text{AS5048A}} + 
+    \underbrace{2 \cdot (8 + 24)}_{\text{ADS1256}} = 128 
+    \text{~clock cycles}
+    \label{eq:spi-clocks}
+\end{equation}
+
+At \SI{1,33}{\mega\hertz} this corresponds to approximately \SI{96}{\micro\second}. The total sensor acquisition time including dead time is approximately \SI{110}{\micro\second}, which is well within 
+the \SI{322}{\micro\second} available before the STM32 TPDO slot on 
+the bus.
 % ============================================================
 %  BACK MATTER
 % ============================================================
@@ -1979,13 +2136,46 @@ The TPDO uses a fixed payload structure in which each measurement is assigned to
     \label{fig:ESCON2_datasheetp9}
 \end{figure}
 
-\chapter{KBST2 Datasheet}
-\label{app:KBST2Datasheet}
+\chapter{Peterson's stress concentration factors}
+\label{app:peterson}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{KBST2}
-    \caption{KBST2 Rigid Shaft Coupling \cite{KBST2KBKAntriebstechnik}.}
-    \label{fig:KBST2RigidShaft}
+    \includegraphics[width=0.8\textwidth]{pearsonKfactor}
+    \caption{Peterson's stress concentration factors for a torsion shaft with a semicircular end keyseat\cite{doi:https://doi.org/10.1002/9780470211106.ch5}.}
+    \label{fig:peterson}
 \end{figure}
+
+
+\chapter{ADS1256 Datasheet}
+\label{app:ADS1256datasheet}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{ADS_timingdatasheet}
+    \caption{ADS1256 datasheet\cite{ADS1256DataSheet}.}
+    \label{fig:ADStiming}
+\end{figure}
+
+\chapter{AS5048A Datasheet}
+\label{app:AS5048Adatasheet}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{AsTiming}
+    \caption{AS5048A datasheet\cite{AmsAS5048AHighResolutiona}.}
+    \label{fig:AStiming}
+\end{figure}
+
+\chapter{AS5048A Capacitance}
+\label{app:AS5048AdatasheetCap}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Astable}
+    \caption{AS5048A capacitance\cite{AmsAS5048AHighResolutiona}.}
+    \label{fig:AScap}
+\end{figure}
+
+
 \end{document}

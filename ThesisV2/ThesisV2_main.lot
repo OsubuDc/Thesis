@@ -9,8 +9,10 @@
 \contentsline {table}{\numberline {3.5}{\ignorespaces Safety factors --- oversized $3 \times 3$\,\si {\milli \metre } 1.4401 key. Required: $S \geq 1.5$.\relax }}{35}{table.caption.49}%
 \contentsline {table}{\numberline {3.6}{\ignorespaces Safety factors --- oversized $3 \times 3$\,\si {\milli \metre } 1.7225 key. Required: $S \geq 1.5$.\relax }}{36}{table.caption.51}%
 \contentsline {table}{\numberline {3.7}{\ignorespaces Comparison of key configurations.\relax }}{36}{table.caption.53}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Worst-case CAN bus timing per control cycle at \SI {1}{\mega \bit \per \second }.\relax }}{68}{table.caption.123}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces CAN frames per control cycle (\SI {1}{\milli \second }).\relax }}{65}{table.caption.114}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

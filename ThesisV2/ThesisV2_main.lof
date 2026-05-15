@@ -26,72 +26,84 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Labeled side--view overview of the testbench\relax }}{30}{figure.caption.33}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Shaft with surface on which an external torque will be applied.\relax }}{37}{figure.caption.55}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Shaft fixed at the section where torque is transmitted to the robot link.\relax }}{37}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces \SI {20}{\newton \metre } applied to the shaft surface.\relax }}{37}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Von Mises stress distribution under \SI {20}{\newton \metre } torque. Maximum stress of \SI {1030}{\mega \pascal } at the shoulder fillet.\relax }}{38}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \SI {35}{\newton \metre } applied to the shaft surface.\relax }}{38}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Von Mises stress distribution under \SI {35}{\newton \metre } torque. Maximum stress of \SI {1575}{\mega \pascal } at the shoulder fillet.\relax }}{38}{figure.caption.59}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Shoulder fixture with dimensions.\relax }}{39}{figure.caption.60}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Elbow fixture with dimensions.\relax }}{39}{figure.caption.61}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Cross-section of the shoulder fixture (green). From left to right: the KBK KBST2 size~8 coupling, the custom bearing retainer plate (blue), and the two bearings.\relax }}{40}{figure.caption.62}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces \SI {60}{\newton } applied downward on the bearing surfaces.\relax }}{41}{figure.caption.65}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces FEA result for the downward bearing load case.\relax }}{42}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Topology result for the downward bearing load case.\relax }}{42}{figure.caption.66}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Annular friction surface on the shoulder fixture to which the torque is applied. Note that in this figure material has already been removed.\relax }}{43}{figure.caption.68}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces FEA result for the torque load case.\relax }}{43}{figure.caption.69}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Stainless steel base construction with overall dimensions.\relax }}{44}{figure.caption.70}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Cross section of the base structure. The red cross--shaped bracket connects the top and bottom halves.\relax }}{45}{figure.caption.71}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces View from the $zy$-plane. Bent brackets, shown in red, support the passive joint.\relax }}{45}{figure.caption.72}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Bottom view of base structure, showing the four holes available for mounting the base to a heavy plate or workbench.\relax }}{46}{figure.caption.73}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Cross--section of the passive joint. The purple volume represents a mock transmission included to verify that sufficient space remains for future implementation. The blue part is a custom bearing retainer plate that constrains the bearing axially. The conical shaft with conical adapter ring supports the weight of the robotic arm. The flanged coupling (black) is bolted to the mounting plate on which the shoulder fixture sits, and is connected to the shaft by a parallel key. Two set screws prevent accidental upward displacement of the flanged coupling.\relax }}{47}{figure.caption.74}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Loading configuration and dimensions for the passive joint shaft FEA. Fixed supports are applied at the bearing surfaces.\relax }}{48}{figure.caption.75}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Von~Mises stress distribution on the passive joint shaft under conservative loading (\SI {24}{\newton } at \SI {0,2}{\metre } and \SI {20}{\newton } at \SI {0,4}{\metre }). Peak stress: \SI {84,5}{\mega \pascal }.\relax }}{48}{figure.caption.76}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Top--down view of the base structure showing the six ball rollers that support the rotating platform.\relax }}{49}{figure.caption.77}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Single--body model of the upper arm link used for the topology study, combining the two nested U--profiles and the end flange into one part.\relax }}{50}{figure.caption.79}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Side view of the upper arm link showing the applied forces for the topology study.\relax }}{51}{figure.caption.80}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces End--effector side of the upper arm link showing the applied payload force.\relax }}{51}{figure.caption.81}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Top view upper arm: topology result.\relax }}{52}{figure.caption.82}%
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Top view upper arm: applied material removal.\relax }}{52}{figure.caption.82}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Side view upper arm: topology result.\relax }}{52}{figure.caption.83}%
-\contentsline {figure}{\numberline {3.29}{\ignorespaces Side view upper arm: applied material removal.\relax }}{52}{figure.caption.83}%
-\contentsline {figure}{\numberline {3.30}{\ignorespaces Opposite side upper arm: topology result.\relax }}{52}{figure.caption.84}%
-\contentsline {figure}{\numberline {3.31}{\ignorespaces Opposite side upper arm: applied material removal.\relax }}{52}{figure.caption.84}%
-\contentsline {figure}{\numberline {3.32}{\ignorespaces Underside upper arm: topology result.\relax }}{52}{figure.caption.85}%
-\contentsline {figure}{\numberline {3.33}{\ignorespaces Underside upper arm: applied material removal.\relax }}{52}{figure.caption.85}%
-\contentsline {figure}{\numberline {3.34}{\ignorespaces Von~Mises stress distribution upper arm: side view.\relax }}{53}{figure.caption.86}%
-\contentsline {figure}{\numberline {3.35}{\ignorespaces Von~Mises stress distribution upper arm: top view.\relax }}{53}{figure.caption.87}%
-\contentsline {figure}{\numberline {3.36}{\ignorespaces Von~Mises stress distribution upper arm: opposite side view.\relax }}{53}{figure.caption.88}%
-\contentsline {figure}{\numberline {3.37}{\ignorespaces Displacement distribution of the upper arm link under the applied loading. Maximum displacement: \SI {9,4e-2}{\milli \metre }.\relax }}{54}{figure.caption.89}%
-\contentsline {figure}{\numberline {3.38}{\ignorespaces Final design upper arm: isometric view.\relax }}{54}{figure.caption.90}%
-\contentsline {figure}{\numberline {3.39}{\ignorespaces Final design upper arm: top view.\relax }}{54}{figure.caption.90}%
-\contentsline {figure}{\numberline {3.40}{\ignorespaces Final design upper arm: opposite side view.\relax }}{54}{figure.caption.91}%
-\contentsline {figure}{\numberline {3.41}{\ignorespaces Final design upper arm: side view.\relax }}{54}{figure.caption.91}%
-\contentsline {figure}{\numberline {3.42}{\ignorespaces Final design upper arm: inner U--profile.\relax }}{55}{figure.caption.92}%
-\contentsline {figure}{\numberline {3.43}{\ignorespaces Flange plate connecting the upper arm link to the joint fixture.\relax }}{55}{figure.caption.92}%
-\contentsline {figure}{\numberline {3.44}{\ignorespaces Single--body model of the forearm link used for the topology study.\relax }}{55}{figure.caption.94}%
-\contentsline {figure}{\numberline {3.45}{\ignorespaces Applied force for the forearm link topology study.\relax }}{56}{figure.caption.95}%
-\contentsline {figure}{\numberline {3.46}{\ignorespaces Side view forearm: topology result.\relax }}{56}{figure.caption.96}%
-\contentsline {figure}{\numberline {3.47}{\ignorespaces Side view forearm: applied material removal.\relax }}{56}{figure.caption.96}%
-\contentsline {figure}{\numberline {3.48}{\ignorespaces Top view forearm: topology result.\relax }}{56}{figure.caption.97}%
-\contentsline {figure}{\numberline {3.49}{\ignorespaces Top view forearm: applied material removal.\relax }}{56}{figure.caption.97}%
-\contentsline {figure}{\numberline {3.50}{\ignorespaces Underside forearm: topology result.\relax }}{56}{figure.caption.98}%
-\contentsline {figure}{\numberline {3.51}{\ignorespaces Underside forearm: applied material removal.\relax }}{56}{figure.caption.98}%
-\contentsline {figure}{\numberline {3.52}{\ignorespaces Horizontal force applied at the end--effector mounting point.\relax }}{57}{figure.caption.99}%
-\contentsline {figure}{\numberline {3.53}{\ignorespaces Von~Mises stress distribution of the forearm link.\relax }}{57}{figure.caption.100}%
-\contentsline {figure}{\numberline {3.54}{\ignorespaces Side view of displacement of the forearm link. Maximum displacement: \SI {3,1e-1}{\milli \metre }.\relax }}{58}{figure.caption.101}%
-\contentsline {figure}{\numberline {3.55}{\ignorespaces Front view of displacement of the forearm link.\relax }}{58}{figure.caption.102}%
-\contentsline {figure}{\numberline {3.56}{\ignorespaces Top view of an incorrectly manufactured part: cutouts extending into the bend zone cause deformation during bending.\relax }}{58}{figure.caption.103}%
-\contentsline {figure}{\numberline {3.57}{\ignorespaces Side view of the same incorrectly manufactured part, showing the deformed bend line.\relax }}{59}{figure.caption.104}%
-\contentsline {figure}{\numberline {3.58}{\ignorespaces Correctly manufactured part with cutouts placed outside the bend zone.\relax }}{59}{figure.caption.105}%
-\contentsline {figure}{\numberline {3.59}{\ignorespaces Final forearm design: side view.\relax }}{59}{figure.caption.106}%
-\contentsline {figure}{\numberline {3.60}{\ignorespaces Final forearm design: top view.\relax }}{59}{figure.caption.106}%
-\contentsline {figure}{\numberline {3.61}{\ignorespaces Final forearm design: inner U--profile.\relax }}{59}{figure.caption.107}%
-\contentsline {figure}{\numberline {3.62}{\ignorespaces Side view of the mechanical end stop at the elbow joint.\relax }}{60}{figure.caption.108}%
-\contentsline {figure}{\numberline {3.63}{\ignorespaces Top view of the mechanical end stop showing the slotted mounting holes for position adjustment.\relax }}{61}{figure.caption.109}%
-\contentsline {figure}{\numberline {3.64}{\ignorespaces Overview of the end--effector with the weight platform mounted.\relax }}{62}{figure.caption.110}%
-\contentsline {figure}{\numberline {3.65}{\ignorespaces Cross--section of the end--effector showing the pen, flanged linear bearings, and 3D--printed guides.\relax }}{62}{figure.caption.111}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Topology result for the torque load case.\relax }}{43}{figure.caption.69}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Von Mises stress distribution under \SI {60}{\newton } bearing load. Maximum stress: \SI {6.08e-3}{\mega \pascal }.\relax }}{44}{figure.caption.71}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Displacement under \SI {60}{\newton } bearing load. Maximum displacement: \SI {9.05e-6}{\milli \metre }.\relax }}{44}{figure.caption.72}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Von Mises stress distribution under \SI {35}{\newton \metre } torque. Maximum stress: \SI {9.73}{\mega \pascal }.\relax }}{45}{figure.caption.73}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Displacement under \SI {35}{\newton \metre } torque. Maximum displacement: \SI {9.92e-3}{\milli \metre }.\relax }}{45}{figure.caption.74}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Stainless steel base construction with overall dimensions.\relax }}{46}{figure.caption.75}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Cross section of the base structure. The red cross--shaped bracket connects the top and bottom halves.\relax }}{47}{figure.caption.76}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces View from the $zy$-plane. Bent brackets, shown in red, support the passive joint.\relax }}{47}{figure.caption.77}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Bottom view of base structure, showing the four holes available for mounting the base to a heavy plate or workbench.\relax }}{48}{figure.caption.78}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Cross--section of the passive joint. The purple volume represents a mock transmission included to verify that sufficient space remains for future implementation. The blue part is a custom bearing retainer plate that constrains the bearing axially. The conical shaft with conical adapter ring supports the weight of the robotic arm. The flanged coupling (black) is bolted to the mounting plate on which the shoulder fixture sits, and is connected to the shaft by a parallel key. Two set screws prevent accidental upward displacement of the flanged coupling.\relax }}{49}{figure.caption.79}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Loading configuration and dimensions for the passive joint shaft FEA. Fixed supports are applied at the bearing surfaces.\relax }}{50}{figure.caption.80}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Von~Mises stress distribution on the passive joint shaft under conservative loading (\SI {24}{\newton } at \SI {0,2}{\metre } and \SI {20}{\newton } at \SI {0,4}{\metre }). Peak stress: \SI {84,5}{\mega \pascal }.\relax }}{50}{figure.caption.81}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Top--down view of the base structure showing the six ball rollers that support the rotating platform.\relax }}{51}{figure.caption.82}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Single--body model of the upper arm link used for the topology study, combining the two nested U--profiles and the end flange into one part.\relax }}{52}{figure.caption.84}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Side view of the upper arm link showing the applied forces for the topology study.\relax }}{53}{figure.caption.85}%
+\contentsline {figure}{\numberline {3.29}{\ignorespaces End--effector side of the upper arm link showing the applied payload force.\relax }}{53}{figure.caption.86}%
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Top view upper arm: topology result.\relax }}{54}{figure.caption.87}%
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Top view upper arm: applied material removal.\relax }}{54}{figure.caption.87}%
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Side view upper arm: topology result.\relax }}{54}{figure.caption.88}%
+\contentsline {figure}{\numberline {3.33}{\ignorespaces Side view upper arm: applied material removal.\relax }}{54}{figure.caption.88}%
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Opposite side upper arm: topology result.\relax }}{54}{figure.caption.89}%
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Opposite side upper arm: applied material removal.\relax }}{54}{figure.caption.89}%
+\contentsline {figure}{\numberline {3.36}{\ignorespaces Underside upper arm: topology result.\relax }}{54}{figure.caption.90}%
+\contentsline {figure}{\numberline {3.37}{\ignorespaces Underside upper arm: applied material removal.\relax }}{54}{figure.caption.90}%
+\contentsline {figure}{\numberline {3.38}{\ignorespaces Von~Mises stress distribution upper arm: side view.\relax }}{55}{figure.caption.91}%
+\contentsline {figure}{\numberline {3.39}{\ignorespaces Von~Mises stress distribution upper arm: top view.\relax }}{55}{figure.caption.92}%
+\contentsline {figure}{\numberline {3.40}{\ignorespaces Von~Mises stress distribution upper arm: opposite side view.\relax }}{55}{figure.caption.93}%
+\contentsline {figure}{\numberline {3.41}{\ignorespaces Displacement distribution of the upper arm link under the applied loading. Maximum displacement: \SI {9,4e-2}{\milli \metre }.\relax }}{56}{figure.caption.94}%
+\contentsline {figure}{\numberline {3.42}{\ignorespaces Final design upper arm: isometric view.\relax }}{56}{figure.caption.95}%
+\contentsline {figure}{\numberline {3.43}{\ignorespaces Final design upper arm: top view.\relax }}{56}{figure.caption.95}%
+\contentsline {figure}{\numberline {3.44}{\ignorespaces Final design upper arm: opposite side view.\relax }}{56}{figure.caption.96}%
+\contentsline {figure}{\numberline {3.45}{\ignorespaces Final design upper arm: side view.\relax }}{56}{figure.caption.96}%
+\contentsline {figure}{\numberline {3.46}{\ignorespaces Final design upper arm: inner U--profile.\relax }}{57}{figure.caption.97}%
+\contentsline {figure}{\numberline {3.47}{\ignorespaces Flange plate connecting the upper arm link to the joint fixture.\relax }}{57}{figure.caption.97}%
+\contentsline {figure}{\numberline {3.48}{\ignorespaces Single--body model of the forearm link used for the topology study.\relax }}{57}{figure.caption.99}%
+\contentsline {figure}{\numberline {3.49}{\ignorespaces Applied force for the forearm link topology study.\relax }}{58}{figure.caption.100}%
+\contentsline {figure}{\numberline {3.50}{\ignorespaces Side view forearm: topology result.\relax }}{58}{figure.caption.101}%
+\contentsline {figure}{\numberline {3.51}{\ignorespaces Side view forearm: applied material removal.\relax }}{58}{figure.caption.101}%
+\contentsline {figure}{\numberline {3.52}{\ignorespaces Top view forearm: topology result.\relax }}{58}{figure.caption.102}%
+\contentsline {figure}{\numberline {3.53}{\ignorespaces Top view forearm: applied material removal.\relax }}{58}{figure.caption.102}%
+\contentsline {figure}{\numberline {3.54}{\ignorespaces Underside forearm: topology result.\relax }}{58}{figure.caption.103}%
+\contentsline {figure}{\numberline {3.55}{\ignorespaces Underside forearm: applied material removal.\relax }}{58}{figure.caption.103}%
+\contentsline {figure}{\numberline {3.56}{\ignorespaces Horizontal force applied at the end--effector mounting point.\relax }}{59}{figure.caption.104}%
+\contentsline {figure}{\numberline {3.57}{\ignorespaces Von~Mises stress distribution of the forearm link.\relax }}{59}{figure.caption.105}%
+\contentsline {figure}{\numberline {3.58}{\ignorespaces Side view of displacement of the forearm link. Maximum displacement: \SI {3,1e-1}{\milli \metre }.\relax }}{60}{figure.caption.106}%
+\contentsline {figure}{\numberline {3.59}{\ignorespaces Front view of displacement of the forearm link.\relax }}{60}{figure.caption.107}%
+\contentsline {figure}{\numberline {3.60}{\ignorespaces Top view of an incorrectly manufactured part: cutouts extending into the bend zone cause deformation during bending.\relax }}{60}{figure.caption.108}%
+\contentsline {figure}{\numberline {3.61}{\ignorespaces Side view of the same incorrectly manufactured part, showing the deformed bend line.\relax }}{61}{figure.caption.109}%
+\contentsline {figure}{\numberline {3.62}{\ignorespaces Correctly manufactured part with cutouts placed outside the bend zone.\relax }}{61}{figure.caption.110}%
+\contentsline {figure}{\numberline {3.63}{\ignorespaces Final forearm design: side view.\relax }}{61}{figure.caption.111}%
+\contentsline {figure}{\numberline {3.64}{\ignorespaces Final forearm design: top view.\relax }}{61}{figure.caption.111}%
+\contentsline {figure}{\numberline {3.65}{\ignorespaces Final forearm design: inner U--profile.\relax }}{61}{figure.caption.112}%
+\contentsline {figure}{\numberline {3.66}{\ignorespaces Side view of the mechanical end stop at the elbow joint.\relax }}{62}{figure.caption.113}%
+\contentsline {figure}{\numberline {3.67}{\ignorespaces Top view of the mechanical end stop showing the slotted mounting holes for position adjustment.\relax }}{63}{figure.caption.114}%
+\contentsline {figure}{\numberline {3.68}{\ignorespaces Overview of the end--effector with the weight platform mounted.\relax }}{64}{figure.caption.115}%
+\contentsline {figure}{\numberline {3.69}{\ignorespaces Cross--section of the end--effector showing the pen, flanged linear bearings, and 3D--printed guides.\relax }}{64}{figure.caption.116}%
+\contentsline {figure}{\numberline {3.70}{\ignorespaces Example of ESCON CAN bus topology with master and slave nodes. Termination resistors of \SI {120}{\ohm } are placed at both ends of the bus from~\blx@tocontentsinit {0}\cite {ESCON2CommunicationGuide}.\relax }}{66}{figure.caption.117}%
+\contentsline {figure}{\numberline {3.71}{\ignorespaces The AS5048A adapter board used for joint-side position sensing~\blx@tocontentsinit {0}\cite {AS5048ATS_EK_ABAmsOSRAM}.\relax }}{66}{figure.caption.118}%
+\contentsline {figure}{\numberline {3.72}{\ignorespaces Standard CAN data frame format~\blx@tocontentsinit {0}\cite {ESCON2CommunicationGuide}.\relax }}{67}{figure.caption.122}%
+\contentsline {figure}{\numberline {3.73}{\ignorespaces AS5048A SPI command/response sequence~\blx@tocontentsinit {0}\cite {AmsAS5048AHighResolutiona}.\relax }}{69}{figure.caption.124}%
+\contentsline {figure}{\numberline {3.74}{\ignorespaces ADS1256 sequence~\blx@tocontentsinit {0}\cite {ADS1256DataSheet}.\relax }}{69}{figure.caption.125}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of ESCON CAN bus topology with master and slave nodes. Termination resistors of \SI {120}{\ohm } are placed at both ends of the bus.\relax }}{64}{figure.caption.112}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The AS5048A adapter board used for joint-side position sensing~\blx@tocontentsinit {0}\cite {AS5048ATS_EK_ABAmsOSRAM}.\relax }}{64}{figure.caption.113}%
+\contentsline {figure}{\numberline {75}{\ignorespaces Maxon Brushless DC Motor \blx@tocontentsinit {0}\cite {BLDCmotorenBorstellozeElektromotoren}.\relax }}{78}{figure.caption.128}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3}{\ignorespaces Maxon Brushless DC Motor \blx@tocontentsinit {0}\cite {BLDCmotorenBorstellozeElektromotoren}.\relax }}{74}{figure.caption.117}%
+\contentsline {figure}{\numberline {76}{\ignorespaces Technical data ESCON2 Compact 60/12 \blx@tocontentsinit {0}\cite {ESCON2Compact60}.\relax }}{79}{figure.caption.130}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4}{\ignorespaces Technical data ESCON2 Compact 60/12 \blx@tocontentsinit {0}\cite {ESCON2Compact60}.\relax }}{75}{figure.caption.119}%
+\contentsline {figure}{\numberline {77}{\ignorespaces Peterson's stress concentration factors for a torsion shaft with a semicircular end keyseat\blx@tocontentsinit {0}\cite {doi:https://doi.org/10.1002/9780470211106.ch5}.\relax }}{82}{figure.caption.132}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5}{\ignorespaces KBST2 Rigid Shaft Coupling \blx@tocontentsinit {0}\cite {KBST2KBKAntriebstechnik}.\relax }}{78}{figure.caption.121}%
+\contentsline {figure}{\numberline {78}{\ignorespaces ADS1256 datasheet\blx@tocontentsinit {0}\cite {ADS1256DataSheet}.\relax }}{83}{figure.caption.134}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {79}{\ignorespaces AS5048A datasheet\blx@tocontentsinit {0}\cite {AmsAS5048AHighResolutiona}.\relax }}{85}{figure.caption.136}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {80}{\ignorespaces AS5048A capacitance\blx@tocontentsinit {0}\cite {AmsAS5048AHighResolutiona}.\relax }}{87}{figure.caption.138}%
