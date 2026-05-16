@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'ThesisV2_main.blg'
-[68] biber:340> INFO - === vr mei 15, 2026, 17:59:34
-[80] Biber.pm:418> INFO - Reading 'ThesisV2_main.bcf'
-[160] Biber.pm:972> INFO - Found 48 citekeys in bib section 0
-[172] Biber.pm:4383> INFO - Processing section 0
-[181] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
-[190] bibtex.pm:1713> INFO - LaTeX decoding ...
-[305] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
-[523] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[523] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[523] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[523] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[547] bbl.pm:654> INFO - Writing 'ThesisV2_main.bbl' with encoding 'UTF-8'
-[569] bbl.pm:757> INFO - Output to ThesisV2_main.bbl
-[569] Biber.pm:130> WARN - ISBN '978-3-319-32550-7 978-3-319-32552-1' in entry 'sicilianoSpringerHandbookRobotics2016a' is invalid - run biber with '--validate_datamodel' for details.
-[569] Biber.pm:130> WARN - ISBN '978-3-319-60041-3 978-3-319-60042-0' in entry 'yuLearningElasticitySeriesElastic2017' is invalid - run biber with '--validate_datamodel' for details.
-[569] Biber.pm:132> INFO - WARNINGS: 2
+[94] biber:340> INFO - === za mei 16, 2026, 14:04:28
+[109] Biber.pm:418> INFO - Reading 'ThesisV2_main.bcf'
+[259] Biber.pm:972> INFO - Found 52 citekeys in bib section 0
+[272] Biber.pm:4383> INFO - Processing section 0
+[284] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[296] bibtex.pm:1713> INFO - LaTeX decoding ...
+[462] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[787] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[787] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[787] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[787] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[821] bbl.pm:654> INFO - Writing 'ThesisV2_main.bbl' with encoding 'UTF-8'
+[854] bbl.pm:757> INFO - Output to ThesisV2_main.bbl
+[854] Biber.pm:130> WARN - ISBN '978-3-319-32550-7 978-3-319-32552-1' in entry 'sicilianoSpringerHandbookRobotics2016a' is invalid - run biber with '--validate_datamodel' for details.
+[854] Biber.pm:130> WARN - ISBN '978-3-319-60041-3 978-3-319-60042-0' in entry 'yuLearningElasticitySeriesElastic2017' is invalid - run biber with '--validate_datamodel' for details.
+[854] Biber.pm:132> INFO - WARNINGS: 2

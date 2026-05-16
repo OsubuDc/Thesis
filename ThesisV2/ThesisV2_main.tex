@@ -2113,11 +2113,9 @@ the bus.
 \newpage
 
 \section{Simulation Environment}
-A simulation environment was developed in ROS~2 for two purposes. First, it allows control algorithms to be tested with full visualisation. Secondly, it provides insight into system behaviour that proved valuable during the early design phase, particularly for identifying and tuning soft joint limits.
+A simulation environment was developed in ROS~2 for two purposes. First, it allows control algorithms to be tested with full visualisation. Secondly, it provides insight into system behaviour that proved valuable during the early design phase, particularly for identifying the need for soft joint limits.
 
 The simulator takes a URDF robot description and trajectory waypoints which are specified via YAML files. YAML configuration files allow the user to easily and quickly change parameters in the code. This simulation uses robot control based on inverse dynamics as is explained in Section~\ref{subsec:inverse-dynamics}. Robot state data such as joint positions, velocities, accelerations, and torques are exported in CSV format, which can be used for plotting and post--processing.
-
-The simulation currently uses an inverse dynamics controller to verify the correct functioning of the framework. The inverse dynamics function can be replaced with impedance control, admittance control, or any other control law without affecting the surrounding infrastructure. The URDF loading, YAML trajectory parsing, Docker environment, ROS~2 communication, RViz visualisation, and CSV data logging all remain unchanged.
 
 \subsection{Inverse Dynamics Control}
 \label{subsec:inverse-dynamics}
@@ -2179,29 +2177,60 @@ where $q_i$ is the current joint angle, $\dot{q}_i$ is the joint angular velocit
 
 The damping term is applied only when the joint moves further into the limit ($\dot{q}_i < 0$ at the lower limit, $\dot{q}_i > 0$ at the upper limit). When the joint moves away from the limit, the damper does not generate a torque, allowing the joint to leave the soft zone. This one--directional damping prevents the endstop from trapping the joint in the limit boundary.
 
+\subsection{Software Architecture}
+\label{subsec:sim-architecture}
+
+The simulation is built on ROS~2 (Robot Operating System~2), an open--source framework for robotics that provides standardised communication between software components through a publish--subscribe messaging system~\cite{ROSHome}.
+
+The full software environment, which includes ROS~2, the Pinocchio rigid--body dynamics library~\cite{Pinocchio}, and all dependencies are packaged in a Docker container. Docker is free to use software that packages an application together with its complete environment into a portable image~\cite{DockerAcceleratedContainer}. This eliminates dependency conflicts and ensures that the simulation can be reproduced on any computer within minutes by building and running the provided Docker image.
+
+Visualisation is provided by RViz, the standard visualisation tool included with ROS~2. RViz subscribes to the joint--states topic published by the simulation node and renders the robot model based on its URDF description. This allows the user to observe the arm's motion and trajectory tracking without additional post--processing of state data.
+
 \subsection{Simulation Pipeline}\label{subsec:sim-pipeline}
 
-Figure~\ref{fig:sim-pipeline} illustrates the complete simulation pipeline from input specification to post-processing. The process is structured as follows:
+The simulation currently uses an inverse dynamics controller to verify the correct functioning of the framework. However, the inverse dynamics function can be replaced with impedance control, admittance control, or any other control law without affecting the surrounding infrastructure. The URDF loading, YAML trajectory parsing, Docker environment, ROS~2 communication, RViz visualisation, and CSV data logging all remain unchanged.
 
-\begin{enumerate}[nosep]
-    \item \textbf{Input specification.} The robot geometry and inertial properties are defined in a URDF file exported from SolidWorks. Desired end-effector waypoints and feedforward velocities are specified in a YAML configuration file, decoupling the trajectory definition from the controller code.
+The simulation process is structured as follows:
+
+\begin{enumerate}
+    \item \textbf{Input specification.} \\
+    The robot geometry and inertial properties are defined in a URDF file, which can be exported from SolidWorks. Desired end--effector waypoints and velocities are specified in a YAML configuration file. This allows different trajectories to be loaded quickly without manually modifying values in the C++ source code, reducing the likelihood of user errors.
+
+    \item \textbf{Simulation node.} \\
+    The simulation is implemented as a single C++ ROS~2 node that loads the URDF model into Pinocchio and parses the YAML waypoints at startup. The simulation loop runs at \SI{1}{\kilo\hertz}, consistent with the control rates widely adopted in collaborative robotics hardware and with the requirements of ISO~10218~\cite{skerljBridgingSimtoRealGap2026}. State integration is performed using a fourth--order Runge-Kutta (RK4) scheme rather than explicit Euler integration. While both methods perform comparably for static setpoint regulation, Fiore and Natale~\cite{fioreDiscretetimeClosedloopInverse2021} show that RK4 produces significantly lower tracking error when following time--varying references, and retains numerical stability over a larger range of controller gains. Since the simulation involves trajectory tracking through sequences of waypoints with nonlinear dynamics, RK4 was selected.
+
+At each timestep ($\Delta t = \SI{1}{\milli\second}$), the controller computes the control torques using the inverse dynamics control strategy described previously. Joint damping is applied to simulate frictional losses in the mechanical joint assemblies, while soft endstop torques are introduced when joints approach their mechanical limits (Section~\ref{subsec:soft-limits}). The system state is then integrated forward using RK4 integration, after which the resulting joint positions are published to the joint--states ROS~2 topic.
     
-    \item \textbf{Containerised environment.} The entire ROS~2 workspace, including the Pinocchio dynamics library and all dependencies, is encapsulated in a Docker image. This ensures reproducibility across machines and eliminates manual dependency management.
+    \item \textbf{Visualisation.} \\
+   RViz subscribes to the published joint states and renders the robot model, providing immediate visual feedback. Figure~\ref{fig:rviz-screenshots} shows the simulated arm as rendered in RViz, including the joint coordinate frames used by the URDF model.
     
-    \item \textbf{Simulation node.} A single C++ ROS~2 node loads the URDF model into Pinocchio and parses the YAML waypoints at startup. At each timestep ($\Delta t = \SI{0.1}{\milli\second}$), the node evaluates the inverse dynamics controller (Section~\ref{subsec:inverse-dynamics}), applies joint damping and soft endstop torques (Section~\ref{subsec:soft-limits}), integrates the state forward using Euler integration, and publishes the resulting joint positions to the \texttt{/joint\_states} ROS~2 topic.
-    
-    \item \textbf{Visualisation.} RViz subscribes to the published joint states and renders the robot model in real time, providing immediate visual feedback during controller tuning.
-    
-    \item \textbf{Data export and analysis.} Joint positions, velocities, accelerations, and all torque components (control, damping, endstop, total) are logged to timestamped CSV files. These are imported into MATLAB for plotting and validation.
+    \item \textbf{Data export.}\\
+	Joint positions, velocities, accelerations, and all torque components (control torque, viscous damping in the joints, endstop torque, and total torque delivered to the joints) are logged to timestamped CSV files at a configurable rate. These files can be imported into external software for plotting and post--processing.
 \end{enumerate}
+\newpage
 
-% Placeholder for pipeline figure — could be a tikz block diagram or an image
-% \begin{figure}[htbp]
-%     \centering
-%     \includegraphics[width=\textwidth]{sim_pipeline}
-%     \caption{Simulation pipeline from input specification to post-processing.}
-%     \label{fig:sim-pipeline}
-% \end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.85\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rviz}
+        \caption{Robot model rendered in RViz.}
+        \label{fig:rviz-model}
+    \end{subfigure}
+    
+    \vspace{0.5cm}
+    
+    \begin{subfigure}[b]{0.85\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rviz_axis}
+        \caption{Joint coordinate frames displayed on the model.}
+        \label{fig:rviz-axes}
+    \end{subfigure}
+    \caption{ROS~2 simulation visualised in RViz. The robot geometry is loaded from the same URDF file used by the dynamics computation, ensuring consistency between the visual representation and the simulated behaviour.}
+    \label{fig:rviz-screenshots}
+\end{figure}
+
+
 % ============================================================
 %  BACK MATTER
 % ============================================================

@@ -308,6 +308,13 @@
   file = {/home/oskar/Zotero/storage/2D6CDBMT/De Gea Fernández et al. - 2020 - Design, Modelling and Control of Novel Series-Elastic Actuators for Industrial Robots.pdf}
 }
 
+@online{DockerAcceleratedContainer,
+  title = {Docker: {{Accelerated Container Application Development}}},
+  url = {https://www.docker.com/},
+  urldate = {2026-05-16},
+  file = {/home/oskar/Zotero/storage/7G7BTYGR/www.docker.com.html}
+}
+
 @incollection{doi:https://doi.org/10.1002/9780470211106.ch5,
   title = {Miscellaneous Design Elements},
   booktitle = {Peterson's Stress Concentration Factors},
@@ -412,6 +419,25 @@
   abstract = {The goal of this study was to analyze the human ability of external force discrimination while actively moving the arm. With the approach presented here, we give an overview for the whole arm of the just-noticeable differences (JNDs) for controlled movements separately executed for the wrist, elbow, and shoulder joints. The work was originally motivated in the design phase of the actuation system of a wearable exoskeleton, which is used in a teleoperation scenario where force feedback should be provided to the subject. The amount of this force feedback has to be calibrated according to the human force discrimination abilities. In the experiments presented here, 10 subjects performed a series of movements facing an opposing force from a commercial haptic interface. Force changes had to be detected in a two-alternative forced choice task. For each of the three joints tested, perceptual thresholds were measured as absolute thresholds (no reference force) and three JNDs corresponding to three reference forces chosen. For this, we used the outcome of the QUEST procedure after 70 trials. Using these four measurements we computed the Weber fraction. Our results demonstrate that different Weber fractions can be measured with respect to the joint. These were 0.11, 0.13, and 0.08 for wrist, elbow, and shoulder, respectively. It is discussed that force perception may be affected by the number of muscles involved and the reproducibility of the movement itself. The minimum perceivable force, on average, was 0.04 N for all three joints.},
   langid = {english},
   file = {/home/oskar/Zotero/storage/PXZI8T3X/Feyzabadi et al. - 2013 - Human Force Discrimination during Active Arm Motion for Force Feedback Design.pdf}
+}
+
+@inproceedings{fioreDiscretetimeClosedloopInverse2021,
+  title = {Discrete-Time Closed-Loop Inverse Kinematics: {{A}} Comparison between {{Euler}} and {{RK4}} Methods},
+  shorttitle = {Discrete-Time Closed-Loop Inverse Kinematics},
+  booktitle = {2021 29th {{Mediterranean Conference}} on {{Control}} and {{Automation}} ({{MED}})},
+  author = {Fiore, Mario D. and Natale, Ciro},
+  date = {2021-06-22},
+  pages = {584--589},
+  publisher = {IEEE},
+  location = {PUGLIA, Italy},
+  doi = {10.1109/MED51440.2021.9480337},
+  url = {https://ieeexplore.ieee.org/document/9480337/},
+  urldate = {2026-05-16},
+  abstract = {This paper investigates the effects of the numerical method employed to solve the system of differential equations that characterise a closed-loop inverse kinematics (CLIK) algorithm in the discrete-time domain. The paper presents a detailed comparison between a 4th order method, namely the Runge-Kutta 4 (RK4) and the explicit Euler 1-st order method, that is the one most often used in applications. In spite of a lower complexity of the mathematical model, simulations on a 7-Degree-Of-Freedom (DOF) show that using explicit Euler produces better performance in some conditions, such as when considering a constant Cartesian reference. On the other hand, significantly lower tracking error is observed for time-varying Cartesian reference when using RK4. This method also generates smoother joint trajectories when moving through a kinematic singularity. Finally, the results suggest that the stability of the closed-loop algorithm is retained for larger gain values when using RK4.},
+  eventtitle = {2021 29th {{Mediterranean Conference}} on {{Control}} and {{Automation}} ({{MED}})},
+  isbn = {978-1-6654-2258-1},
+  langid = {english},
+  file = {/home/oskar/Zotero/storage/YFFZYLBY/Fiore and Natale - 2021 - Discrete-time closed-loop inverse kinematics A comparison between Euler and RK4 methods.pdf}
 }
 
 @article{fujikiSeriesAdmittanceImpedance2022,
@@ -937,6 +963,13 @@
   file = {/home/oskar/Zotero/storage/NEBWJIDG/Rosenstrauch et al. - 2018 - Human robot collaboration - using kinect v2 for ISOTS 15066 speed and separation monitoring.pdf}
 }
 
+@online{ROSHome,
+  title = {{{ROS}}: {{Home}}},
+  url = {https://www.ros.org/},
+  urldate = {2026-05-16},
+  file = {/home/oskar/Zotero/storage/24G4TZCM/www.ros.org.html}
+}
+
 @incollection{safeeaEndEffectorPreciseHandGuiding2018,
   title = {End-{{Effector Precise Hand-Guiding}} for {{Collaborative Robots}}},
   booktitle = {{{ROBOT}} 2017: {{Third Iberian Robotics Conference}}},
@@ -1043,6 +1076,23 @@
   isbn = {978-3-319-32550-7 978-3-319-32552-1},
   langid = {english},
   file = {/home/oskar/Zotero/storage/NDJZK4M7/Siciliano and Khatib - 2016 - Springer Handbook of Robotics.pdf}
+}
+
+@online{skerljBridgingSimtoRealGap2026,
+  title = {Bridging the {{Sim-to-Real Gap}} with Multipanda Ros2: {{A Real-Time ROS2 Framework}} for {{Multimanual Systems}}},
+  shorttitle = {Bridging the {{Sim-to-Real Gap}} with Multipanda Ros2},
+  author = {Škerlj, Jon and Bien, Seongjin and Naceri, Abdeldjallil and Haddadin, Sami},
+  date = {2026-02-02},
+  eprint = {2602.02269},
+  eprinttype = {arXiv},
+  eprintclass = {cs.RO},
+  doi = {10.48550/arXiv.2602.02269},
+  url = {http://arxiv.org/abs/2602.02269},
+  urldate = {2026-05-16},
+  abstract = {We present multipanda ros2, a novel opensource ROS2 architecture for multi-robot control of Franka Robotics robots. Leveraging ros2 control, this framework provides native ROS2 interfaces for controlling any number of robots from a single process. Our core contributions address key challenges in real-time torque control, including interaction control and robot-environment modeling. A central focus of this work is sustaining a 1kHz control frequency, a necessity for real-time control and a minimum frequency required by safety standards. Moreover, we introduce a controllet-feature design pattern that enables controller-switching delays of ≤ 2 ms, facilitating reproducible benchmarking and complex multi-robot interaction scenarios. To bridge the simulation-toreality (sim2real) gap, we integrate a high-fidelity MuJoCo simulation with quantitative metrics for both kinematic accuracy and dynamic consistency (torques, forces, and control errors). Furthermore, we demonstrate that real-world inertial parameter identification can significantly improve force and torque accuracy, providing a methodology for iterative physics refinement. Our work extends approaches from soft robotics to rigid dual-arm, contact-rich tasks, showcasing a promising method to reduce the sim2real gap and providing a robust, reproducible platform for advanced robotics research.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Robotics,Computer Science - Software Engineering,Electrical Engineering and Systems Science - Systems and Control},
+  file = {/home/oskar/Zotero/storage/KJVUV6H3/Škerlj et al. - 2026 - Bridging the Sim-to-Real Gap with multipanda ros2 A Real-Time ROS2 Framework for Multimanual System.pdf}
 }
 
 @inproceedings{songImpedanceControlRobots2017,

@@ -1845,6 +1845,167 @@
       \verb https://stack-of-tasks.github.io/pinocchio/
       \endverb
     \endentry
+    \entry{ROSHome}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{{ROS}}: {{Home}}}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/24G4TZCM/www.ros.org.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ros.org/
+      \endverb
+      \verb{url}
+      \verb https://www.ros.org/
+      \endverb
+    \endentry
+    \entry{DockerAcceleratedContainer}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Docker: {{Accelerated Container Application Development}}}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/7G7BTYGR/www.docker.com.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.docker.com/
+      \endverb
+      \verb{url}
+      \verb https://www.docker.com/
+      \endverb
+    \endentry
+    \entry{skerljBridgingSimtoRealGap2026}{online}{}
+      \name{author}{4}{}{%
+        {{hash=57b0eeb27d00e7995b7d34896f33b1dc}{%
+           family={Škerlj},
+           familyi={Š\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d80c091c2b0d0aafb73f8861296a6e19}{%
+           family={Bien},
+           familyi={B\bibinitperiod},
+           given={Seongjin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0d34e89d68bba7d7f1c04111cf22f69e}{%
+           family={Naceri},
+           familyi={N\bibinitperiod},
+           given={Abdeldjallil},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1eeed5190ecef27eb5b83d595cd48d5f}{%
+           family={Haddadin},
+           familyi={H\bibinitperiod},
+           given={Sami},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{184d2123f910f64dcdedc2d6eca25555}
+      \strng{fullhash}{56497b8f1c9964fa145930ad31791048}
+      \strng{bibnamehash}{56497b8f1c9964fa145930ad31791048}
+      \strng{authorbibnamehash}{56497b8f1c9964fa145930ad31791048}
+      \strng{authornamehash}{184d2123f910f64dcdedc2d6eca25555}
+      \strng{authorfullhash}{56497b8f1c9964fa145930ad31791048}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present multipanda ros2, a novel opensource ROS2 architecture for multi-robot control of Franka Robotics robots. Leveraging ros2 control, this framework provides native ROS2 interfaces for controlling any number of robots from a single process. Our core contributions address key challenges in real-time torque control, including interaction control and robot-environment modeling. A central focus of this work is sustaining a 1kHz control frequency, a necessity for real-time control and a minimum frequency required by safety standards. Moreover, we introduce a controllet-feature design pattern that enables controller-switching delays of ≤ 2 ms, facilitating reproducible benchmarking and complex multi-robot interaction scenarios. To bridge the simulation-toreality (sim2real) gap, we integrate a high-fidelity MuJoCo simulation with quantitative metrics for both kinematic accuracy and dynamic consistency (torques, forces, and control errors). Furthermore, we demonstrate that real-world inertial parameter identification can significantly improve force and torque accuracy, providing a methodology for iterative physics refinement. Our work extends approaches from soft robotics to rigid dual-arm, contact-rich tasks, showcasing a promising method to reduce the sim2real gap and providing a robust, reproducible platform for advanced robotics research.}
+      \field{day}{2}
+      \field{eprintclass}{cs.RO}
+      \field{eprinttype}{arXiv}
+      \field{month}{2}
+      \field{pubstate}{prepublished}
+      \field{shorttitle}{Bridging the {{Sim-to-Real Gap}} with Multipanda Ros2}
+      \field{title}{Bridging the {{Sim-to-Real Gap}} with Multipanda Ros2: {{A Real-Time ROS2 Framework}} for {{Multimanual Systems}}}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2602.02269
+      \endverb
+      \verb{eprint}
+      \verb 2602.02269
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/KJVUV6H3/Škerlj et al. - 2026 - Bridging the Sim-to-Real Gap with multipanda ros2 A Real-Time ROS2 Framework for Multimanual System.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2602.02269
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2602.02269
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Robotics,Computer Science - Software Engineering,Electrical Engineering and Systems Science - Systems and Control}
+    \endentry
+    \entry{fioreDiscretetimeClosedloopInverse2021}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=942d4739b99233116039c398228d0212}{%
+           family={Fiore},
+           familyi={F\bibinitperiod},
+           given={Mario\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=3e659826d5ec12d6496adb66ecfb6ef7}{%
+           family={Natale},
+           familyi={N\bibinitperiod},
+           given={Ciro},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {PUGLIA, Italy}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{af56885e9ac92acf37d328358624bbfd}
+      \strng{fullhash}{af56885e9ac92acf37d328358624bbfd}
+      \strng{bibnamehash}{af56885e9ac92acf37d328358624bbfd}
+      \strng{authorbibnamehash}{af56885e9ac92acf37d328358624bbfd}
+      \strng{authornamehash}{af56885e9ac92acf37d328358624bbfd}
+      \strng{authorfullhash}{af56885e9ac92acf37d328358624bbfd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper investigates the effects of the numerical method employed to solve the system of differential equations that characterise a closed-loop inverse kinematics (CLIK) algorithm in the discrete-time domain. The paper presents a detailed comparison between a 4th order method, namely the Runge-Kutta 4 (RK4) and the explicit Euler 1-st order method, that is the one most often used in applications. In spite of a lower complexity of the mathematical model, simulations on a 7-Degree-Of-Freedom (DOF) show that using explicit Euler produces better performance in some conditions, such as when considering a constant Cartesian reference. On the other hand, significantly lower tracking error is observed for time-varying Cartesian reference when using RK4. This method also generates smoother joint trajectories when moving through a kinematic singularity. Finally, the results suggest that the stability of the closed-loop algorithm is retained for larger gain values when using RK4.}
+      \field{booktitle}{2021 29th {{Mediterranean Conference}} on {{Control}} and {{Automation}} ({{MED}})}
+      \field{day}{22}
+      \field{eventtitle}{2021 29th {{Mediterranean Conference}} on {{Control}} and {{Automation}} ({{MED}})}
+      \field{isbn}{978-1-6654-2258-1}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shorttitle}{Discrete-Time Closed-Loop Inverse Kinematics}
+      \field{title}{Discrete-Time Closed-Loop Inverse Kinematics: {{A}} Comparison between {{Euler}} and {{RK4}} Methods}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{584\bibrangedash 589}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/MED51440.2021.9480337
+      \endverb
+      \verb{file}
+      \verb /home/oskar/Zotero/storage/YFFZYLBY/Fiore and Natale - 2021 - Discrete-time closed-loop inverse kinematics A comparison between Euler and RK4 methods.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9480337/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9480337/
+      \endverb
+    \endentry
     \entry{BLDCmotorenBorstellozeElektromotoren}{online}{}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
