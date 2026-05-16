@@ -27,7 +27,7 @@ log_dir = '/home/oskar/Thesis/csv';
 export_dir = '/home/oskar/Thesis/ThesisV2/Graphics';  % LaTeX graphicspath
 
 % Test 1: Baseline trajectory tracking
-file_test1 = fullfile(log_dir, 'test1_baseline.csv');
+file_test1 = fullfile(log_dir, 'test1_baseline_kpkd.csv');
 
 % Test 3: Damping comparison (same trajectory, two runs)
 file_damping_on  = fullfile(log_dir, 'test3_damping_on.csv');
@@ -96,11 +96,6 @@ if isfile(file_test1)
     legend('Actual path','Setpoints','Location','best');
     grid on; axis equal;
     view([-35 30]);
-
-    % Export
-    exportgraphics(fig1, fullfile(export_dir, 'sim_test1_tracking.pdf'), 'ContentType', 'vector');
-    exportgraphics(fig2, fullfile(export_dir, 'sim_test1_3d.pdf'), 'ContentType', 'vector');
-    fprintf('Test 1: Exported to %s\n', export_dir);
 
 else
     warning('Test 1 CSV not found: %s', file_test1);

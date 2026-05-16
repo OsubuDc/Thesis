@@ -67,10 +67,11 @@
 \contentsline {subsection}{\numberline {3.4.2}Soft Joint Limits}{71}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Software Architecture}{72}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}Simulation Pipeline}{72}{subsection.3.4.4}%
-\contentsline {chapter}{References}{75}{chapter*.128}%
-\contentsline {chapter}{Maxon Motor Datasheet}{81}{appendix*.129}%
-\contentsline {chapter}{ESCON2 Compact 60/12 Datasheet}{83}{appendix*.131}%
-\contentsline {chapter}{Peterson's stress concentration factors}{85}{appendix*.133}%
-\contentsline {chapter}{ADS1256 Datasheet}{87}{appendix*.135}%
-\contentsline {chapter}{AS5048A Datasheet}{89}{appendix*.137}%
-\contentsline {chapter}{AS5048A Capacitance}{91}{appendix*.139}%
+\contentsline {subsection}{\numberline {3.4.5}Simulation Results}{74}{subsection.3.4.5}%
+\contentsline {chapter}{References}{77}{chapter*.130}%
+\contentsline {chapter}{Maxon Motor Datasheet}{83}{appendix*.131}%
+\contentsline {chapter}{ESCON2 Compact 60/12 Datasheet}{85}{appendix*.133}%
+\contentsline {chapter}{Peterson's stress concentration factors}{87}{appendix*.135}%
+\contentsline {chapter}{ADS1256 Datasheet}{89}{appendix*.137}%
+\contentsline {chapter}{AS5048A Datasheet}{91}{appendix*.139}%
+\contentsline {chapter}{AS5048A Capacitance}{93}{appendix*.141}%

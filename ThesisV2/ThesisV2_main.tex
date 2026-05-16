@@ -2207,11 +2207,10 @@ At each timestep ($\Delta t = \SI{1}{\milli\second}$), the controller computes t
     \item \textbf{Data export.}\\
 	Joint positions, velocities, accelerations, and all torque components (control torque, viscous damping in the joints, endstop torque, and total torque delivered to the joints) are logged to timestamped CSV files at a configurable rate. These files can be imported into external software for plotting and post--processing.
 \end{enumerate}
-\newpage
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.85\textwidth}
+    \begin{subfigure}[b]{0.6\textwidth}
         \centering
         \includegraphics[width=\textwidth]{rviz}
         \caption{Robot model rendered in RViz.}
@@ -2220,7 +2219,7 @@ At each timestep ($\Delta t = \SI{1}{\milli\second}$), the controller computes t
     
     \vspace{0.5cm}
     
-    \begin{subfigure}[b]{0.85\textwidth}
+    \begin{subfigure}[b]{0.6\textwidth}
         \centering
         \includegraphics[width=\textwidth]{rviz_axis}
         \caption{Joint coordinate frames displayed on the model.}
@@ -2229,8 +2228,58 @@ At each timestep ($\Delta t = \SI{1}{\milli\second}$), the controller computes t
     \caption{ROS~2 simulation visualised in RViz. The robot geometry is loaded from the same URDF file used by the dynamics computation, ensuring consistency between the visual representation and the simulated behaviour.}
     \label{fig:rviz-screenshots}
 \end{figure}
+\newpage
 
+\subsection{Simulation Results}
+\label{subsec:sim-results}
 
+The simulation was used to evaluate trajectory tracking performance under different controller gains in order to verify that the simulation pipeline produces physically consistent and expected results.
+
+\smalltitle{Gain Evaluation and Tracking Performance}
+
+Since the task--space PD controller has no integral action, a steady--state position error exist because of gravitational forces. The magnitude of this error depends directly on the proportional gain $K_p$.
+
+Figures~\ref{fig:sim-kp10} and~\ref{fig:sim-kp100} show the end--effector position for two gain settings tracking the same waypoint sequence. With $K_p = \num{10}$ and $K_d = \num{5}$ (Figure~\ref{fig:sim-kp10}), the arm converges slowly and settles with a steady-state error along the vertical axis where the controller must overcome the gravitational forces. With $K_p = \num{100}$ and $K_d = \num{10}$ (Figure~\ref{fig:sim-kp100}), the steady--state error reduces, and the arm settles within seconds at each waypoint.
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{test1_lowPD}
+        \caption{Trajectory tracking with $K_p = 10$, $K_d = 5$. The steady--state error in Z is visible.}
+        \label{fig:sim-kp10}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{test1_highPD}
+        \caption{Trajectory tracking with $K_p = 100$, $K_d = 10$. Reduced steady--state error and faster settling.}
+        \label{fig:sim-kp100}
+    \end{minipage}
+\end{figure}
+
+The corresponding joint torques are shown in Figures~\ref{fig:sim-torque-kp10} and~\ref{fig:sim-torque-kp100}. The gravitational compensation torques are configuration--dependent. In the initial configuration, the first link extends vertically while the second link and end--effector extend horizontally, as shown in Figure~\ref{fig:rviz-model}. This creates a gravitational moment about both the shoulder and elbow axes of approximately \SI{0.18}{\newton\metre}. The base joint requires minimal torque since it rotates about the vertical axis and therefore does not need to compensate for gravitational loading.
+
+As the arm moves toward the target waypoints, the changing configuration alters the lever arms associated with the gravitational forces. Consequently, the shoulder compensation torque decreases to approximately \SI{0.02}{\newton\metre}, while the elbow torque remains near \SI{0.18}{\newton\metre}, since it continuously supports the second link and end--effector. Upon returning to the home configuration, both torques return to approximately \SI{0.18}{\newton\metre}, confirming consistent configuration--dependent gravity compensation behavior.
+
+With low gains (Figure~\ref{fig:sim-torque-kp10}), the control torques remain close to the gravitational compensation values throughout, with no noticable peaks during the slow waypoint transitions. With high gains (Figure~\ref{fig:sim-torque-kp100}), the transient torques deviate significantly from the gravitational baseline.  The viscous damping torque remains small in magnitude but becomes visible during transient motion. The damping coefficient can be configured independently for each joint within the simulation.
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{test1_torqueslow}
+        \caption{Joint torques with $K_p = 10$, $K_d = 5$. Torques barely exceed the gravitational compensation baseline.}
+        \label{fig:sim-torque-kp10}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{test1_torqueshigh}
+        \caption{Joint torques with $K_p = 100$, $K_d = 10$. Higher transient torques during waypoint transitions.}
+        \label{fig:sim-torque-kp100}
+    \end{minipage}
+\end{figure}
 % ============================================================
 %  BACK MATTER
 % ============================================================
